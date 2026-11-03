@@ -3,6 +3,8 @@
 import { makeClient, classifyChannel } from "./classify.js";
 import { ANTHROPIC_API_KEY } from "../extension/build/config.js";
 import { localDay } from "./summary.js";
+import { pollReader, IDLE_POLL_S } from "./readwise.js";
+import { applyReaderEvents } from "./reader-sync.js";
 
 // A "pending" classification older than this, with no call in progress in this worker, was
 // interrupted by the worker stopping and gets retried.
@@ -132,7 +134,8 @@ chrome.runtime.onMessage.addListener((msg, sender, reply) => {
   const handle = {
     credit: () => (msg.source === "youtube" ? creditVideo(msg) : credit(msg)),
     problem: () => addProblem(msg.source, msg.message, msg.url),
-    resume: async () => { await resumeInterrupted(); },
+    resume: async () => { await resumeInterrupted(); await ensureReaderAlarm(); },
+    pollReader: async () => { await pollReaderOnce(); },
     reclassify: async () => {
       await setChannel(msg.channelUrl, { name: msg.name, status: "error", retry: true });
       const { videos = {} } = await chrome.storage.local.get("videos");
@@ -157,5 +160,36 @@ async function injectIntoOpenTabs() {
   }
 }
 
-chrome.runtime.onStartup.addListener(() => { resumeInterrupted(); refreshBadge(); });
-chrome.runtime.onInstalled.addListener(() => { resumeInterrupted(); refreshBadge(); injectIntoOpenTabs(); });
+// Reader API polling, for reading done in Reader's phone apps. Runs only when a Readwise token
+// is set in the popup's settings. Each poll says how long to wait before the next one.
+const READER_ALARM = "reader-poll";
+async function pollReaderOnce() {
+  const { settings = {}, readerApi = {} } = await chrome.storage.local.get(["settings", "readerApi"]);
+  if (!settings.readwiseToken) { await chrome.alarms.clear(READER_ALARM); return; }
+  let delayS = IDLE_POLL_S;
+  try {
+    const r = await pollReader({ token: settings.readwiseToken, state: readerApi.state, lastEventAt: readerApi.lastEventAt ?? 0 });
+    delayS = r.delayS;
+    await update(["log", "readerApi"], ({ log = {}, readerApi: cur = {} }) => {
+      const merged = applyReaderEvents({ log, events: cur.events ?? [], newEvents: r.events, docs: r.state.docs, now: Date.now() });
+      const lastEventAt = Math.max(cur.lastEventAt ?? 0, ...r.events.map((e) => e.at));
+      return { log: merged.log, readerApi: { state: r.state, events: merged.events, lastEventAt, lastPollAt: Date.now() } };
+    });
+  } catch (e) {
+    if (e.retryAfterS) delayS = Math.max(delayS, e.retryAfterS);
+    await addProblem("reader", `Reader API poll failed: ${String(e.message ?? e).slice(0, 200)}`);
+  }
+  await chrome.alarms.create(READER_ALARM, { delayInMinutes: Math.max(0.5, delayS / 60) });
+}
+chrome.alarms.onAlarm.addListener((a) => { if (a.name === READER_ALARM) pollReaderOnce(); });
+chrome.storage.onChanged.addListener((changes) => {
+  const was = changes.settings?.oldValue?.readwiseToken;
+  const now = changes.settings?.newValue?.readwiseToken;
+  if (changes.settings && was !== now) pollReaderOnce();
+});
+async function ensureReaderAlarm() {
+  if (!(await chrome.alarms.get(READER_ALARM))) pollReaderOnce();
+}
+
+chrome.runtime.onStartup.addListener(() => { resumeInterrupted(); refreshBadge(); ensureReaderAlarm(); });
+chrome.runtime.onInstalled.addListener(() => { resumeInterrupted(); refreshBadge(); injectIntoOpenTabs(); ensureReaderAlarm(); });

@@ -26,7 +26,10 @@ export function summarize(log, channels, { threshold }) {
     const dayOut = { totals: zero(), sources: {} };
     for (const [source, items] of Object.entries(bySource)) {
       const s = { totals: zero(), items: [] };
-      for (const [key, item] of Object.entries(items)) {
+      for (const [key, raw] of Object.entries(items)) {
+        // Reader documents can have time from both the content script and the Reader API
+        // (src/reader-sync.js); the larger one counts.
+        const item = { ...raw, seconds: Math.max(raw.seconds ?? 0, raw.apiSeconds ?? 0) };
         const cls = classify(source, key, item, channels, threshold);
         s.totals[cls] += item.seconds;
         dayOut.totals[cls] += item.seconds;

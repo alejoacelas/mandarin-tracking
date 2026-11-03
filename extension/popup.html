@@ -39,6 +39,8 @@
   <h2>Settings</h2>
   <label>Chat or document counts as Mandarin at this % Chinese <input type="number" id="threshold" min="1" max="100"></label>
   <label>Stop counting reading after this many idle seconds <input type="number" id="idle" min="10" max="3600"></label>
+  <label>Readwise token, to include phone reading <input type="password" id="readwise" placeholder="readwise.io/access_token" style="width:150px"></label>
+  <div class="muted" id="reader-status"></div>
   <button id="export">Export JSON</button>
 </section>
 <script type="module" src="build/popup.js"></script>

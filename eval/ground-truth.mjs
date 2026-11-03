@@ -121,7 +121,7 @@ async function groundTruth(channel) {
 // Mandarin when SenseVoice says zh and the transcript reads as fluent Mandarin.
 function decide(clips) {
   if (clips.length < 4) return { label: "unknown", note: "too few clips" };
-  const speech = clips.filter((c) => c.chars >= 8);
+  const speech = clips.filter((c) => c.chars >= 8 && c.lang !== "nospeech");
   const langs = speech.map((c) => (c.lang === "zh" && !c.fluent ? "zh?" : c.lang)).join(",");
   if (speech.length < clips.length / 3) return { label: "other", share: 0, langs, note: "mostly no speech" };
   const share = speech.filter((c) => c.lang === "zh" && c.fluent).length / speech.length;
@@ -129,6 +129,13 @@ function decide(clips) {
   return { label, share: Math.round(share * 100) / 100, langs };
 }
 
+// --relabel: re-apply decide() to clips already saved, without downloading anything.
+if (process.argv.includes("--relabel")) {
+  const saved = JSON.parse(await readFile(outFile, "utf8"));
+  for (const c of saved) if (c.clips) c.audio_label = decide(c.clips);
+  await writeFile(outFile, JSON.stringify(saved, null, 2));
+  process.exit(0);
+}
 const channels = JSON.parse(await readFile(channelsFile, "utf8"));
 const done = existsSync(outFile) ? JSON.parse(await readFile(outFile, "utf8")) : [];
 const results = done.filter((d) => !d.error && d.clips.length >= 8);

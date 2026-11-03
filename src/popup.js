@@ -5,7 +5,7 @@ const $ = (id) => document.getElementById(id);
 const el = (tag, props = {}, ...kids) => { const e = Object.assign(document.createElement(tag), props); e.append(...kids); return e; };
 
 async function render() {
-  const data = await chrome.storage.local.get(["log", "channels", "settings", "problems", "seenProblemsAt"]);
+  const data = await chrome.storage.local.get(["log", "channels", "settings", "problems", "seenProblemsAt", "readerApi"]);
   const settings = { ...DEFAULT_SETTINGS, ...data.settings };
   const summary = summarize(data.log ?? {}, data.channels ?? {}, settings);
   const today = summary[localDay(new Date())];
@@ -61,21 +61,27 @@ async function render() {
 
   $("threshold").value = Math.round(settings.threshold * 100);
   $("idle").value = settings.idleSeconds;
+  $("readwise").value = settings.readwiseToken ?? "";
+  const lastPoll = data.readerApi?.lastPollAt;
+  $("reader-status").textContent = settings.readwiseToken ? (lastPoll ? `Reader API last checked ${new Date(lastPoll).toLocaleTimeString()}` : "Reader API not checked yet") : "";
 }
 
 async function saveSettings() {
   const { settings } = await chrome.storage.local.get("settings");
   const threshold = Math.min(100, Math.max(1, Number($("threshold").value))) / 100;
   const idleSeconds = Math.min(3600, Math.max(10, Number($("idle").value)));
-  await chrome.storage.local.set({ settings: { ...settings, threshold, idleSeconds } });
+  const readwiseToken = $("readwise").value.trim() || undefined;
+  await chrome.storage.local.set({ settings: { ...settings, threshold, idleSeconds, readwiseToken } });
   chrome.runtime.sendMessage({ type: "resume" }).catch(() => {});
 render();
 }
 $("threshold").onchange = saveSettings;
 $("idle").onchange = saveSettings;
+$("readwise").onchange = saveSettings;
 $("dismiss").onclick = () => chrome.runtime.sendMessage({ type: "seenProblems" }).then(render);
 $("export").onclick = async () => {
   const data = await chrome.storage.local.get(["log", "channels", "videos", "settings"]);
+  if (data.settings) data.settings = { ...data.settings, readwiseToken: undefined }; // don't export the token
   const blob = new Blob([JSON.stringify({ format: "mandarin-tracking-extension/1", exportedAt: new Date().toISOString(), ...data }, null, 2)], { type: "application/json" });
   el("a", { href: URL.createObjectURL(blob), download: `mandarin-time-${localDay(new Date())}.json` }).click();
 };

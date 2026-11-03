@@ -3,8 +3,8 @@
   "name": "Mandarin time",
   "version": "0.1.0",
   "description": "Tracks time spent on Mandarin videos on YouTube, Mandarin reading in Readwise Reader, and Mandarin chats on claude.ai and chatgpt.com.",
-  "permissions": ["storage", "scripting"],
-  "host_permissions": ["https://www.youtube.com/*", "https://claude.ai/*", "https://chatgpt.com/*", "https://read.readwise.io/*", "https://api.anthropic.com/*"],
+  "permissions": ["storage", "scripting", "alarms"],
+  "host_permissions": ["https://www.youtube.com/*", "https://claude.ai/*", "https://chatgpt.com/*", "https://read.readwise.io/*", "https://readwise.io/*", "https://api.anthropic.com/*"],
   "background": { "service_worker": "build/background.js", "type": "module" },
   "action": { "default_popup": "popup.html" },
   "content_scripts": [
