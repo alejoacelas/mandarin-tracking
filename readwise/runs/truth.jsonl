@@ -1,0 +1,3 @@
+{"scenario":"probe","doc":"01m6gp20vdmt85kvmp3qc2280b","start":1793708985.9,"end":1793708986.0,"note":"jump to 50%, not counted as reading"}
+{"scenario":"js_scroll_8min","doc":"01m6gp20jg4avmec5qjvdv74t0","start":1793709048.6,"end":1793709536.8,"note":"programmatic scrollTop, no input events; server stopped receiving progress after ~2 min"}
+{"scenario":"steady_3min","doc":"01m6gp1z5s48yjfgmhk5j0c5j8","start":1793709647.4,"end":1793709859.0,"note":"arrow keys, read top to bottom"}
