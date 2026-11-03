@@ -2,3 +2,4 @@
 node_modules/
 extension/build/
 eval/results/
+__pycache__/

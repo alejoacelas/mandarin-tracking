@@ -13,7 +13,7 @@ import re
 from datetime import datetime
 
 HERE = pathlib.Path(__file__).parent
-POLL_INTERVALS = [10, 60, 120, 300, 600, 900]
+POLL_INTERVALS = [10, 30, 60, 120, 300, 600, 900, "adaptive300", "adaptive900"]
 PHASES = 5  # poll start offsets averaged per interval
 GAP = 300  # seconds without a progress save that end a session
 TAIL = 30  # seconds credited after a session's last save
@@ -37,7 +37,10 @@ def char_counts(snaps):
         html = p.read_text()
         title = re.sub("<[^>]+>", "", re.search(r"<h1>(.*?)</h1>", html, re.S).group(1)).strip()
         by_title[title] = sum("一" <= c <= "鿿" for c in html)
-    return {i: by_title.get(d["title"], 0) for i, d in snaps[-1]["docs"].items()}
+    def lookup(title):  # copies of a fixture share its first four characters
+        return by_title.get(title) or next((n for t, n in by_title.items() if t[:4] == title[:4]), 0)
+
+    return {i: lookup(d["title"]) for i, d in snaps[-1]["docs"].items()}
 
 
 def subsample(snaps, every, offset=0):
@@ -51,13 +54,30 @@ def subsample(snaps, every, offset=0):
     return out
 
 
+def subsample_adaptive(snaps, base, offset=0, fast=30, hold=300):
+    """Poll every `base` seconds, but every `fast` seconds within `hold` of a seen change."""
+    out, last_change = [], -1e18
+    for s in snaps:
+        if s["t"] < snaps[0]["t"] + offset:
+            continue
+        if not out:
+            out.append(s)
+            continue
+        every = fast if s["t"] - last_change < hold else base
+        if s["t"] - out[-1]["t"] >= every - 2:
+            if any(out[-1]["docs"].get(d, {}).get("updated_at") != v["updated_at"] for d, v in s["docs"].items()):
+                last_change = s["t"]
+            out.append(s)
+    return out
+
+
 def changes(snaps):
     """(prev, cur, doc, gain) for each doc whose save time changed between polls."""
     out = []
     for a, b in zip(snaps, snaps[1:]):
         for d, pb in b["docs"].items():
-            pa = a["docs"].get(d)
-            if pa and pa["updated_at"] != pb["updated_at"]:
+            pa = a["docs"].get(d) or {"updated_at": None, "progress": 0}  # new document
+            if pa["updated_at"] != pb["updated_at"]:
                 out.append((a, b, d, (pb["progress"] or 0) - (pa["progress"] or 0)))
     return out
 
@@ -117,18 +137,23 @@ def main():
     snaps, truth = load()
     chars = char_counts(snaps)
     scenarios = scenarios_from(truth)
-    header = f"{'scenario':<16}{'every':>6}{'true':>7}" + "".join(f"{n:>14}" for n in ESTIMATORS)
+    header = f"{'scenario':<16}{'every':>12}{'true':>7}" + "".join(f"{n:>14}" for n in ESTIMATORS)
     rows = {}
     for every in POLL_INTERVALS:
-        runs = [changes(subsample(snaps, every, every * k / PHASES)) for k in range(PHASES)]
+        if isinstance(every, str):
+            base = int(every.removeprefix("adaptive"))
+            runs = [changes(subsample_adaptive(snaps, base, base * k / PHASES)) for k in range(PHASES)]
+        else:
+            runs = [changes(subsample(snaps, every, every * k / PHASES)) for k in range(PHASES)]
         for name, sc in scenarios.items():
             vals = [0.0] * len(ESTIMATORS)
             for ch in runs:
-                mine = [c for c in ch if c[2] in sc["docs"] and sc["start"] - 60 <= c[1]["t"] < sc["until"]]
+                mine = [c for c in ch if c[2] in sc["docs"] and sc["start"] <= c[1]["t"] < sc["until"]]
                 for i, f in enumerate(ESTIMATORS.values()):
-                    vals[i] += f(mine, every, chars) / 60 / PHASES
+                    cap = int(every.removeprefix("adaptive")) if isinstance(every, str) else every
+                    vals[i] += f(mine, cap, chars) / 60 / PHASES
             rows.setdefault(name, []).append(
-                f"{name:<16}{every:>6}{sc['true'] / 60:>7.1f}" + "".join(f"{v:>14.1f}" for v in vals)
+                f"{name:<16}{every:>12}{sc['true'] / 60:>7.1f}" + "".join(f"{v:>14.1f}" for v in vals)
             )
     print(header)
     for name in rows:

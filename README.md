@@ -17,15 +17,22 @@ A Chrome extension, built separately.
 
 ### Readwise Reader
 
-The Reader API (`GET https://readwise.io/api/v3/list/?updatedAfter=…`, token from
-readwise.io/access_token) gives each document's `reading_progress`,
-`last_opened_at` and content, but no time spent. Time is estimated from how
-progress changes between polls. The method is being chosen by benchmarking
-several estimates against each other.
+Two measurements, combined per document per day by taking the larger:
 
-Limits: progress is a scroll position, so skimming inflates it and rereading adds
-nothing. Phone reading appears only after the app syncs. The list endpoint allows
-20 requests per minute.
+- On the desktop, the extension's content script on read.readwise.io counts engaged time.
+- Everywhere, including the phone apps, `src/readwise.js` reads the Reader API. The API has no
+  time spent, but a document's `updated_at` moves each time Reader saves reading progress
+  (about every 30 s while you scroll) and `last_opened_at` marks opens. Saves less than 5 min
+  apart form one session, plus 45 s after the last save. The tracker polls every 5 min, and
+  every 30 s while saves are arriving, because each poll only sees a document's latest save.
+  A document counts as Mandarin when its text is at least 30% Chinese.
+
+`readwise/benchmark.py` compares estimators on recorded scripted reading
+(`readwise/runs/`); this method was within about 15% per session and 11% overall, while
+crediting whole poll intervals or characters read was off by 2–4×. Untested: how promptly
+the phone apps sync progress, and reading without scrolling for over 5 min, which ends the
+session. Reader stops syncing progress when the page scrolls without user input, so
+benchmarks drive it with real key presses.
 
 ### Pleco
 
