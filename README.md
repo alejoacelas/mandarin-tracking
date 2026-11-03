@@ -71,12 +71,9 @@ Build it with `npm install && npm run build`, which reads `ANTHROPIC_API_KEY` fr
 unpacked" and pick the `extension/` folder. After each rebuild, press the extension's reload
 button; open tabs pick up the new version without reloading.
 
-The popup shows today's Mandarin total, a breakdown per channel, chat and document, and the
-last seven days. A red badge means something needs attention: a channel that couldn't be
-labelled, a page whose layout the extension no longer recognises, or a failed Reader API
-poll. A chat or document counts as Mandarin when at least 30% of its text is Chinese
+Click the toolbar icon to see the breakdown; "Open in a tab" shows the same view full size. The icon's badge shows today's Mandarin minutes. The view has the last seven days as bars (click one to see that day), the day's Mandarin total, and each channel, chat and document with its time and label. An amber "!" on the badge means something needs attention: a channel that couldn't be labelled, a page whose layout the extension no longer recognises, or a failed Reader API poll. A chat or document counts as Mandarin when at least 30% of its text is Chinese
 (adjustable). Reading stops counting after 2 minutes without input. Set a Readwise token in
-the popup to add phone reading. "Export JSON" saves the raw log, channel labels and
+Settings to add phone reading. "Export JSON" saves the raw log, channel labels and
 settings, without the token.
 
 Tests: `npm test` runs unit tests. `npm run test:e2e` loads the extension into Chromium and

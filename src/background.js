@@ -1,8 +1,9 @@
 // Background worker: stores credited time, resolves YouTube videos to channels, asks the LLM to
-// classify new channels, and shows a red badge when something needs attention.
+// classify new channels, and keeps the toolbar badge up to date.
 import { makeClient, classifyChannel } from "./classify.js";
 import { ANTHROPIC_API_KEY } from "../extension/build/config.js";
-import { localDay } from "./summary.js";
+import { localDay, summarize } from "./summary.js";
+import { DEFAULT_SETTINGS } from "./content/messaging.js";
 import { pollReader, IDLE_POLL_S } from "./readwise.js";
 import { applyReaderEvents } from "./reader-sync.js";
 
@@ -114,14 +115,34 @@ async function setChannel(url, value) {
   await update(["channels"], ({ channels = {} }) => ({ channels: { ...channels, [url]: value } }));
 }
 
+// The toolbar icon shows today's Mandarin minutes ("45m", "1h05") in red, or a "!" on amber when
+// something needs attention.
 export async function refreshBadge() {
-  const { problems = [], seenProblemsAt = 0, channels = {} } = await chrome.storage.local.get(["problems", "seenProblemsAt", "channels"]);
+  const { problems = [], seenProblemsAt = 0, channels = {}, log = {}, settings = {} } =
+    await chrome.storage.local.get(["problems", "seenProblemsAt", "channels", "log", "settings"]);
   const unseen = problems.filter((p) => p.at > seenProblemsAt).length;
   const failed = Object.values(channels).filter((c) => c.status === "error" || (c.status === "pending" && Date.now() - c.since > CLASSIFY_STALE_MS)).length;
-  const n = unseen + failed;
-  await chrome.action.setBadgeText({ text: n ? "!" : "" });
-  await chrome.action.setBadgeBackgroundColor({ color: "#d93025" });
+  if (unseen + failed) {
+    await chrome.action.setBadgeText({ text: "!" });
+    await chrome.action.setBadgeBackgroundColor({ color: "#e8a200" });
+    return;
+  }
+  const today = localDay(new Date());
+  const seconds = summarize({ [today]: log[today] ?? {} }, channels, { ...DEFAULT_SETTINGS, ...settings })[today].totals.mandarin;
+  const m = Math.round(seconds / 60);
+  await chrome.action.setBadgeText({ text: m ? (m < 60 ? `${m}m` : `${Math.floor(m / 60)}h${String(m % 60).padStart(2, "0")}`) : "" });
+  await chrome.action.setBadgeBackgroundColor({ color: "#d0402b" });
+  await chrome.action.setBadgeTextColor?.({ color: "#ffffff" });
 }
+let badgeTimer = null;
+chrome.storage.onChanged.addListener((changes) => {
+  if (!["log", "channels", "settings", "problems", "seenProblemsAt"].some((k) => k in changes)) return;
+  clearTimeout(badgeTimer);
+  badgeTimer = setTimeout(refreshBadge, 1000);
+});
+// Once a minute, so the badge resets at midnight.
+chrome.alarms.create("badge", { periodInMinutes: 1 });
+chrome.alarms.onAlarm.addListener((a) => { if (a.name === "badge") refreshBadge(); });
 
 // Channels left "pending" when the worker was stopped mid-classification get retried.
 async function resumeInterrupted() {

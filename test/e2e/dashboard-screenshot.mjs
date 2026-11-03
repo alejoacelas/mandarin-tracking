@@ -1,5 +1,6 @@
-// Renders the popup with sample data and saves a screenshot to /tmp/popup.png. For docs and
-// visual checks; opens a browser window. Usage: node test/e2e/popup-screenshot.mjs
+// Renders the dashboard with sample data, as the toolbar popup and as a tab, in light and dark,
+// and saves screenshots to /tmp/dashboard-*.png. For visual checks; opens a browser window.
+// Usage: node test/e2e/dashboard-screenshot.mjs
 import { Browser, sleep } from "./harness.js";
 import { writeFileSync } from "node:fs";
 
@@ -33,14 +34,19 @@ const channels = {
   "https://www.youtube.com/@newchannel": { name: "某个新频道", status: "pending", since: Date.now() },
 };
 await b.worker.eval(`chrome.storage.local.clear().then(() => chrome.storage.local.set(${JSON.stringify({ log, channels, settings: { threshold: 0.3, idleSeconds: 120 } })})).then(() => true)`);
-await b.worker.eval(`location.reload()`);
-await sleep(1500);
-await b.worker.eval(`document.querySelectorAll("details").forEach((d) => d.open = true)`);
-await sleep(300);
-await b.cdp.send("Emulation.setDeviceMetricsOverride", { width: 380, height: 1000, deviceScaleFactor: 2, mobile: false }, b.worker.sessionId);
-const h = await b.worker.eval(`document.body.scrollHeight`);
-await b.cdp.send("Emulation.setDeviceMetricsOverride", { width: 380, height: h, deviceScaleFactor: 2, mobile: false }, b.worker.sessionId);
-const shot = await b.cdp.send("Page.captureScreenshot", { format: "png", captureBeyondViewport: true }, b.worker.sessionId);
-writeFileSync("/tmp/popup.png", Buffer.from(shot.data, "base64"));
+const page = b.worker;
+for (const [mode, width, query] of [["popup", 420, "?popup"], ["tab", 900, ""]]) {
+  for (const scheme of ["light", "dark"]) {
+    await b.cdp.send("Emulation.setEmulatedMedia", { features: [{ name: "prefers-color-scheme", value: scheme }] }, page.sessionId);
+    await page.eval(`location.href = "dashboard.html${query}"`).catch(() => {});
+    await sleep(1500);
+    await b.cdp.send("Emulation.setDeviceMetricsOverride", { width, height: 1000, deviceScaleFactor: 2, mobile: false }, page.sessionId);
+    await sleep(300);
+    const h = await page.eval(`document.documentElement.scrollHeight`);
+    await b.cdp.send("Emulation.setDeviceMetricsOverride", { width, height: h, deviceScaleFactor: 2, mobile: false }, page.sessionId);
+    const shot = await b.cdp.send("Page.captureScreenshot", { format: "png", captureBeyondViewport: true }, page.sessionId);
+    writeFileSync(`/tmp/dashboard-${mode}-${scheme}.png`, Buffer.from(shot.data, "base64"));
+  }
+}
 await b.close();
-console.log("saved /tmp/popup.png");
+console.log("saved /tmp/dashboard-*.png");

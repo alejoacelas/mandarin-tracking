@@ -114,10 +114,10 @@ export class Browser {
     const { id } = await this.cdp.send("Extensions.loadUnpacked", { path: this.extPath });
     this.extId = id;
     const b = this;
-    // Storage is read through the extension's popup page in a background tab: evaluating in the
+    // Storage is read through the extension's dashboard page in a background tab: evaluating in the
     // service worker over CDP is unreliable while it starts and stops.
     for (let i = 0; i < 20; i++) {
-      b.worker = await b.open(`chrome-extension://${b.extId}/popup.html`);
+      b.worker = await b.open(`chrome-extension://${b.extId}/dashboard.html`);
       if (await b.worker.eval("typeof chrome.storage?.local").catch(() => "") === "object") return;
       await b.cdp.send("Target.closeTarget", { targetId: b.worker.targetId });
       await sleep(500);
