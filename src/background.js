@@ -4,7 +4,12 @@ import { makeClient, classifyChannel } from "./classify.js";
 import { ANTHROPIC_API_KEY } from "../extension/build/config.js";
 import { localDay } from "./summary.js";
 
-const CLASSIFY_STALE_MS = 3 * 60_000; // a "pending" classification older than this was interrupted
+// A "pending" classification older than this, with no call in progress in this worker, was
+// interrupted by the worker stopping and gets retried.
+const CLASSIFY_STALE_MS = 10 * 60_000;
+const inFlight = new Set(); // channel URLs being classified by this worker instance
+const oembedFailures = new Map(); // videoId -> time of last failure, to avoid refetching every 5 s
+const MAX_CREDIT_SECONDS = 3600;
 
 // All storage writes go through one queue so concurrent messages can't overwrite each other.
 let queue = Promise.resolve();
@@ -28,7 +33,11 @@ async function addProblem(source, message, url) {
 }
 
 async function credit({ source, key, title, url, seconds, share, units }) {
-  if (!(seconds > 0 && seconds < 3600)) return;
+  if (!(seconds > 0)) return;
+  if (seconds > MAX_CREDIT_SECONDS) {
+    await addProblem(source, `Got ${seconds} s in one report for ${title ?? key}; recorded ${MAX_CREDIT_SECONDS} s.`);
+    seconds = MAX_CREDIT_SECONDS;
+  }
   const day = localDay(new Date());
   await update(["log"], ({ log = {} }) => {
     const items = ((log[day] ??= {})[source] ??= {});
@@ -45,8 +54,10 @@ async function credit({ source, key, title, url, seconds, share, units }) {
 async function resolveVideo(videoId) {
   const { videos = {} } = await chrome.storage.local.get("videos");
   if (videos[videoId]) return videos[videoId];
+  if (videoId === "unknown") throw new Error("A video played with sound but its ID couldn't be found.");
+  if (Date.now() - (oembedFailures.get(videoId) ?? 0) < 10 * 60_000) throw new Error(`Still can't look up the channel of video ${videoId}.`);
   const r = await fetch(`https://www.youtube.com/oembed?format=json&url=${encodeURIComponent(`https://www.youtube.com/watch?v=${videoId}`)}`);
-  if (!r.ok) throw new Error(`YouTube oEmbed returned ${r.status} for video ${videoId}`);
+  if (!r.ok) { oembedFailures.set(videoId, Date.now()); throw new Error(`YouTube oEmbed returned ${r.status} for video ${videoId}`); }
   const o = await r.json();
   if (!o.author_url || !o.author_name) throw new Error(`YouTube oEmbed has no channel for video ${videoId}`);
   const info = { channelUrl: o.author_url, channelName: o.author_name, title: o.title };
@@ -59,16 +70,17 @@ async function creditVideo({ videoId, seconds }) {
   try {
     info = await resolveVideo(videoId);
   } catch (e) {
-    // Keep the time, visibly unresolved, instead of dropping it.
-    await credit({ source: "youtube", key: "unresolved", title: "Videos whose channel couldn't be looked up", seconds });
+    // Keep the time, visibly unresolved and under the video's ID, instead of dropping it.
+    await credit({ source: "youtube", key: `video:${videoId}`, title: `Video ${videoId} (channel unknown)`, url: videoId === "unknown" ? undefined : `https://www.youtube.com/watch?v=${videoId}`, seconds });
     await addProblem("youtube", String(e.message ?? e));
     return;
   }
   await credit({ source: "youtube", key: info.channelUrl, title: info.channelName, url: info.channelUrl, seconds });
-  await ensureClassified(info);
+  ensureClassified(info); // runs on; the content script doesn't wait for it
 }
 
 async function ensureClassified({ channelUrl, channelName, title }) {
+  if (inFlight.has(channelUrl)) return;
   let start = false;
   await update(["channels"], ({ channels = {} }) => {
     const c = channels[channelUrl];
@@ -78,12 +90,15 @@ async function ensureClassified({ channelUrl, channelName, title }) {
     return { channels: { ...channels, [channelUrl]: { name: channelName, status: "pending", since: Date.now(), videoTitle: title } } };
   });
   if (!start) return;
+  inFlight.add(channelUrl);
   try {
     const result = await classifyChannel(makeClient(ANTHROPIC_API_KEY), { name: channelName, url: channelUrl, videoTitle: title });
     await setChannel(channelUrl, { name: channelName, status: "done", at: Date.now(), ...pick(result, ["label", "confidence", "mandarin_share", "reason"]) });
   } catch (e) {
     await setChannel(channelUrl, { name: channelName, status: "error", at: Date.now(), error: String(e.message ?? e).slice(0, 300) });
     await addProblem("youtube", `Couldn't classify channel ${channelName}: ${String(e.message ?? e).slice(0, 200)}`);
+  } finally {
+    inFlight.delete(channelUrl);
   }
   await refreshBadge();
 }
@@ -96,7 +111,7 @@ async function setChannel(url, value) {
 export async function refreshBadge() {
   const { problems = [], seenProblemsAt = 0, channels = {} } = await chrome.storage.local.get(["problems", "seenProblemsAt", "channels"]);
   const unseen = problems.filter((p) => p.at > seenProblemsAt).length;
-  const failed = Object.values(channels).filter((c) => c.status === "error").length;
+  const failed = Object.values(channels).filter((c) => c.status === "error" || (c.status === "pending" && Date.now() - c.since > CLASSIFY_STALE_MS)).length;
   const n = unseen + failed;
   await chrome.action.setBadgeText({ text: n ? "!" : "" });
   await chrome.action.setBadgeBackgroundColor({ color: "#d93025" });
@@ -117,6 +132,7 @@ chrome.runtime.onMessage.addListener((msg, sender, reply) => {
   const handle = {
     credit: () => (msg.source === "youtube" ? creditVideo(msg) : credit(msg)),
     problem: () => addProblem(msg.source, msg.message, msg.url),
+    resume: async () => { await resumeInterrupted(); },
     reclassify: async () => {
       await setChannel(msg.channelUrl, { name: msg.name, status: "error", retry: true });
       const { videos = {} } = await chrome.storage.local.get("videos");
@@ -130,5 +146,16 @@ chrome.runtime.onMessage.addListener((msg, sender, reply) => {
   return true;
 });
 
+// Chrome doesn't put content scripts into tabs that were open before an install or update, so
+// those tabs would track nothing until reloaded. Inject them now.
+async function injectIntoOpenTabs() {
+  for (const cs of chrome.runtime.getManifest().content_scripts) {
+    const tabs = await chrome.tabs.query({ url: cs.matches });
+    for (const tab of tabs) {
+      chrome.scripting.executeScript({ target: { tabId: tab.id }, files: cs.js, world: cs.world ?? "ISOLATED" }).catch(() => {});
+    }
+  }
+}
+
 chrome.runtime.onStartup.addListener(() => { resumeInterrupted(); refreshBadge(); });
-chrome.runtime.onInstalled.addListener(() => { resumeInterrupted(); refreshBadge(); });
+chrome.runtime.onInstalled.addListener(() => { resumeInterrupted(); refreshBadge(); injectIntoOpenTabs(); });

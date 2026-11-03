@@ -17,6 +17,8 @@ export const ZH = "我最近在学习中文，每天都会和老师练习口语�
 export const EN = "I have been thinking about how to plan the project timeline and which tasks come first. ".repeat(4);
 export const VIDEO_ID = "SHWjQrGb3MQ";
 export const CHANNEL_URL = "https://www.youtube.com/@laogao";
+export const VIDEO_ID_2 = "aaaaaaaaaaa";
+export const CHANNEL_URL_2 = "https://www.youtube.com/@otherchannel";
 
 const chatHtml = (title, text) => `<!doctype html><meta charset="utf-8"><title>${title}</title><body><nav>Recents: another chat title in English</nav><main><div id="t">${text}</div><textarea></textarea></main></body>`;
 
@@ -32,13 +34,18 @@ function handler(req, res) {
   if (host === "www.youtube.com") {
     if (url.pathname === "/oembed") {
       res.writeHead(200, { "content-type": "application/json" });
-      return res.end(JSON.stringify({ author_name: "老高與小茉 Mr & Mrs Gao", author_url: CHANNEL_URL, title: "test video" }));
+      const id = new URL(url.searchParams.get("url")).searchParams.get("v");
+      const ch = id === VIDEO_ID ? { author_name: "老高與小茉 Mr & Mrs Gao", author_url: CHANNEL_URL } : { author_name: "Other", author_url: CHANNEL_URL_2 };
+      return res.end(JSON.stringify({ ...ch, title: "test video" }));
     }
     if (url.pathname === "/fixture/video.mp4") {
       res.writeHead(200, { "content-type": "video/mp4" });
       return res.end(readFileSync(path.join(here, "fixtures/video.mp4")));
     }
-    return html(`<!doctype html><meta charset="utf-8"><title>video</title><body><div id="movie_player"><video src="/fixture/video.mp4"></video></div></body>`);
+    // Imitates YouTube's player: getVideoData() reports which video is loaded.
+    return html(`<!doctype html><meta charset="utf-8"><title>video</title><body><div id="movie_player" class="html5-video-player"><video src="/fixture/video.mp4"></video></div>
+      <script>window.currentVideo = new URLSearchParams(location.search).get("v");
+      document.getElementById("movie_player").getVideoData = () => ({ video_id: window.currentVideo });</script></body>`);
   }
   res.writeHead(404); res.end();
 }
@@ -65,7 +72,8 @@ class Cdp {
 }
 
 export class Browser {
-  static async launch() {
+  // live: talk to the real sites instead of the local fixtures.
+  static async launch({ live = false } = {}) {
     const b = new Browser();
     b.dir = mkdtempSync(path.join(tmpdir(), "mt-e2e-"));
     execFileSync("openssl", ["req", "-x509", "-newkey", "rsa:2048", "-nodes", "-subj", "/CN=test", "-days", "1",
@@ -77,8 +85,9 @@ export class Browser {
     b.proc = spawn(chromium.executablePath(), [
       `--user-data-dir=${b.dir}/profile`, "--remote-debugging-port=0", "--no-first-run", "--no-default-browser-check",
       `--disable-extensions-except=${ext}`, `--load-extension=${ext}`,
-      `--host-resolver-rules=MAP claude.ai 127.0.0.1:${port},MAP chatgpt.com 127.0.0.1:${port},MAP www.youtube.com 127.0.0.1:${port}`,
-      "--ignore-certificate-errors", "--autoplay-policy=no-user-gesture-required", "about:blank",
+      ...(live ? [] : [`--host-resolver-rules=MAP claude.ai 127.0.0.1:${port},MAP chatgpt.com 127.0.0.1:${port},MAP www.youtube.com 127.0.0.1:${port}`,
+        "--ignore-certificate-errors"]),
+      "--autoplay-policy=no-user-gesture-required", "about:blank",
     ], { stdio: ["ignore", "ignore", "pipe"] });
     const wsUrl = await new Promise((resolve, reject) => {
       let buf = "";

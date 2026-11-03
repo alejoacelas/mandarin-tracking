@@ -33,7 +33,7 @@ const SCHEMA = {
 };
 
 export function makeClient(apiKey) {
-  return new Anthropic({ apiKey, dangerouslyAllowBrowser: true, maxRetries: 3 });
+  return new Anthropic({ apiKey, dangerouslyAllowBrowser: true, maxRetries: 2, timeout: 4 * 60_000 });
 }
 
 // channel: { name, url, videoTitle? }

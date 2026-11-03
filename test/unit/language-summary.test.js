@@ -18,6 +18,7 @@ test("classify chats by threshold and YouTube by channel label", () => {
   assert.equal(classify("claude", "x", { share: 0.31 }, {}, 0.3), "mandarin");
   assert.equal(classify("claude", "x", { share: 0.29 }, {}, 0.3), "other");
   assert.equal(classify("claude", "x", { share: null }, {}, 0.3), "unclassified");
+  assert.equal(classify("claude", "_other", { share: null }, {}, 0.3), "other");
   const ch = { a: { status: "done", label: "mandarin" }, b: { status: "pending" }, c: { status: "done", label: "unknown" }, d: { status: "error" } };
   assert.equal(classify("youtube", "a", {}, ch, 0.3), "mandarin");
   for (const k of ["b", "c", "d", "missing"]) assert.equal(classify("youtube", k, {}, ch, 0.3), "unclassified");

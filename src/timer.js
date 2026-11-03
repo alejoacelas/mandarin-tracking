@@ -3,7 +3,12 @@
 //
 // "video" mode counts while the video plays and no ad is showing, whether or not the tab is
 // visible (listening counts). "reading" mode counts while the tab is visible and focused and
-// the user did something (key, pointer, scroll, page text changing) within the idle limit.
+// the user did something (key, pointer, scroll) within the idle limit.
+//
+// Callers tick the timer about once a second. A longer stretch between calls means the computer
+// slept or the page was frozen, so at most MAX_STRETCH_MS of it counts.
+export const MAX_STRETCH_MS = 15_000;
+
 export class EngagementTimer {
   constructor({ mode, now = () => Date.now(), idleMs = 120_000 }) {
     this.mode = mode;
@@ -16,22 +21,20 @@ export class EngagementTimer {
     this.lastActivity = now();
     this.since = now(); // start of the stretch not yet collected
     this.pendingMs = 0;
-  }
-
-  counting(at) {
-    if (this.mode === "video") return this.playing && !this.ad;
-    return this.visible && this.focused && at - this.lastActivity < this.idleMs;
+    this.gapMs = 0; // time dropped because of long gaps, for diagnostics
   }
 
   // Moves engaged time up to `at` into pendingMs. In reading mode an idle stretch is credited
   // only up to the moment the idle limit ran out.
   advance(at = this.now()) {
     if (at <= this.since) return;
+    const end = Math.min(at, this.since + MAX_STRETCH_MS);
+    if (at > end) this.gapMs += at - end;
     if (this.mode === "video") {
-      if (this.counting(at)) this.pendingMs += at - this.since;
+      if (this.playing && !this.ad) this.pendingMs += end - this.since;
     } else if (this.visible && this.focused) {
-      const end = Math.min(at, this.lastActivity + this.idleMs);
-      if (end > this.since) this.pendingMs += end - this.since;
+      const until = Math.min(end, this.lastActivity + this.idleMs);
+      if (until > this.since) this.pendingMs += until - this.since;
     }
     this.since = at;
   }
@@ -52,5 +55,10 @@ export class EngagementTimer {
     const seconds = Math.floor(this.pendingMs / 1000);
     this.pendingMs -= seconds * 1000;
     return seconds;
+  }
+
+  // Puts seconds back, e.g. when sending them to the background worker failed.
+  giveBack(seconds) {
+    this.pendingMs += seconds * 1000;
   }
 }

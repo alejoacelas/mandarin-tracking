@@ -1,3 +1,10 @@
 {"scenario":"probe","doc":"01m6gp20vdmt85kvmp3qc2280b","start":1793708985.9,"end":1793708986.0,"note":"jump to 50%, not counted as reading"}
 {"scenario":"js_scroll_8min","doc":"01m6gp20jg4avmec5qjvdv74t0","start":1793709048.6,"end":1793709536.8,"note":"programmatic scrollTop, no input events; server stopped receiving progress after ~2 min"}
 {"scenario":"steady_3min","doc":"01m6gp1z5s48yjfgmhk5j0c5j8","start":1793709647.4,"end":1793709859.0,"note":"arrow keys, read top to bottom"}
+{"scenario":"read_idle_read","doc":"01m6gp205nfebcvv02w72tdq51","start":1793709908.0,"end":1793709971.0}
+{"scenario":"read_idle_read","doc":"01m6gp205nfebcvv02w72tdq51","start":1793710405.8,"end":1793710466.0,"note":"7 min idle before this, doc left open"}
+{"scenario":"skim","doc":"01m6gp1zv6tfnbdfjegz3dy9g7","start":1793710478.0,"end":1793710486.5,"note":"End key, then 30 s idle, then left"}
+{"scenario":"reread","doc":"01m6gp20vdmt85kvmp3qc2280b","start":1793710540.0,"end":1793710674.4,"note":"read above earlier max progress"}
+{"scenario":"two_docs","doc":"01m6gp1zhrfy0c7qx4hdmtwznn","start":1793710685.5,"end":1793710744.1}
+{"scenario":"two_docs","doc":"01m6gp20vdmt85kvmp3qc2280b","start":1793710752.6,"end":1793710810.7}
+{"scenario":"two_docs","doc":"01m6gp1zhrfy0c7qx4hdmtwznn","start":1793710819.5,"end":1793710877.7}

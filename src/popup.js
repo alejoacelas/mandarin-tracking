@@ -44,12 +44,15 @@ async function render() {
   const days = $("days");
   days.replaceChildren();
   for (let i = 0; i < 7; i++) {
-    const d = localDay(new Date(Date.now() - i * 86400_000));
+    const date = new Date();
+    date.setDate(date.getDate() - i);
+    const d = localDay(date);
     days.append(el("div", {}, el("span", { textContent: d }), el("span", { textContent: formatDuration(summary[d]?.totals.mandarin ?? 0) })));
   }
 
   const unseen = (data.problems ?? []).filter((p) => p.at > (data.seenProblemsAt ?? 0));
-  const failedChannels = Object.values(data.channels ?? {}).filter((c) => c.status === "error");
+  const failedChannels = Object.values(data.channels ?? {}).filter((c) => c.status === "error" || (c.status === "pending" && Date.now() - c.since > 10 * 60_000))
+    .map((c) => c.status === "pending" ? { ...c, error: "classification was interrupted; retrying" } : c);
   $("problems").hidden = !unseen.length && !failedChannels.length;
   $("problem-list").replaceChildren(
     ...unseen.map((p) => el("div", { className: "problem", textContent: `${new Date(p.at).toLocaleTimeString()} ${SOURCES[p.source] ?? p.source}: ${p.message}` })),
@@ -65,7 +68,8 @@ async function saveSettings() {
   const threshold = Math.min(100, Math.max(1, Number($("threshold").value))) / 100;
   const idleSeconds = Math.min(3600, Math.max(10, Number($("idle").value)));
   await chrome.storage.local.set({ settings: { ...settings, threshold, idleSeconds } });
-  render();
+  chrome.runtime.sendMessage({ type: "resume" }).catch(() => {});
+render();
 }
 $("threshold").onchange = saveSettings;
 $("idle").onchange = saveSettings;
@@ -75,4 +79,5 @@ $("export").onclick = async () => {
   const blob = new Blob([JSON.stringify({ format: "mandarin-tracking-extension/1", exportedAt: new Date().toISOString(), ...data }, null, 2)], { type: "application/json" });
   el("a", { href: URL.createObjectURL(blob), download: `mandarin-time-${localDay(new Date())}.json` }).click();
 };
+chrome.runtime.sendMessage({ type: "resume" }).catch(() => {});
 render();

@@ -3,7 +3,7 @@
 // (see README). Run with `npm run test:e2e`.
 import { test, before, after, beforeEach } from "node:test";
 import assert from "node:assert/strict";
-import { Browser, sleep, VIDEO_ID, CHANNEL_URL } from "./harness.js";
+import { Browser, sleep, VIDEO_ID, CHANNEL_URL, VIDEO_ID_2, CHANNEL_URL_2 } from "./harness.js";
 
 const IDLE_SECONDS = 6;
 const TOLERANCE = 2; // seconds of allowed difference from the scripted schedule
@@ -21,7 +21,10 @@ beforeEach(async () => {
     await chrome.storage.local.set({
       settings: { idleSeconds: ${IDLE_SECONDS}, threshold: 0.3 },
       // Pre-classified, so the test doesn't call the LLM.
-      channels: { ${JSON.stringify(CHANNEL_URL)}: { name: "test", status: "done", label: "mandarin" } },
+      channels: {
+        ${JSON.stringify(CHANNEL_URL)}: { name: "test", status: "done", label: "mandarin" },
+        ${JSON.stringify(CHANNEL_URL_2)}: { name: "test 2", status: "done", label: "other" },
+      },
     });
   })()`);
 });
@@ -56,6 +59,35 @@ test("separates time per Claude chat, stops at the idle limit, follows in-app na
   assert.equal(day.claude[A].title, "Chat aaaa");
   assert.ok(day.claude[A].share > 0.6, `chat A share ${day.claude[A].share}`);
   assert.ok(day.claude[B].share < 0.1, `chat B share ${day.claude[B].share}`);
+});
+
+test("switching chats mid-activity keeps each chat's own share and title", async () => {
+  const page = await browser.open(`https://claude.ai/chat/${A}`);
+  await beActive(page, 8);    // A: Chinese, 8 s, not yet flushed when we switch
+  // The app swaps URL, title and text at once, like a sidebar click.
+  await page.eval(`history.pushState({}, "", "/chat/${B}"); document.title = "Chat bbbb - Claude";
+    document.getElementById("t").textContent = "Planning the project timeline and the order of tasks, which is a long English conversation. ".repeat(20)`);
+  await beActive(page, 6);
+  await settle();
+
+  const day = await today();
+  near(day.claude?.[A]?.seconds, 8, "chat A");
+  near(day.claude?.[B]?.seconds, 6 + IDLE_SECONDS, "chat B");
+  assert.ok(day.claude[A].share > 0.6, `chat A share ${day.claude[A].share}`);
+  assert.equal(day.claude[A].title, "Chat aaaa");
+  assert.ok(day.claude[B].share < 0.1, `chat B share ${day.claude[B].share}`);
+});
+
+test("time on pages that aren't a conversation doesn't go to the next chat", async () => {
+  const page = await browser.open("https://claude.ai/recents");
+  await beActive(page, 6);
+  await page.eval(`history.pushState({}, "", "/chat/${A}")`);
+  await beActive(page, 4);
+  await settle();
+
+  const day = await today();
+  near(day.claude?._other?.seconds, 6, "recents page");
+  near(day.claude?.[A]?.seconds, 4 + IDLE_SECONDS, "chat opened from recents");
 });
 
 test("doesn't count a chat tab in the background", async () => {
@@ -120,4 +152,18 @@ test("YouTube counts playing time, including background tabs, excluding pauses, 
 
   const day = await today();
   near(day.youtube?.[CHANNEL_URL]?.seconds, 8 + 6 + 4, "YouTube channel");
+});
+
+test("YouTube credits the video actually playing when it changes without a URL change (miniplayer)", async () => {
+  const yt = await browser.open(`https://www.youtube.com/watch?v=${VIDEO_ID}`);
+  await yt.eval(`document.querySelector("video").play().then(() => true)`);
+  await sleep(7000);
+  await yt.eval(`window.currentVideo = ${JSON.stringify(VIDEO_ID_2)}`); // next video, same URL
+  await sleep(7000);
+  await yt.eval(`document.querySelector("video").pause()`);
+  await sleep(6500);
+
+  const day = await today();
+  near(day.youtube?.[CHANNEL_URL]?.seconds, 7, "first channel");
+  near(day.youtube?.[CHANNEL_URL_2]?.seconds, 7, "second channel");
 });

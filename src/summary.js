@@ -9,6 +9,7 @@ export function localDay(d) {
 }
 
 export function classify(source, key, item, channels, threshold) {
+  if (key.startsWith("_")) return "other"; // pages that aren't a conversation, unsent new chats
   if (source === "youtube") {
     const c = channels[key];
     if (c?.status !== "done") return "unclassified";
