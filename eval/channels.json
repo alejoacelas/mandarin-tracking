@@ -1,0 +1,408 @@
+[
+  {
+    "name": "老高與小茉 Mr & Mrs Gao",
+    "url": "https://www.youtube.com/@laogao",
+    "category": "plain_mandarin",
+    "expected_label": "mandarin",
+    "why_tricky": "Huge Taiwan-style Mandarin storytelling channel (hosts live in Japan); well documented, but traditional characters and Japan residence could suggest Taiwanese or Japanese."
+  },
+  {
+    "name": "小Lin说",
+    "url": "https://www.youtube.com/@xiao_lin_shuo",
+    "category": "plain_mandarin",
+    "expected_label": "mandarin",
+    "why_tricky": "Mainland finance explainer by a US-based host; easy case as a baseline."
+  },
+  {
+    "name": "志祺七七",
+    "url": "https://www.youtube.com/@shasha77",
+    "category": "plain_mandarin",
+    "expected_label": "mandarin",
+    "why_tricky": "Taiwanese news explainer; traditional characters, Taiwan context could tempt a Hokkien guess."
+  },
+  {
+    "name": "李永乐老师",
+    "url": "https://www.youtube.com/@李永乐老师官方",
+    "category": "plain_mandarin",
+    "expected_label": "mandarin",
+    "why_tricky": "This YouTube re-upload channel has only ~71k subs; the classifier must tie it to the well-known Beijing teacher."
+  },
+  {
+    "name": "东北农村马大叔【农村大叔记录生活】",
+    "url": "https://www.youtube.com/@food0",
+    "category": "plain_mandarin",
+    "expected_label": "mandarin",
+    "why_tricky": "Small (~20k) rural Northeast vlog; titles show auto-translated to English, little written about it online; heavy Dongbei accent."
+  },
+  {
+    "name": "小凱BO-Kai (Follow me to veg out)",
+    "url": "https://www.youtube.com/@naturesong1989",
+    "category": "plain_mandarin",
+    "expected_label": "mandarin",
+    "why_tricky": "Tiny (~7k) Taichung vegetarian food channel; almost nothing written about it, mixed English channel name."
+  },
+  {
+    "name": "Kiki 's Vlog  小日子",
+    "url": "https://www.youtube.com/@kikisvlog",
+    "category": "plain_mandarin",
+    "expected_label": "mandarin",
+    "why_tricky": "Tiny (~2k) travel vlog with English titles about Japan; language guessed from '小日子' only, may be silent or captioned."
+  },
+  {
+    "name": "Joeman",
+    "url": "https://www.youtube.com/@joeman",
+    "category": "romanised_name",
+    "expected_label": "mandarin",
+    "why_tricky": "Romanised name and YouTube-translated English titles, but a Taiwanese Mandarin host."
+  },
+  {
+    "name": "Chef Wang 美食作家王刚",
+    "url": "https://www.youtube.com/@chefwang",
+    "category": "romanised_name",
+    "expected_label": "mandarin",
+    "why_tricky": "English-first name and titles; Wang Gang speaks Sichuan-accented Mandarin, possibly with Sichuanese, which could push it to other or mixed."
+  },
+  {
+    "name": "Papi酱",
+    "url": "https://www.youtube.com/@papi_jiang",
+    "category": "romanised_name",
+    "expected_label": "mandarin",
+    "why_tricky": "Titles auto-translate to 'papi Jiang - ...'; mainland comedian speaking fast Mandarin."
+  },
+  {
+    "name": "千千進食中",
+    "url": "https://www.youtube.com/@Chienseating",
+    "category": "romanised_name",
+    "expected_label": "mandarin",
+    "why_tricky": "Titles appear in English ('Chien-Chien Eating') via YouTube translation; Taiwanese Mandarin mukbang."
+  },
+  {
+    "name": "Rose & Anzai Country Life",
+    "url": "https://www.youtube.com/@roseinchina1",
+    "category": "romanised_name",
+    "expected_label": "mandarin",
+    "why_tricky": "English name and English titles; rural Chinese couple speaking Mandarin or local dialect with English subtitles."
+  },
+  {
+    "name": "Mandarin Corner",
+    "url": "https://www.youtube.com/@MandarinCorner",
+    "category": "learning",
+    "expected_label": "mandarin",
+    "why_tricky": "Comprehensible-input channel mostly in Mandarin, but English name and English titles ('Free New HSK Level 1') suggest an English-taught course."
+  },
+  {
+    "name": "Lazy Chinese - Comprehensible Input",
+    "url": "https://www.youtube.com/@Lazy-Chinese",
+    "category": "learning",
+    "expected_label": "mandarin",
+    "why_tricky": "Comprehensible input podcast in slow Mandarin; English channel name and titles."
+  },
+  {
+    "name": "Blabla Chinese - Comprehensible Input",
+    "url": "https://www.youtube.com/@blablachinese7526",
+    "category": "learning",
+    "expected_label": "mandarin",
+    "why_tricky": "Small (~13k) CI channel, Mandarin audio stories; English titles, little written about it."
+  },
+  {
+    "name": "Yoyo Chinese",
+    "url": "https://www.youtube.com/@YoyoChinese",
+    "category": "learning",
+    "expected_label": "mixed",
+    "why_tricky": "Learning channel mostly taught in English with Mandarin examples; Mandarin share may fall below 25% (other)."
+  },
+  {
+    "name": "Mandarin Blueprint",
+    "url": "https://www.youtube.com/@MandarinBlueprint",
+    "category": "learning",
+    "expected_label": "other",
+    "why_tricky": "Method/motivation channel spoken almost entirely in English despite 'Mandarin' in the name."
+  },
+  {
+    "name": "ChinesePod",
+    "url": "https://www.youtube.com/@ChinesePodTV",
+    "category": "learning",
+    "expected_label": "mixed",
+    "why_tricky": "Dialogue lessons: Mandarin dialogues explained in English; share varies by level."
+  },
+  {
+    "name": "Taiwanese Mandarin With Miss Lin",
+    "url": "https://www.youtube.com/@MandarinWithMissLin",
+    "category": "learning",
+    "expected_label": "mixed",
+    "why_tricky": "Teaches Taiwanese Mandarin, likely with English explanation; 'Taiwanese' in name could trigger Hokkien."
+  },
+  {
+    "name": "Learn Cantonese with CantoneseClass101.com",
+    "url": "https://www.youtube.com/@CantoneseClass101",
+    "category": "learning",
+    "expected_label": "other",
+    "why_tricky": "Cantonese taught in English; a learning channel that is not Mandarin."
+  },
+  {
+    "name": "試當真Trial & Error",
+    "url": "https://www.youtube.com/@trialanderror924",
+    "category": "cantonese",
+    "expected_label": "other",
+    "why_tricky": "Hong Kong comedy group; Chinese-character and English-translated titles, Cantonese speech."
+  },
+  {
+    "name": "毛記電視",
+    "url": "https://www.youtube.com/@100MOSTHongKong",
+    "category": "cantonese",
+    "expected_label": "other",
+    "why_tricky": "Hong Kong TVMost; titles use written Cantonese (嘅, 咩), audio Cantonese."
+  },
+  {
+    "name": "我係多師奶 C-Lady",
+    "url": "https://www.youtube.com/@c-lady",
+    "category": "cantonese",
+    "expected_label": "other",
+    "why_tricky": "Hong Kong housewife travel vlogs, including trips to mainland cities (Hangzhou) which might suggest Mandarin."
+  },
+  {
+    "name": "碌斌深夜粵語廣播",
+    "url": "https://www.youtube.com/@lubinlost",
+    "category": "cantonese",
+    "expected_label": "other",
+    "why_tricky": "Cantonese storytelling ('粵語' in name), but titles are in standard written Chinese with no Cantonese markers."
+  },
+  {
+    "name": "MY FM 好玩",
+    "url": "https://www.youtube.com/@MY-malaysia",
+    "category": "cantonese",
+    "expected_label": "mixed",
+    "why_tricky": "Malaysian Chinese radio station historically Cantonese-heavy; simplified-character Mandarin-looking titles; current speech may be largely Mandarin."
+  },
+  {
+    "name": "神經俠侶 - SG Couple",
+    "url": "https://www.youtube.com/@SGCouple_Jo_Hiromi",
+    "category": "cantonese",
+    "expected_label": "other",
+    "why_tricky": "'SG Couple' suggests Singapore (Mandarin/English); actually Hong Kong comedian Joseph Lam's Cantonese talk show."
+  },
+  {
+    "name": "公視台語台",
+    "url": "https://www.youtube.com/@ptstaigitai",
+    "category": "hokkien_hakka_wu",
+    "expected_label": "other",
+    "why_tricky": "Taiwan public TV's Taiwanese Hokkien channel; titles in Han characters read like Chinese."
+  },
+  {
+    "name": "台南妹仔教你講台語",
+    "url": "https://www.youtube.com/@a_yo__oy_a",
+    "category": "hokkien_hakka_wu",
+    "expected_label": "mixed",
+    "why_tricky": "Teaches Taiwanese Hokkien, likely mixing Mandarin explanation; titles in Hokkien Han characters."
+  },
+  {
+    "name": "客家電視 HakkaTV",
+    "url": "https://www.youtube.com/@hakkatv",
+    "category": "hokkien_hakka_wu",
+    "expected_label": "other",
+    "why_tricky": "Taiwan Hakka TV; titles show translated to English; programmes mostly Hakka with some Mandarin."
+  },
+  {
+    "name": "吳儂軟語 Wu Chinese",
+    "url": "https://www.youtube.com/@WuChinese",
+    "category": "hokkien_hakka_wu",
+    "expected_label": "other",
+    "why_tricky": "Shanghainese/Wu content (~23k subs); some videos are Mandarin, titles mostly simplified Chinese."
+  },
+  {
+    "name": "讲闲话的夏安七",
+    "url": "https://www.youtube.com/@xiaanqi",
+    "category": "hokkien_hakka_wu",
+    "expected_label": "unknown",
+    "why_tricky": "Tiny (~4k) Shanghai-culture channel; '讲闲话' hints Shanghainese, but simplified Mandarin titles; little online evidence."
+  },
+  {
+    "name": "NAKATA UNIVERSITY ",
+    "url": "https://www.youtube.com/@NKTofficial",
+    "category": "japanese",
+    "expected_label": "other",
+    "why_tricky": "Japanese lecture channel; YouTube shows English-translated titles, the original Japanese name has kanji (中田敦彦のYouTube大学)."
+  },
+  {
+    "name": "鳥人間 中国史三昧",
+    "url": "https://www.youtube.com/@c-history",
+    "category": "japanese",
+    "expected_label": "other",
+    "why_tricky": "Japanese 'yukkuri' narration about Chinese history; kanji-heavy titles full of Chinese names."
+  },
+  {
+    "name": "日本経済新聞",
+    "url": "https://www.youtube.com/@nikkei",
+    "category": "japanese",
+    "expected_label": "other",
+    "why_tricky": "Nikkei; kanji-heavy news titles, some about Xi Jinping and China."
+  },
+  {
+    "name": "serpentza",
+    "url": "https://www.youtube.com/@serpentza",
+    "category": "english_about_china",
+    "expected_label": "other",
+    "why_tricky": "South African in China speaking English; heavy China topic."
+  },
+  {
+    "name": "Chinese Cooking Demystified",
+    "url": "https://www.youtube.com/@ChineseCookingDemystified",
+    "category": "english_about_china",
+    "expected_label": "other",
+    "why_tricky": "English narration by a couple including a Chinese speaker; occasional Mandarin on location."
+  },
+  {
+    "name": "Strictly Dumpling",
+    "url": "https://www.youtube.com/@strictlydumpling",
+    "category": "english_about_china",
+    "expected_label": "other",
+    "why_tricky": "Chinese-American Mike Chen speaks English; name suggests Chinese food."
+  },
+  {
+    "name": "mrnigelng",
+    "url": "https://www.youtube.com/@mrnigelng",
+    "category": "english_about_china",
+    "expected_label": "other",
+    "why_tricky": "Malaysian Chinese comedian (Uncle Roger) speaking English with an affected accent; may drop Cantonese/Mandarin words."
+  },
+  {
+    "name": "Xiaomanyc 小马在纽约",
+    "url": "https://www.youtube.com/@xiaomanyc",
+    "category": "bilingual",
+    "expected_label": "mixed",
+    "why_tricky": "American speaking Mandarin and many other languages; recent videos feature various languages, so Mandarin share may be under 25%."
+  },
+  {
+    "name": "Mandarin Monkey",
+    "url": "https://www.youtube.com/@MandarinMonkey",
+    "category": "bilingual",
+    "expected_label": "other",
+    "why_tricky": "Name says Mandarin; British-Taiwanese couple talking mostly English."
+  },
+  {
+    "name": "YuYu love vlog",
+    "url": "https://www.youtube.com/@yuyuqinglv",
+    "category": "bilingual",
+    "expected_label": "unknown",
+    "why_tricky": "Korean couple vlogging trips in China; Korean speech with Chinese bits; Chinese-sounding name."
+  },
+  {
+    "name": "Blondie in China",
+    "url": "https://www.youtube.com/@BlondieinChina",
+    "category": "bilingual",
+    "expected_label": "other",
+    "why_tricky": "American who speaks fluent Mandarin; earlier videos had much Mandarin, recent ones mostly English narration."
+  },
+  {
+    "name": "阿滴",
+    "url": "https://www.youtube.com/@rayduenglish",
+    "category": "misleading",
+    "expected_label": "mandarin",
+    "why_tricky": "Handle @rayduenglish and English-teaching origins, but Taiwanese host speaks Mandarin; now general vlogs with translated English titles."
+  },
+  {
+    "name": "Thomas阿福",
+    "url": "https://www.youtube.com/@ThomasAfu",
+    "category": "misleading",
+    "expected_label": "mandarin",
+    "why_tricky": "German host with Chinese name, speaks Mandarin; latest titles in English may signal a shift."
+  },
+  {
+    "name": "Jerry Kowal 郭杰瑞",
+    "url": "https://www.youtube.com/@jerrykowal1007",
+    "category": "misleading",
+    "expected_label": "mandarin",
+    "why_tricky": "American host known for Mandarin videos; recent titles show in English, possibly more English content now."
+  },
+  {
+    "name": "VOA 美國之音粵語",
+    "url": "https://www.youtube.com/@voacantonese",
+    "category": "misleading",
+    "expected_label": "other",
+    "why_tricky": "VOA Cantonese; stopped uploading March 2025, traditional-character titles look like Mandarin news."
+  },
+  {
+    "name": "周杰倫 Jay Chou",
+    "url": "https://www.youtube.com/@jaychou",
+    "category": "music",
+    "expected_label": "mandarin",
+    "why_tricky": "Mandopop; videos are music videos plus announcements with little speech."
+  },
+  {
+    "name": "GEM鄧紫棋",
+    "url": "https://www.youtube.com/@gem0816",
+    "category": "music",
+    "expected_label": "mandarin",
+    "why_tricky": "Hong Kong-born singer; mostly Mandarin vocals, HK origin may suggest Cantonese."
+  },
+  {
+    "name": "Eason Chan",
+    "url": "https://www.youtube.com/@easonchan",
+    "category": "music",
+    "expected_label": "mixed",
+    "why_tricky": "Hong Kong singer with both Cantonese and Mandarin catalogues; recent uploads are Cantonese songs."
+  },
+  {
+    "name": "MIRROR",
+    "url": "https://www.youtube.com/@MIRRORweare",
+    "category": "music",
+    "expected_label": "other",
+    "why_tricky": "Hong Kong boy band singing Cantonese; English-ish titles."
+  },
+  {
+    "name": "李子柒 Liziqi",
+    "url": "https://www.youtube.com/@cnliziqi",
+    "category": "no_speech",
+    "expected_label": "other",
+    "why_tricky": "Rural cooking/crafts with almost no talking; famous Chinese creator likely to be labelled Mandarin."
+  },
+  {
+    "name": "办公室小野 Ms Yeah",
+    "url": "https://www.youtube.com/@MsYeahOfficialChannel",
+    "category": "no_speech",
+    "expected_label": "other",
+    "why_tricky": "Office cooking stunts with minimal speech; some recent multinational videos."
+  },
+  {
+    "name": "Dianxi Xiaoge",
+    "url": "https://www.youtube.com/@dianxixiaoge",
+    "category": "no_speech",
+    "expected_label": "other",
+    "why_tricky": "Yunnan cooking with sparse speech, partly Yunnan dialect; English titles."
+  },
+  {
+    "name": "BBC News 中文",
+    "url": "https://www.youtube.com/@bbcnewschinese",
+    "category": "news",
+    "expected_label": "mandarin",
+    "why_tricky": "Foreign broadcaster's Chinese service; traditional characters; some Cantonese clips possible."
+  },
+  {
+    "name": "RFI 华语 - 法国国际广播电台",
+    "url": "https://www.youtube.com/@RFI_Cn",
+    "category": "news",
+    "expected_label": "mandarin",
+    "why_tricky": "Small (~81k) French broadcaster Mandarin service."
+  },
+  {
+    "name": "zaobaosg",
+    "url": "https://www.youtube.com/@zaobaodotsg",
+    "category": "news",
+    "expected_label": "mandarin",
+    "why_tricky": "Singapore Lianhe Zaobao; Singapore Mandarin with some '[EN]' English videos."
+  },
+  {
+    "name": "RFA 自由亞洲粵語",
+    "url": "https://www.youtube.com/@rfacantonese",
+    "category": "news",
+    "expected_label": "other",
+    "why_tricky": "RFA Cantonese service; latest video is a farewell; RFA's Mandarin service is far better known."
+  },
+  {
+    "name": "日本電視台(Nippon TV)-NTV中文",
+    "url": "https://www.youtube.com/@日本電視台-NTV",
+    "category": "news",
+    "expected_label": "unknown",
+    "why_tricky": "Japanese broadcaster's Chinese channel; titles show in English; audio may be Japanese with Chinese subtitles or a Mandarin voiceover."
+  }
+]

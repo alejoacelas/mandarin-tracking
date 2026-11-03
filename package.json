@@ -1,0 +1,28 @@
+{
+  "name": "2026-11-03-mandarin-tracking",
+  "version": "1.0.0",
+  "description": "Track how much time I spend taking in and using Mandarin, across:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alejoacelas/mandarin-tracking.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/alejoacelas/mandarin-tracking/issues"
+  },
+  "homepage": "https://github.com/alejoacelas/mandarin-tracking#readme",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.4.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}
