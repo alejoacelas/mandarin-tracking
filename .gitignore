@@ -1,5 +1,4 @@
 .env
 node_modules/
-extension/dist/
-extension/config.local.js
+extension/build/
 eval/results/

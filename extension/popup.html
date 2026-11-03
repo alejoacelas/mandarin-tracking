@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mandarin time</title>
+<style>
+  :root { --fg: #1f1f1f; --muted: #6b6b6b; --line: #e6e6e6; --accent: #c0392b; --bg: #fff; --chip: #f3f3f3; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #ececec; --muted: #9a9a9a; --line: #333; --bg: #1c1c1c; --chip: #2a2a2a; --accent: #ff6b5b; } }
+  body { font: 13px/1.4 system-ui, sans-serif; color: var(--fg); background: var(--bg); margin: 0; width: 380px; }
+  header { padding: 14px 16px 10px; border-bottom: 1px solid var(--line); }
+  .big { font-size: 28px; font-weight: 600; }
+  .muted { color: var(--muted); }
+  section { padding: 10px 16px; border-bottom: 1px solid var(--line); }
+  h2 { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 0 0 6px; }
+  details summary { cursor: pointer; display: flex; justify-content: space-between; gap: 8px; list-style: none; padding: 3px 0; }
+  details summary::-webkit-details-marker { display: none; }
+  .row { display: flex; justify-content: space-between; gap: 8px; padding: 3px 0 3px 10px; }
+  .row .name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1; }
+  .chip { background: var(--chip); border-radius: 4px; padding: 0 5px; font-size: 11px; white-space: nowrap; }
+  .chip.mandarin { color: #1e8e3e; } .chip.unclassified, .chip.error { color: var(--accent); }
+  .problem { color: var(--accent); padding: 2px 0; }
+  button { font: inherit; padding: 3px 8px; cursor: pointer; }
+  .days div { display: flex; justify-content: space-between; }
+  .reason { color: var(--muted); font-size: 11px; padding: 0 0 4px 10px; }
+  label { display: flex; justify-content: space-between; align-items: center; padding: 2px 0; }
+  input[type=number] { width: 60px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="muted">Mandarin today</div>
+  <div class="big" id="today">–</div>
+  <div class="muted" id="today-extra"></div>
+</header>
+<section id="problems" hidden><h2>Needs attention</h2><div id="problem-list"></div><button id="dismiss">Dismiss</button></section>
+<section><h2>Today by source</h2><div id="sources"></div></section>
+<section class="days"><h2>Last 7 days</h2><div id="days"></div></section>
+<section>
+  <h2>Settings</h2>
+  <label>Chat or document counts as Mandarin at this % Chinese <input type="number" id="threshold" min="1" max="100"></label>
+  <label>Stop counting reading after this many idle seconds <input type="number" id="idle" min="10" max="3600"></label>
+  <button id="export">Export JSON</button>
+</section>
+<script type="module" src="build/popup.js"></script>
+</body>
+</html>

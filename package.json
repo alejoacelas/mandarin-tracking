@@ -4,7 +4,8 @@
   "description": "Track how much time I spend taking in and using Mandarin, across:",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --test 'test/unit/*.test.js'",
+    "build": "node --env-file=.env scripts/build.mjs"
   },
   "repository": {
     "type": "git",
