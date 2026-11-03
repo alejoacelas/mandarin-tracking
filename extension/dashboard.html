@@ -44,7 +44,7 @@
 
   /* sources */
   .src-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
-  .src-head b { font-size: 16px; } .src-head span { color: var(--zh); font-weight: 600; }
+  .src-head b { font-size: 16px; } .src-head span { color: var(--zh); font-weight: 600; } .src-head span.muted { color: var(--muted); font-weight: 400; }
   .item { display: grid; grid-template-columns: 1fr auto 70px; gap: 10px; align-items: center; padding: 7px 0; border-top: 1px solid var(--line); }
   .item .name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .item .time { text-align: right; font-variant-numeric: tabular-nums; }
@@ -92,6 +92,7 @@
     <label>Stop counting reading and chats after this long without input <span><input type="number" id="idle" min="10" max="3600"> s</span></label>
     <label>Readwise access token, to add reading on your phone <input type="password" id="readwise" placeholder="readwise.io/access_token"></label>
     <div class="muted" id="reader-status"></div>
+    <label>Mac apps to show, by name, separated by commas <input type="text" id="mac-apps" placeholder="Orca"></label>
     <p><button id="export">Export all data (JSON)</button></p>
   </div>
 

@@ -1,7 +1,7 @@
 // Background worker: stores credited time, resolves YouTube videos to channels, asks the LLM to
 // classify new channels, and keeps the toolbar badge up to date.
 import { makeClient, classifyChannel } from "./classify.js";
-import { ANTHROPIC_API_KEY } from "../extension/build/config.js";
+import { ANTHROPIC_API_KEY, READWISE_TOKEN } from "../extension/build/config.js";
 import { localDay, summarize } from "./summary.js";
 import { DEFAULT_SETTINGS } from "./content/messaging.js";
 import { pollReader, IDLE_POLL_S } from "./readwise.js";
@@ -161,6 +161,7 @@ chrome.runtime.onMessage.addListener((msg, sender, reply) => {
     problem: () => addProblem(msg.source, msg.message, msg.url),
     resume: async () => { await resumeInterrupted(); await ensureReaderAlarm(); },
     pollReader: async () => { await pollReaderOnce(); },
+    syncAppTime: async () => { await syncAppTime(); },
     reclassify: async () => {
       await setChannel(msg.channelUrl, { name: msg.name, status: "error", retry: true });
       const { videos = {} } = await chrome.storage.local.get("videos");
@@ -185,15 +186,17 @@ async function injectIntoOpenTabs() {
   }
 }
 
-// Reader API polling, for reading done in Reader's phone apps. Runs only when a Readwise token
-// is set in the popup's settings. Each poll says how long to wait before the next one.
+// Reader API polling, for reading done in Reader's phone apps. Uses the token from the settings,
+// or else the one built in from .env (scripts/build.mjs). Each poll says how long to wait before
+// the next one.
 const READER_ALARM = "reader-poll";
 async function pollReaderOnce() {
   const { settings = {}, readerApi = {} } = await chrome.storage.local.get(["settings", "readerApi"]);
-  if (!settings.readwiseToken) { await chrome.alarms.clear(READER_ALARM); return; }
+  const token = settings.readwiseToken || READWISE_TOKEN;
+  if (!token) { await chrome.alarms.clear(READER_ALARM); return; }
   let delayS = IDLE_POLL_S;
   try {
-    const r = await pollReader({ token: settings.readwiseToken, state: readerApi.state, lastEventAt: readerApi.lastEventAt ?? 0 });
+    const r = await pollReader({ token, state: readerApi.state, lastEventAt: readerApi.lastEventAt ?? 0 });
     delayS = r.delayS;
     await update(["log", "readerApi"], ({ log = {}, readerApi: cur = {} }) => {
       const merged = applyReaderEvents({ log, events: cur.events ?? [], newEvents: r.events, docs: r.state.docs, now: Date.now() });
@@ -216,5 +219,21 @@ async function ensureReaderAlarm() {
   if (!(await chrome.alarms.get(READER_ALARM))) pollReaderOnce();
 }
 
+// Mac app time from the apptime helper (apptime/), which counts the frontmost app while you're at
+// the computer. Copied once a minute; the helper keeps the totals, so this replaces `appTime`.
+const APPTIME_URL = "http://127.0.0.1:47321/";
+async function syncAppTime() {
+  try {
+    const r = await fetch(APPTIME_URL);
+    if (!r.ok) throw new Error(`returned ${r.status}`);
+    const { days = {} } = await r.json();
+    await chrome.storage.local.set({ appTime: { days, at: Date.now() } });
+  } catch (e) {
+    const { appTime = {} } = await chrome.storage.local.get("appTime");
+    await chrome.storage.local.set({ appTime: { ...appTime, error: String(e.message ?? e), errorAt: Date.now() } });
+  }
+}
+chrome.alarms.onAlarm.addListener((a) => { if (a.name === "badge") syncAppTime(); });
+
 chrome.runtime.onStartup.addListener(() => { resumeInterrupted(); refreshBadge(); ensureReaderAlarm(); });
-chrome.runtime.onInstalled.addListener(() => { resumeInterrupted(); refreshBadge(); injectIntoOpenTabs(); ensureReaderAlarm(); });
+chrome.runtime.onInstalled.addListener(() => { resumeInterrupted(); refreshBadge(); injectIntoOpenTabs(); ensureReaderAlarm(); syncAppTime(); });

@@ -32,7 +32,8 @@ channels from `channels.json`.
 Two measurements, combined per document per day by taking the larger:
 
 - On the desktop, the extension's content script on read.readwise.io counts engaged time.
-- Everywhere, including the phone apps, `src/readwise.js` reads the Reader API. The API has no
+- Everywhere, including the phone apps, `src/readwise.js` reads the Reader API, with the token
+  from the extension's settings or else `READWISE_TOKEN` from `.env`, built in by `npm run build`. The API has no
   time spent, but a document's `updated_at` moves each time Reader saves reading progress
   (about every 30 s while you scroll) and `last_opened_at` marks opens. Saves less than 5 min
   apart form one session, plus 45 s after the last save. The tracker polls every 5 min, and
@@ -48,12 +49,17 @@ benchmarks drive it with real key presses.
 
 ### Pleco
 
-Pleco runs on the iPhone and has no API; its history export keeps only the last
-lookup time per word. Time comes from iPhone Screen Time instead: with "Share
-Across Devices" on, iPhone app sessions sync to the Mac's Biome `App.InFocus`
-stream (`~/Library/Biome`, readable only with Full Disk Access). The tracker sums
-Pleco's sessions per day. Biome keeps about four weeks, so the reader runs
-continuously. It cannot separate document reading from lookups.
+Not tracked. Pleco has no API, and the Mac's copy of iPhone Screen Time lists only a few
+apps per day, so Pleco's minutes can't be read from it.
+
+### Mac apps
+
+`apptime/` is a small helper that runs in the background at login (install with
+`apptime/install.sh`; it needs no permissions). Every 5 s it gives 5 s to the app in front,
+unless the screen is locked or there has been no input for 2 minutes, and serves the daily
+totals at `http://127.0.0.1:47321/`. The extension copies them once a minute and shows the apps
+named in its settings (Orca by default) in their own card, outside the Mandarin total, since the
+helper can't tell what language you use in an app. It counts from install onwards.
 
 ### LLM conversations
 
@@ -79,4 +85,5 @@ settings, without the token.
 Tests: `npm test` runs unit tests. `npm run test:e2e` loads the extension into Chromium and
 checks recorded time against a scripted schedule on local copies of claude.ai, chatgpt.com
 and YouTube. It opens browser windows, so run it on a machine you aren't using.
-`test/e2e/live-checks.mjs` and `live-reader.mjs` check the parts that need the real sites.
+`test/e2e/live-checks.mjs`, `live-reader.mjs` and `live-apptime.mjs` check the parts that need
+the real sites or the Mac helper.

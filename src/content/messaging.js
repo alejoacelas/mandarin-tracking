@@ -1,5 +1,5 @@
 // Content-script side of talking to the background worker.
-export const DEFAULT_SETTINGS = { idleSeconds: 120, threshold: 0.3 };
+export const DEFAULT_SETTINGS = { idleSeconds: 120, threshold: 0.3, macApps: ["Orca"] };
 
 let contextGone = false;
 

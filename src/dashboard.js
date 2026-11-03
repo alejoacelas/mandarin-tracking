@@ -18,7 +18,7 @@ function lastDays(n) {
 }
 
 async function render() {
-  const data = await chrome.storage.local.get(["log", "channels", "settings", "problems", "seenProblemsAt", "readerApi"]);
+  const data = await chrome.storage.local.get(["log", "channels", "settings", "problems", "seenProblemsAt", "readerApi", "appTime"]);
   const settings = { ...DEFAULT_SETTINGS, ...data.settings };
   const summary = summarize(data.log ?? {}, data.channels ?? {}, settings);
   const today = localDay(new Date());
@@ -74,11 +74,13 @@ async function render() {
     }
     sources.append(card);
   }
+  const apps = appsCard(data.appTime, settings.macApps);
   if (!sources.children.length) {
     sources.append(el("div", { className: "card empty", textContent: selected === today
       ? "Nothing tracked yet today. Play a YouTube video, or read in Reader, Claude or ChatGPT, and it shows up here within a few seconds."
       : "Nothing tracked on this day." }));
   }
+  if (apps) sources.append(apps);
 
   // Problems.
   const unseen = (data.problems ?? []).filter((p) => p.at > (data.seenProblemsAt ?? 0));
@@ -94,9 +96,36 @@ async function render() {
     $("threshold").value = Math.round(settings.threshold * 100);
     $("idle").value = settings.idleSeconds;
     $("readwise").value = settings.readwiseToken ?? "";
+    $("mac-apps").value = settings.macApps.join(", ");
   }
   const lastPoll = data.readerApi?.lastPollAt;
-  $("reader-status").textContent = settings.readwiseToken ? (lastPoll ? `Reader API last checked ${new Date(lastPoll).toLocaleTimeString()}` : "Reader API not checked yet") : "";
+  $("reader-status").textContent = lastPoll ? `Reader API last checked ${new Date(lastPoll).toLocaleTimeString()}` : settings.readwiseToken ? "Reader API not checked yet" : "";
+}
+
+// Time in the chosen Mac apps, from the apptime helper. Shown on its own: the helper sees which
+// app is in front, not what language you use in it, so it isn't part of the Mandarin total.
+function appsCard(appTime, names) {
+  if (!names.length) return null;
+  const day = appTime?.days?.[selected] ?? {};
+  const items = names.map((n) => {
+    const hit = Object.entries(day).find(([id, a]) => a.name.toLowerCase() === n.toLowerCase() || id.toLowerCase() === n.toLowerCase());
+    return { title: hit?.[1].name ?? n, seconds: hit?.[1].seconds ?? 0 };
+  });
+  const total = items.reduce((a, i) => a + i.seconds, 0);
+  const top = Math.max(1, ...items.map((i) => i.seconds));
+  const card = el("div", { className: "card" }, el("div", { className: "src-head" }, el("b", { textContent: "Mac apps" }),
+    el("span", { className: "muted", textContent: `${formatDuration(total)}, not counted as Mandarin` })));
+  for (const i of items) {
+    card.append(el("div", { className: "item" },
+      el("span", { className: "name", textContent: i.title }), el("span"),
+      el("span", { className: "time", textContent: formatDuration(i.seconds) }),
+      el("div", { className: "meter" }, el("div", { style: `width:${(i.seconds / top) * 100}%;background:var(--other)` }))));
+  }
+  const stale = !appTime?.at || (appTime.errorAt ?? 0) > appTime.at;
+  if (stale) card.append(el("p", { className: "muted", textContent: appTime?.error
+    ? `The Mac app helper isn't answering (${appTime.error}). Install it with apptime/install.sh.`
+    : "Waiting for the Mac app helper (apptime/install.sh)." }));
+  return card;
 }
 
 function row(source, item, top) {
@@ -131,12 +160,14 @@ async function saveSettings() {
   const threshold = Math.min(100, Math.max(1, Number($("threshold").value))) / 100;
   const idleSeconds = Math.min(3600, Math.max(10, Number($("idle").value)));
   const readwiseToken = $("readwise").value.trim() || undefined;
-  await chrome.storage.local.set({ settings: { ...settings, threshold, idleSeconds, readwiseToken } });
+  const macApps = $("mac-apps").value.split(",").map((s) => s.trim()).filter(Boolean);
+  await chrome.storage.local.set({ settings: { ...settings, threshold, idleSeconds, readwiseToken, macApps } });
   chrome.runtime.sendMessage({ type: "resume" }).catch(() => {});
 }
 $("threshold").onchange = saveSettings;
 $("idle").onchange = saveSettings;
 $("readwise").onchange = saveSettings;
+$("mac-apps").onchange = saveSettings;
 $("toggle-settings").onclick = () => { $("settings").hidden = !$("settings").hidden; };
 $("open-tab").hidden = !inPopup;
 $("open-tab").onclick = () => { chrome.tabs.create({ url: chrome.runtime.getURL("dashboard.html") }); window.close(); };
@@ -149,4 +180,5 @@ $("export").onclick = async () => {
 };
 chrome.storage.onChanged.addListener(() => render());
 chrome.runtime.sendMessage({ type: "resume" }).catch(() => {});
+chrome.runtime.sendMessage({ type: "syncAppTime" }).catch(() => {});
 render();
