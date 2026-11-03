@@ -25,7 +25,8 @@ const SITES = {
     key: (u) => u.pathname.match(/\/read\/(\w{8,})/)?.[1],
     isNewChat: () => false,
     title: () => document.title.replace(/ [|–-] Readwise.*$/i, ""),
-    textRoot: () => document.querySelector("article") ?? document.querySelector("main"),
+    // The open document's text; <main> also holds the document list and menus.
+    textRoot: () => document.getElementById("document-text-content"),
   },
 };
 
