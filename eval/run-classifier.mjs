@@ -1,11 +1,12 @@
 // Runs the channel classifier on every channel in eval/ground-truth.json and compares its label
 // with the label from the audio. The classifier gets exactly what the extension sees: YouTube's
 // oEmbed data (channel name, channel URL, video title) for one of the channel's videos.
-// Usage: node --env-file=.env eval/run-classifier.mjs [runs-per-channel]
+// Usage: node --env-file=.env eval/run-classifier.mjs [runs-per-channel] [--skip-done <earlier results file>]
+// --skip-done runs only the channels with no successful run in that file, to finish an interrupted run.
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { makeClient, classifyChannel } from "../src/classify.js";
 
-const RUNS = Number(process.argv[2] ?? 1);
+const RUNS = Number(/^\d+$/.test(process.argv[2] ?? "") ? process.argv[2] : 1);
 const CONCURRENCY = 8;
 // Truth is the audio label, replaced by the adjudicated verdict where the two methods disagreed
 // and a reviewer settled it (eval/adjudicated.json). Channels whose truth is "unknown" are skipped.
@@ -14,6 +15,11 @@ const truth = JSON.parse(await readFile("eval/ground-truth.json", "utf8"))
   .filter((c) => !c.error)
   .map((c) => ({ ...c, audio_label: { ...c.audio_label, label: adjudicated[c.url] ?? c.audio_label.label } }))
   .filter((c) => c.audio_label.label !== "unknown");
+const skipFile = process.argv.includes("--skip-done") ? process.argv[process.argv.indexOf("--skip-done") + 1] : null;
+if (skipFile) {
+  const done = new Set(JSON.parse(await readFile(skipFile, "utf8")).filter((r) => !r.error).map((r) => r.url));
+  truth.splice(0, truth.length, ...truth.filter((c) => !done.has(c.url)));
+}
 const client = makeClient(process.env.ANTHROPIC_API_KEY);
 
 async function oembed(videoId) {

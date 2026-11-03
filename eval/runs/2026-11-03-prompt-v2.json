@@ -1860,384 +1860,6 @@
     "seconds": 22.197
   },
   {
-    "name": "GEM鄧紫棋",
-    "url": "https://www.youtube.com/@gem0816",
-    "category": "music",
-    "truth": "mandarin",
-    "share": 1,
-    "run": 0,
-    "input": {
-      "name": "GEM鄧紫棋",
-      "url": "https://www.youtube.com/@gem0816",
-      "videoTitle": "G.E.M.鄧紫棋【自由的你 Free to Be You】Official Music Video"
-    },
-    "error": "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cgg7uzkHTgXAGUfFbLdba\"}"
-  },
-  {
-    "name": "GEM鄧紫棋",
-    "url": "https://www.youtube.com/@gem0816",
-    "category": "music",
-    "truth": "mandarin",
-    "share": 1,
-    "run": 1,
-    "input": {
-      "name": "GEM鄧紫棋",
-      "url": "https://www.youtube.com/@gem0816",
-      "videoTitle": "G.E.M. 鄧紫棋【自由的你 FREE TO BE YOU】啟程版 Official Lyric Video (4K)"
-    },
-    "error": "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cgg7v2YvwJmo59VbxWq6T\"}"
-  },
-  {
-    "name": "Eason Chan",
-    "url": "https://www.youtube.com/@easonchan",
-    "category": "music",
-    "truth": "mixed",
-    "share": 0.38,
-    "run": 0,
-    "input": {
-      "name": "Eason Chan",
-      "url": "https://www.youtube.com/@easonchan",
-      "videoTitle": "《K歌之王 AIR》陳奕迅 Eason Chan [Behind the scenes]"
-    },
-    "error": "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cgg7v45U9KbR2TSf9X75B\"}"
-  },
-  {
-    "name": "Eason Chan",
-    "url": "https://www.youtube.com/@easonchan",
-    "category": "music",
-    "truth": "mixed",
-    "share": 0.38,
-    "run": 1,
-    "input": {
-      "name": "Eason Chan",
-      "url": "https://www.youtube.com/@easonchan",
-      "videoTitle": "《K歌之王 AIR (Night Version)》陳奕迅 Eason Chan with The Heritage Orchestra【Official MV】"
-    },
-    "error": "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cgg7v5T49LJVL2X8km6Do\"}"
-  },
-  {
-    "name": "MIRROR",
-    "url": "https://www.youtube.com/@MIRRORweare",
-    "category": "music",
-    "truth": "other",
-    "share": 0.5,
-    "run": 0,
-    "input": {
-      "name": "MIRROR",
-      "url": "https://www.youtube.com/@MIRRORweare",
-      "videoTitle": "Jeremy 李駿傑 &  Marf 邱彥筒《Whistle》Official Music Video"
-    },
-    "error": "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cgg7v6ixra4zEAMcuqjEw\"}"
-  },
-  {
-    "name": "MIRROR",
-    "url": "https://www.youtube.com/@MIRRORweare",
-    "category": "music",
-    "truth": "other",
-    "share": 0.5,
-    "run": 1,
-    "input": {
-      "name": "MIRROR",
-      "url": "https://www.youtube.com/@MIRRORweare",
-      "videoTitle": "Ian Chan 陳卓賢《在遠方的你》Official Music Video"
-    },
-    "error": "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cgg7v88HxW4dfkQBuMtct\"}"
-  },
-  {
-    "name": "周杰倫 Jay Chou",
-    "url": "https://www.youtube.com/@jaychou",
-    "category": "music",
-    "truth": "mandarin",
-    "share": 1,
-    "run": 0,
-    "input": {
-      "name": "周杰倫 Jay Chou",
-      "url": "https://www.youtube.com/@jaychou",
-      "videoTitle": "Jay Chou 周杰倫【Sicily 西西里】Official Music Video"
-    },
-    "error": "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cgg7uAzf42Kde2AUXhkhw\"}"
-  },
-  {
-    "name": "办公室小野 Ms Yeah",
-    "url": "https://www.youtube.com/@MsYeahOfficialChannel",
-    "category": "no_speech",
-    "truth": "mandarin",
-    "share": 0.5,
-    "run": 0,
-    "input": {
-      "name": "办公室小野 Ms Yeah",
-      "url": "https://www.youtube.com/@MsYeahOfficialChannel",
-      "videoTitle": "Cook Chinese New Year's Dinner in Office! | Ms Yeah"
-    },
-    "error": "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cgg7v9LULwHPK9ynFb3ad\"}"
-  },
-  {
-    "name": "YuYu love vlog",
-    "url": "https://www.youtube.com/@yuyuqinglv",
-    "category": "bilingual",
-    "truth": "other",
-    "share": 0,
-    "run": 0,
-    "input": {
-      "name": "YuYu love vlog",
-      "url": "https://www.youtube.com/@yuyuqinglv",
-      "videoTitle": "동성커플 | 북한 국경 소도시 여행 2탄|중국인 여친이 북한식당 데려감| 압록강 단교에서 뽀뽀하기 | lesbian"
-    },
-    "error": "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cgg7rSgPTajNzWg1fR8YP\"}"
-  },
-  {
-    "name": "办公室小野 Ms Yeah",
-    "url": "https://www.youtube.com/@MsYeahOfficialChannel",
-    "category": "no_speech",
-    "truth": "mandarin",
-    "share": 0.5,
-    "run": 1,
-    "input": {
-      "name": "办公室小野 Ms Yeah",
-      "url": "https://www.youtube.com/@MsYeahOfficialChannel",
-      "videoTitle": "How to DIY a BBQ Bicycle?! Will anyone buy my barbecue? | Ms Yeah"
-    },
-    "error": "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cgg7vAURYstqJ6xbphqDD\"}"
-  },
-  {
-    "name": "李子柒 Liziqi",
-    "url": "https://www.youtube.com/@cnliziqi",
-    "category": "no_speech",
-    "truth": "other",
-    "share": 0,
-    "run": 0,
-    "input": {
-      "name": "李子柒 Liziqi",
-      "url": "https://www.youtube.com/@cnliziqi",
-      "videoTitle": "送给所有知道我名字的人！For Everyone Who Knows My Name.丨Liziqi Channel"
-    },
-    "error": "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cgg7vAXf2cm5SrzBKnsVu\"}"
-  },
-  {
-    "name": "李子柒 Liziqi",
-    "url": "https://www.youtube.com/@cnliziqi",
-    "category": "no_speech",
-    "truth": "other",
-    "share": 0,
-    "run": 1,
-    "input": {
-      "name": "李子柒 Liziqi",
-      "url": "https://www.youtube.com/@cnliziqi",
-      "videoTitle": "拿柴房造了一个森林衣帽间~I turned the Woodshed into a Forest-Themed Closet.丨Liziqi Channel"
-    },
-    "error": "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cgg7vBddtQDyGwaH99iqY\"}"
-  },
-  {
-    "name": "BBC News 中文",
-    "url": "https://www.youtube.com/@bbcnewschinese",
-    "category": "news",
-    "truth": "mixed",
-    "share": 0.25,
-    "run": 0,
-    "input": {
-      "name": "BBC News 中文",
-      "url": "https://www.youtube.com/@bbcnewschinese",
-      "videoTitle": "為何美國中期選舉對特朗普至關重要？－ BBC News 中文"
-    },
-    "error": "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cgg7vBed6dTzakkbsakw7\"}"
-  },
-  {
-    "name": "BBC News 中文",
-    "url": "https://www.youtube.com/@bbcnewschinese",
-    "category": "news",
-    "truth": "mixed",
-    "share": 0.25,
-    "run": 1,
-    "input": {
-      "name": "BBC News 中文",
-      "url": "https://www.youtube.com/@bbcnewschinese",
-      "videoTitle": "姆巴佩的玩笑為何讓中國震怒？－ BBC News 中文"
-    },
-    "error": "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cgg7vBm4kzqF6gW5goMCE\"}"
-  },
-  {
-    "name": "RFI 华语 - 法国国际广播电台",
-    "url": "https://www.youtube.com/@RFI_Cn",
-    "category": "news",
-    "truth": "mandarin",
-    "share": 1,
-    "run": 0,
-    "input": {
-      "name": "RFI 华语 - 法国国际广播电台",
-      "url": "https://www.youtube.com/@RFI_Cn",
-      "videoTitle": "RFI 11月2日巴黎午间新闻"
-    },
-    "error": "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cgg7vCwX2gQkEjPidaCEe\"}"
-  },
-  {
-    "name": "Dianxi Xiaoge",
-    "url": "https://www.youtube.com/@dianxixiaoge",
-    "category": "no_speech",
-    "truth": "other",
-    "share": 0,
-    "run": 0,
-    "input": {
-      "name": "滇西小哥 Dianxi Xiaoge",
-      "url": "https://www.youtube.com/@dianxixiaoge",
-      "videoTitle": "Tengchong’s Volcanic Lily Bulbs: A Fresh Taste of the Countryside at Our Family Table【滇西小哥】"
-    },
-    "error": "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cgg7vCxFU72atZixE3zCK\"}"
-  },
-  {
-    "name": "RFI 华语 - 法国国际广播电台",
-    "url": "https://www.youtube.com/@RFI_Cn",
-    "category": "news",
-    "truth": "mandarin",
-    "share": 1,
-    "run": 1,
-    "input": {
-      "name": "RFI 华语 - 法国国际广播电台",
-      "url": "https://www.youtube.com/@RFI_Cn",
-      "videoTitle": "RFI 11月1日巴黎午间新闻"
-    },
-    "error": "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cgg7vCs4FeCfCoGmr9bjS\"}"
-  },
-  {
-    "name": "周杰倫 Jay Chou",
-    "url": "https://www.youtube.com/@jaychou",
-    "category": "music",
-    "truth": "mandarin",
-    "share": 1,
-    "run": 1,
-    "input": {
-      "name": "周杰倫 Jay Chou",
-      "url": "https://www.youtube.com/@jaychou",
-      "videoTitle": "Jay Chou 周杰倫【My Daughter, Your Highness女兒殿下】Official Music Video"
-    },
-    "error": "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cgg7uQ9vCjmFSTZ2acdgX\"}"
-  },
-  {
-    "name": "RFA 自由亞洲粵語",
-    "url": "https://www.youtube.com/@rfacantonese",
-    "category": "news",
-    "truth": "other",
-    "share": 0.13,
-    "run": 0,
-    "input": {
-      "name": "RFA 自由亞洲粵語",
-      "url": "https://www.youtube.com/@rfacantonese",
-      "videoTitle": "自由亞洲粵語告別讀者"
-    },
-    "error": "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cgg7vEBg9hiirRyXYT32d\"}"
-  },
-  {
-    "name": "Dianxi Xiaoge",
-    "url": "https://www.youtube.com/@dianxixiaoge",
-    "category": "no_speech",
-    "truth": "other",
-    "share": 0,
-    "run": 1,
-    "input": {
-      "name": "滇西小哥 Dianxi Xiaoge",
-      "url": "https://www.youtube.com/@dianxixiaoge",
-      "videoTitle": "Thee Yunnan Wild Mushroom Collection 🍄 Foraging in the Mountains, Cooking at Home!【滇西小哥】"
-    },
-    "error": "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cgg7vEEQMjBotXt4SiErD\"}"
-  },
-  {
-    "name": "RFA 自由亞洲粵語",
-    "url": "https://www.youtube.com/@rfacantonese",
-    "category": "news",
-    "truth": "other",
-    "share": 0.13,
-    "run": 1,
-    "input": {
-      "name": "RFA 自由亞洲粵語",
-      "url": "https://www.youtube.com/@rfacantonese",
-      "videoTitle": "再有在台流亡港人獲定居：希望成功例子讓其他庇護者安心"
-    },
-    "error": "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cgg7vEGtVxWhTRYCx9FTc\"}"
-  },
-  {
-    "name": "zaobaosg",
-    "url": "https://www.youtube.com/@zaobaodotsg",
-    "category": "news",
-    "truth": "mandarin",
-    "share": 1,
-    "run": 0,
-    "input": {
-      "name": "zaobaosg",
-      "url": "https://www.youtube.com/@zaobaodotsg",
-      "videoTitle": "中共五中全会“从严治党”为二十一大铺垫？| China’s fifth plenum focus on party discipline #东谈西论 #早报播客"
-    },
-    "error": "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cgg7vEfCXcW9WDqXSm1EP\"}"
-  },
-  {
-    "name": "zaobaosg",
-    "url": "https://www.youtube.com/@zaobaodotsg",
-    "category": "news",
-    "truth": "mandarin",
-    "share": 1,
-    "run": 1,
-    "input": {
-      "name": "zaobaosg",
-      "url": "https://www.youtube.com/@zaobaodotsg",
-      "videoTitle": "[EN] 你被财报骗过吗？Ever been tricked by a financial report? #理财Talk! #早报播客"
-    },
-    "error": "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cgg7vFNNHd1LRS8p7z3ga\"}"
-  },
-  {
-    "name": "日本電視台(Nippon TV)-NTV中文",
-    "url": "https://www.youtube.com/@日本電視台-NTV",
-    "category": "news",
-    "truth": "mixed",
-    "share": 0.57,
-    "run": 1,
-    "input": {
-      "name": "日本電視台(Nippon TV)-NTV中文",
-      "url": "https://www.youtube.com/@%E6%97%A5%E6%9C%AC%E9%9B%BB%E8%A6%96%E5%8F%B0-NTV",
-      "videoTitle": "【長編影像】高市首相與德國總理梅爾茨會談 經濟安保與AI領域達成合作共識"
-    },
-    "error": "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cgg7vFbFYkCTBcuqaSDCd\"}"
-  },
-  {
-    "name": "日本電視台(Nippon TV)-NTV中文",
-    "url": "https://www.youtube.com/@日本電視台-NTV",
-    "category": "news",
-    "truth": "mixed",
-    "share": 0.57,
-    "run": 0,
-    "input": {
-      "name": "日本電視台(Nippon TV)-NTV中文",
-      "url": "https://www.youtube.com/@%E6%97%A5%E6%9C%AC%E9%9B%BB%E8%A6%96%E5%8F%B0-NTV",
-      "videoTitle": "【貼身採訪】“能住的寺廟”宿坊魅力何在？ 現代化翻修 住宿人數暴增10倍…大受外國觀光客好評"
-    },
-    "error": "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cgg7vFX3JQkctByfusyr4\"}"
-  },
-  {
-    "name": "VOA 美國之音粵語",
-    "url": "https://www.youtube.com/@voacantonese",
-    "category": "misleading",
-    "truth": "other",
-    "share": 0,
-    "run": 0,
-    "input": {
-      "name": "VOA 美國之音粵語",
-      "url": "https://www.youtube.com/@voacantonese",
-      "videoTitle": "時事一週(星期六) 2025年3月15日：民營企業促進法未在 “兩會” 通過 分析：中共內部或仍有分歧 - 3月 15日,2025年"
-    },
-    "error": "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cgg7uRDRZwMP8qW4PJehW\"}"
-  },
-  {
-    "name": "Jerry Kowal 郭杰瑞",
-    "url": "https://www.youtube.com/@jerrykowal1007",
-    "category": "misleading",
-    "truth": "mandarin",
-    "share": 0.86,
-    "run": 0,
-    "input": {
-      "name": "Jerry Kowal 郭杰瑞",
-      "url": "https://www.youtube.com/@jerrykowal1007",
-      "videoTitle": "纽约5个灵魂美食，没吃过等于白来纽约！"
-    },
-    "error": "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cgg7sfxNyc6iFbmWT9cGa\"}"
-  },
-  {
     "name": "VOA 美國之音粵語",
     "url": "https://www.youtube.com/@voacantonese",
     "category": "misleading",
@@ -2261,17 +1883,555 @@
     "seconds": 11.084
   },
   {
-    "name": "Thomas阿福",
-    "url": "https://www.youtube.com/@ThomasAfu",
-    "category": "misleading",
+    "name": "周杰倫 Jay Chou",
+    "url": "https://www.youtube.com/@jaychou",
+    "category": "music",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 1,
+    "input": {
+      "name": "周杰倫 Jay Chou",
+      "url": "https://www.youtube.com/@jaychou",
+      "videoTitle": "Jay Chou 周杰倫【My Daughter, Your Highness女兒殿下】Official Music Video"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "95%",
+    "reason": "This is Jay Chou's official channel (@jaychou). Its recent uploads, including the 女兒殿下 MV and 太陽之子, are his own songs, and the lyrics in the video descriptions are Mandarin (for example '一早帶娃出門上學七點半'). Wikipedia also lists his singles as Mandarin.",
+    "searches": 1,
+    "usage": {
+      "input_tokens": 23677,
+      "output_tokens": 404
+    },
+    "seconds": 11.281
+  },
+  {
+    "name": "周杰倫 Jay Chou",
+    "url": "https://www.youtube.com/@jaychou",
+    "category": "music",
     "truth": "mandarin",
     "share": 1,
     "run": 0,
     "input": {
-      "name": "Thomas阿福",
-      "url": "https://www.youtube.com/@ThomasAfu",
-      "videoTitle": "德国兄弟挑战在香格里拉说24小时中文，全程笑疯了"
+      "name": "周杰倫 Jay Chou",
+      "url": "https://www.youtube.com/@jaychou",
+      "videoTitle": "Jay Chou 周杰倫【Sicily 西西里】Official Music Video"
     },
-    "error": "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cgg7tMKzFGcQJpctHqf7A\"}"
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "95%",
+    "reason": "The @jaychou channel posts Jay Chou's official music videos, which are sung almost entirely in Mandarin. Its recent video 'Sicily 西西里' has Mandarin lyrics by Vincent Fang (方文山), shown in the video's comments and in lyric videos, and the descriptions are in Chinese.",
+    "searches": 1,
+    "usage": {
+      "input_tokens": 23451,
+      "output_tokens": 372
+    },
+    "seconds": 12.662
+  },
+  {
+    "name": "GEM鄧紫棋",
+    "url": "https://www.youtube.com/@gem0816",
+    "category": "music",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 1,
+    "input": {
+      "name": "GEM鄧紫棋",
+      "url": "https://www.youtube.com/@gem0816",
+      "videoTitle": "G.E.M. 鄧紫棋【自由的你 FREE TO BE YOU】啟程版 Official Lyric Video (4K)"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "90%",
+    "reason": "The search results confirm that the @gem0816 channel is G.E.M.'s official channel, and its new 2025 single 自由的你 is a lead track from her new album, part of her Mandopop catalog. Her recent releases are sung almost entirely in Mandarin, with occasional English lines and a few older Cantonese songs.",
+    "searches": 2,
+    "usage": {
+      "input_tokens": 23280,
+      "output_tokens": 465
+    },
+    "seconds": 13.516
+  },
+  {
+    "name": "MIRROR",
+    "url": "https://www.youtube.com/@MIRRORweare",
+    "category": "music",
+    "truth": "other",
+    "share": 0.5,
+    "run": 0,
+    "input": {
+      "name": "MIRROR",
+      "url": "https://www.youtube.com/@MIRRORweare",
+      "videoTitle": "Jeremy 李駿傑 &  Marf 邱彥筒《Whistle》Official Music Video"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "5%",
+    "reason": "@MIRRORweare is the official channel of MIRROR, the Hong Kong Cantopop boy group. Its music videos and live performances (for example Whistle, Dear My Friend and Kingdom Live) are sung in Cantonese, sometimes mixed with English, and Wikipedia and the press describe the group as Cantopop.",
+    "searches": 3,
+    "usage": {
+      "input_tokens": 24782,
+      "output_tokens": 527
+    },
+    "seconds": 18.22
+  },
+  {
+    "name": "MIRROR",
+    "url": "https://www.youtube.com/@MIRRORweare",
+    "category": "music",
+    "truth": "other",
+    "share": 0.5,
+    "run": 1,
+    "input": {
+      "name": "MIRROR",
+      "url": "https://www.youtube.com/@MIRRORweare",
+      "videoTitle": "Ian Chan 陳卓賢《在遠方的你》Official Music Video"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "5%",
+    "reason": "I confirmed that @MIRRORweare is the official channel of MIRROR, a Hong Kong Cantopop boy group. Its recent uploads are music videos and live clips, such as Ian Chan's 在遠方的你, 同往, DNA is U and Edan Lui's concert clips, and Wikipedia lists the genre as Cantonese pop (粵語流行音樂). The lyrics I found use Cantonese wording (e.g. 捱得過), so the vocals are mostly Cantonese rather than Mandarin.",
+    "searches": 3,
+    "usage": {
+      "input_tokens": 35947,
+      "output_tokens": 737
+    },
+    "seconds": 20.856
+  },
+  {
+    "name": "GEM鄧紫棋",
+    "url": "https://www.youtube.com/@gem0816",
+    "category": "music",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 0,
+    "input": {
+      "name": "GEM鄧紫棋",
+      "url": "https://www.youtube.com/@gem0816",
+      "videoTitle": "G.E.M.鄧紫棋【自由的你 Free to Be You】Official Music Video"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "90%",
+    "reason": "The @gem0816 channel is G.E.M.'s official music channel. Its recent uploads, like 自由的你 (released October 2026, with lyrics on Baidu and KKBOX), 超能力 and the 時光音樂會 live clips, are pop songs with Mandarin-language lyrics. Her Cantonese songs (海闊天空 may be one) and English songs make up only a small share.",
+    "searches": 3,
+    "usage": {
+      "input_tokens": 25138,
+      "output_tokens": 722
+    },
+    "seconds": 21.017
+  },
+  {
+    "name": "Eason Chan",
+    "url": "https://www.youtube.com/@easonchan",
+    "category": "music",
+    "truth": "mixed",
+    "share": 0.38,
+    "run": 1,
+    "input": {
+      "name": "Eason Chan",
+      "url": "https://www.youtube.com/@easonchan",
+      "videoTitle": "《K歌之王 AIR (Night Version)》陳奕迅 Eason Chan with The Heritage Orchestra【Official MV】"
+    },
+    "label": "mixed",
+    "confidence": "medium",
+    "mandarin_share": "45%",
+    "reason": "This is Eason Chan's official channel, and its recent uploads come in both Cantonese and Mandarin. Chinese Wikipedia and Tencent News say the 2025 K歌之王 AIR remake has a Day Version in Cantonese and a Night Version in Mandarin, and his latest album, CHIN UP!, has songs in both languages but mostly Cantonese, along with Mandarin singles such as 這樣很好 and 孤勇者.",
+    "searches": 5,
+    "usage": {
+      "input_tokens": 43212,
+      "output_tokens": 894
+    },
+    "seconds": 22.499
+  },
+  {
+    "name": "Eason Chan",
+    "url": "https://www.youtube.com/@easonchan",
+    "category": "music",
+    "truth": "mixed",
+    "share": 0.38,
+    "run": 0,
+    "input": {
+      "name": "Eason Chan",
+      "url": "https://www.youtube.com/@easonchan",
+      "videoTitle": "《K歌之王 AIR》陳奕迅 Eason Chan [Behind the scenes]"
+    },
+    "label": "mixed",
+    "confidence": "low",
+    "mandarin_share": "30%",
+    "reason": "Recent uploads on @easonchan are mostly Cantonese, with some Mandarin. The 2025 single 《K歌之王 AIR》 has both a Cantonese and a Mandarin version, its MV is in Cantonese, the 2023 album CHIN UP! has 6 Cantonese and 2 Mandarin songs, and the 2026 releases and recording-session concerts are mainly Hong Kong Cantonese material; I found nothing on what language he speaks in the behind-the-scenes videos, so the share is a rough estimate.",
+    "searches": 7,
+    "usage": {
+      "input_tokens": 47933,
+      "output_tokens": 1233
+    },
+    "seconds": 30.431
+  },
+  {
+    "name": "RFI 华语 - 法国国际广播电台",
+    "url": "https://www.youtube.com/@RFI_Cn",
+    "category": "news",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 0,
+    "input": {
+      "name": "RFI 华语 - 法国国际广播电台",
+      "url": "https://www.youtube.com/@RFI_Cn",
+      "videoTitle": "RFI 11月2日巴黎午间新闻"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "95%",
+    "reason": "The @RFI_Cn handle belongs to RFI's Chinese service. It currently posts daily Mandarin news programs like '巴黎午间新闻' (Paris midday news), with descriptions and titles in Chinese. Its podcast shows, such as 要闻解说 (news explainers) and 法国报纸摘要 (French press review), are Mandarin radio broadcasts, though the channel may also have a few French-learning segments.",
+    "searches": 1,
+    "usage": {
+      "input_tokens": 23375,
+      "output_tokens": 490
+    },
+    "seconds": 11.408
+  },
+  {
+    "name": "BBC News 中文",
+    "url": "https://www.youtube.com/@bbcnewschinese",
+    "category": "news",
+    "truth": "mixed",
+    "share": 0.25,
+    "run": 1,
+    "input": {
+      "name": "BBC News 中文",
+      "url": "https://www.youtube.com/@bbcnewschinese",
+      "videoTitle": "姆巴佩的玩笑為何讓中國震怒？－ BBC News 中文"
+    },
+    "label": "mixed",
+    "confidence": "medium",
+    "mandarin_share": "60%",
+    "reason": "A search confirms this is the BBC Chinese service channel: its recent Traditional-Chinese titles include a Short on Mbappé and China from about a week ago. As far as I know, it mixes reports its own reporters narrate in Mandarin with English BBC footage and interviews that carry Chinese subtitles, but I found no direct breakdown of the audio, so the Mandarin share is a rough estimate.",
+    "searches": 1,
+    "usage": {
+      "input_tokens": 22886,
+      "output_tokens": 659
+    },
+    "seconds": 14.367
+  },
+  {
+    "name": "李子柒 Liziqi",
+    "url": "https://www.youtube.com/@cnliziqi",
+    "category": "no_speech",
+    "truth": "other",
+    "share": 0,
+    "run": 0,
+    "input": {
+      "name": "李子柒 Liziqi",
+      "url": "https://www.youtube.com/@cnliziqi",
+      "videoTitle": "送给所有知道我名字的人！For Everyone Who Knows My Name.丨Liziqi Channel"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "5%",
+    "reason": "Wikipedia, Atlantis Press and the Taipei Times (reporting on her 2024 comeback) say Li Ziqi rarely speaks in her videos, which mostly carry nature and cooking sounds and calm music, with no narrator. The Paper notes that the little speech there is tends to be Sichuanese dialect rather than standard Mandarin.",
+    "searches": 3,
+    "usage": {
+      "input_tokens": 34149,
+      "output_tokens": 728
+    },
+    "seconds": 22.107
+  },
+  {
+    "name": "李子柒 Liziqi",
+    "url": "https://www.youtube.com/@cnliziqi",
+    "category": "no_speech",
+    "truth": "other",
+    "share": 0,
+    "run": 1,
+    "input": {
+      "name": "李子柒 Liziqi",
+      "url": "https://www.youtube.com/@cnliziqi",
+      "videoTitle": "拿柴房造了一个森林衣帽间~I turned the Woodshed into a Forest-Themed Closet.丨Liziqi Channel"
+    },
+    "label": "other",
+    "confidence": "medium",
+    "mandarin_share": "5%",
+    "reason": "Wikipedia notes that Li \"rarely speaks in her videos\" and that nature sounds, cooking sounds and calm music dominate. Her November 2024 comeback videos, including the woodshed closet video, follow the same mostly wordless style. What little speech there is is Chinese (short exchanges, sometimes in Sichuanese), so these mostly non-verbal videos fall under \"other\".",
+    "searches": 3,
+    "usage": {
+      "input_tokens": 58388,
+      "output_tokens": 1133
+    },
+    "seconds": 26.069
+  },
+  {
+    "name": "RFI 华语 - 法国国际广播电台",
+    "url": "https://www.youtube.com/@RFI_Cn",
+    "category": "news",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 1,
+    "input": {
+      "name": "RFI 华语 - 法国国际广播电台",
+      "url": "https://www.youtube.com/@RFI_Cn",
+      "videoTitle": "RFI 11月1日巴黎午间新闻"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "90%",
+    "reason": "Searches confirm @RFI_Cn is the official channel of RFI's Chinese (华语) service, and it regularly posts daily Mandarin news bulletins such as 'RFI法广3月22日巴黎午间新闻', which also appear on its X account. Its descriptions and podcasts are all in Chinese, though no source I found states the spoken language outright. Some clips may include French or English interviewees.",
+    "searches": 2,
+    "usage": {
+      "input_tokens": 33740,
+      "output_tokens": 684
+    },
+    "seconds": 18.629
+  },
+  {
+    "name": "RFA 自由亞洲粵語",
+    "url": "https://www.youtube.com/@rfacantonese",
+    "category": "news",
+    "truth": "other",
+    "share": 0.13,
+    "run": 0,
+    "input": {
+      "name": "RFA 自由亞洲粵語",
+      "url": "https://www.youtube.com/@rfacantonese",
+      "videoTitle": "自由亞洲粵語告別讀者"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "5%",
+    "reason": "This is Radio Free Asia's Cantonese service. Its X, Clubhouse and archive listings say 自由亞洲電台粵語部 / RFA Cantonese, and its videos, such as the 維港外望 commentary series, are tagged 'cantonese'. That means the speech is mainly Cantonese, not Mandarin. The service has since said goodbye to its audience, as the 告別 video title shows.",
+    "searches": 2,
+    "usage": {
+      "input_tokens": 23126,
+      "output_tokens": 466
+    },
+    "seconds": 13.456
+  },
+  {
+    "name": "RFA 自由亞洲粵語",
+    "url": "https://www.youtube.com/@rfacantonese",
+    "category": "news",
+    "truth": "other",
+    "share": 0.13,
+    "run": 1,
+    "input": {
+      "name": "RFA 自由亞洲粵語",
+      "url": "https://www.youtube.com/@rfacantonese",
+      "videoTitle": "再有在台流亡港人獲定居：希望成功例子讓其他庇護者安心"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "5%",
+    "reason": "I confirmed that @rfacantonese belongs to Radio Free Asia's Cantonese service (自由亞洲電台粵語部), whose linked accounts point to youtube.com/@rfacantonese and rfa.org/cantonese. Its shows, such as 香港人自由講 and 聲如洪鍾, are Hong Kong commentary and news hosted in Cantonese, so there is little or no spoken Mandarin.",
+    "searches": 1,
+    "usage": {
+      "input_tokens": 23360,
+      "output_tokens": 472
+    },
+    "seconds": 11.08
+  },
+  {
+    "name": "Dianxi Xiaoge",
+    "url": "https://www.youtube.com/@dianxixiaoge",
+    "category": "no_speech",
+    "truth": "other",
+    "share": 0,
+    "run": 0,
+    "input": {
+      "name": "滇西小哥 Dianxi Xiaoge",
+      "url": "https://www.youtube.com/@dianxixiaoge",
+      "videoTitle": "Tengchong’s Volcanic Lily Bulbs: A Fresh Taste of the Countryside at Our Family Table【滇西小哥】"
+    },
+    "label": "other",
+    "confidence": "medium",
+    "mandarin_share": "15%",
+    "reason": "Chinese media coverage of this Baoshan, Yunnan cooking channel (@dianxixiaoge) says she always speaks a soft Yunnan dialect in her videos. That dialect is a Southwestern variety of Mandarin, but her videos are mostly cooking, music and ambient country sounds, with only short chats with family and her dog, so spoken Mandarin is a small share of each video.",
+    "searches": 3,
+    "usage": {
+      "input_tokens": 26447,
+      "output_tokens": 974
+    },
+    "seconds": 21.913
+  },
+  {
+    "name": "办公室小野 Ms Yeah",
+    "url": "https://www.youtube.com/@MsYeahOfficialChannel",
+    "category": "no_speech",
+    "truth": "mandarin",
+    "share": 0.5,
+    "run": 0,
+    "input": {
+      "name": "办公室小野 Ms Yeah",
+      "url": "https://www.youtube.com/@MsYeahOfficialChannel",
+      "videoTitle": "Cook Chinese New Year's Dinner in Office! | Ms Yeah"
+    },
+    "label": "other",
+    "confidence": "medium",
+    "mandarin_share": "10%",
+    "reason": "Wikipedia and Chinese media say this exact channel (UCRB4xZ_2ew7fzmrcv8aj4Lw / @MsYeahOfficialChannel) is known for 无配音 (no-narration) videos by a 'girl who doesn't talk': mostly music and cooking sounds, with only a few Mandarin words. Her 2024 restart on Douyin added Mandarin-speaking vlogs, but I couldn't confirm that those vlogs are uploaded to this YouTube channel, so I'm only moderately confident.",
+    "searches": 8,
+    "usage": {
+      "input_tokens": 79304,
+      "output_tokens": 1663
+    },
+    "seconds": 45.203
+  },
+  {
+    "name": "Dianxi Xiaoge",
+    "url": "https://www.youtube.com/@dianxixiaoge",
+    "category": "no_speech",
+    "truth": "other",
+    "share": 0,
+    "run": 1,
+    "input": {
+      "name": "滇西小哥 Dianxi Xiaoge",
+      "url": "https://www.youtube.com/@dianxixiaoge",
+      "videoTitle": "Thee Yunnan Wild Mushroom Collection 🍄 Foraging in the Mountains, Cooking at Home!【滇西小哥】"
+    },
+    "label": "mandarin",
+    "confidence": "medium",
+    "mandarin_share": "85%",
+    "reason": "Chinese news coverage says the host now rarely dubs her videos in standard Mandarin (普通话配音), and that she and her family and neighbours talk in the local Baoshan dialect, a form of Southwestern Mandarin that is a regional variety of Mandarin, not a separate Chinese language. Much of each video is ambient cooking sound with little talk, and the dialect is hard to follow even for many Chinese viewers, so confidence is only medium.",
+    "searches": 3,
+    "usage": {
+      "input_tokens": 35596,
+      "output_tokens": 992
+    },
+    "seconds": 23.836
+  },
+  {
+    "name": "zaobaosg",
+    "url": "https://www.youtube.com/@zaobaodotsg",
+    "category": "news",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 0,
+    "input": {
+      "name": "zaobaosg",
+      "url": "https://www.youtube.com/@zaobaodotsg",
+      "videoTitle": "中共五中全会“从严治党”为二十一大铺垫？| China’s fifth plenum focus on party discipline #东谈西论 #早报播客"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "90%",
+    "reason": "Search results confirm @zaobaodotsg is the official YouTube channel of Singapore's Chinese-language newspaper Lianhe Zaobao. It posts newsroom videos and podcasts such as 东谈西论 and 早报播客, which a podcast directory lists as 'a news podcast in Chinese'. Its recent titles and descriptions are mainly in Chinese, which points to Singapore Mandarin narration, though I didn't find a source that names the spoken language outright.",
+    "searches": 1,
+    "usage": {
+      "input_tokens": 23073,
+      "output_tokens": 433
+    },
+    "seconds": 11.878
+  },
+  {
+    "name": "zaobaosg",
+    "url": "https://www.youtube.com/@zaobaodotsg",
+    "category": "news",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 1,
+    "input": {
+      "name": "zaobaosg",
+      "url": "https://www.youtube.com/@zaobaodotsg",
+      "videoTitle": "[EN] 你被财报骗过吗？Ever been tricked by a financial report? #理财Talk! #早报播客"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "90%",
+    "reason": "I confirmed @zaobaodotsg is the official YouTube channel of Lianhe Zaobao, Singapore's Chinese-language newspaper, and its podcasts like 理财Talk and 理财万事通 are Chinese-language shows hosted by a 96.3好FM DJ. The '[EN]' tag on the sample title most likely marks English subtitles, not English audio, though I didn't verify that or listen to recent videos.",
+    "searches": 2,
+    "usage": {
+      "input_tokens": 23420,
+      "output_tokens": 506
+    },
+    "seconds": 12.601
+  },
+  {
+    "name": "BBC News 中文",
+    "url": "https://www.youtube.com/@bbcnewschinese",
+    "category": "news",
+    "truth": "mixed",
+    "share": 0.25,
+    "run": 0,
+    "input": {
+      "name": "BBC News 中文",
+      "url": "https://www.youtube.com/@bbcnewschinese",
+      "videoTitle": "為何美國中期選舉對特朗普至關重要？－ BBC News 中文"
+    },
+    "label": "mixed",
+    "confidence": "medium",
+    "mandarin_share": "60%",
+    "reason": "This is the official BBC News Chinese channel (@bbcnewschinese). Its own channel trailer says its videos are mainly in Mandarin (普通话/国语) and Cantonese, with Chinese subtitles, and its recent videos combine Mandarin-narrated reports with English material subtitled in Chinese, such as the exclusive interview with Canadian Prime Minister Carney, plus some Cantonese Hong Kong pieces. I couldn't find transcripts, so the 60% Mandarin share is an estimate.",
+    "searches": 6,
+    "usage": {
+      "input_tokens": 88887,
+      "output_tokens": 1671
+    },
+    "seconds": 42.429
+  },
+  {
+    "name": "办公室小野 Ms Yeah",
+    "url": "https://www.youtube.com/@MsYeahOfficialChannel",
+    "category": "no_speech",
+    "truth": "mandarin",
+    "share": 0.5,
+    "run": 1,
+    "input": {
+      "name": "办公室小野 Ms Yeah",
+      "url": "https://www.youtube.com/@MsYeahOfficialChannel",
+      "videoTitle": "How to DIY a BBQ Bicycle?! Will anyone buy my barbecue? | Ms Yeah"
+    },
+    "label": "other",
+    "confidence": "medium",
+    "mandarin_share": "15%",
+    "reason": "English Wikipedia says Ms Yeah's videos (@MsYeahOfficialChannel) have no narration, so there is almost no language barrier. She has said she isn't confident speaking on camera, and the videos are mostly music, cooking sounds and visual gags, with only short spoken lines that are probably Mandarin. Since 2024 the channel has posted hobby videos instead of office cooking, and I couldn't confirm how much speech those newer videos contain, including the BBQ-bicycle selling video.",
+    "searches": 8,
+    "usage": {
+      "input_tokens": 101812,
+      "output_tokens": 2272
+    },
+    "seconds": 54.853
+  },
+  {
+    "name": "日本電視台(Nippon TV)-NTV中文",
+    "url": "https://www.youtube.com/@日本電視台-NTV",
+    "category": "news",
+    "truth": "mixed",
+    "share": 0.57,
+    "run": 1,
+    "input": {
+      "name": "日本電視台(Nippon TV)-NTV中文",
+      "url": "https://www.youtube.com/@%E6%97%A5%E6%9C%AC%E9%9B%BB%E8%A6%96%E5%8F%B0-NTV",
+      "videoTitle": "【長編影像】高市首相與德國總理梅爾茨會談 經濟安保與AI領域達成合作共識"
+    },
+    "label": "unknown",
+    "confidence": "low",
+    "mandarin_share": "unknown",
+    "reason": "I confirmed this is Nippon TV's official Chinese channel: it says it covers Japanese news, and a viewer wrote that its reports are 'translated into Chinese', but I found nothing showing whether that means Mandarin voice-over or Japanese audio with Chinese subtitles. I couldn't open any of its video pages before my search limit ran out, so I can't tell which language is spoken.",
+    "searches": 8,
+    "usage": {
+      "input_tokens": 95236,
+      "output_tokens": 1447
+    },
+    "seconds": 50.279
+  },
+  {
+    "name": "日本電視台(Nippon TV)-NTV中文",
+    "url": "https://www.youtube.com/@日本電視台-NTV",
+    "category": "news",
+    "truth": "mixed",
+    "share": 0.57,
+    "run": 0,
+    "input": {
+      "name": "日本電視台(Nippon TV)-NTV中文",
+      "url": "https://www.youtube.com/@%E6%97%A5%E6%9C%AC%E9%9B%BB%E8%A6%96%E5%8F%B0-NTV",
+      "videoTitle": "【貼身採訪】“能住的寺廟”宿坊魅力何在？ 現代化翻修 住宿人數暴增10倍…大受外國觀光客好評"
+    },
+    "label": "unknown",
+    "confidence": "low",
+    "mandarin_share": "unknown",
+    "reason": "I confirmed that this is Nippon TV's official Chinese news channel (ID UC2MNvVRVnzpqgR_4N0P3UMg, started in 2025): the sample video is a Chinese version of a Japanese Nippon TV report, and a viewer says its reports are 'translated into Chinese.' But nothing I found says whether that means Mandarin dubbing or Japanese audio with Chinese subtitles, and I hit the search limit before I could check any video's audio.",
+    "searches": 8,
+    "usage": {
+      "input_tokens": 290511,
+      "output_tokens": 2769
+    },
+    "seconds": 83.826
   }
 ]
