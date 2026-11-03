@@ -45,17 +45,9 @@ continuously. It cannot separate document reading from lookups.
 
 ### LLM conversations
 
-Claude and ChatGPT keep every message server-side with a timestamp, whichever
-device sent it. The Chrome extension fetches history from the endpoints the web
-apps use, with the browser's login:
-
-- claude.ai: `/api/organizations/{org}/chat_conversations` and
-  `/chat_conversations/{id}?tree=True&rendering_mode=messages`
-- chatgpt.com: `/backend-api/conversations` and `/backend-api/conversation/{id}`,
-  with the bearer token from `/api/auth/session`
-
-These endpoints are undocumented and may change; the official data exports carry
-the same timestamps as a manual fallback. A turn counts as Mandarin when my
-message is at least 30% CJK characters. Turns are grouped into sessions split by
-gaps over 10 minutes, and each gap is capped at an estimate of reading and typing
-time.
+The extension times each conversation on claude.ai and chatgpt.com live, while its tab
+is visible, focused and in use, and records the share of Chinese in the chat. Chats in
+the desktop and phone apps are not counted. To add them, fetch history from the
+endpoints the web apps use (claude.ai `/api/organizations/{org}/chat_conversations`,
+chatgpt.com `/backend-api/conversations`), which carry per-message timestamps from
+every device, and merge per chat per day by taking the larger, as for Reader.
