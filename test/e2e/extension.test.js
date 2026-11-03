@@ -167,3 +167,18 @@ test("YouTube credits the video actually playing when it changes without a URL c
   near(day.youtube?.[CHANNEL_URL]?.seconds, 7, "first channel");
   near(day.youtube?.[CHANNEL_URL_2]?.seconds, 7, "second channel");
 });
+
+test("a tab open before the extension reloads keeps tracking, and isn't counted twice", async () => {
+  const page = await browser.open(`https://claude.ai/chat/${A}`);
+  await beActive(page, 6);
+  await settle();                    // 6 s + idle tail, all stored before the reload
+  await browser.reloadExtension();   // the reopened storage tab is now active; bring the chat back
+  await page.activate();
+  await sleep(1500);                 // the updated extension injects its scripts into open tabs
+  await beActive(page, 8);
+  await settle();
+
+  const day = await today();
+  // Counting twice (old and new script both running) would add another 8 + IDLE_SECONDS.
+  near(day.claude?.[A]?.seconds, 6 + IDLE_SECONDS + 8 + IDLE_SECONDS, "chat across an extension reload");
+});

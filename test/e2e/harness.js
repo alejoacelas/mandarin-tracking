@@ -84,7 +84,7 @@ export class Browser {
     const ext = path.join(root, "extension");
     b.proc = spawn(chromium.executablePath(), [
       `--user-data-dir=${b.dir}/profile`, "--remote-debugging-port=0", "--no-first-run", "--no-default-browser-check",
-      `--disable-extensions-except=${ext}`, `--load-extension=${ext}`,
+      "--enable-unsafe-extension-debugging", // lets CDP install the extension (Extensions.loadUnpacked)
       ...(live ? [] : [`--host-resolver-rules=MAP claude.ai 127.0.0.1:${port},MAP chatgpt.com 127.0.0.1:${port},MAP www.youtube.com 127.0.0.1:${port}`,
         "--ignore-certificate-errors"]),
       "--autoplay-policy=no-user-gesture-required", "about:blank",
@@ -97,13 +97,26 @@ export class Browser {
     const ws = new WebSocket(wsUrl);
     await new Promise((r) => (ws.onopen = r));
     b.cdp = new Cdp(ws);
+    b.extPath = ext;
+    await b.installExtension();
+    return b;
+  }
+
+  // Installs the extension, or reinstalls it as an update if it's already there (what pressing
+  // reload on chrome://extensions does after a rebuild). Then opens the page used to read storage.
+  async installExtension() {
+    const { id } = await this.cdp.send("Extensions.loadUnpacked", { path: this.extPath });
+    this.extId = id;
+    const b = this;
     // Storage is read through the extension's popup page in a background tab: evaluating in the
     // service worker over CDP is unreliable while it starts and stops.
-    const swId = await b.waitForTarget((t) => t.type === "service_worker" && t.url.endsWith("/build/background.js"));
-    const { targetInfos } = await b.cdp.send("Target.getTargets");
-    const extId = new URL(targetInfos.find((t) => t.targetId === swId).url).host;
-    b.worker = await b.open(`chrome-extension://${extId}/popup.html`);
-    return b;
+    for (let i = 0; i < 20; i++) {
+      b.worker = await b.open(`chrome-extension://${b.extId}/popup.html`);
+      if (await b.worker.eval("typeof chrome.storage?.local").catch(() => "") === "object") return;
+      await b.cdp.send("Target.closeTarget", { targetId: b.worker.targetId });
+      await sleep(500);
+    }
+    throw new Error("extension pages didn't load");
   }
 
   async waitForTarget(pred) {
@@ -135,6 +148,11 @@ export class Browser {
     page.activate = () => this.cdp.send("Target.activateTarget", { targetId });
     page.move = (x, y) => this.cdp.send("Input.dispatchMouseEvent", { type: "mouseMoved", x, y }, page.sessionId);
     return page;
+  }
+
+  async reloadExtension() {
+    await this.cdp.send("Target.closeTarget", { targetId: this.worker.targetId });
+    await this.installExtension();
   }
 
   async storage(keys) {
