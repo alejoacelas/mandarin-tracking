@@ -235,5 +235,14 @@ async function syncAppTime() {
 }
 chrome.alarms.onAlarm.addListener((a) => { if (a.name === "badge") syncAppTime(); });
 
+// Reload after a rebuild (scripts/build.mjs), so the installed copy picks it up on its own.
+async function reloadIfRebuilt() {
+  try {
+    const onDisk = (await (await fetch(chrome.runtime.getURL("build/build-id.txt"), { cache: "no-store" })).text()).trim();
+    if (onDisk && onDisk !== __BUILD_ID__) chrome.runtime.reload();
+  } catch {} // file mid-write during a build; the next minute checks again
+}
+chrome.alarms.onAlarm.addListener((a) => { if (a.name === "badge") reloadIfRebuilt(); });
+
 chrome.runtime.onStartup.addListener(() => { resumeInterrupted(); refreshBadge(); ensureReaderAlarm(); });
 chrome.runtime.onInstalled.addListener(() => { resumeInterrupted(); refreshBadge(); injectIntoOpenTabs(); ensureReaderAlarm(); syncAppTime(); });
