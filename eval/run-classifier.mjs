@@ -7,7 +7,13 @@ import { makeClient, classifyChannel } from "../src/classify.js";
 
 const RUNS = Number(process.argv[2] ?? 1);
 const CONCURRENCY = 8;
-const truth = JSON.parse(await readFile("eval/ground-truth.json", "utf8")).filter((c) => !c.error && c.audio_label.label !== "unknown");
+// Truth is the audio label, replaced by the adjudicated verdict where the two methods disagreed
+// and a reviewer settled it (eval/adjudicated.json). Channels whose truth is "unknown" are skipped.
+const adjudicated = Object.fromEntries(JSON.parse(await readFile("eval/adjudicated.json", "utf8")).map((a) => [a.url, a.verdict]));
+const truth = JSON.parse(await readFile("eval/ground-truth.json", "utf8"))
+  .filter((c) => !c.error)
+  .map((c) => ({ ...c, audio_label: { ...c.audio_label, label: adjudicated[c.url] ?? c.audio_label.label } }))
+  .filter((c) => c.audio_label.label !== "unknown");
 const client = makeClient(process.env.ANTHROPIC_API_KEY);
 
 async function oembed(videoId) {
@@ -27,8 +33,10 @@ async function worker() {
     const videoId = [...new Set(c.clips.map((x) => x.videoId))][k % 3] ?? c.clips[0].videoId;
     const row = { name: c.name, url: c.url, category: c.category, truth: c.audio_label.label, share: c.audio_label.share, run: k };
     try {
-      const o = await oembed(videoId);
-      row.input = { name: o.author_name, url: o.author_url, videoTitle: o.title };
+      // Embed-disabled videos refuse oEmbed; the extension then has the channel from YouTube's
+      // player, so fall back to the channel's name and URL without a title.
+      const o = await oembed(videoId).catch(() => null);
+      row.input = o ? { name: o.author_name, url: o.author_url, videoTitle: o.title } : { name: c.name.trim(), url: c.url };
       const t = Date.now();
       const r = await classifyChannel(client, row.input);
       Object.assign(row, { label: r.label, confidence: r.confidence, mandarin_share: r.mandarin_share, reason: r.reason, searches: r.searches, usage: r.usage, seconds: (Date.now() - t) / 1000 });

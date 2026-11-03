@@ -1,0 +1,2536 @@
+[
+  {
+    "name": "李永乐老师",
+    "url": "https://www.youtube.com/@李永乐老师官方",
+    "category": "plain_mandarin",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 1,
+    "input": {
+      "name": "李永乐老师",
+      "url": "https://www.youtube.com/@%E6%9D%8E%E6%B0%B8%E4%B9%90%E8%80%81%E5%B8%88%E5%AE%98%E6%96%B9",
+      "videoTitle": "【李永乐老师】汽车刹车踏板到底是如何工作的？一个视频弄懂汽车制动系统"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "98%",
+    "reason": "Li Yongle (李永乐) is a well-known Beijing high-school physics teacher at the RDFZ (人大附中) who explains science in Mandarin Chinese on a whiteboard, and his official YouTube channel reposts these videos. The sample video, on how car braking systems work, matches his usual Mandarin science lessons.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6735,
+      "output_tokens": 144
+    },
+    "seconds": 2.411
+  },
+  {
+    "name": "志祺七七",
+    "url": "https://www.youtube.com/@shasha77",
+    "category": "plain_mandarin",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 0,
+    "input": {
+      "name": "志祺七七",
+      "url": "https://www.youtube.com/@shasha77",
+      "videoTitle": "外國旅客去日韓創新高、來台卻少3成！外國旅客來台最常抱怨什麼？ft. 資深導遊 Claire 曾麗茵《強者我朋友》EP 273｜志祺七七"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "95%",
+    "reason": "志祺七七 is a well-known Taiwanese news-explainer channel hosted by 張志祺 (Chih-Chi Chang) in Taipei. He speaks Taiwanese-accented Mandarin in every video, and the 《強者我朋友》 interview series is also conducted in Mandarin.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6717,
+      "output_tokens": 136
+    },
+    "seconds": 2.643
+  },
+  {
+    "name": "小Lin说",
+    "url": "https://www.youtube.com/@xiao_lin_shuo",
+    "category": "plain_mandarin",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 0,
+    "input": {
+      "name": "小Lin说",
+      "url": "https://www.youtube.com/@xiao_lin_shuo",
+      "videoTitle": "史上最大现金收购案 富二代如何正确拼爹"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "95%",
+    "reason": "小Lin说 is a well-known finance and economics explainer channel run by Xiao Lin, a Chinese creator based in the US, who narrates her videos in Mandarin. The sample title is also typical of her Mandarin explainer videos. I didn't search for this; the answer comes from what I already know about the channel.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6667,
+      "output_tokens": 136
+    },
+    "seconds": 2.827
+  },
+  {
+    "name": "小Lin说",
+    "url": "https://www.youtube.com/@xiao_lin_shuo",
+    "category": "plain_mandarin",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 1,
+    "input": {
+      "name": "小Lin说",
+      "url": "https://www.youtube.com/@xiao_lin_shuo",
+      "videoTitle": "【硬核】俄乌打了四年多，到底谁在买单？"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "98%",
+    "reason": "小Lin说 is a well-known Chinese finance and economics explainer channel. The host, Xiao Lin, is a mainland Chinese woman who worked in finance in the US, and she narrates her videos in Mandarin. Her videos are also widely reposted on Bilibili for mainland Chinese viewers. This comes from what I already know about the channel; I did not run a web search to check it.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6669,
+      "output_tokens": 161
+    },
+    "seconds": 2.864
+  },
+  {
+    "name": "李永乐老师",
+    "url": "https://www.youtube.com/@李永乐老师官方",
+    "category": "plain_mandarin",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 0,
+    "input": {
+      "name": "李永乐老师",
+      "url": "https://www.youtube.com/@%E6%9D%8E%E6%B0%B8%E4%B9%90%E8%80%81%E5%B8%88%E5%AE%98%E6%96%B9",
+      "videoTitle": "【李永乐老师】中美股市哪个更赚钱？为什么道指屡创新高，上证指数永远3000点？"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "98%",
+    "reason": "Li Yongle is a Beijing high-school physics teacher at the RDFZ (人大附中) whose well-known YouTube channel has him explaining science, math and economics at a whiteboard in standard Mandarin. This video's title, which compares the US and Chinese stock markets, fits his usual Mandarin explainer format.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6736,
+      "output_tokens": 141
+    },
+    "seconds": 2.991
+  },
+  {
+    "name": "老高與小茉 Mr & Mrs Gao",
+    "url": "https://www.youtube.com/@laogao",
+    "category": "plain_mandarin",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 0,
+    "input": {
+      "name": "老高與小茉 Mr & Mrs Gao",
+      "url": "https://www.youtube.com/@laogao",
+      "videoTitle": "【最長影片】1小時講完《奧德賽》完整版 | 老高與小茉 Mr & Mrs Gao"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "95%",
+    "reason": "The host, Lao Gao, is a well-known Chinese YouTuber who lives in Japan. He and his co-host Xiao Mo talk in Mandarin about mysteries, science and stories, and both his Wikipedia entry and media coverage describe it as a Chinese-language channel. I'm going on what I already know about this channel; I didn't run a search to check it.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6694,
+      "output_tokens": 154
+    },
+    "seconds": 3.071
+  },
+  {
+    "name": "老高與小茉 Mr & Mrs Gao",
+    "url": "https://www.youtube.com/@laogao",
+    "category": "plain_mandarin",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 1,
+    "input": {
+      "name": "老高與小茉 Mr & Mrs Gao",
+      "url": "https://www.youtube.com/@laogao",
+      "videoTitle": "第二名 | 老高與小茉 Mr & Mrs Gao"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "95%",
+    "reason": "老高與小茉 is a well-known Chinese-language YouTube channel. Its host, Lao Gao, is from mainland China and lives in Japan, and he tells stories about mysteries, science and conspiracy theories in Mandarin, with his wife Xiao Mo reacting. The videos are widely described as Mandarin-language content. I answered from what I already know about the channel and did not search for this one.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6676,
+      "output_tokens": 165
+    },
+    "seconds": 3.484
+  },
+  {
+    "name": "志祺七七",
+    "url": "https://www.youtube.com/@shasha77",
+    "category": "plain_mandarin",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 1,
+    "input": {
+      "name": "志祺七七",
+      "url": "https://www.youtube.com/@shasha77",
+      "videoTitle": "成本最貴還是要去！台商為何要去美國設廠？台灣會被掏空嗎？ ft. 《商周》副總編輯 吳中傑《強者我朋友》EP 272｜志祺七七"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "95%",
+    "reason": "志祺七七 is a well-known Taiwanese explainer channel hosted by 張志祺 (Chang Chih-chi), who talks about current affairs in Taiwanese-accented Mandarin. Its interview series 《強者我朋友》, which the sample video belongs to, is also a Mandarin conversation with Taiwanese guests.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6713,
+      "output_tokens": 148
+    },
+    "seconds": 3.874
+  },
+  {
+    "name": "Joeman",
+    "url": "https://www.youtube.com/@joeman",
+    "category": "romanised_name",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 0,
+    "input": {
+      "name": "Joeman",
+      "url": "https://www.youtube.com/@joeman",
+      "videoTitle": "全新節目！我被矇眼隨機丟包！沒手機、沒導航、只能問路人⋯一直開錯超崩潰《不看導航Joe出發》ep1【Joeman】"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "95%",
+    "reason": "Joeman (Joe Huang/黃逸豪) is a well-known Taiwanese YouTuber whose variety, food and travel videos are spoken in Taiwanese-accented Mandarin, with only occasional Taiwanese Hokkien or English phrases. The sample title's traditional-character Mandarin phrasing and Taiwan-based travel show fit that pattern. This label comes from what I already know about the channel; I didn't search the web this time.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6703,
+      "output_tokens": 184
+    },
+    "seconds": 3.215
+  },
+  {
+    "name": "Joeman",
+    "url": "https://www.youtube.com/@joeman",
+    "category": "romanised_name",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 1,
+    "input": {
+      "name": "Joeman",
+      "url": "https://www.youtube.com/@joeman",
+      "videoTitle": "台北信義一坪200萬的小坪數要怎麼裝潢？一次開箱5間實品屋！國美馥遇《Joe是要看房》 ep.63【Joeman】"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "95%",
+    "reason": "Joeman (Joeman Huang, 黃信維) is a well-known Taiwanese YouTuber whose vlogs, food reviews and property-tour series like 'Joe是要看房' are presented in Taiwanese Mandarin. Some Taiwanese Hokkien or English may come up now and then, but Mandarin is the main language.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6700,
+      "output_tokens": 147
+    },
+    "seconds": 3.206
+  },
+  {
+    "name": "Chef Wang 美食作家王刚",
+    "url": "https://www.youtube.com/@chefwang",
+    "category": "romanised_name",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 0,
+    "input": {
+      "name": "美食作家王刚",
+      "url": "https://www.youtube.com/@chefwang",
+      "videoTitle": "厨师长分享：家庭版“干炒牛河”，干香嫩滑，锅气十足"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "95%",
+    "reason": "美食作家王刚 is Wang Gang, a well-known chef from Zigong, Sichuan. His cooking videos are narrated in Mandarin with a Sichuan accent (often called 川普, Sichuan-accented Mandarin), with simplified Chinese subtitles. This is based on well-known facts about the channel, not on a web search.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6675,
+      "output_tokens": 148
+    },
+    "seconds": 2.971
+  },
+  {
+    "name": "Chef Wang 美食作家王刚",
+    "url": "https://www.youtube.com/@chefwang",
+    "category": "romanised_name",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 1,
+    "input": {
+      "name": "美食作家王刚",
+      "url": "https://www.youtube.com/@chefwang",
+      "videoTitle": "厨师长教你：“白油里脊丝”的家常做法，滑嫩多汁，咸鲜适口"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "90%",
+    "reason": "美食作家王刚 (Wang Gang) is a well-known chef from Sichuan (Zigong). He narrates his cooking videos in Sichuan-accented Mandarin, and Chinese subtitles are standard on his channel. His Sichuan accent is famous, but his speech is broadly understandable Mandarin rather than heavy Sichuanese dialect.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6680,
+      "output_tokens": 156
+    },
+    "seconds": 3.284
+  },
+  {
+    "name": "Papi酱",
+    "url": "https://www.youtube.com/@papi_jiang",
+    "category": "romanised_name",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 0,
+    "input": {
+      "name": "Papi酱",
+      "url": "https://www.youtube.com/@papi_jiang",
+      "videoTitle": "papi酱 - 热烈欢迎张伟丽！原来格斗世界冠军的生活是这样的！！（当天伟丽签了好多名✍️"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "95%",
+    "reason": "Papi酱 (Jiang Yilei) is a well-known Shanghai-based Chinese comedy creator, and her sketches and vlogs are in Mandarin. She sometimes adds bits of Shanghainese or English for comic effect, but most of the speech is Mandarin. The sample video, a vlog with UFC champion Zhang Weili, fits her usual Mandarin-language content.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6694,
+      "output_tokens": 165
+    },
+    "seconds": 2.727
+  },
+  {
+    "name": "Papi酱",
+    "url": "https://www.youtube.com/@papi_jiang",
+    "category": "romanised_name",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 1,
+    "input": {
+      "name": "Papi酱",
+      "url": "https://www.youtube.com/@papi_jiang",
+      "videoTitle": "papi酱 - 领导当惯了，谈恋爱也有职业病"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "95%",
+    "reason": "Papi酱 (Jiang Yilei) is a well-known Shanghai-based Chinese comedian whose short sketch videos are mainly in Mandarin. She is famous for speeding up her voice and occasionally drops in Shanghainese or other dialects for jokes, but Mandarin is by far the main language.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6665,
+      "output_tokens": 138
+    },
+    "seconds": 2.65
+  },
+  {
+    "name": "东北农村马大叔【农村大叔记录生活】",
+    "url": "https://www.youtube.com/@food0",
+    "category": "plain_mandarin",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 0,
+    "input": {
+      "name": "东北农村马大叔【农村大叔记录生活】",
+      "url": "https://www.youtube.com/@food0",
+      "videoTitle": "花4萬元買來的房子迎來山楂大豐收，大叔高興壞了！ 摘下來做山楂多種吃法"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "95%",
+    "reason": "The channel's own description says it is run by a single elderly farmer from Northeast China who films his daily life, cooking, singing and farm work. Northeast China speaks Northeastern Mandarin, so the speech is almost certainly Mandarin, though I found no direct description of the audio itself.",
+    "searches": 1,
+    "usage": {
+      "input_tokens": 23026,
+      "output_tokens": 369
+    },
+    "seconds": 11.147
+  },
+  {
+    "name": "东北农村马大叔【农村大叔记录生活】",
+    "url": "https://www.youtube.com/@food0",
+    "category": "plain_mandarin",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 1,
+    "input": {
+      "name": "东北农村马大叔【农村大叔记录生活】",
+      "url": "https://www.youtube.com/@food0",
+      "videoTitle": "這麼多的大白菜，大叔做成酸菜，吃一年都會不壞"
+    },
+    "label": "mandarin",
+    "confidence": "medium",
+    "mandarin_share": "90%",
+    "reason": "The channel's own description says it's run by a single, older farmer from Northeast China (东北) who films his daily life, cooking, singing and farm work. People in rural Northeast China speak Northeastern Mandarin, so his speech is almost certainly Mandarin. I didn't find direct evidence about the audio itself, which is why confidence is medium.",
+    "searches": 1,
+    "usage": {
+      "input_tokens": 22312,
+      "output_tokens": 366
+    },
+    "seconds": 11.675
+  },
+  {
+    "name": "千千進食中",
+    "url": "https://www.youtube.com/@Chienseating",
+    "category": "romanised_name",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 0,
+    "input": {
+      "name": "千千進食中",
+      "url": "https://www.youtube.com/@Chienseating",
+      "videoTitle": "到萬里吃螃蟹 🦀 秋蟹季的海景海鮮大餐！🤤【千千進食中】"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "95%",
+    "reason": "千千進食中 (Chienseating) is a well-known Taiwanese food/mukbang YouTuber whose host, Chien Chien, narrates and talks to the camera in Taiwanese-accented Mandarin. The sample video is about eating crab in Wanli, New Taipei, which fits her usual Taiwan food content. I didn't run a search for this; the label rests on what I already know about the channel.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6684,
+      "output_tokens": 237
+    },
+    "seconds": 4.238
+  },
+  {
+    "name": "千千進食中",
+    "url": "https://www.youtube.com/@Chienseating",
+    "category": "romanised_name",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 1,
+    "input": {
+      "name": "千千進食中",
+      "url": "https://www.youtube.com/@Chienseating",
+      "videoTitle": "鮑魚拿來做沙拉？好市多也有酸種麵包？敢有好吃？【千千進食中】"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "90%",
+    "reason": "I didn't search for this; the answer is based on what I already know. 千千進食中 is run by 千千, a well-known Taiwanese food and eating-show YouTuber who narrates her videos in Taiwanese-accented Mandarin. Phrases like 敢有好吃 in the title only suggest an occasional Taiwanese Hokkien phrase.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6681,
+      "output_tokens": 264
+    },
+    "seconds": 3.887
+  },
+  {
+    "name": "Lazy Chinese - Comprehensible Input",
+    "url": "https://www.youtube.com/@Lazy-Chinese",
+    "category": "learning",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 0,
+    "input": {
+      "name": "Lazy Chinese - Comprehensible Input",
+      "url": "https://www.youtube.com/@Lazy-Chinese",
+      "videoTitle": "My life in Vietnam | Chinese for complete beginners | Comprehensible input"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "95%",
+    "reason": "Hacking Chinese and the Comprehensible Input Wiki describe Lazy Chinese as a comprehensible-input channel where the host speaks slow, clear Mandarin. They say she gives plenty of listening practice instead of long explanations in English.",
+    "searches": 1,
+    "usage": {
+      "input_tokens": 22620,
+      "output_tokens": 377
+    },
+    "seconds": 12.067
+  },
+  {
+    "name": "Lazy Chinese - Comprehensible Input",
+    "url": "https://www.youtube.com/@Lazy-Chinese",
+    "category": "learning",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 1,
+    "input": {
+      "name": "Lazy Chinese - Comprehensible Input",
+      "url": "https://www.youtube.com/@Lazy-Chinese",
+      "videoTitle": "Chinese Podcast: Can we be useless? @xiaoguachinese | Comprehensible input | Intermediate"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "95%",
+    "reason": "Lazy Chinese is a comprehensible-input podcast and YouTube channel hosted by Suqing, and a listener review says it is \"all in Mandarin.\" It uses slow, simple Mandarin stories and talks, with English appearing only in the transcripts and subtitles.",
+    "searches": 1,
+    "usage": {
+      "input_tokens": 22477,
+      "output_tokens": 462
+    },
+    "seconds": 13.128
+  },
+  {
+    "name": "Mandarin Corner",
+    "url": "https://www.youtube.com/@MandarinCorner",
+    "category": "learning",
+    "truth": "mixed",
+    "share": 0.67,
+    "run": 0,
+    "input": {
+      "name": "Mandarin Corner",
+      "url": "https://www.youtube.com/@MandarinCorner",
+      "videoTitle": "Belajar Gratis New HSK Level 1 Bab 5"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "85%",
+    "reason": "Mandarin Corner is a well-known Chinese-learning channel hosted by Eileen. Most of its videos are natural Mandarin speech, such as street interviews, vlogs and conversations, with Chinese, pinyin and English subtitles, and only some lessons include English explanations. The Indonesian video title appears to be a translated title, not the language spoken. This is based on what I already know about the channel; I did not run a search to confirm it.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6666,
+      "output_tokens": 330
+    },
+    "seconds": 4.399
+  },
+  {
+    "name": "Mandarin Corner",
+    "url": "https://www.youtube.com/@MandarinCorner",
+    "category": "learning",
+    "truth": "mixed",
+    "share": 0.67,
+    "run": 1,
+    "input": {
+      "name": "Mandarin Corner",
+      "url": "https://www.youtube.com/@MandarinCorner",
+      "videoTitle": "Belajar Gratis New HSK Level 1 Bab 5"
+    },
+    "label": "mandarin",
+    "confidence": "medium",
+    "mandarin_share": "80%",
+    "reason": "Mandarin Corner is a well-known Chinese-learning channel run by teacher Eileen. Most of its videos are natural Mandarin speech (vlogs, interviews, comprehensible-input lessons) with Chinese, pinyin and English subtitles; the Indonesian title is probably just a translated title. Some beginner HSK lessons include English explanations, but Mandarin seems to make up most of the speech. I answered from what I already know about the channel and did not run a web search to check.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6666,
+      "output_tokens": 362
+    },
+    "seconds": 5.063
+  },
+  {
+    "name": "Rose & Anzai Country Life",
+    "url": "https://www.youtube.com/@roseinchina1",
+    "category": "romanised_name",
+    "truth": "mandarin",
+    "share": 0.88,
+    "run": 0,
+    "input": {
+      "name": "Rose & Anzai Country Life",
+      "url": "https://www.youtube.com/@roseinchina1",
+      "videoTitle": "Saw the lights on at midnight and crept downstairs... caught my husband doing this"
+    },
+    "label": "mandarin",
+    "confidence": "medium",
+    "mandarin_share": "85%",
+    "reason": "The channel is run by Rose, a Ugandan woman who lives in rural Suichang, Zhejiang. Chinese and English news outlets (Chinanews, SCMP, Tide News) say she speaks fluent Mandarin in her videos, which first became popular on Douyin and Bilibili. The YouTube uploads appear to be the same videos with English titles, though some English or local-dialect speech with her family may be mixed in.",
+    "searches": 5,
+    "usage": {
+      "input_tokens": 51060,
+      "output_tokens": 1056
+    },
+    "seconds": 31.336
+  },
+  {
+    "name": "Blabla Chinese - Comprehensible Input",
+    "url": "https://www.youtube.com/@blablachinese7526",
+    "category": "learning",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 0,
+    "input": {
+      "name": "Blabla Chinese - Comprehensible Input",
+      "url": "https://www.youtube.com/@blablachinese7526",
+      "videoTitle": "Why I didn’t want to say hello"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "90%",
+    "reason": "Blabla Chinese is a comprehensible-input channel run by a host named Amber. Learner sites say its stories and explanations are given in Chinese, not English, and Hacking Chinese lists it with the channels that are in Chinese (Mandarin).",
+    "searches": 1,
+    "usage": {
+      "input_tokens": 22547,
+      "output_tokens": 397
+    },
+    "seconds": 11.976
+  },
+  {
+    "name": "Yoyo Chinese",
+    "url": "https://www.youtube.com/@YoyoChinese",
+    "category": "learning",
+    "truth": "mixed",
+    "share": 0.67,
+    "run": 0,
+    "input": {
+      "name": "Yoyo Chinese",
+      "url": "https://www.youtube.com/@YoyoChinese",
+      "videoTitle": "A Coffee Shop Inside the Forbidden City?! ☕🇨🇳 | Yoyo News | Learn Chinese"
+    },
+    "label": "mixed",
+    "confidence": "high",
+    "mandarin_share": "40%",
+    "reason": "Yoyo Chinese is a Mandarin-learning channel run by Yangyang Cheng. Its lessons are mostly explained in English, with Mandarin examples and dialogues mixed in. Series like Yoyo News probably have more Mandarin, but the channel overall is bilingual. This comes from what I already know about the channel; I didn't run a search.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6690,
+      "output_tokens": 151
+    },
+    "seconds": 3.34
+  },
+  {
+    "name": "Kiki 's Vlog  小日子",
+    "url": "https://www.youtube.com/@kikisvlog",
+    "category": "plain_mandarin",
+    "truth": "other",
+    "share": 0,
+    "run": 1,
+    "input": {
+      "name": "Kiki 's Vlog  小日子",
+      "url": "https://www.youtube.com/@kikisvlog",
+      "videoTitle": "Day2 🇯🇵感受東京人賞櫻日常錦糸公園😘中目黑🌸新宿御苑的春櫻・10天日本自由行 Kiki’s Vlog .57"
+    },
+    "label": "other",
+    "confidence": "low",
+    "mandarin_share": "10%",
+    "reason": "The channel's About page says it is run by Kiki, a mother of twins from Taipei, Taiwan. It uses Japanese-style '暮らしのvlog' hashtags, and these daily-life vlogs usually have music and on-screen text with little or no speech, so they likely contain little spoken Mandarin. I couldn't confirm the audio directly, so whatever speech there is may well be Taiwanese Mandarin.",
+    "searches": 6,
+    "usage": {
+      "input_tokens": 64825,
+      "output_tokens": 1218
+    },
+    "seconds": 43.638
+  },
+  {
+    "name": "小凱BO-Kai (Follow me to veg out)",
+    "url": "https://www.youtube.com/@naturesong1989",
+    "category": "plain_mandarin",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 1,
+    "input": {
+      "name": "小凱BO-Kai (Follow me to veg out)",
+      "url": "https://www.youtube.com/@naturesong1989",
+      "videoTitle": "快炒店的各種拿手好菜"
+    },
+    "label": "unknown",
+    "confidence": "low",
+    "mandarin_share": "unknown",
+    "reason": "I couldn't find anything about the channel's spoken audio. Its YouTube keywords (美食, 餐廳, Food Documentary, Production process, 製作過程) and the 快炒店 title suggest Taiwanese food-prep videos, which often have little or no narration, but no search result described the host, a voice-over or subtitles.",
+    "searches": 8,
+    "usage": {
+      "input_tokens": 101323,
+      "output_tokens": 1437
+    },
+    "seconds": 44.758
+  },
+  {
+    "name": "Blabla Chinese - Comprehensible Input",
+    "url": "https://www.youtube.com/@blablachinese7526",
+    "category": "learning",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 1,
+    "input": {
+      "name": "Blabla Chinese - Comprehensible Input",
+      "url": "https://www.youtube.com/@blablachinese7526",
+      "videoTitle": "How Wu Zetian became China’s only female emperor"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "95%",
+    "reason": "Hacking Chinese and a blog about Mandarin comprehensible-input channels both list Blabla Chinese as a channel for Mandarin learners. One describes its videos as levelled stories with explanations given in Chinese, not English, so the speech is almost all Mandarin.",
+    "searches": 1,
+    "usage": {
+      "input_tokens": 22450,
+      "output_tokens": 379
+    },
+    "seconds": 10.961
+  },
+  {
+    "name": "Yoyo Chinese",
+    "url": "https://www.youtube.com/@YoyoChinese",
+    "category": "learning",
+    "truth": "mixed",
+    "share": 0.67,
+    "run": 1,
+    "input": {
+      "name": "Yoyo Chinese",
+      "url": "https://www.youtube.com/@YoyoChinese",
+      "videoTitle": "Monkey King: Chinese or Japanese? Why Did He Journey West? | Chinese Culture Explained"
+    },
+    "label": "mixed",
+    "confidence": "medium",
+    "mandarin_share": "35%",
+    "reason": "Yoyo Chinese is a well-known Mandarin-learning channel run by Yangyang Cheng, who explains lessons and culture topics mainly in English with Mandarin examples and some Mandarin street interviews. A video like the Monkey King culture explainer is probably narrated mostly in English, so Mandarin is a substantial part of the channel's speech but not most of it.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6682,
+      "output_tokens": 285
+    },
+    "seconds": 4.018
+  },
+  {
+    "name": "Mandarin Blueprint",
+    "url": "https://www.youtube.com/@MandarinBlueprint",
+    "category": "learning",
+    "truth": "other",
+    "share": 0,
+    "run": 1,
+    "input": {
+      "name": "Mandarin Blueprint",
+      "url": "https://www.youtube.com/@MandarinBlueprint",
+      "videoTitle": "The Chinese Goal Framework That Survives Real Life"
+    },
+    "label": "other",
+    "confidence": "medium",
+    "mandarin_share": "15%",
+    "reason": "Mandarin Blueprint is a channel that teaches Mandarin. It is run by Phil Crimmins and Luke Neale, two native English speakers. Their videos are mostly English discussion of learning methods, such as goal-setting and memory techniques, with only occasional Mandarin examples or phrases, so Mandarin is well under 25% of the speech. This is based on what I already know about the channel, not on a search during this task.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6667,
+      "output_tokens": 171
+    },
+    "seconds": 3.782
+  },
+  {
+    "name": "Mandarin Blueprint",
+    "url": "https://www.youtube.com/@MandarinBlueprint",
+    "category": "learning",
+    "truth": "other",
+    "share": 0,
+    "run": 0,
+    "input": {
+      "name": "Mandarin Blueprint",
+      "url": "https://www.youtube.com/@MandarinBlueprint",
+      "videoTitle": "Stop Studying Chinese Without a Deadline"
+    },
+    "label": "other",
+    "confidence": "medium",
+    "mandarin_share": "15%",
+    "reason": "I didn't run any searches for this, so this answer is based on what I already know about the channel. Mandarin Blueprint is a channel about learning Chinese run by native English speakers Phil Crimmins and Luke Neale, and most videos, including ones like 'Stop Studying Chinese Without a Deadline', are English talks about study methods, with only occasional Mandarin examples or Chinese-language segments.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6665,
+      "output_tokens": 445
+    },
+    "seconds": 5.567
+  },
+  {
+    "name": "小凱BO-Kai (Follow me to veg out)",
+    "url": "https://www.youtube.com/@naturesong1989",
+    "category": "plain_mandarin",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 0,
+    "input": {
+      "name": "小凱BO-Kai (Follow me to veg out)",
+      "url": "https://www.youtube.com/@naturesong1989",
+      "videoTitle": "一台60年骨董級老推車的烤玉米！！！"
+    },
+    "label": "unknown",
+    "confidence": "low",
+    "mandarin_share": "unknown",
+    "reason": "The channel's keywords (美食, Food Documentary, 製作過程, 必吃美食) and the video title suggest a Taiwanese street-food channel, and channels like this often show only vendor footage with ambient sound and little or no narration. I found no source that describes the spoken audio, so I can't tell whether the speech is Mandarin, Taiwanese Hokkien, or there is almost none.",
+    "searches": 8,
+    "usage": {
+      "input_tokens": 86055,
+      "output_tokens": 1390
+    },
+    "seconds": 51.595
+  },
+  {
+    "name": "ChinesePod",
+    "url": "https://www.youtube.com/@ChinesePodTV",
+    "category": "learning",
+    "truth": "mixed",
+    "share": 0.67,
+    "run": 0,
+    "input": {
+      "name": "ChinesePod",
+      "url": "https://www.youtube.com/@ChinesePodTV",
+      "videoTitle": "Elementary | Where Did You Learn Chinese?"
+    },
+    "label": "mixed",
+    "confidence": "medium",
+    "mandarin_share": "45%",
+    "reason": "ChinesePod is a well-known Shanghai-founded Mandarin-learning service. Based on what I already know about it (I didn't run a search), its YouTube lessons, like the Elementary-level 'Where Did You Learn Chinese?', mix Mandarin example dialogues with explanations from hosts speaking mostly English. That puts Mandarin at a substantial but partial share of the speech.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6661,
+      "output_tokens": 301
+    },
+    "seconds": 4.051
+  },
+  {
+    "name": "ChinesePod",
+    "url": "https://www.youtube.com/@ChinesePodTV",
+    "category": "learning",
+    "truth": "mixed",
+    "share": 0.67,
+    "run": 1,
+    "input": {
+      "name": "ChinesePod",
+      "url": "https://www.youtube.com/@ChinesePodTV",
+      "videoTitle": "Intermediate | A Disappointing Delivery"
+    },
+    "label": "mixed",
+    "confidence": "high",
+    "mandarin_share": "50%",
+    "reason": "ChinesePod is a well-known Shanghai-based Mandarin-learning service. Its lessons play Mandarin dialogues, and hosts such as Jenny Zhu and John Pasden explain them in a mix of English and Mandarin. Lower levels lean toward English and higher levels toward Mandarin, so overall the speech is bilingual.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6659,
+      "output_tokens": 261
+    },
+    "seconds": 3.989
+  },
+  {
+    "name": "Learn Cantonese with CantoneseClass101.com",
+    "url": "https://www.youtube.com/@CantoneseClass101",
+    "category": "learning",
+    "truth": "other",
+    "share": 0,
+    "run": 0,
+    "input": {
+      "name": "Learn Cantonese with CantoneseClass101.com",
+      "url": "https://www.youtube.com/@CantoneseClass101",
+      "videoTitle": "Listening Practice for Advanced Cantonese Learners"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "0%",
+    "reason": "CantoneseClass101 belongs to the Innovative Language family and teaches Cantonese. Its videos mix Cantonese dialogue with English explanations, so they contain little or no Mandarin. The sample video title, about listening practice for advanced Cantonese learners, fits that pattern.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6675,
+      "output_tokens": 127
+    },
+    "seconds": 3.002
+  },
+  {
+    "name": "我係多師奶 C-Lady",
+    "url": "https://www.youtube.com/@c-lady",
+    "category": "cantonese",
+    "truth": "other",
+    "share": 0,
+    "run": 0,
+    "error": "Error: oEmbed 401"
+  },
+  {
+    "name": "我係多師奶 C-Lady",
+    "url": "https://www.youtube.com/@c-lady",
+    "category": "cantonese",
+    "truth": "other",
+    "share": 0,
+    "run": 1,
+    "error": "Error: oEmbed 401"
+  },
+  {
+    "name": "Rose & Anzai Country Life",
+    "url": "https://www.youtube.com/@roseinchina1",
+    "category": "romanised_name",
+    "truth": "mandarin",
+    "share": 0.88,
+    "run": 1,
+    "input": {
+      "name": "Rose & Anzai Country Life",
+      "url": "https://www.youtube.com/@roseinchina1",
+      "videoTitle": "DaGe just had a heart stent surgery, my husband went into town to pick up his meds💗"
+    },
+    "label": "mandarin",
+    "confidence": "medium",
+    "mandarin_share": "80%",
+    "reason": "Rose is a Ugandan woman who lives in a village in Zhejiang and cross-posts the same content from her Douyin, Bilibili and Xiaohongshu accounts. Chinese articles (The Paper, Zhihu) say she talks in fluent Mandarin in her videos, with her Chinese husband and relatives, so the English titles are likely translations. Some speech is probably not Mandarin, such as her Uganda trip series and any local dialect from relatives.",
+    "searches": 5,
+    "usage": {
+      "input_tokens": 86898,
+      "output_tokens": 1495
+    },
+    "seconds": 43.707
+  },
+  {
+    "name": "毛記電視",
+    "url": "https://www.youtube.com/@100MOSTHongKong",
+    "category": "cantonese",
+    "truth": "other",
+    "share": 0,
+    "run": 0,
+    "input": {
+      "name": "毛記電視",
+      "url": "https://www.youtube.com/@100MOSTHongKong",
+      "videoTitle": "東方昇間房原來咁亂🤯垃圾缸瞬間變身豪宅！！！辦公室內竟然有張床瞓覺🤣《國家級任務》 第215集Office大改造"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "0%",
+    "reason": "毛記電視 (TVMost) is a Hong Kong comedy media company. Its videos are in Cantonese, and the sample title uses Cantonese words like 咁, 瞓覺 and 原來咁亂. Spoken Mandarin is rare on the channel.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6714,
+      "output_tokens": 121
+    },
+    "seconds": 2.453
+  },
+  {
+    "name": "Learn Cantonese with CantoneseClass101.com",
+    "url": "https://www.youtube.com/@CantoneseClass101",
+    "category": "learning",
+    "truth": "other",
+    "share": 0,
+    "run": 1,
+    "input": {
+      "name": "Learn Cantonese with CantoneseClass101.com",
+      "url": "https://www.youtube.com/@CantoneseClass101",
+      "videoTitle": "Quiz | 390 Cantonese Words You'll Use Every Day - Basic Vocabulary #79"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "0%",
+    "reason": "CantoneseClass101 belongs to Innovative Language's series of courses that teach in English. Its videos teach Cantonese vocabulary with English explanations and Cantonese pronunciation, so there is essentially no spoken Mandarin. This is based on what is known about the channel; I did not search to confirm it.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6692,
+      "output_tokens": 133
+    },
+    "seconds": 3.038
+  },
+  {
+    "name": "毛記電視",
+    "url": "https://www.youtube.com/@100MOSTHongKong",
+    "category": "cantonese",
+    "truth": "other",
+    "share": 0,
+    "run": 1,
+    "input": {
+      "name": "毛記電視",
+      "url": "https://www.youtube.com/@100MOSTHongKong",
+      "videoTitle": "《圍爐取戀》😴瞓瞓吓，男友呀爸走入房摸我⁉️｜..,,▉+末代mk愛情故事×°+!◆｜男友多次偷食💔再原諒｜`''●MK滴成長 |!★｜"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "0%",
+    "reason": "毛記電視 (TVMost) is a Hong Kong media company whose YouTube videos are in Cantonese. The video title uses written Cantonese (瞓瞓吓, 呀爸, 滴) and Hong Kong slang (MK). I recognised the channel from what I already know and did not search for it.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6736,
+      "output_tokens": 133
+    },
+    "seconds": 3.1
+  },
+  {
+    "name": "Kiki 's Vlog  小日子",
+    "url": "https://www.youtube.com/@kikisvlog",
+    "category": "plain_mandarin",
+    "truth": "other",
+    "share": 0,
+    "run": 0,
+    "input": {
+      "name": "Kiki 's Vlog  小日子",
+      "url": "https://www.youtube.com/@kikisvlog",
+      "videoTitle": "Day3從東京移動🌈河口湖・ 開箱陽台房『富士急行線』貼近富士山腳下・嚐吉田烏龍麵與天婦羅・日本10天自由行 KiKi’s Vlog .58"
+    },
+    "label": "unknown",
+    "confidence": "low",
+    "mandarin_share": "unknown",
+    "reason": "The channel is run by KIKI, a Taiwanese mother of twins who posts Japanese-style daily-life and travel vlogs (Japanese hashtags like #暮らしのvlog, captions in Traditional Chinese). Vlogs in this style are often silent apart from music and on-screen text, and I couldn't find anything showing whether she speaks, or in which language, so I can't tell how much spoken Mandarin there is.",
+    "searches": 4,
+    "usage": {
+      "input_tokens": 131043,
+      "output_tokens": 1730
+    },
+    "seconds": 55.293
+  },
+  {
+    "name": "碌斌深夜粵語廣播",
+    "url": "https://www.youtube.com/@lubinlost",
+    "category": "cantonese",
+    "truth": "other",
+    "share": 0,
+    "run": 1,
+    "input": {
+      "name": "碌斌深夜粵語廣播",
+      "url": "https://www.youtube.com/@lubinlost",
+      "videoTitle": "曾轟動香港的馬尼拉人質事件：為何每一步行動都錯？ 為何總統露出詭異微笑？ 誰該為八條港人性命負責？| 半夜怪談劇場"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "0%",
+    "reason": "The channel name literally means 'Lubin's Late-Night Cantonese Broadcast' (粵語廣播), and its content is Hong Kong-focused storytelling (for example, the Manila hostage crisis and Hong Kong victims), so the speech is Cantonese. I didn't run a search; this rests only on the channel name and the sample title.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6720,
+      "output_tokens": 145
+    },
+    "seconds": 2.882
+  },
+  {
+    "name": "MY FM 好玩",
+    "url": "https://www.youtube.com/@MY-malaysia",
+    "category": "cantonese",
+    "truth": "mixed",
+    "share": 0.38,
+    "run": 1,
+    "input": {
+      "name": "MY FM 好玩",
+      "url": "https://www.youtube.com/@MY-malaysia",
+      "videoTitle": "Yoon吴家润直接怼老师『不会唱歌』⁉️ 大头Aki和秉昀因队长身份压力大爆哭😭 林德荣感同身受而走心落泪❗【MY FM BIG SHOW 我容易吗 EP 3】"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "85%",
+    "reason": "MY FM is Astro's Malaysian Chinese-language radio station, which broadcasts mainly in Mandarin. Its YouTube content, such as the MY FM BIG SHOW with Malaysian Chinese artists like 林德荣, is mostly in Malaysian-accented Mandarin with occasional Cantonese or English mixed in.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6737,
+      "output_tokens": 150
+    },
+    "seconds": 2.942
+  },
+  {
+    "name": "MY FM 好玩",
+    "url": "https://www.youtube.com/@MY-malaysia",
+    "category": "cantonese",
+    "truth": "mixed",
+    "share": 0.38,
+    "run": 0,
+    "input": {
+      "name": "MY FM 好玩",
+      "url": "https://www.youtube.com/@MY-malaysia",
+      "videoTitle": "Maq 赖铭权、卡卡演出前受伤流血🩸 培永、彤彤熬夜抢救内容🔥BIG SHOW 前夕状况连连⁉️【MY FM BIG SHOW 我容易吗 EP 4】"
+    },
+    "label": "mandarin",
+    "confidence": "medium",
+    "mandarin_share": "80%",
+    "reason": "MY FM is a Malaysian Chinese radio station run by Astro. Based on what I already know about it (I didn't run a search), its DJs, such as 培永, 彤彤 and 卡卡, host mainly in Malaysian Mandarin, with some Cantonese, English and Malay mixed in. The video titles are in Simplified Chinese with Mandarin-style wording, which fits this but is only weak evidence.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6732,
+      "output_tokens": 371
+    },
+    "seconds": 4.612
+  },
+  {
+    "name": "公視台語台",
+    "url": "https://www.youtube.com/@ptstaigitai",
+    "category": "hokkien_hakka_wu",
+    "truth": "other",
+    "share": 0,
+    "run": 0,
+    "input": {
+      "name": "公視台語台",
+      "url": "https://www.youtube.com/@ptstaigitai",
+      "videoTitle": "《阿松與阿暖》EP54｜你就是我的完整"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "5%",
+    "reason": "公視台語台 (PTS Taigi) is Taiwan Public Television's channel dedicated to Taiwanese Hokkien, and its dramas, such as 《阿松與阿暖》, are produced mainly in Taiwanese Hokkien. Some Mandarin turns up, but it is a small share of the speech. This comes from what is known about the broadcaster; I did not run a web search for this channel.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6665,
+      "output_tokens": 165
+    },
+    "seconds": 3.407
+  },
+  {
+    "name": "碌斌深夜粵語廣播",
+    "url": "https://www.youtube.com/@lubinlost",
+    "category": "cantonese",
+    "truth": "other",
+    "share": 0,
+    "run": 0,
+    "input": {
+      "name": "碌斌深夜粵語廣播",
+      "url": "https://www.youtube.com/@lubinlost",
+      "videoTitle": "把演唱會當祭祀，真能借命改運？！ 盤點那些網傳“別有用心”的演唱會 | 半夜怪談劇場"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "0%",
+    "reason": "The channel name says it is a Cantonese (粵語) broadcast. Its YouTube description calls the host a professional Cantonese voice actor for film and ads, and it is written in colloquial Cantonese (我嘅故事頻道, 訂閱啦), so the storytelling is in Cantonese, not Mandarin.",
+    "searches": 1,
+    "usage": {
+      "input_tokens": 22498,
+      "output_tokens": 422
+    },
+    "seconds": 12.226
+  },
+  {
+    "name": "公視台語台",
+    "url": "https://www.youtube.com/@ptstaigitai",
+    "category": "hokkien_hakka_wu",
+    "truth": "other",
+    "share": 0,
+    "run": 1,
+    "input": {
+      "name": "公視台語台",
+      "url": "https://www.youtube.com/@ptstaigitai",
+      "videoTitle": "《阿松與阿暖》EP53｜你來佮我冤家好無"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "5%",
+    "reason": "公視台語台 (PTS Taigi) is Taiwan Public Television's channel for Taiwanese Hokkien, and its programmes are mainly made in Taigi. The sample title also uses Taiwanese Hokkien wording (佮, 冤家, 好無), which points to a Taigi drama rather than a Mandarin one.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6668,
+      "output_tokens": 143
+    },
+    "seconds": 2.783
+  },
+  {
+    "name": "吳儂軟語 Wu Chinese",
+    "url": "https://www.youtube.com/@WuChinese",
+    "category": "hokkien_hakka_wu",
+    "truth": "other",
+    "share": 0.13,
+    "run": 1,
+    "error": "Error: oEmbed 401"
+  },
+  {
+    "name": "神經俠侶 - SG Couple",
+    "url": "https://www.youtube.com/@SGCouple_Jo_Hiromi",
+    "category": "cantonese",
+    "truth": "other",
+    "share": 0,
+    "run": 1,
+    "input": {
+      "name": "神經俠侶 - SG Couple",
+      "url": "https://www.youtube.com/@SGCouple_Jo_Hiromi",
+      "videoTitle": "【EP12】《Bar Talk》│Sunk Cost│Joseph Lam│Sebastian Leung主持：林作、Sebastian(Seb)"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "5%",
+    "reason": "The channel is a podcast hosted by Joseph Lam (林作), a Hong Kong media personality, with Hiromi Wada and Sebastian Leung. Its episode titles use Cantonese wording such as 「做人都係惡啲好」, so the speech is almost certainly Cantonese rather than Mandarin.",
+    "searches": 1,
+    "usage": {
+      "input_tokens": 22841,
+      "output_tokens": 436
+    },
+    "seconds": 10.478
+  },
+  {
+    "name": "Taiwanese Mandarin With Miss Lin",
+    "url": "https://www.youtube.com/@MandarinWithMissLin",
+    "category": "learning",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 1,
+    "input": {
+      "name": "Taiwanese Mandarin With Miss Lin",
+      "url": "https://www.youtube.com/@MandarinWithMissLin",
+      "videoTitle": "Dogs = Kids? Dog Culture un Taiwan| Chengyu idioms in Real Conversation | Taiwanese Mandarin"
+    },
+    "label": "mandarin",
+    "confidence": "medium",
+    "mandarin_share": "75%",
+    "reason": "Miss Lin is a Mandarin teacher born and raised in Taipei. Her podcast and Patreon focus on Taiwanese Mandarin listening practice and real conversation, and many of her videos are labelled 'ONLY IN CHINESE' with subtitles. Some lesson-style videos probably explain things in English, so a fair share of the speech may be English, which keeps my confidence at medium.",
+    "searches": 3,
+    "usage": {
+      "input_tokens": 34696,
+      "output_tokens": 825
+    },
+    "seconds": 22.45
+  },
+  {
+    "name": "神經俠侶 - SG Couple",
+    "url": "https://www.youtube.com/@SGCouple_Jo_Hiromi",
+    "category": "cantonese",
+    "truth": "other",
+    "share": 0,
+    "run": 0,
+    "input": {
+      "name": "神經俠侶 - SG Couple",
+      "url": "https://www.youtube.com/@SGCouple_Jo_Hiromi",
+      "videoTitle": "【EP64】《神經俠侶》SG Couple│樹敵│Sow Enmity│Joseph Lam│Hiromi Wada"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "5%",
+    "reason": "The podcast is hosted by Hong Kong commentator Joseph Lam (林作) and Hiromi Wada (和田裕美), a Japanese actress based in Hong Kong who speaks Cantonese. Episode titles use written Cantonese such as '搵錢為甚麼', so the speech is almost certainly Cantonese, not Mandarin.",
+    "searches": 1,
+    "usage": {
+      "input_tokens": 23075,
+      "output_tokens": 537
+    },
+    "seconds": 13.313
+  },
+  {
+    "name": "客家電視 HakkaTV",
+    "url": "https://www.youtube.com/@hakkatv",
+    "category": "hokkien_hakka_wu",
+    "truth": "mixed",
+    "share": 0.6,
+    "run": 0,
+    "input": {
+      "name": "客家電視 HakkaTV",
+      "url": "https://www.youtube.com/@hakkatv",
+      "videoTitle": "一場不一樣的婚禮《膠有囍事》x 楊淑喻 彭筱茵 彭起夫｜芹報布告欄｜2026《福氣來了》EP76"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "15%",
+    "reason": "Hakka TV (客家電視台) is Taiwan's public Hakka-language broadcaster under PTS, and it is required to air its programming mainly in Hakka. Shows like 《福氣來了》 are Hakka-language variety programs, so Mandarin only turns up sometimes, in interviews or with guests. I didn't run a web search; this is based on what I already know about the broadcaster.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6710,
+      "output_tokens": 273
+    },
+    "seconds": 3.784
+  },
+  {
+    "name": "客家電視 HakkaTV",
+    "url": "https://www.youtube.com/@hakkatv",
+    "category": "hokkien_hakka_wu",
+    "truth": "mixed",
+    "share": 0.6,
+    "run": 1,
+    "input": {
+      "name": "客家電視 HakkaTV",
+      "url": "https://www.youtube.com/@hakkatv",
+      "videoTitle": "【精彩內容搶先看】守護環境有規矩 共同購買共同承擔 #彭桂枝《#誰來作客》EP117"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "15%",
+    "reason": "Hakka TV (客家電視台) is Taiwan's public broadcaster whose stated purpose is Hakka-language programming, so most hosts and shows speak Taiwanese Hakka. Some guests on talk shows like 《誰來作客》 speak Mandarin, but Mandarin is a minority of the speech on the channel.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6695,
+      "output_tokens": 260
+    },
+    "seconds": 3.294
+  },
+  {
+    "name": "台南妹仔教你講台語",
+    "url": "https://www.youtube.com/@a_yo__oy_a",
+    "category": "hokkien_hakka_wu",
+    "truth": "other",
+    "share": 0,
+    "run": 1,
+    "input": {
+      "name": "台南妹仔教你講台語",
+      "url": "https://www.youtube.com/@a_yo__oy_a",
+      "videoTitle": "來台南想買特別的紀念品？開箱巷仔Niau的家！｜台南妹仔ayo"
+    },
+    "label": "other",
+    "confidence": "medium",
+    "mandarin_share": "25%",
+    "reason": "I found that the channel is run by AYO, a host from Tainan. She bills herself as a Taiwanese–Mandarin bilingual host, also hosts a show on PTS's Taiwanese-language channel, and makes videos to teach and promote Taiwanese Hokkien. Her video descriptions are largely written in Taiwanese Hokkien, so the speech is probably mostly Hokkien, though I couldn't hear the audio and some explanations may be in Mandarin.",
+    "searches": 1,
+    "usage": {
+      "input_tokens": 23423,
+      "output_tokens": 649
+    },
+    "seconds": 15.508
+  },
+  {
+    "name": "鳥人間 中国史三昧",
+    "url": "https://www.youtube.com/@c-history",
+    "category": "japanese",
+    "truth": "other",
+    "share": 0,
+    "run": 0,
+    "input": {
+      "name": "鳥人間 中国史三昧",
+      "url": "https://www.youtube.com/@c-history",
+      "videoTitle": "中国史上唯一の女帝　武則天は名君なのか　【唐　武周】【ゆっくり解説】"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "0%",
+    "reason": "The video title is written in Japanese (it uses the particles の and なのか) and is tagged ゆっくり解説. That tag marks a Japanese video format narrated by Japanese text-to-speech voices. The channel name 鳥人間 中国史三昧 is also Japanese, so the speech is Japanese commentary about Chinese history, not Mandarin.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6685,
+      "output_tokens": 149
+    },
+    "seconds": 2.333
+  },
+  {
+    "name": "鳥人間 中国史三昧",
+    "url": "https://www.youtube.com/@c-history",
+    "category": "japanese",
+    "truth": "other",
+    "share": 0,
+    "run": 1,
+    "input": {
+      "name": "鳥人間 中国史三昧",
+      "url": "https://www.youtube.com/@c-history",
+      "videoTitle": "四千年前の「謎の巨大要塞都市」石峁[シーマオ]遺跡とは何か　【中国先史　新石器時代】【ゆっくり解説】"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "0%",
+    "reason": "The video title is in Japanese and uses the 'ゆっくり解説' (Yukkuri commentary) format, so the narration is Japanese text-to-speech about Chinese history. Nothing points to spoken Mandarin. I based this on the channel name and video title and did not search further.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6705,
+      "output_tokens": 123
+    },
+    "seconds": 2.342
+  },
+  {
+    "name": "日本経済新聞",
+    "url": "https://www.youtube.com/@nikkei",
+    "category": "japanese",
+    "truth": "other",
+    "share": 0,
+    "run": 0,
+    "input": {
+      "name": "日本経済新聞",
+      "url": "https://www.youtube.com/@nikkei",
+      "videoTitle": "【GMO不正アクセスで謝罪】GMO熊谷社長、子会社の指摘「生かせず」"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "0%",
+    "reason": "This is the official YouTube channel of Nihon Keizai Shimbun (Nikkei), a major Japanese business newspaper. Its videos are Japanese-language news reports, like the GMO press-conference clip in the example title. I didn't need a web search for this; it's a well-known Japanese news outlet and there's no sign of Mandarin speech.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6681,
+      "output_tokens": 146
+    },
+    "seconds": 2.549
+  },
+  {
+    "name": "日本経済新聞",
+    "url": "https://www.youtube.com/@nikkei",
+    "category": "japanese",
+    "truth": "other",
+    "share": 0,
+    "run": 1,
+    "input": {
+      "name": "日本経済新聞",
+      "url": "https://www.youtube.com/@nikkei",
+      "videoTitle": "【中国経済の真相】習近平氏は4期目に向けどう動く？党大会まで1年の中国政治を読む【NIKKEI LIVE】"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "0%",
+    "reason": "日本経済新聞 (Nikkei) is Japan's major business newspaper, and its official YouTube channel puts out Japanese-language news and NIKKEI LIVE commentary. The sample video's title is in Japanese (it uses kana), so the speech is Japanese even though the topic is Chinese politics.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6695,
+      "output_tokens": 134
+    },
+    "seconds": 2.998
+  },
+  {
+    "name": "吳儂軟語 Wu Chinese",
+    "url": "https://www.youtube.com/@WuChinese",
+    "category": "hokkien_hakka_wu",
+    "truth": "other",
+    "share": 0.13,
+    "run": 0,
+    "input": {
+      "name": "吳儂軟語 Wu Chinese",
+      "url": "https://www.youtube.com/@WuChinese",
+      "videoTitle": "上海南汇哭嫁 Shanghai Nanhui Crying Marriage"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "5%",
+    "reason": "The channel's YouTube description says it is about Wu Chinese (吴语), the language group spoken in Shanghai, Zhejiang and southern Jiangsu. The sample video, Nanhui crying-marriage songs from Shanghai, is local Wu folk material, so the speech is most likely Wu dialects rather than Mandarin.",
+    "searches": 1,
+    "usage": {
+      "input_tokens": 22183,
+      "output_tokens": 442
+    },
+    "seconds": 12.016
+  },
+  {
+    "name": "NAKATA UNIVERSITY ",
+    "url": "https://www.youtube.com/@NKTofficial",
+    "category": "japanese",
+    "truth": "other",
+    "share": 0,
+    "run": 0,
+    "input": {
+      "name": "中田敦彦のYouTube大学 - NAKATA UNIVERSITY",
+      "url": "https://www.youtube.com/@NKTofficial",
+      "videoTitle": "【消費減税】食料品8%→1%で物価高から救われる？2年限定の裏側と高市首相の変節"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "0%",
+    "reason": "Nakata Atsuhiko is a Japanese comedian (Oriental Radio), and his YouTube University channel features him giving lectures in Japanese. The sample title, about a consumption tax cut and Prime Minister Takaichi, is a Japanese topic written in Japanese, so the channel has essentially no Mandarin speech.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6704,
+      "output_tokens": 142
+    },
+    "seconds": 2.463
+  },
+  {
+    "name": "serpentza",
+    "url": "https://www.youtube.com/@serpentza",
+    "category": "english_about_china",
+    "truth": "other",
+    "share": 0,
+    "run": 0,
+    "input": {
+      "name": "serpentza",
+      "url": "https://www.youtube.com/@serpentza",
+      "videoTitle": "She's Faking it! China's Disturbing New Trend - This Won't End Well"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "3%",
+    "reason": "serpentza is run by Winston Sterzel, a South African vlogger who used to live in China. He hosts his videos in English and talks about China, as in this video title. Any Mandarin is limited to occasional clips or phrases.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6663,
+      "output_tokens": 104
+    },
+    "seconds": 1.882
+  },
+  {
+    "name": "台南妹仔教你講台語",
+    "url": "https://www.youtube.com/@a_yo__oy_a",
+    "category": "hokkien_hakka_wu",
+    "truth": "other",
+    "share": 0,
+    "run": 0,
+    "input": {
+      "name": "台南妹仔教你講台語",
+      "url": "https://www.youtube.com/@a_yo__oy_a",
+      "videoTitle": "你愛面對的干焦你家己（你要面對的只有你自己）"
+    },
+    "label": "other",
+    "confidence": "medium",
+    "mandarin_share": "20%",
+    "reason": "The host, Ayo (周佳穎) from Tainan, runs a channel that promotes and teaches Taiwanese Hokkien, and press coverage (udn, BIOS monthly, Liberty Times) says she makes her videos and hosts in Taiwanese. She describes herself as a Taiwanese–Mandarin bilingual host, and her descriptions mix the two, so some lessons likely explain in Mandarin, but most of the speech appears to be Taiwanese Hokkien.",
+    "searches": 4,
+    "usage": {
+      "input_tokens": 45649,
+      "output_tokens": 998
+    },
+    "seconds": 22.291
+  },
+  {
+    "name": "NAKATA UNIVERSITY ",
+    "url": "https://www.youtube.com/@NKTofficial",
+    "category": "japanese",
+    "truth": "other",
+    "share": 0,
+    "run": 1,
+    "input": {
+      "name": "中田敦彦のYouTube大学 - NAKATA UNIVERSITY",
+      "url": "https://www.youtube.com/@NKTofficial",
+      "videoTitle": "【簗農水大臣辞任】辞任では終わらない！「予算と選挙」をめぐる公職選挙法違反疑惑"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "0%",
+    "reason": "中田敦彦のYouTube大学 is the educational channel of Atsuhiko Nakata, a Japanese comedian from the duo Oriental Radio. He gives his lectures in Japanese, and the video title is in Japanese too (it uses kana such as の and では), so there is essentially no Mandarin speech.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6711,
+      "output_tokens": 136
+    },
+    "seconds": 3.156
+  },
+  {
+    "name": "serpentza",
+    "url": "https://www.youtube.com/@serpentza",
+    "category": "english_about_china",
+    "truth": "other",
+    "share": 0,
+    "run": 1,
+    "input": {
+      "name": "serpentza",
+      "url": "https://www.youtube.com/@serpentza",
+      "videoTitle": "In China, If You See this Symbol Your Life is Over"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "5%",
+    "reason": "SerpentZA is run by Winston Sterzel, a South African who lived in Shenzhen. His videos are commentary and vlogs about China in English, and only short Mandarin clips or conversations appear in them. I'm going on what I already know about this well-known channel, since I didn't run any searches for this answer.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6655,
+      "output_tokens": 131
+    },
+    "seconds": 2.494
+  },
+  {
+    "name": "Chinese Cooking Demystified",
+    "url": "https://www.youtube.com/@ChineseCookingDemystified",
+    "category": "english_about_china",
+    "truth": "other",
+    "share": 0,
+    "run": 0,
+    "input": {
+      "name": "Chinese Cooking Demystified",
+      "url": "https://www.youtube.com/@ChineseCookingDemystified",
+      "videoTitle": "The 30-Spice Noodle Soup Nobody Will Teach You"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "5%",
+    "reason": "Chinese Cooking Demystified is run by Steph and Chris, a couple based in Shenzhen. The narration and commentary are in English, and Mandarin only comes up now and then in short clips of vendors or in dish names.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6676,
+      "output_tokens": 105
+    },
+    "seconds": 2.636
+  },
+  {
+    "name": "mrnigelng",
+    "url": "https://www.youtube.com/@mrnigelng",
+    "category": "english_about_china",
+    "truth": "other",
+    "share": 0,
+    "run": 1,
+    "input": {
+      "name": "mrnigelng",
+      "url": "https://www.youtube.com/@mrnigelng",
+      "videoTitle": "Uncle Roger Hate Sushi Pizza (Kitchen Nightmares)"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "2%",
+    "reason": "mrnigelng belongs to Nigel Ng, the Malaysian comedian who plays Uncle Roger. His videos are reactions and stand-up in English, delivered in an exaggerated Malaysian-Chinese accent, and the only Mandarin is the odd word or phrase used as a joke.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6671,
+      "output_tokens": 131
+    },
+    "seconds": 2.39
+  },
+  {
+    "name": "mrnigelng",
+    "url": "https://www.youtube.com/@mrnigelng",
+    "category": "english_about_china",
+    "truth": "other",
+    "share": 0,
+    "run": 0,
+    "input": {
+      "name": "mrnigelng",
+      "url": "https://www.youtube.com/@mrnigelng",
+      "videoTitle": "Uncle Roger Review Nick DiGiovanni Korean Fried Chicken"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "2%",
+    "reason": "mrnigelng is Nigel Ng, a Malaysian comedian who plays Uncle Roger. His videos, including food reviews like this Nick DiGiovanni one, are in English with a mock Chinese-Malaysian accent and only the odd Chinese phrase such as 'haiyaa'.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6670,
+      "output_tokens": 132
+    },
+    "seconds": 3.009
+  },
+  {
+    "name": "Chinese Cooking Demystified",
+    "url": "https://www.youtube.com/@ChineseCookingDemystified",
+    "category": "english_about_china",
+    "truth": "other",
+    "share": 0,
+    "run": 1,
+    "input": {
+      "name": "Chinese Cooking Demystified",
+      "url": "https://www.youtube.com/@ChineseCookingDemystified",
+      "videoTitle": "What was Sichuan Food before the chili pepper?"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "5%",
+    "reason": "Chinese Cooking Demystified is run by Chris Thompson, an American, and Steph Li, who is from Shenzhen. Their videos are narrated in English, so only the odd Chinese dish name or short clip is in Mandarin. I'm going on what I already know about this well-known channel; I didn't run a search to check it.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6669,
+      "output_tokens": 138
+    },
+    "seconds": 3.081
+  },
+  {
+    "name": "Strictly Dumpling",
+    "url": "https://www.youtube.com/@strictlydumpling",
+    "category": "english_about_china",
+    "truth": "other",
+    "share": 0,
+    "run": 0,
+    "input": {
+      "name": "Strictly Dumpling",
+      "url": "https://www.youtube.com/@strictlydumpling",
+      "videoTitle": "INSIDE Paris’s LARGEST All You Can Eat SUSHI BUFFET! | Was It Worth It? 🍣"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "2%",
+    "reason": "Strictly Dumpling is Mike Chen's food channel. Mike Chen is a Chinese-American YouTuber based in the US, and he narrates his videos in English. The sample title, about a Paris sushi buffet, fits his usual English-language food and travel content, and he only says the occasional Mandarin phrase.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6691,
+      "output_tokens": 136
+    },
+    "seconds": 2.492
+  },
+  {
+    "name": "Strictly Dumpling",
+    "url": "https://www.youtube.com/@strictlydumpling",
+    "category": "english_about_china",
+    "truth": "other",
+    "share": 0,
+    "run": 1,
+    "input": {
+      "name": "Strictly Dumpling",
+      "url": "https://www.youtube.com/@strictlydumpling",
+      "videoTitle": "Best KING CRAB Buffet EVER! Japan’s TOP 5 King Crab Buffets—RANKED! ⭐"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "0%",
+    "reason": "Strictly Dumpling is Mike Chen's well-known food channel. He's a Chinese-American YouTuber based in the US, and he narrates his videos in English. The sample video, a ranking of Japanese king crab buffets, matches his usual English-language food reviews.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6690,
+      "output_tokens": 120
+    },
+    "seconds": 3.353
+  },
+  {
+    "name": "Xiaomanyc 小马在纽约",
+    "url": "https://www.youtube.com/@xiaomanyc",
+    "category": "bilingual",
+    "truth": "other",
+    "share": 0,
+    "run": 1,
+    "input": {
+      "name": "Xiaomanyc 小马在纽约",
+      "url": "https://www.youtube.com/@xiaomanyc",
+      "videoTitle": "I Took an Amazon Tribesman to the World’s Most Futuristic City"
+    },
+    "label": "mixed",
+    "confidence": "medium",
+    "mandarin_share": "30%",
+    "reason": "I didn't run a search; this is based on what I already know about the channel. Xiaomanyc is run by Arieh Smith, an American who learns many languages. His videos are narrated in English and show him speaking to people in other languages, and Mandarin has always been a large share of that, especially in his early videos and the China ones, like this one about a futuristic city.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6677,
+      "output_tokens": 372
+    },
+    "seconds": 4.991
+  },
+  {
+    "name": "Xiaomanyc 小马在纽约",
+    "url": "https://www.youtube.com/@xiaomanyc",
+    "category": "bilingual",
+    "truth": "other",
+    "share": 0,
+    "run": 0,
+    "input": {
+      "name": "Xiaomanyc 小马在纽约",
+      "url": "https://www.youtube.com/@xiaomanyc",
+      "videoTitle": "I Surprised Bride and Groom by Marrying Them in Their Languages"
+    },
+    "label": "other",
+    "confidence": "medium",
+    "mandarin_share": "20%",
+    "reason": "I didn't search; this is based on what I already know. The channel belongs to Arieh Smith, an American polyglot whose videos are narrated in English and show him speaking many languages with people, such as Hindi, Cantonese, Swahili and Urdu. Mandarin was the focus in his early videos but is only a minority of the speech across the channel, and the wedding video named here is multilingual.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6676,
+      "output_tokens": 533
+    },
+    "seconds": 6.477
+  },
+  {
+    "name": "Mandarin Monkey",
+    "url": "https://www.youtube.com/@MandarinMonkey",
+    "category": "bilingual",
+    "truth": "other",
+    "share": 0,
+    "run": 0,
+    "input": {
+      "name": "Mandarin Monkey",
+      "url": "https://www.youtube.com/@MandarinMonkey",
+      "videoTitle": "Is This Normal or Are We Just Weird?"
+    },
+    "label": "mixed",
+    "confidence": "high",
+    "mandarin_share": "50%",
+    "reason": "The Mandarin Monkey podcast is run by Tom and Ula, a mixed couple living in Taiwan. Its own descriptions call it a bilingual Mandarin–English podcast that teaches Chinese through 'Chinglish', with a native speaker talking Mandarin alongside English conversation and translation.",
+    "searches": 1,
+    "usage": {
+      "input_tokens": 22764,
+      "output_tokens": 558
+    },
+    "seconds": 13.063
+  },
+  {
+    "name": "Taiwanese Mandarin With Miss Lin",
+    "url": "https://www.youtube.com/@MandarinWithMissLin",
+    "category": "learning",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 0,
+    "input": {
+      "name": "Taiwanese Mandarin With Miss Lin",
+      "url": "https://www.youtube.com/@MandarinWithMissLin",
+      "videoTitle": "Connect with Taiwanese People: Use Precise Words | Walk & Learn | Heritage Learners"
+    },
+    "label": "mandarin",
+    "confidence": "medium",
+    "mandarin_share": "75%",
+    "reason": "The channel is run by Miss Lin, a Mandarin teacher born and raised in Taipei. It focuses on intermediate learners and listening practice, with real-life situations filmed in Mandarin, conversations with locals, and a linked podcast for Chinese listening, so most of the speech is likely Mandarin. Some lessons probably explain things in English, which puts the share near the line between mandarin and mixed.",
+    "searches": 7,
+    "usage": {
+      "input_tokens": 83433,
+      "output_tokens": 1515
+    },
+    "seconds": 55.368
+  },
+  {
+    "name": "Blondie in China",
+    "url": "https://www.youtube.com/@BlondieinChina",
+    "category": "bilingual",
+    "truth": "other",
+    "share": 0,
+    "run": 0,
+    "input": {
+      "name": "Blondie in China",
+      "url": "https://www.youtube.com/@BlondieinChina",
+      "videoTitle": "I took my parents to YUNNAN!! (China's most delicious province??)"
+    },
+    "label": "mixed",
+    "confidence": "medium",
+    "mandarin_share": "30%",
+    "reason": "The channel is run by Amy Lyons, an Australian vlogger who speaks fluent Chinese (Wikipedia and China Daily). Her YouTube food and travel videos are narrated in English for a Western audience, with Mandarin used when she talks to locals. The share of Mandarin is my estimate, and in videos like the one with her parents it is likely lower.",
+    "searches": 1,
+    "usage": {
+      "input_tokens": 22522,
+      "output_tokens": 557
+    },
+    "seconds": 12.859
+  },
+  {
+    "name": "讲闲话的夏安七",
+    "url": "https://www.youtube.com/@xiaanqi",
+    "category": "hokkien_hakka_wu",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 0,
+    "input": {
+      "name": "讲闲话的夏安七",
+      "url": "https://www.youtube.com/@xiaanqi",
+      "videoTitle": "你们认为上海户口还值钱吗？"
+    },
+    "label": "mixed",
+    "confidence": "low",
+    "mandarin_share": "60%",
+    "reason": "The host is a young Shanghainese woman whose videos are about Shanghai life, and many cover the Shanghai and Subei dialects, including chats with her mother in dialect. Her titles are in standard Mandarin, and her Bilibili bio says her accent 'drifts around' (口音飘忽不定), which suggests mostly Mandarin commentary with a lot of Shanghainese, but I couldn't confirm the audio directly.",
+    "searches": 8,
+    "usage": {
+      "input_tokens": 66703,
+      "output_tokens": 1514
+    },
+    "seconds": 35.642
+  },
+  {
+    "name": "Mandarin Monkey",
+    "url": "https://www.youtube.com/@MandarinMonkey",
+    "category": "bilingual",
+    "truth": "other",
+    "share": 0,
+    "run": 1,
+    "input": {
+      "name": "Mandarin Monkey",
+      "url": "https://www.youtube.com/@MandarinMonkey",
+      "videoTitle": "We Tried to Design Our Perfect Lives…Then Came the Catch"
+    },
+    "label": "mixed",
+    "confidence": "high",
+    "mandarin_share": "50%",
+    "reason": "The channel's podcast listings say Mandarin Monkey is a bilingual Mandarin-English podcast. In it, Tom (British) and Ula (Taiwanese) switch naturally between Mandarin and English while talking about family life between Taiwan and the UK.",
+    "searches": 1,
+    "usage": {
+      "input_tokens": 22765,
+      "output_tokens": 542
+    },
+    "seconds": 14.861
+  },
+  {
+    "name": "Jerry Kowal 郭杰瑞",
+    "url": "https://www.youtube.com/@jerrykowal1007",
+    "category": "misleading",
+    "truth": "mandarin",
+    "share": 0.86,
+    "run": 0,
+    "input": {
+      "name": "Jerry Kowal 郭杰瑞",
+      "url": "https://www.youtube.com/@jerrykowal1007",
+      "videoTitle": "纽约5个灵魂美食，没吃过等于白来纽约！"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "90%",
+    "reason": "Jerry Kowal (郭杰瑞) is an American vlogger who is well known for making Chinese-language videos about life and food in the US for Chinese audiences. He speaks fluent Mandarin in them, and the channel's titles, like the New York food one given here, fit that format.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6678,
+      "output_tokens": 126
+    },
+    "seconds": 2.664
+  },
+  {
+    "name": "Jerry Kowal 郭杰瑞",
+    "url": "https://www.youtube.com/@jerrykowal1007",
+    "category": "misleading",
+    "truth": "mandarin",
+    "share": 0.86,
+    "run": 1,
+    "input": {
+      "name": "Jerry Kowal 郭杰瑞",
+      "url": "https://www.youtube.com/@jerrykowal1007",
+      "videoTitle": "伊宁美食荒漠? 还是美食热带雨林？"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "90%",
+    "reason": "Jerry Kowal (郭杰瑞) is a well-known American creator who makes Chinese-language videos for Chinese audiences, speaking fluent Mandarin; he first built his following on Bilibili/Douyin and later on YouTube. His videos are Mandarin narration and conversations, such as food and travel content filmed in China like the Yining (Xinjiang) episode, with only occasional English.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6676,
+      "output_tokens": 167
+    },
+    "seconds": 2.766
+  },
+  {
+    "name": "周杰倫 Jay Chou",
+    "url": "https://www.youtube.com/@jaychou",
+    "category": "music",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 1,
+    "input": {
+      "name": "周杰倫 Jay Chou",
+      "url": "https://www.youtube.com/@jaychou",
+      "videoTitle": "Jay Chou 周杰倫【My Daughter, Your Highness女兒殿下】Official Music Video"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "90%",
+    "reason": "Jay Chou is a Taiwanese Mandopop singer, and nearly all of his songs are sung in Mandarin. A few tracks use some Taiwanese Hokkien or English, but they are a small minority. This official channel mainly hosts his music videos, which are overwhelmingly Mandarin vocals.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6683,
+      "output_tokens": 138
+    },
+    "seconds": 2.445
+  },
+  {
+    "name": "周杰倫 Jay Chou",
+    "url": "https://www.youtube.com/@jaychou",
+    "category": "music",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 0,
+    "input": {
+      "name": "周杰倫 Jay Chou",
+      "url": "https://www.youtube.com/@jaychou",
+      "videoTitle": "Jay Chou 周杰倫【Sicily 西西里】Official Music Video"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "90%",
+    "reason": "This is the official channel of Jay Chou, the Taiwanese Mandopop singer, and it posts his music videos. Nearly all of his songs, 'Sicily 西西里' included, are sung in Mandarin. A few have short parts in English or Taiwanese Hokkien, but those are a small share.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6674,
+      "output_tokens": 134
+    },
+    "seconds": 3.152
+  },
+  {
+    "name": "Thomas阿福",
+    "url": "https://www.youtube.com/@ThomasAfu",
+    "category": "misleading",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 1,
+    "input": {
+      "name": "Thomas阿福",
+      "url": "https://www.youtube.com/@ThomasAfu",
+      "videoTitle": "德国兄弟第一次到云南，一天狂吃4顿饭，直接震惊了"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "80%",
+    "reason": "I didn't search for this one; it's based on what I already know. Thomas阿福 (Thomas Derksen) is a well-known German vlogger in Shanghai who talks to his Chinese audience in fluent Mandarin. Some German is likely when his brother or family appear, but most of the speech is Mandarin.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6675,
+      "output_tokens": 303
+    },
+    "seconds": 5.111
+  },
+  {
+    "name": "Blondie in China",
+    "url": "https://www.youtube.com/@BlondieinChina",
+    "category": "bilingual",
+    "truth": "other",
+    "share": 0,
+    "run": 1,
+    "input": {
+      "name": "Blondie in China",
+      "url": "https://www.youtube.com/@BlondieinChina",
+      "videoTitle": "I let a globe decide everything I eat for 24 hours"
+    },
+    "label": "other",
+    "confidence": "medium",
+    "mandarin_share": "20%",
+    "reason": "Blondie in China is run by an American woman (Kay) who lives in China and studies Chinese. Her videos, including the globe food challenge, are mainly narrated in English for Western viewers, and she only speaks Mandarin in short exchanges with locals, so Mandarin is probably well under half of the speech.",
+    "searches": 1,
+    "usage": {
+      "input_tokens": 22229,
+      "output_tokens": 463
+    },
+    "seconds": 11.864
+  },
+  {
+    "name": "VOA 美國之音粵語",
+    "url": "https://www.youtube.com/@voacantonese",
+    "category": "misleading",
+    "truth": "other",
+    "share": 0,
+    "run": 0,
+    "input": {
+      "name": "VOA 美國之音粵語",
+      "url": "https://www.youtube.com/@voacantonese",
+      "videoTitle": "時事一週(星期六) 2025年3月15日：民營企業促進法未在 “兩會” 通過 分析：中共內部或仍有分歧 - 3月 15日,2025年"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "5%",
+    "reason": "The channel is VOA's Cantonese service (粵語 means Cantonese, and the handle is @voacantonese). VOA runs its Mandarin programming on a separate channel, so this one's news programs are spoken in Cantonese, apart from occasional Mandarin soundbites from interviewees.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6709,
+      "output_tokens": 129
+    },
+    "seconds": 3.116
+  },
+  {
+    "name": "VOA 美國之音粵語",
+    "url": "https://www.youtube.com/@voacantonese",
+    "category": "misleading",
+    "truth": "other",
+    "share": 0,
+    "run": 1,
+    "input": {
+      "name": "VOA 美國之音粵語",
+      "url": "https://www.youtube.com/@voacantonese",
+      "videoTitle": "時事經緯 (2025年3月14日): 學者評論北京兩會不滿愛國者治港立法會議員表現不濟"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "0%",
+    "reason": "The channel is VOA Cantonese, Voice of America's Cantonese-language service. Its handle (@voacantonese), its name (粵語 means Cantonese) and its Hong Kong-focused current-affairs show 時事經緯 all point to programming in Cantonese, not Mandarin. VOA runs its Mandarin content on a separate channel.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6690,
+      "output_tokens": 148
+    },
+    "seconds": 4.279
+  },
+  {
+    "name": "GEM鄧紫棋",
+    "url": "https://www.youtube.com/@gem0816",
+    "category": "music",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 0,
+    "input": {
+      "name": "GEM鄧紫棋",
+      "url": "https://www.youtube.com/@gem0816",
+      "videoTitle": "G.E.M.鄧紫棋【自由的你 Free to Be You】Official Music Video"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "85%",
+    "reason": "This is the official channel of G.E.M. (Gloria Tang, 鄧紫棋), a singer from Hong Kong. Most of her catalogue is sung in Mandarin, including hits like 泡沫, 光年之外, 句號 and 倒數. There are some Cantonese songs, mainly from early in her career, and a few in English. This is based on what I already know about her; I did not run a web search.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6675,
+      "output_tokens": 335
+    },
+    "seconds": 4.463
+  },
+  {
+    "name": "GEM鄧紫棋",
+    "url": "https://www.youtube.com/@gem0816",
+    "category": "music",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 1,
+    "input": {
+      "name": "GEM鄧紫棋",
+      "url": "https://www.youtube.com/@gem0816",
+      "videoTitle": "G.E.M. 鄧紫棋【自由的你 FREE TO BE YOU】啟程版 Official Lyric Video (4K)"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "80%",
+    "reason": "This is the official channel of G.E.M. (鄧紫棋), a singer from Hong Kong. Since around 2014 she has sung mostly in Mandarin (for example 光年之外, 泡沫, 句號 and the 啟示錄 album), and only a small part of her catalog is in Cantonese or English. This is based on what I already know about her; I did not run a web search for this answer.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6691,
+      "output_tokens": 272
+    },
+    "seconds": 3.949
+  },
+  {
+    "name": "Thomas阿福",
+    "url": "https://www.youtube.com/@ThomasAfu",
+    "category": "misleading",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 0,
+    "input": {
+      "name": "Thomas阿福",
+      "url": "https://www.youtube.com/@ThomasAfu",
+      "videoTitle": "德国兄弟挑战在香格里拉说24小时中文，全程笑疯了"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "85%",
+    "reason": "The channel belongs to 阿福Thomas (Thomas Derksen), a German creator who has lived in Shanghai since 2016. Wikipedia says he speaks Mandarin, and he is one of the best-known foreign video makers aimed at Chinese audiences. His videos are mainly Mandarin, with occasional German when he is with his family, as the video about his brother speaking Chinese for 24 hours suggests.",
+    "searches": 1,
+    "usage": {
+      "input_tokens": 23266,
+      "output_tokens": 519
+    },
+    "seconds": 12.147
+  },
+  {
+    "name": "Eason Chan",
+    "url": "https://www.youtube.com/@easonchan",
+    "category": "music",
+    "truth": "mixed",
+    "share": 0.38,
+    "run": 0,
+    "input": {
+      "name": "Eason Chan",
+      "url": "https://www.youtube.com/@easonchan",
+      "videoTitle": "《K歌之王 AIR》陳奕迅 Eason Chan [Behind the scenes]"
+    },
+    "label": "mixed",
+    "confidence": "medium",
+    "mandarin_share": "45%",
+    "reason": "This is the official channel of Eason Chan, a Hong Kong singer who records a large catalogue in both Cantonese and Mandarin. For example, 'K歌之王' exists in both a Cantonese and a Mandarin version. His behind-the-scenes and talk segments are often in Cantonese, so Mandarin is probably a large share of the channel but not most of it. I didn't search for this and am going on what I already know about him.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6673,
+      "output_tokens": 330
+    },
+    "seconds": 5.395
+  },
+  {
+    "name": "Eason Chan",
+    "url": "https://www.youtube.com/@easonchan",
+    "category": "music",
+    "truth": "mixed",
+    "share": 0.38,
+    "run": 1,
+    "input": {
+      "name": "Eason Chan",
+      "url": "https://www.youtube.com/@easonchan",
+      "videoTitle": "《K歌之王 AIR (Night Version)》陳奕迅 Eason Chan with The Heritage Orchestra【Official MV】"
+    },
+    "label": "mixed",
+    "confidence": "medium",
+    "mandarin_share": "45%",
+    "reason": "This is the official channel of Eason Chan (陳奕迅), a Hong Kong singer who records a lot in both Cantonese and Mandarin. His official MVs and releases are split roughly evenly between the two languages, and 《K歌之王》 itself exists in both a Mandarin and a Cantonese version, so the sung vocals across the channel are likely mixed.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6687,
+      "output_tokens": 366
+    },
+    "seconds": 4.971
+  },
+  {
+    "name": "MIRROR",
+    "url": "https://www.youtube.com/@MIRRORweare",
+    "category": "music",
+    "truth": "mixed",
+    "share": 0.5,
+    "run": 0,
+    "input": {
+      "name": "MIRROR",
+      "url": "https://www.youtube.com/@MIRRORweare",
+      "videoTitle": "Jeremy 李駿傑 &  Marf 邱彥筒《Whistle》Official Music Video"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "5%",
+    "reason": "MIRROR is a 12-member Hong Kong Cantopop boy group formed through ViuTV's Good Night Show – King Maker, and Jeremy Lee (李駿傑) is one of its members. The group's songs, music videos and variety content are almost all in Cantonese, so this channel has very little spoken or sung Mandarin.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6677,
+      "output_tokens": 248
+    },
+    "seconds": 4.652
+  },
+  {
+    "name": "MIRROR",
+    "url": "https://www.youtube.com/@MIRRORweare",
+    "category": "music",
+    "truth": "mixed",
+    "share": 0.5,
+    "run": 1,
+    "input": {
+      "name": "MIRROR",
+      "url": "https://www.youtube.com/@MIRRORweare",
+      "videoTitle": "Ian Chan 陳卓賢《在遠方的你》Official Music Video"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "5%",
+    "reason": "MIRROR is a 12-member Cantopop boy group from Hong Kong, formed through ViuTV's Good Night Show: King Maker. Its official channel posts music videos by the group and its members, such as Ian Chan (陳卓賢), and those songs and videos are almost entirely in Cantonese. This is from what I already know about the group; I didn't run a search.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6668,
+      "output_tokens": 259
+    },
+    "seconds": 3.915
+  },
+  {
+    "name": "办公室小野 Ms Yeah",
+    "url": "https://www.youtube.com/@MsYeahOfficialChannel",
+    "category": "no_speech",
+    "truth": "mixed",
+    "share": 0.5,
+    "run": 1,
+    "input": {
+      "name": "办公室小野 Ms Yeah",
+      "url": "https://www.youtube.com/@MsYeahOfficialChannel",
+      "videoTitle": "How to DIY a BBQ Bicycle?! Will anyone buy my barbecue? | Ms Yeah"
+    },
+    "label": "mandarin",
+    "confidence": "medium",
+    "mandarin_share": "85%",
+    "reason": "I didn't run a search; this is based on what I already know. 办公室小野 (Ms Yeah) is a mainland Chinese channel about cooking in the office, run by a Beijing-based creator. Her short skits with coworkers are spoken in Mandarin with English subtitles added, though much of each video is music and cooking with little talking.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6693,
+      "output_tokens": 321
+    },
+    "seconds": 4.396
+  },
+  {
+    "name": "办公室小野 Ms Yeah",
+    "url": "https://www.youtube.com/@MsYeahOfficialChannel",
+    "category": "no_speech",
+    "truth": "mixed",
+    "share": 0.5,
+    "run": 0,
+    "input": {
+      "name": "办公室小野 Ms Yeah",
+      "url": "https://www.youtube.com/@MsYeahOfficialChannel",
+      "videoTitle": "Cook Chinese New Year's Dinner in Office! | Ms Yeah"
+    },
+    "label": "mandarin",
+    "confidence": "medium",
+    "mandarin_share": "90%",
+    "reason": "I didn't search; this is based on what I already know about the channel. Ms Yeah (办公室小野) is a mainland Chinese creator from Chengdu who cooks with office equipment, and the short talk with her coworkers in her videos is in Mandarin with Chinese and English subtitles. Much of each video is music and cooking without speech, so the total amount of Mandarin you'd hear is small.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6682,
+      "output_tokens": 592
+    },
+    "seconds": 6.7
+  },
+  {
+    "name": "BBC News 中文",
+    "url": "https://www.youtube.com/@bbcnewschinese",
+    "category": "news",
+    "truth": "other",
+    "share": 0.25,
+    "run": 0,
+    "input": {
+      "name": "BBC News 中文",
+      "url": "https://www.youtube.com/@bbcnewschinese",
+      "videoTitle": "為何美國中期選舉對特朗普至關重要？－ BBC News 中文"
+    },
+    "label": "mandarin",
+    "confidence": "medium",
+    "mandarin_share": "75%",
+    "reason": "I'm answering from background knowledge without a search: this is the official channel of the BBC Chinese Service, whose explainers and reports are narrated mainly in Mandarin with Chinese subtitles. Some videos also include interviews in English or other languages, and some Hong Kong stories are in Cantonese, so the Mandarin share is my estimate.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6673,
+      "output_tokens": 339
+    },
+    "seconds": 4.394
+  },
+  {
+    "name": "李子柒 Liziqi",
+    "url": "https://www.youtube.com/@cnliziqi",
+    "category": "no_speech",
+    "truth": "other",
+    "share": 0,
+    "run": 1,
+    "input": {
+      "name": "李子柒 Liziqi",
+      "url": "https://www.youtube.com/@cnliziqi",
+      "videoTitle": "拿柴房造了一个森林衣帽间~I turned the Woodshed into a Forest-Themed Closet.丨Liziqi Channel"
+    },
+    "label": "other",
+    "confidence": "medium",
+    "mandarin_share": "5%",
+    "reason": "Li Ziqi is a well-known rural-life creator from Sichuan. Her videos have almost no speech: mostly ambient sound and music, with only short spoken lines here and there, usually in Sichuanese dialect (a Southwestern Mandarin variety) with her grandmother. Overall the channel has very little spoken Mandarin, so it counts as mostly speechless.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6696,
+      "output_tokens": 337
+    },
+    "seconds": 5.098
+  },
+  {
+    "name": "讲闲话的夏安七",
+    "url": "https://www.youtube.com/@xiaanqi",
+    "category": "hokkien_hakka_wu",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 1,
+    "input": {
+      "name": "讲闲话的夏安七",
+      "url": "https://www.youtube.com/@xiaanqi",
+      "videoTitle": "上海人有多“讲规矩”？闲聊城市文化差异"
+    },
+    "label": "mandarin",
+    "confidence": "low",
+    "mandarin_share": "70%",
+    "reason": "I found no transcript or comment that states the spoken language. The host (now called 一条夏安七) is a Shanghai talk vlogger whose bio says her accent \"飘忽不定\" (it drifts). Most of her topics, like salaries, housing and dating in Shanghai, are aimed at a nationwide audience, which points to mainly Mandarin with Shanghainese mixed in. Some videos are tagged 沪语/上海话 (Shanghainese) and may be largely in Shanghainese.",
+    "searches": 8,
+    "usage": {
+      "input_tokens": 111479,
+      "output_tokens": 1682
+    },
+    "seconds": 55.435
+  },
+  {
+    "name": "RFI 华语 - 法国国际广播电台",
+    "url": "https://www.youtube.com/@RFI_Cn",
+    "category": "news",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 0,
+    "input": {
+      "name": "RFI 华语 - 法国国际广播电台",
+      "url": "https://www.youtube.com/@RFI_Cn",
+      "videoTitle": "RFI 11月2日巴黎午间新闻"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "95%",
+    "reason": "RFI 华语 is the Chinese-language service of Radio France Internationale. Its news bulletins, such as the 'Paris midday news' (巴黎午间新闻), are broadcast in Mandarin; RFI's Cantonese and other services run separately. This comes from what I already know about RFI, as I did not run any searches.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6670,
+      "output_tokens": 142
+    },
+    "seconds": 2.54
+  },
+  {
+    "name": "BBC News 中文",
+    "url": "https://www.youtube.com/@bbcnewschinese",
+    "category": "news",
+    "truth": "other",
+    "share": 0.25,
+    "run": 1,
+    "input": {
+      "name": "BBC News 中文",
+      "url": "https://www.youtube.com/@bbcnewschinese",
+      "videoTitle": "姆巴佩的玩笑為何讓中國震怒？－ BBC News 中文"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "90%",
+    "reason": "BBC News 中文 is the BBC World Service's Chinese-language service. It broadcasts video reports and explainers in Mandarin (Putonghua), and its YouTube videos are narrated in Mandarin with Chinese subtitles. Cantonese content goes to the separate BBC News 粵語 channel. This comes from what I already know about the BBC; I didn't run a web search.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6675,
+      "output_tokens": 161
+    },
+    "seconds": 3.748
+  },
+  {
+    "name": "RFI 华语 - 法国国际广播电台",
+    "url": "https://www.youtube.com/@RFI_Cn",
+    "category": "news",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 1,
+    "input": {
+      "name": "RFI 华语 - 法国国际广播电台",
+      "url": "https://www.youtube.com/@RFI_Cn",
+      "videoTitle": "RFI 11月1日巴黎午间新闻"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "95%",
+    "reason": "RFI 华语 is the Chinese-language service of Radio France Internationale. Its news bulletins, such as the Paris midday news, are broadcast in Mandarin (普通话). The service's Cantonese broadcasts were cut years ago, so the speech on this channel is overwhelmingly Mandarin.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6670,
+      "output_tokens": 137
+    },
+    "seconds": 2.308
+  },
+  {
+    "name": "RFA 自由亞洲粵語",
+    "url": "https://www.youtube.com/@rfacantonese",
+    "category": "news",
+    "truth": "other",
+    "share": 0.13,
+    "run": 0,
+    "input": {
+      "name": "RFA 自由亞洲粵語",
+      "url": "https://www.youtube.com/@rfacantonese",
+      "videoTitle": "自由亞洲粵語告別讀者"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "0%",
+    "reason": "This is Radio Free Asia's Cantonese service, as the channel name (粵語) and handle (@rfacantonese) show, and its broadcasts and videos are in Cantonese for audiences in Hong Kong and Guangdong. RFA runs its Mandarin content on a separate channel. This is based on what I already know about RFA, not on a web search.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6663,
+      "output_tokens": 147
+    },
+    "seconds": 3.086
+  },
+  {
+    "name": "RFA 自由亞洲粵語",
+    "url": "https://www.youtube.com/@rfacantonese",
+    "category": "news",
+    "truth": "other",
+    "share": 0.13,
+    "run": 1,
+    "input": {
+      "name": "RFA 自由亞洲粵語",
+      "url": "https://www.youtube.com/@rfacantonese",
+      "videoTitle": "再有在台流亡港人獲定居：希望成功例子讓其他庇護者安心"
+    },
+    "label": "other",
+    "confidence": "high",
+    "mandarin_share": "5%",
+    "reason": "This is Radio Free Asia's Cantonese service (粵語 means Cantonese, and the handle is @rfacantonese). Its news reports on Hong Kong and Hong Kong exiles are presented in Cantonese, so Mandarin would only turn up in the odd interview clip. This is based on what is publicly known about RFA's language services; I did not search for this answer.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6679,
+      "output_tokens": 153
+    },
+    "seconds": 2.904
+  },
+  {
+    "name": "zaobaosg",
+    "url": "https://www.youtube.com/@zaobaodotsg",
+    "category": "news",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 0,
+    "input": {
+      "name": "zaobaosg",
+      "url": "https://www.youtube.com/@zaobaodotsg",
+      "videoTitle": "中共五中全会“从严治党”为二十一大铺垫？| China’s fifth plenum focus on party discipline #东谈西论 #早报播客"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "90%",
+    "reason": "zaobaosg is the YouTube channel of Lianhe Zaobao, Singapore's Mandarin-language daily newspaper. Its videos and podcasts, such as 东谈西论 / 早报播客, are news commentary spoken in Mandarin, and the English part of the title is just a translated subtitle. I identified the channel from my own knowledge and did not run a web search.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6695,
+      "output_tokens": 159
+    },
+    "seconds": 3.044
+  },
+  {
+    "name": "Dianxi Xiaoge",
+    "url": "https://www.youtube.com/@dianxixiaoge",
+    "category": "no_speech",
+    "truth": "other",
+    "share": 0,
+    "run": 0,
+    "input": {
+      "name": "滇西小哥 Dianxi Xiaoge",
+      "url": "https://www.youtube.com/@dianxixiaoge",
+      "videoTitle": "Tengchong’s Volcanic Lily Bulbs: A Fresh Taste of the Countryside at Our Family Table【滇西小哥】"
+    },
+    "label": "mandarin",
+    "confidence": "medium",
+    "mandarin_share": "85%",
+    "reason": "I didn't search; this is from what I already know. The channel is run by Dong Mei, a cooking and rural-life creator from Baoshan in western Yunnan, and the little talk in her videos is mostly family chat in the local Yunnan dialect, which is a Southwestern Mandarin variety. Much of each video has no talking at all, only cooking and natural sounds, so the share is a rough estimate and confidence is medium.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6706,
+      "output_tokens": 450
+    },
+    "seconds": 5.502
+  },
+  {
+    "name": "Dianxi Xiaoge",
+    "url": "https://www.youtube.com/@dianxixiaoge",
+    "category": "no_speech",
+    "truth": "other",
+    "share": 0,
+    "run": 1,
+    "input": {
+      "name": "滇西小哥 Dianxi Xiaoge",
+      "url": "https://www.youtube.com/@dianxixiaoge",
+      "videoTitle": "Thee Yunnan Wild Mushroom Collection 🍄 Foraging in the Mountains, Cooking at Home!【滇西小哥】"
+    },
+    "label": "mandarin",
+    "confidence": "medium",
+    "mandarin_share": "85%",
+    "reason": "The channel is run by Dong Meihua, a rural cooking vlogger from Baoshan in western Yunnan. Her videos don't have much talking, and the speech they do have is mostly casual chat with family in the local Yunnan dialect, which is a form of Southwestern Mandarin, with Chinese and English subtitles. Ambient sound and background music make up most of the rest of the audio.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6707,
+      "output_tokens": 389
+    },
+    "seconds": 4.77
+  },
+  {
+    "name": "zaobaosg",
+    "url": "https://www.youtube.com/@zaobaodotsg",
+    "category": "news",
+    "truth": "mandarin",
+    "share": 1,
+    "run": 1,
+    "input": {
+      "name": "zaobaosg",
+      "url": "https://www.youtube.com/@zaobaodotsg",
+      "videoTitle": "[EN] 你被财报骗过吗？Ever been tricked by a financial report? #理财Talk! #早报播客"
+    },
+    "label": "mandarin",
+    "confidence": "high",
+    "mandarin_share": "90%",
+    "reason": "zaobaosg is the YouTube channel of Lianhe Zaobao, Singapore's main Chinese-language newspaper. Its videos, news clips and podcasts such as 早报播客 and 理财Talk are made in Mandarin, and the [EN] tag in the title most likely marks English subtitles. This comes from what I already know about the outlet; I did not search for it.",
+    "searches": 0,
+    "usage": {
+      "input_tokens": 6683,
+      "output_tokens": 158
+    },
+    "seconds": 3.083
+  },
+  {
+    "name": "YuYu love vlog",
+    "url": "https://www.youtube.com/@yuyuqinglv",
+    "category": "bilingual",
+    "truth": "other",
+    "share": 0,
+    "run": 0,
+    "input": {
+      "name": "YuYu love vlog",
+      "url": "https://www.youtube.com/@yuyuqinglv",
+      "videoTitle": "동성커플 | 북한 국경 소도시 여행 2탄|중국인 여친이 북한식당 데려감| 압록강 단교에서 뽀뽀하기 | lesbian"
+    },
+    "label": "mixed",
+    "confidence": "low",
+    "mandarin_share": "40%",
+    "reason": "The channel's About page says it's a Chinese-Korean lesbian couple's vlog (🇨🇳🇰🇷, a Chinese partner named Minmin, keywords 中韩情侣 / 한중커플), and video titles are in Korean, so the speech is probably a mix of Mandarin and Korean. I found no direct evidence of which language they actually speak on camera, so the share is a rough guess.",
+    "searches": 8,
+    "usage": {
+      "input_tokens": 70812,
+      "output_tokens": 1546
+    },
+    "seconds": 48.399
+  },
+  {
+    "name": "李子柒 Liziqi",
+    "url": "https://www.youtube.com/@cnliziqi",
+    "category": "no_speech",
+    "truth": "other",
+    "share": 0,
+    "run": 0,
+    "input": {
+      "name": "李子柒 Liziqi",
+      "url": "https://www.youtube.com/@cnliziqi",
+      "videoTitle": "送给所有知道我名字的人！For Everyone Who Knows My Name.丨Liziqi Channel"
+    },
+    "label": "other",
+    "confidence": "medium",
+    "mandarin_share": "10%",
+    "reason": "News coverage (Chinese News Weekly, The Paper) describes Li Ziqi's videos as mostly silent, showing countryside cooking and crafts with ambient sound, and says she 'rarely speaks' in them. When she does talk, The Paper says it is in Sichuanese dialect, often with her grandmother, so there is little Mandarin speech on the channel.",
+    "searches": 2,
+    "usage": {
+      "input_tokens": 24099,
+      "output_tokens": 632
+    },
+    "seconds": 14.636
+  },
+  {
+    "name": "YuYu love vlog",
+    "url": "https://www.youtube.com/@yuyuqinglv",
+    "category": "bilingual",
+    "truth": "other",
+    "share": 0,
+    "run": 1,
+    "input": {
+      "name": "YuYu love vlog",
+      "url": "https://www.youtube.com/@yuyuqinglv",
+      "videoTitle": "중국 소도시 여행 #1 | 북한이랑 가장 가까운 도시여행 | 호산장성 단동딸기 그리고 맛집탐방 | 레즈커플 |Lesbian couple"
+    },
+    "label": "mixed",
+    "confidence": "low",
+    "mandarin_share": "35%",
+    "reason": "I found no direct evidence of what language is spoken in the videos, so this is a best guess. The channel belongs to a Chinese-Korean (🇨🇳🇰🇷) lesbian couple: Minmin is Chinese and has a Douyin account, the channel keywords are in both Chinese and Korean, and the video titles and TikTok captions are mostly Korean. That suggests a mix of Korean and Mandarin speech.",
+    "searches": 8,
+    "usage": {
+      "input_tokens": 118434,
+      "output_tokens": 2132
+    },
+    "seconds": 62.882
+  },
+  {
+    "name": "日本電視台(Nippon TV)-NTV中文",
+    "url": "https://www.youtube.com/@日本電視台-NTV",
+    "category": "news",
+    "truth": "mixed",
+    "share": 0.57,
+    "run": 0,
+    "input": {
+      "name": "日本電視台(Nippon TV)-NTV中文",
+      "url": "https://www.youtube.com/@%E6%97%A5%E6%9C%AC%E9%9B%BB%E8%A6%96%E5%8F%B0-NTV",
+      "videoTitle": "【貼身採訪】“能住的寺廟”宿坊魅力何在？ 現代化翻修 住宿人數暴增10倍…大受外國觀光客好評"
+    },
+    "label": "unknown",
+    "confidence": "low",
+    "mandarin_share": "unknown",
+    "reason": "This is Nippon TV's official Chinese-language news channel, launched in 2025, and its video descriptions say each story first aired on Nippon TV. I found nothing showing whether the voices are dubbed into Mandarin or left in Japanese with Chinese subtitles, so I can't say how much of the speech is Mandarin.",
+    "searches": 8,
+    "usage": {
+      "input_tokens": 118921,
+      "output_tokens": 2035
+    },
+    "seconds": 55.913
+  },
+  {
+    "name": "日本電視台(Nippon TV)-NTV中文",
+    "url": "https://www.youtube.com/@日本電視台-NTV",
+    "category": "news",
+    "truth": "mixed",
+    "share": 0.57,
+    "run": 1,
+    "input": {
+      "name": "日本電視台(Nippon TV)-NTV中文",
+      "url": "https://www.youtube.com/@%E6%97%A5%E6%9C%AC%E9%9B%BB%E8%A6%96%E5%8F%B0-NTV",
+      "videoTitle": "【長編影像】高市首相與德國總理梅爾茨會談 經濟安保與AI領域達成合作共識"
+    },
+    "label": "unknown",
+    "confidence": "low",
+    "mandarin_share": "unknown",
+    "reason": "This is Nippon TV's official Chinese news channel, launched in 2025, and its descriptions say each story first aired on Nippon TV. I found nothing saying whether the audio is dubbed into Mandarin or left in Japanese with Chinese subtitles, and I couldn't open any video pages to check.",
+    "searches": 8,
+    "usage": {
+      "input_tokens": 163936,
+      "output_tokens": 2179
+    },
+    "seconds": 67.547
+  }
+]

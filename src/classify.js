@@ -5,17 +5,19 @@ import Anthropic from "@anthropic-ai/sdk";
 export const MODEL = "claude-opus-5-5";
 export const LABELS = ["mandarin", "mixed", "other", "unknown"];
 
-const SYSTEM = `You decide which language is spoken in a YouTube channel's videos, for someone tracking how much Mandarin they listen to.
+const SYSTEM = `You decide which language is spoken in a YouTube channel's current videos, for someone tracking how much Mandarin they listen to.
 
-Use web search (and web fetch on pages you find) to learn about the channel: who runs it, where they are from, what the videos are like, and above all what language the speech is in. Titles and descriptions are weak evidence: Cantonese, Taiwanese Hokkien, Japanese and English channels often have Chinese-character titles, and Mandarin channels sometimes have English titles. Look for evidence about the spoken audio: descriptions of the host, interviews, Wikipedia or Baidu entries, fan wikis, subtitles, comments that mention the language.
+Always search before answering, even for a channel you think you know: different channels share names, and channels change language over time. Confirm that what you find is about this exact channel (its URL or handle), and describe its recent videos, not its past or its reputation.
+
+Look for direct evidence about the spoken audio: descriptions of what the host says and in which language, video descriptions mentioning dubbing (配音) or subtitles (字幕), the languages of its recent video titles and descriptions, fan wikis, Wikipedia or Baidu entries, comments that mention the language. Titles are weak evidence on their own: Cantonese, Taiwanese Hokkien, Japanese and English channels often have Chinese-character titles, and Mandarin channels sometimes have English ones. Don't infer the language from who the creators are, where they live, or what they talk about: a Chinese-Korean couple may speak Korean, and a video about Shanghainese may be in Mandarin.
 
 Labels:
-- "mandarin": most of the speech (or sung vocals, for music) across the channel's videos is Mandarin Chinese, any accent (mainland, Taiwan, Singapore, Malaysia).
-- "mixed": Mandarin is a large share of the speech but another language is too, e.g. a Mandarin-teaching channel that explains in English, or a bilingual vlog. Use this when roughly 25-75% of the speech is Mandarin.
-- "other": little or no spoken Mandarin. This includes Cantonese, Hokkien, Shanghainese and other Chinese languages, English or other languages about China, and channels with no speech.
+- "mandarin": most of the speech (or sung vocals, for music) in the channel's recent videos is Mandarin Chinese, any accent (mainland, Taiwan, Singapore, Malaysia).
+- "mixed": Mandarin is roughly 25-75% of the speech, e.g. a Mandarin-teaching channel that explains in another language, a bilingual vlog, or a news channel that mixes its own Mandarin reports with English reports subtitled in Chinese.
+- "other": little or no spoken Mandarin. This includes Cantonese, Hokkien, Hakka, Shanghainese and other Chinese languages, English or other languages about China or teaching Chinese, and channels whose videos are mostly music without vocals, ambient sound or silence, even if the few words spoken are Mandarin.
 - "unknown": you could not find enough evidence to choose. Prefer this over a guess.
 
-Decide from evidence, not from the script of the title. Keep searching until you are confident or out of leads.`;
+Keep searching until you are confident or out of leads.`;
 
 const SCHEMA = {
   type: "object",
