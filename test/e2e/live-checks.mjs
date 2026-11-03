@@ -7,7 +7,7 @@ import { Browser, sleep } from "./harness.js";
 const live = await Browser.launch({ live: true });
 const yt = await live.open("https://www.youtube.com/watch?v=SHWjQrGb3MQ");
 await sleep(5000);
-console.log("real player:", await yt.eval(`JSON.stringify({ api: typeof document.getElementById("movie_player")?.getVideoData, id: document.getElementById("movie_player")?.getVideoData?.().video_id, playerClass: !!document.querySelector("video")?.closest(".html5-video-player"), adFlag: !!document.querySelector(".ad-showing") })`));
+console.log("real player:", await yt.eval(`JSON.stringify({ api: typeof document.getElementById("movie_player")?.getVideoData, id: document.getElementById("movie_player")?.getVideoData?.().video_id, details: (({ videoId, channelId, author }) => ({ videoId, channelId, author }))(document.getElementById("movie_player")?.getPlayerResponse?.()?.videoDetails ?? {}), playerClass: !!document.querySelector("video")?.closest(".html5-video-player"), adFlag: !!document.querySelector(".ad-showing") })`));
 await live.close();
 // 2) Fixture page, real Anthropic API: the extension classifies a channel it hasn't seen.
 const b = await Browser.launch();

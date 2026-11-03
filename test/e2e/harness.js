@@ -19,6 +19,8 @@ export const VIDEO_ID = "SHWjQrGb3MQ";
 export const CHANNEL_URL = "https://www.youtube.com/@laogao";
 export const VIDEO_ID_2 = "aaaaaaaaaaa";
 export const CHANNEL_URL_2 = "https://www.youtube.com/@otherchannel";
+export const VIDEO_ID_NO_EMBED = "bbbbbbbbbbb"; // oEmbed refuses it, like embed-disabled videos
+export const CHANNEL_ID_NO_EMBED = "UCnoembed0000000000000";
 
 const chatHtml = (title, text) => `<!doctype html><meta charset="utf-8"><title>${title}</title><body><nav>Recents: another chat title in English</nav><main><div id="t">${text}</div><textarea></textarea></main></body>`;
 
@@ -35,6 +37,7 @@ function handler(req, res) {
     if (url.pathname === "/oembed") {
       res.writeHead(200, { "content-type": "application/json" });
       const id = new URL(url.searchParams.get("url")).searchParams.get("v");
+      if (id === VIDEO_ID_NO_EMBED) { res.writeHead(401); return res.end(); }
       const ch = id === VIDEO_ID ? { author_name: "老高與小茉 Mr & Mrs Gao", author_url: CHANNEL_URL } : { author_name: "Other", author_url: CHANNEL_URL_2 };
       return res.end(JSON.stringify({ ...ch, title: "test video" }));
     }
@@ -45,7 +48,10 @@ function handler(req, res) {
     // Imitates YouTube's player: getVideoData() reports which video is loaded.
     return html(`<!doctype html><meta charset="utf-8"><title>video</title><body><div id="movie_player" class="html5-video-player"><video src="/fixture/video.mp4"></video></div>
       <script>window.currentVideo = new URLSearchParams(location.search).get("v");
-      document.getElementById("movie_player").getVideoData = () => ({ video_id: window.currentVideo });</script></body>`);
+      window.playerDetails = null; // set by a test to imitate getPlayerResponse().videoDetails
+      const p = document.getElementById("movie_player");
+      p.getVideoData = () => ({ video_id: window.currentVideo, title: "test video" });
+      p.getPlayerResponse = () => ({ videoDetails: window.playerDetails });</script></body>`);
   }
   res.writeHead(404); res.end();
 }

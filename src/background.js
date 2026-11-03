@@ -67,10 +67,14 @@ async function resolveVideo(videoId) {
   return info;
 }
 
-async function creditVideo({ videoId, seconds }) {
+// The channel comes from YouTube's player when the content script has it (channel ID, which
+// also works for videos whose embedding is disabled), otherwise from YouTube's oEmbed lookup.
+async function creditVideo({ videoId, seconds, channelId, channelName, videoTitle }) {
   let info;
   try {
-    info = await resolveVideo(videoId);
+    info = channelId
+      ? { channelUrl: `https://www.youtube.com/channel/${channelId}`, channelName, title: videoTitle }
+      : await resolveVideo(videoId);
   } catch (e) {
     // Keep the time, visibly unresolved and under the video's ID, instead of dropping it.
     await credit({ source: "youtube", key: `video:${videoId}`, title: `Video ${videoId} (channel unknown)`, url: videoId === "unknown" ? undefined : `https://www.youtube.com/watch?v=${videoId}`, seconds });

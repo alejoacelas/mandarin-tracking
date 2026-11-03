@@ -3,7 +3,7 @@
 // (see README). Run with `npm run test:e2e`.
 import { test, before, after, beforeEach } from "node:test";
 import assert from "node:assert/strict";
-import { Browser, sleep, VIDEO_ID, CHANNEL_URL, VIDEO_ID_2, CHANNEL_URL_2 } from "./harness.js";
+import { Browser, sleep, VIDEO_ID, CHANNEL_URL, VIDEO_ID_2, CHANNEL_URL_2, VIDEO_ID_NO_EMBED, CHANNEL_ID_NO_EMBED } from "./harness.js";
 
 const IDLE_SECONDS = 6;
 const TOLERANCE = 2; // seconds of allowed difference from the scripted schedule
@@ -24,6 +24,7 @@ beforeEach(async () => {
       channels: {
         ${JSON.stringify(CHANNEL_URL)}: { name: "test", status: "done", label: "mandarin" },
         ${JSON.stringify(CHANNEL_URL_2)}: { name: "test 2", status: "done", label: "other" },
+        ${JSON.stringify(`https://www.youtube.com/channel/${CHANNEL_ID_NO_EMBED}`)}: { name: "no embed", status: "done", label: "mandarin" },
       },
     });
   })()`);
@@ -181,4 +182,19 @@ test("a tab open before the extension reloads keeps tracking, and isn't counted 
   const day = await today();
   // Counting twice (old and new script both running) would add another 8 + IDLE_SECONDS.
   near(day.claude?.[A]?.seconds, 6 + IDLE_SECONDS + 8 + IDLE_SECONDS, "chat across an extension reload");
+});
+
+test("YouTube gets the channel from the player when oEmbed refuses the video", async () => {
+  const yt = await browser.open(`https://www.youtube.com/watch?v=${VIDEO_ID_NO_EMBED}`);
+  await yt.eval(`window.playerDetails = { videoId: ${JSON.stringify(VIDEO_ID_NO_EMBED)}, channelId: ${JSON.stringify(CHANNEL_ID_NO_EMBED)}, author: "频道" }`);
+  await yt.eval(`document.querySelector("video").play().then(() => true)`);
+  await sleep(8000);
+  await yt.eval(`document.querySelector("video").pause()`);
+  await sleep(6500);
+
+  const day = await today();
+  near(day.youtube?.[`https://www.youtube.com/channel/${CHANNEL_ID_NO_EMBED}`]?.seconds, 8, "channel from player");
+  assert.equal(day.youtube[`https://www.youtube.com/channel/${CHANNEL_ID_NO_EMBED}`].title, "频道");
+  const { problems = [] } = await browser.storage(["problems"]);
+  assert.deepEqual(problems, []);
 });

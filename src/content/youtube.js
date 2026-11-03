@@ -34,6 +34,12 @@ function playingVideoId() {
 }
 
 let videoId = null; // video the pending seconds belong to
+let channel = null; // { channelId, channelName, videoTitle } from YouTube's player, when available
+
+function channelFromPlayer() {
+  const d = document.documentElement.dataset;
+  return d.mtChannelId ? { channelId: d.mtChannelId, channelName: d.mtChannelName, videoTitle: d.mtVideoTitle } : null;
+}
 let pageWithoutVideoSince = null;
 let problemReported = false;
 
@@ -42,7 +48,7 @@ async function flush() {
   const seconds = timer.take();
   if (seconds <= 0) return;
   // No ID at all: keep the time, visibly, rather than drop it.
-  const ok = await send({ type: "credit", source: "youtube", videoId: videoId ?? "unknown", seconds });
+  const ok = await send({ type: "credit", source: "youtube", videoId: videoId ?? "unknown", ...channel, seconds });
   if (!ok) timer.giveBack(seconds);
 }
 
@@ -52,7 +58,8 @@ setInterval(() => {
   const ad = !!document.querySelector(".ad-showing");
   if (playing && !ad) {
     const id = playingVideoId();
-    if (id !== videoId) { flush(); videoId = id; }
+    if (id !== videoId) { flush(); videoId = id; channel = null; }
+    channel = channelFromPlayer() ?? channel;
   }
   timer.set({ playing, ad });
 

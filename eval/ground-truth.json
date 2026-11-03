@@ -560,8 +560,8 @@
     "failed_clips": 0,
     "audio_label": {
       "label": "mandarin",
-      "share": 0.75,
-      "langs": "zh,zh,zh,nospeech"
+      "share": 1,
+      "langs": "zh,zh,zh"
     }
   },
   {
@@ -815,6 +815,4196 @@
       "label": "mandarin",
       "share": 1,
       "langs": "zh,zh,zh,zh,zh,zh,zh,zh,zh"
+    }
+  },
+  {
+    "name": "Papi酱",
+    "url": "https://www.youtube.com/@papi_jiang",
+    "category": "romanised_name",
+    "expected_label": "mandarin",
+    "why_tricky": "Titles auto-translate to 'papi Jiang - ...'; mainland comedian speaking fast Mandarin.",
+    "clips": [
+      {
+        "videoId": "Wfo65-vkIrE",
+        "start": 479,
+        "lang": "zh",
+        "event": "Laughter",
+        "chars": 258,
+        "text": "其实根本就不会就你配吗也没交给力加高你下去打其实是上班而已啊对呀从来不加班对啊那你在这种外面会遇到就是有些人知道你上来挑衅一下你们没有也没有哎你看你真到了我一说真到这种时候就没人没人敢吱声了更多的是哎你能踢我一咬吗我你们能打我一拳吗大的嘴大家都是大家都是就是想感受一下你的力量那会不会能过年回家请你说哎跟姑爸打两下你有一次真的这是我我讲一个故事小的时候十几岁然后那时候我在那个外面就是练舞吗然后我爸说",
+        "fluent": true
+      },
+      {
+        "videoId": "Wfo65-vkIrE",
+        "start": 1199,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 256,
+        "text": "哇塞直接给我准备了电解质然后给我准备了冰激淋哇冰淇淋对对对知道冰淇淋开心吗太开心了还给我喝水还给我喝了电解质哇我跟你说我拿到那个水的时候我刚时我当时就觉得人生太幸福了我就我坐在那个窗台上然后看着那个呃窗外然后喝了那口水我觉得人生我太幸福了哎呦别看好幸福啊我觉得他其实是虽然很痛苦但我觉得你是能享受在里面的对对对我觉得如果如果你是一种痛苦的被迫的然后我觉得是无法坚持不到现在其实你靠热爱对这个男力带的话",
+        "fluent": true
+      },
+      {
+        "videoId": "Wfo65-vkIrE",
+        "start": 1919,
+        "lang": "zh",
+        "event": "Laughter",
+        "chars": 264,
+        "text": "是的第一次打完是给你个真的然后然后之后你再打的话就纪念腰带啊纪念腰带的话它它不是那个纯金的打赢一次然后他会给你镶一个那个红宝石真么宝存啊在家保放在柜擦发架子上那没有其实很多人很多冠军他们就是拿完腰带以后要抱着腰带睡觉啊然后又怎么样但是我从来没有爸爸过年的时候会把那个腰带打出来给机会看吗没有从来没拿出来哦你你跟你爸爸都蛮低调的你知要放我的话就一过年就在屋里走是吗对啊然后大家吃饭大家吃饭原桌面我就把放",
+        "fluent": true
+      },
+      {
+        "videoId": "oaR2j7nIWUk",
+        "start": 43,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 154,
+        "text": "把那个 excel 发给我啥你看啊上周我们吃饭喝咖啡视频聊天总计两个小时十九分钟有这么算的吗你任何事情都是需要数据支持的那一周两个多小时你觉得够吗那多少才算够啊你是不是得量化一下呢你是不是怕把我当成你员工呢有吗对吧我明天吃饭约的是几点啊是六点吗你跟我妈对吧我想给你们拉下群那咱俩是直接在餐厅碰头吗都行你们对齐就好",
+        "fluent": true
+      },
+      {
+        "videoId": "oaR2j7nIWUk",
+        "start": 107,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 186,
+        "text": "今天我怀着沉重的心情来到这里对小江的父亲进行探望一听就知道是 a i 写的稿我说过很多次了我们要拥抱 a i 要拥抱进步我感觉你拥抱的有点过头了啊咱们今天晚上视频一会儿不可以嗯你几点有空啊问小杨哦对了你下一个我们公司的那个办公系统我们现在视频都是在那个上面完事他可以用 a i 直接给你整理成文字资料你之后如果想复盘的话可以直接看听不懂哎问小杨多好啊你真的爱我吗你这个话题太大了你得拆分一下",
+        "fluent": true
+      },
+      {
+        "videoId": "oaR2j7nIWUk",
+        "start": 172,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 153,
+        "text": "不知道这个也要恐怖啊当然了我又不是你的员工当然你要是我员工早把安裁了你看我最好啊发疯谁都会今天你问我爱不爱明天他们我爱不爱到底爱什么怎么爱这不是靠拍脑袋就能决定的有谁你觉得我们现在存在的最大的问题到底是啥我觉得没什么太大的问题推荐还算蛮顺利的那你说他是不是没事找事也不能这么说现在市场环境不好扬年都不好顾唉",
+        "fluent": true
+      },
+      {
+        "videoId": "3UiW-Yn_ERE",
+        "start": 411,
+        "lang": "zh",
+        "event": "Laughter",
+        "chars": 148,
+        "text": "可以啊对呀那很锻炼腿部肌肉啊对呀明天晚上都干我老公最喜欢他他包里面肯定有这个啊就是贼贼惦所以演唱会是用这种演唱会是用这个开生茶一看就知道那焗完它以后你就是每喝完喝一口然后放在里面嗯十秒还是三十含住含住然后呢就慢慢吞下去呢就对你的那个声音会一个很好的保护你不想开演唱会吗我小姐要一次戳过唱片的算了吧",
+        "fluent": true
+      },
+      {
+        "videoId": "3UiW-Yn_ERE",
+        "start": 1027,
+        "lang": "zh",
+        "event": "Laughter",
+        "chars": 193,
+        "text": "角色换谁敢换一个主创 o k o 但是呢我觉得那个那一刻呢我不舒服站起来我就出门口一开门换来的那个人站在我前面所以新来那个人你知道我多没礼貌我就直接啊走过了他去找负责的人我说你们为什么这样那个把那人找回来这样然后我就回去了回去化妆化完妆以后我再想一下当然是不是很有礼貌嗯我就出去找那个换来的人我就说我说不好意思我不是对别人我是对事我说那个事情一定要给我一个理由但可能以前年更年轻的时候我不一定会",
+        "fluent": true
+      },
+      {
+        "videoId": "3UiW-Yn_ERE",
+        "start": 1644,
+        "lang": "zh",
+        "event": "Laughter",
+        "chars": 156,
+        "text": "跟我比但她也在内地挺多年了万一她也进步了呢然后她老公还是一个内地的人所以呢为什么他还是这样的有机会你你应该好问但是你不能拿我跟他他是个侮辱那你是这样讨论过这个问题吗我也跟蔡小文说了对啊你为什么可以那么离谱的呢他怎么说我说他好啊但她老公的普通话就比他要好一些什么什么你再说一次我觉得你老公普通话比你要差一些差一些对",
+        "fluent": true
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "mandarin",
+      "share": 1,
+      "langs": "zh,zh,zh,zh,zh,zh,zh,zh,zh"
+    }
+  },
+  {
+    "name": "Rose & Anzai Country Life",
+    "url": "https://www.youtube.com/@roseinchina1",
+    "category": "romanised_name",
+    "expected_label": "mandarin",
+    "why_tricky": "English name and English titles; rural Chinese couple speaking Mandarin or local dialect with English subtitles.",
+    "clips": [
+      {
+        "videoId": "7BofegmdUkA",
+        "start": 120,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 130,
+        "text": "这个灯怎么亮呢姐吴建宇你在这里干嘛你不是说得按照检查作业吗是啊嗯我是在检查作业啊我说那检查作业在楼上的话灯太亮了我说在下面检查一下好一点哦睡门父母的那一点都还没有我手机亮了喂又不冷你都没穿衣服你还给我盖的衣服我还没睡了吗宝宝睡了我也睡了我洗了三个宿舍喝了一口水",
+        "fluent": true
+      },
+      {
+        "videoId": "7BofegmdUkA",
+        "start": 302,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 118,
+        "text": "我只要还有嗯你没吃去啊怎么刚才碗里面刚才是夹出来的时候就是这么多所以是说越吃越多了你拿一点碗拿碗拿过来我给你分一点吃嘛不用不用不用不你吃了那你吃一口好不好吃来来好我够够够你吃了你自吃你这要帮我吃的过来我一碗吃就是一个人吃要变两碗了你吃点",
+        "fluent": true
+      },
+      {
+        "videoId": "7BofegmdUkA",
+        "start": 483,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 120,
+        "text": "啊你煮的好香啊好臭嘞现了先放一点辣椒再倒半瓶酱油好了再给它炒一下炒一炒这个这种到了就颜色都变得漂亮好多了水炒干一点现在放一半瓶油有一点要倒倒一点或者这样不容易灌好了再把里面水煮干再焖一下就可以出锅了我先拿个玻璃饼逛点是在差不多了这样哪些装笋",
+        "fluent": true
+      },
+      {
+        "videoId": "6tYn3KKD4M0",
+        "start": 137,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 115,
+        "text": "好我拿去爸爸好别宝妈妈我拿不下来哦你妈妈拿喂宝宝前几天刚住院回来这被子也没人给他晒没人给他洗妈妈今天把这个教室生新的时间掉洗干净了拿来晒明天给他挂妈妈给你好谢谢你去哪里呀小心点啊啊被子去放这来明天把这个领羊子跟羊毛被一起给大个袋子",
+        "fluent": true
+      },
+      {
+        "videoId": "6tYn3KKD4M0",
+        "start": 344,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 45,
+        "text": "这再加一点水再给它搅拌搅拌均匀再放一点油再撒一点蒜末盖着盖点小火慢慢好再小小炸带汤就可以了",
+        "fluent": true
+      },
+      {
+        "videoId": "6tYn3KKD4M0",
+        "start": 550,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 136,
+        "text": "你看在这里呢哇塞怎么这么多稀蛋小姐我听见过你们是老鼠在这里要吃东西啊拿下去留一个啊哇这个小区挺厉害的生稀的不辣我随它的现在给我堵在里面生了哦那么提它放冰箱里了哦好的你烧火呗再放一点点的粉我有点自大了你是就那个位置是不是啊好了现在去烧一下油放一点油好了现在把它粉鼓一下我椒鱼",
+        "fluent": false
+      },
+      {
+        "videoId": "PZCrn1hDVQ8",
+        "start": 166,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 92,
+        "text": "进来进己去拿一个小心啊对拿去给奶奶蒸给奶奶谢谢嗯好棒那钟也拿过了不要真不要蒸啊那谢谢奶奶来不要吃不要哈吃不要吃我拎还是你拎哎哎哎你自己拎啊我们买单很快的哎怎么猛都关掉了爸爸又跑哪里去了",
+        "fluent": true
+      },
+      {
+        "videoId": "PZCrn1hDVQ8",
+        "start": 417,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "PZCrn1hDVQ8",
+        "start": 667,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 57,
+        "text": "我们老师这么教的呗哦难怪那我去招呼你去吧我也好了马上诶打该打半点了没打开放一点油裹着灭糊放了就擦一下轻一点啊小心点",
+        "fluent": true
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "mandarin",
+      "share": 0.88,
+      "langs": "zh,zh,zh,zh,zh,zh?,zh,zh"
+    }
+  },
+  {
+    "name": "千千進食中",
+    "url": "https://www.youtube.com/@Chienseating",
+    "category": "romanised_name",
+    "expected_label": "mandarin",
+    "why_tricky": "Titles appear in English ('Chien-Chien Eating') via YouTube translation; Taiwanese Mandarin mukbang.",
+    "clips": [
+      {
+        "videoId": "XTF8VYJkz2U",
+        "start": 248,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 172,
+        "text": "想我到万里也想要吃点特别的蘸一下汁我因为他那个他连这个都已经交趾摸干吃鱼要很注意吃所以我们应该要吃蟹但是你们吃看这个这鱼肉很好吃那你们夹的时候啊一定要去沾一下这个你讲新鲜的啊就是要清蒸清蒸真的是最正的我们今天几乎都选清蒸的你们等下一入口的时候你居然看到老板那边口感呢是细致的可是它带一点点紧实度所以你不会觉得很滑但没有蘸到酱样也好吃那就一呀它就",
+        "fluent": true
+      },
+      {
+        "videoId": "XTF8VYJkz2U",
+        "start": 621,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 122,
+        "text": "不好两个红感糯它们它的那个三点蟹的蟹肉是清甜款的比较淡雅气的那个香气然后在它中间的那个蟹糕的甜度也很高我当时相调之下我觉得三点蟹的那个紧实度再高一点的样它其实肉它比较大块然后你就会测出它的那个紧实度很够然后的花虾就是松嫩然后这个就是紧实哇这米整",
+        "fluent": true
+      },
+      {
+        "videoId": "XTF8VYJkz2U",
+        "start": 993,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 111,
+        "text": "我觉得刚来一定要点一下白点红鱼我觉得好好吃我觉得鱼要到胶子这么明显的比较少见这条鱼买的真好你们不觉得很好这只很好吃吗谢谢你的牺牲好想要炒滑蛋哦鱼的这个吃炒滑蛋最好吃最近不确定有没有这太多了你有欢寿司要问大家喜欢寿司吗大家说",
+        "fluent": true
+      },
+      {
+        "videoId": "6-HVVjEAb24",
+        "start": 204,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 146,
+        "text": "级嗯对有一种人家在吃一个 set 的感觉先种小菜刚的鸡翅很像是开胃小点然后这个呢就是餐前的沙拉吃完这个河风鲍鱼鲜虾沙拉我觉得调味的话它的荷风酱里面有加一点哇沙我觉得跟海鲜眼大但包为什么就是这个组合总觉得很想要再加个无味酱之类就它明明不是九孔知道吗可就包有种本德摆盘我自己觉得尝鲜可以但是果它跟咸水",
+        "fluent": true
+      },
+      {
+        "videoId": "6-HVVjEAb24",
+        "start": 512,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 132,
+        "text": "啊要嘛就是点回家我自己切因为那个油粉吃起来才会多汁但是我现在呢因为它目前就是雄羞啊啊我们有没有鸡排的汁带所以呢我们还是来切一下蛮大块的呢不过我是鸡排店老板我每天都会一我自己吃完我就会关了不用唉它其实外面是饱囊种地瓜粉的鸡排就是比较古早味的鸡排的感觉嗯蒜味的我来试试",
+        "fluent": true
+      },
+      {
+        "videoId": "6-HVVjEAb24",
+        "start": 819,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 193,
+        "text": "加水还好我忍住了我让它继续蹲了十分钟你看他现在有没有真的有汤的感觉了呢我们俩连白饭都准备好了因总觉得要配一下饭比较合理哇韩式的味道是大家想要这种海带汤的话因为会有点像我们在泡那个海带牙汤的那个味道这个是还多了香油的香气煮了牛肉之后那个出了那个肉甜味也会融进去里面所以它对我来说比较像是韩式的味道这不单纯因会胆薄 happy通常呢韩国女生如果吃完小孩之后会喝一好一阵子的那个海带汤当做坐月子",
+        "fluent": true
+      },
+      {
+        "videoId": "Hbvc0k-_dDM",
+        "start": 396,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 8,
+        "text": "了哇的香猪的 q 弹",
+        "fluent": true
+      },
+      {
+        "videoId": "Hbvc0k-_dDM",
+        "start": 992,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 53,
+        "text": "好的牛肉泡一下汤感觉加一点胡椒不错嗯加一点好可我觉得跟泡菜一起吃也不错所以我觉得这种淡淡的咸味不要太重口味",
+        "fluent": true
+      },
+      {
+        "videoId": "Hbvc0k-_dDM",
+        "start": 1587,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 214,
+        "text": "配上蒜味也很棒就是我有点难取决反正我觉得两个都很帮大家有兴趣可以试试看第三个是原味的酸面包第四个的话是火腿口味的虽然火腿口味是第四名但我觉得它吃起来的风味很特别一定要试试看我觉得安国店很推荐大家来买因为我不确定说他是不是因为刚开没多久分店所以他排队其实没有广上市场人这么多所以我们刚来的时候很快就买到我觉得非常的幸运而且这边其实很适合拍照不过广上市场还可以逛街看你们个人呢嘿就这样耶我现在回饭店然后呢",
+        "fluent": true
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "mandarin",
+      "share": 1,
+      "langs": "zh,zh,zh,zh,zh,zh,zh,zh,zh"
+    }
+  },
+  {
+    "name": "Lazy Chinese - Comprehensible Input",
+    "url": "https://www.youtube.com/@Lazy-Chinese",
+    "category": "learning",
+    "expected_label": "mandarin",
+    "why_tricky": "Comprehensible input podcast in slow Mandarin; English channel name and titles.",
+    "clips": [
+      {
+        "videoId": "NdwR3zhDX0Y",
+        "start": 153,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 47,
+        "text": "是他的妈妈他喜欢什么呢他喜欢咬东西他喜欢咬这个他喜欢咬这个还有那个还有这个他喜欢咬东西 for不",
+        "fluent": true
+      },
+      {
+        "videoId": "NdwR3zhDX0Y",
+        "start": 383,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 41,
+        "text": "tan 我哈萨克人我哈萨克人哈萨克人我住在越南六月了他住在越南了嗯很很ura 你喜吃什",
+        "fluent": true
+      },
+      {
+        "videoId": "NdwR3zhDX0Y",
+        "start": 613,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 53,
+        "text": "开行因为我喜欢他做的拖鞋嗯这个拖鞋是我的第三个新的东西好这就是我的三个新的东西第一个新的东西就是一只狗 no ",
+        "fluent": true
+      },
+      {
+        "videoId": "V21ZcvqS-aA",
+        "start": 311,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 98,
+        "text": "很很难过对对那个时候我觉得这个男人他要什么他到底要什么对对我这么可爱还不够吗你还要什么现在的你还这样觉得吗不不不呃我那个时候是觉得我已经告诉你了呀我已经很清楚的告诉你我不要孩子我不要结婚我不要工作",
+        "fluent": true
+      },
+      {
+        "videoId": "V21ZcvqS-aA",
+        "start": 778,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 116,
+        "text": "在我的生活有很大的麻烦嗯我没有钱付房租对嗯对呀我们分手的时候嗯我的生活和他的生活没有关系他不可能帮我付房租当然对不对嗯所以现在你的男朋友跟你说嗯苏青你要做这个我觉得她是真的相信你可以做到所以她会跟你说有时候我看到我妈妈照顾我爸爸天哪",
+        "fluent": true
+      },
+      {
+        "videoId": "V21ZcvqS-aA",
+        "start": 1244,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 122,
+        "text": "我觉得我是一个很普通的人好如果我可以做一点点好事嗯我觉得就可以了就是我可以做到的嗯嗯我我也觉得可以做无用之术就是我喜欢这个的点是我觉得我不需要别人告诉我我有没有用嗯就是我自己认识我自己我我知道我需要什么适合做什么喜欢做什么想要做什么嗯嗯那我就去",
+        "fluent": true
+      },
+      {
+        "videoId": "ijZ8JMfNetY",
+        "start": 189,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 88,
+        "text": "台湾的糖嗯嗯嗯所以现在现在你住在越南你可以吃到台湾的东西吗不可以没有都没有昨天昨天昨天我跟我的男朋友说哦我好想吃台湾的蛋饼嗯对哦真的好的我我和西卡一样我觉得嗯我很喜欢中国菜可是",
+        "fluent": true
+      },
+      {
+        "videoId": "ijZ8JMfNetY",
+        "start": 473,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 86,
+        "text": "选了一还是二我选二没有钱很无聊没有钱很好玩哦很好玩对不起我今天的脑子啊没有钱没有钱很无聊好怕我好难过那让我死了吧啊没有钱很好玩哦所以我们我们中文老师真的没有钱都没有钱对可是",
+        "fluent": true
+      },
+      {
+        "videoId": "ijZ8JMfNetY",
+        "start": 756,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 90,
+        "text": "知道要多少钱可是我我记得很贵嗯对我知道我知道在澳大利亚离婚要多少钱好这个要做多少博客给了不用我记得我离婚的时候嗯是五百多澳币哦还好还可以哎哎不对不对不对更多吗哎我觉得可能是九百九百",
+        "fluent": true
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "mandarin",
+      "share": 1,
+      "langs": "zh,zh,zh,zh,zh,zh,zh,zh,zh"
+    }
+  },
+  {
+    "name": "Mandarin Corner",
+    "url": "https://www.youtube.com/@MandarinCorner",
+    "category": "learning",
+    "expected_label": "mandarin",
+    "why_tricky": "Comprehensible-input channel mostly in Mandarin, but English name and English titles ('Free New HSK Level 1') suggest an English-taught course.",
+    "clips": [
+      {
+        "videoId": "rfe3MSe_ak4",
+        "start": 463,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "rfe3MSe_ak4",
+        "start": 1158,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "rfe3MSe_ak4",
+        "start": 1852,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "PaHLCsOw0Mk",
+        "start": 307,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 22,
+        "text": "星期一星期二星期三星期四星期五星六星星天休天",
+        "fluent": true
+      },
+      {
+        "videoId": "PaHLCsOw0Mk",
+        "start": 769,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "PaHLCsOw0Mk",
+        "start": 1230,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 1,
+        "text": "同"
+      },
+      {
+        "videoId": "lENIAumdlkI",
+        "start": 435,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 15,
+        "text": "妹妹妹妹和和 ok哥哥呢没有家己",
+        "fluent": false
+      },
+      {
+        "videoId": "lENIAumdlkI",
+        "start": 1089,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 21,
+        "text": "有几口人我家有四口人爸爸妈妈妹妹和我 ok木",
+        "fluent": true
+      },
+      {
+        "videoId": "lENIAumdlkI",
+        "start": 1742,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 1,
+        "text": "야"
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "mixed",
+      "share": 0.67,
+      "langs": "zh,zh?,zh"
+    }
+  },
+  {
+    "name": "Blabla Chinese - Comprehensible Input",
+    "url": "https://www.youtube.com/@blablachinese7526",
+    "category": "learning",
+    "expected_label": "mandarin",
+    "why_tricky": "Small (~13k) CI channel, Mandarin audio stories; English titles, little written about it.",
+    "clips": [
+      {
+        "videoId": "3J1d2v4okYw",
+        "start": 76,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 115,
+        "text": "叫小辣椒我见到这个老爷爷的时候我会和他打招呼早上好早上好但是呢有的时候如果我们在这里然后这个老爷爷他离得比较远的时候可能我也没有说哎早上好我没有这个呃因为比较远还有我也觉得我没有非常非常的想和他嗨打招呼因为早上我也想一个人很安静的",
+        "fluent": true
+      },
+      {
+        "videoId": "3J1d2v4okYw",
+        "start": 191,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 107,
+        "text": "他说我很漂亮很漂亮然后我听到第一遍的时候我觉得有一点点奇怪有一点奇怪啊为什么说这个如果他说一遍 ok 如果别的人说你啊你很漂亮我说啊谢谢我很开心但是我的感觉是很奇怪为什么可能是因为我感觉他在一直看着我看着我所以我觉得啊",
+        "fluent": true
+      },
+      {
+        "videoId": "3J1d2v4okYw",
+        "start": 306,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 103,
+        "text": "人你们正常的这个离得这么远它是离得很近那个时候我觉得啊好恶心很恶心很恶心然后我很快很快我说哈谢谢谢谢然后我很快和我的狗走了我不想回头所以可能嗯以后如果我再见到这个老爷爷可能哈早上啊可能很快打招呼然后很快走了",
+        "fluent": true
+      },
+      {
+        "videoId": "6cmWpSqWRYI",
+        "start": 61,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 84,
+        "text": "在那个时代在古代都是男性做皇帝的时候为什么武则天他可以很特别他可以是唯一一位做皇帝的女性呢他最开始进入皇宫的时候他也很年轻皇宫就是皇帝他生活和工作的地方皇宫所以这个皇帝",
+        "fluent": true
+      },
+      {
+        "videoId": "6cmWpSqWRYI",
+        "start": 154,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 110,
+        "text": "任武则天所以开始可能武则天帮助他一点儿但是后来呢越来越多所以武则天他的权力也越来越大他也可以参与到很多国家大事的决定上后来嗯第二个皇帝也去世了他去世以后他的儿子做了第三个皇帝这个皇帝呢不是武则天这个皇帝是武则天的儿子但是",
+        "fluent": true
+      },
+      {
+        "videoId": "6cmWpSqWRYI",
+        "start": 246,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 112,
+        "text": "可以做到的别的女性没有做到过皇帝这个最高的位置很多人觉得武则天是一个坏女人因为呢有一个很流行的关于武则天的故事是说武则天他为了做皇帝为了有更多的权利呢他有很多的对手对手就是不同意他的人他为了让他的对手嗯失败她可以做皇帝武则天",
+        "fluent": true
+      },
+      {
+        "videoId": "ePEnvElf9Sg",
+        "start": 313,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 77,
+        "text": "他说啊我今天我从深圳回家他我在广州他在深圳深圳也是很大的城市他回家他的家在嗯也是广州的嗯旁边很近啊他去他的爸爸妈妈家他说今天我回家我的爸爸妈妈给我相亲他说",
+        "fluent": true
+      },
+      {
+        "videoId": "ePEnvElf9Sg",
+        "start": 784,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 109,
+        "text": "我和这个男生一起吃饭 o k 好的然后我们一起吃饭然后呢吃饭以后呢是这个男生的妈妈给我的妈妈发信息说怎么样怎么样啊你的女儿觉得怎么样我的儿子觉得怎么样啊还有这个男生的姥爷他的妈妈的爸爸他的姥爷和我的姥爷他们也是朋友他们也认识",
+        "fluent": true
+      },
+      {
+        "videoId": "ePEnvElf9Sg",
+        "start": 1255,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 120,
+        "text": "哦很开心还是你想要一个房子你想要在深圳在广州有一个房子还是你想要在我们的家在爸爸妈妈的家老家有一个房子你想要孩子还是你不想要孩子他们都忘了kity 他们想啊房子啊孩子啊kiki 啊没有kity 他们没有想kiki 忘了kiki 他们忘了kiki 想什么",
+        "fluent": true
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "mandarin",
+      "share": 1,
+      "langs": "zh,zh,zh,zh,zh,zh,zh,zh,zh"
+    }
+  },
+  {
+    "name": "Yoyo Chinese",
+    "url": "https://www.youtube.com/@YoyoChinese",
+    "category": "learning",
+    "expected_label": "mixed",
+    "why_tricky": "Learning channel mostly taught in English with Mandarin examples; Mandarin share may fall below 25% (other).",
+    "clips": [
+      {
+        "videoId": "YDE4-zEHmjA",
+        "start": 27,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 130,
+        "text": "网红店吸引了很多人专程前往不久前在北京故宫博物院附近一家叫做故宫角楼的咖啡厅开张营业了而且立刻成为了热门的打卡地这间咖啡厅最特别的地方就是它不仅是一处可以让游览故宫的游客休息放松的餐饮店更是富含着故宫的文化创意和创意思路整间咖啡厅的装修风格来源于中国的国宝之一",
+        "fluent": true
+      },
+      {
+        "videoId": "YDE4-zEHmjA",
+        "start": 69,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 131,
+        "text": "地上的壁画隔断的纱窗样式都是取自于这幅名画另外店内提供的饮品和糕点也都不简单很多都是通过查阅了中国清代的宫廷饮食档案在结合现代的制作工艺创新出来的比如根据清代著名的皇帝康熙对巧克力的喜爱制作了名为康熙最爱巧克力的热饮和以宫廷中喜爱的例子作为味道的咖啡还有抹茶味道",
+        "fluent": true
+      },
+      {
+        "videoId": "YDE4-zEHmjA",
+        "start": 111,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 84,
+        "text": "很不一样的体验如果有机会去故宫玩的话您不妨也去品尝一下角楼咖啡吧那么在你的国家有没有这种非常有特色的咖啡厅呢今天的播报就到这里希望大家多多关注悠悠播报我是小优我们下期见",
+        "fluent": true
+      },
+      {
+        "videoId": "-hBJz6OSQ9Q",
+        "start": 64,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 434,
+        "text": "it's all based on journey to the west which is one of china's great classical novels written all the way back in the 16th century so this isn't just some new fantasy world it's the modernday version o"
+      },
+      {
+        "videoId": "-hBJz6OSQ9Q",
+        "start": 161,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 374,
+        "text": "turn wuang is finally defeated by the buddha himself no less and he gets imprisoned under a mountain for500 years ouch but he gets one shot at redemption and that shot is the journey to the west he do"
+      },
+      {
+        "videoId": "-hBJz6OSQ9Q",
+        "start": 257,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 461,
+        "text": "rebel fighting just for himself but then on the journey all of his incredible power gets a new purpose protecting his master he becomes a loyal protector and finally he becomes an enlightened disciple"
+      },
+      {
+        "videoId": "3ESUmmZ-DtQ",
+        "start": 27,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 134,
+        "text": "春节期间上映也被叫做春节档在二零二一年的牛年春节七天假期里中国全国的电影票房达到了破纪录的七十八点二二亿人民币其中最火爆的电影就是唐人街探案三和你好李焕英分别拿下了三十五点六二亿和二十七点二二亿人民币的票房创造了国内外的多项票房记录可见中国人在春节期间看电影有多么热情",
+        "fluent": true
+      },
+      {
+        "videoId": "3ESUmmZ-DtQ",
+        "start": 67,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 133,
+        "text": "火热也是近十几年来的事电影公司抓住了春节假期期间人们在家休息又没有太多娱乐活动可以选择就推出了适合节日期间观看的电影让人们逐渐形成了在春节期间看电影的习惯这种春节档的电影一般都是剧情轻松幽默气氛也比较热闹比如甲方乙方西游降魔篇疯狂外星人和唐人街探案系列等等很符合人们",
+        "fluent": true
+      },
+      {
+        "videoId": "3ESUmmZ-DtQ",
+        "start": 108,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 106,
+        "text": "推荐上面这些电影给对中国文化感兴趣的朋友和中国人一起感受节日的气氛那么在你的国家有没有这种适合节假日观看的电影呢在节日期间人们都会参加哪些娱乐活动呢好了今天的播报就到这里希望大家多多关注悠悠播报我是大优我们下次见",
+        "fluent": true
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "mixed",
+      "share": 0.67,
+      "langs": "zh,zh,zh,en,en,en,zh,zh,zh"
+    }
+  },
+  {
+    "name": "Mandarin Blueprint",
+    "url": "https://www.youtube.com/@MandarinBlueprint",
+    "category": "learning",
+    "expected_label": "other",
+    "why_tricky": "Method/motivation channel spoken almost entirely in English despite 'Mandarin' in the name.",
+    "clips": [
+      {
+        "videoId": "1QfraJG-piE",
+        "start": 175,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 560,
+        "text": "that flight was in preparation for one specific evening with specific people in it now we made a whole video about what fluent actually means and i've linked it at the end of this one so i won't retea"
+      },
+      {
+        "videoId": "1QfraJG-piE",
+        "start": 439,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 565,
+        "text": "eaason date to reach fluency is you know x probably three and a half years or so three to three and a half years and so that's an input based one i'm inputting 60 minutes per day and the output would "
+      },
+      {
+        "videoId": "1QfraJG-piE",
+        "start": 703,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 515,
+        "text": "g on a regular basis of some kind and if you're ahead pull the date closer why not right that's what i mean by stretch it a little bit now sometimes life gets in the way for a stretch and you need to "
+      },
+      {
+        "videoId": "0_3vTS7JBi8",
+        "start": 199,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 496,
+        "text": "for me or maybe instead of writing down i want to learn chinese because of career or a certain promotion i might get you want to really write down i want to impress my bosses with amazing chinese so t"
+      },
+      {
+        "videoId": "0_3vTS7JBi8",
+        "start": 498,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 529,
+        "text": "to the gym i'm gonna to do something at least three to four to five times a week and it's just gonna to happen right because it's part of who i am and if i don't do that it feels weird now of course e"
+      },
+      {
+        "videoId": "0_3vTS7JBi8",
+        "start": 797,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 583,
+        "text": "so that's a very important one too in terms of get comparableible input that's all about how much you understand right so reading your first full sentence without help that's a big one your first grad"
+      },
+      {
+        "videoId": "LL8UuUMOehA",
+        "start": 164,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 483,
+        "text": "what did the rules say and that takes time and it makes you fall behind the conversation so when you come across the most common words inside sentences over and over you're doing two jobs at once you'"
+      },
+      {
+        "videoId": "LL8UuUMOehA",
+        "start": 410,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 617,
+        "text": "hundreds of those passive hours and learn almost nothing from them while training yourself to tune chinese out a while back on one of our calls a member shared exactly this experience when she first s"
+      },
+      {
+        "videoId": "LL8UuUMOehA",
+        "start": 656,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 561,
+        "text": "the native tv shows actually start making sense well the answer is a specific number and i'll get to that in a second but finding sentences where you already know most of the words while it takes cons"
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "other",
+      "share": 0,
+      "langs": "en,en,en,en,en,en,en,en,en"
+    }
+  },
+  {
+    "name": "Taiwanese Mandarin With Miss Lin",
+    "url": "https://www.youtube.com/@MandarinWithMissLin",
+    "category": "learning",
+    "expected_label": "mixed",
+    "why_tricky": "Teaches Taiwanese Mandarin, likely with English explanation; 'Taiwanese' in name could trigger Hokkien.",
+    "clips": [
+      {
+        "videoId": "I4UujfsHTIc",
+        "start": 128,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 91,
+        "text": "way 就是 is 是军事 military 但要酷呃 any mission cool depot 基地 base 你可以想象得到吗然后这边的植物也很特别很漂亮对不好感受一下那我非常喜欢来这个公园为什么呢",
+        "fluent": true
+      },
+      {
+        "videoId": "I4UujfsHTIc",
+        "start": 322,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 108,
+        "text": "对然后在这边讲话就要比较小声一点往这边走的话就是福州山公园的方向呃基本上从这边到福州山公园呃大概很快二十分钟左右你就可以眺望整个台北市可以看到一零一哦对然后所以这边也是嗯年底跨年的时候大家很喜欢来的地方因为你可以在这",
+        "fluent": true
+      },
+      {
+        "videoId": "I4UujfsHTIc",
+        "start": 515,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 93,
+        "text": "跟朋友聊个天或是跟山友爬山的朋友叫山友聊个天像量子像在很多台湾长辈都会这样哦早上约呃一起走走个步道呃练练个身体然后在这边泡茶聊天对很惬意对不对瞭望台就是看呃景色的地方对呃现在很多公园步道",
+        "fluent": true
+      },
+      {
+        "videoId": "S4URAh3L96w",
+        "start": 247,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 121,
+        "text": "对一起睡 o k 可你不会怕他说就是我不知道哎不会怕他说哎他他就不听你的话不把你当主人吗应该是说他要把你当妈妈的话他也不至于到会不尊重你还有其实你有确就是有正确的饲养方式还有正确的教育我觉得他算是一个不至于到行为有脱续的嗯脱絮脱絮就是他没有办法遵守",
+        "fluent": true
+      },
+      {
+        "videoId": "S4URAh3L96w",
+        "start": 618,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 120,
+        "text": "困难的点因为我可能之后要回台湾嘛那我就觉得说第一个你找房子你要找能够接受宠物的房东其实就很不容易啦就是你要找房子就很有限对不对其实应该是说看你想要找哪一区的房子像我现在住的这一区比较老年化的社区然后他们会害怕自己的家具被破坏那其实我就算在自",
+        "fluent": true
+      },
+      {
+        "videoId": "S4URAh3L96w",
+        "start": 988,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 142,
+        "text": "嗯可能我不知道哎可能台北的话真的是地狭人丑就是地比较小然后人很多所以我会觉得狗狗都在小小的公寓里面可是我都觉得像在法国狗狗都在外面然后就是很比较自然的生长我自己个感觉然后我狗狗跟主人的关系是很明显的嗯主人就是主人狗狗就是狗狗对当然也有很宠狗狗的时候可是我会觉得那个距离是很大的嗯我自己",
+        "fluent": true
+      },
+      {
+        "videoId": "8pKLK1V03qg",
+        "start": 128,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 116,
+        "text": "身份所以影片就变得太长了那这个部分之后我会留给上山玉山会员嗯以后应该也会用这样的方式把多出来完整的影片留给会员嗯同时我也想鼓励大家加入我的 paton 或是加入我的课程你们的各种支持都让我可以做更好的内容谢谢你们然后登山口就在这边从这个",
+        "fluent": true
+      },
+      {
+        "videoId": "8pKLK1V03qg",
+        "start": 320,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 81,
+        "text": "西就可能是坚果啊呃带个什么巧克力可是在这边台湾我们会带水果还会带自己的茶上来喝因为有人说在山上泡的茶特别好喝你看超绿的很美对不对早安好哇你看马上台北一零一你不用去",
+        "fluent": true
+      },
+      {
+        "videoId": "8pKLK1V03qg",
+        "start": 512,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 36,
+        "text": "看到吗蝶那个在台湾啊朋友都会唱一歌蝴蝶蝴蝶生的真美丽在你们国家是怎样唱的",
+        "fluent": true
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "mandarin",
+      "share": 1,
+      "langs": "zh,zh,zh,zh,zh,zh,zh,zh,zh"
+    }
+  },
+  {
+    "name": "ChinesePod",
+    "url": "https://www.youtube.com/@ChinesePodTV",
+    "category": "learning",
+    "expected_label": "mixed",
+    "why_tricky": "Dialogue lessons: Mandarin dialogues explained in English; share varies by level.",
+    "clips": [
+      {
+        "videoId": "rb_WBUNRnEo",
+        "start": 194,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 158,
+        "text": "哦你在哪个学校学习中文我在 chinese 学习中文 i'm learning chinese on chinese chinese 习中文 i'm learning chinese on chinese po 我在 chinese po 学习中文 chinese我过 chinese ive never heard chinese chinese it chinese过",
+        "fluent": true
+      },
+      {
+        "videoId": "rb_WBUNRnEo",
+        "start": 486,
+        "lang": "en",
+        "event": "BGM",
+        "chars": 53,
+        "text": "when在学校 don do that pattern chinese and the the verb it's like on"
+      },
+      {
+        "videoId": "rb_WBUNRnEo",
+        "start": 778,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 66,
+        "text": "thre monthss right head to chinesepo now register for access over0 lessons goo"
+      },
+      {
+        "videoId": "9R5qUAAD-Pc",
+        "start": 197,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 256,
+        "text": "四检查一下再签字 so that first verb is检查 so third tone second right对检查很重要哦检查 means check something to inspect it对 so often when you get something delivered they'll want you to check it make sure there's no mi",
+        "fluent": true
+      },
+      {
+        "videoId": "9R5qUAAD-Pc",
+        "start": 493,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 201,
+        "text": "一点不一样错误呢是比较呃 object的就是嗯怎么说而且也没有错那么严重如果你说都是我的错就好像你伤害了别人 hurt someone's feeling 啊什么的 ok  so if you say错误 it's like mistake and it's often not as serious对而且你不是故意的 and not intentional but if you say是我的错 i",
+        "fluent": true
+      },
+      {
+        "videoId": "9R5qUAAD-Pc",
+        "start": 788,
+        "lang": "en",
+        "event": "BGM",
+        "chars": 242,
+        "text": "is it possible that the service is so good that they proactively offer you a refund so jenny中 china is changing is淘宝 or what觉得淘宝不太可能因上种 third party三方的 seller就人家从自己 base卖东西 that also means they wouldn'"
+      },
+      {
+        "videoId": "3pCXzd-APpg",
+        "start": 206,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 130,
+        "text": "的一个动作就一直在想一直在想有点像 have be all the time single对对好的那他的女朋友就让他用微信啊然后这个男的就说这是什么新玩意儿什么新玩意儿这是什么新玩意儿不是玩常常会加一个 r音在后面玩意儿对玩意儿意思呃玩意感觉就是好像比有意思的东挺好玩的挺新",
+        "fluent": true
+      },
+      {
+        "videoId": "3pCXzd-APpg",
+        "start": 515,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 151,
+        "text": "都可以使用对随时随地都可以使用就是呃任何时间任何的地方都可以使用 any time any place 嗯而且基本可以代替短信功能代替是 substitute replace 没错前一段时间网上嚷嚷着微信也要收费嚷嚷这是什么呃如果说一个人嚷嚷着啊就是他大声的说话但这个是网上呃那他指的就是这个可能声音比较多呃动作比较大",
+        "fluent": true
+      },
+      {
+        "videoId": "3pCXzd-APpg",
+        "start": 824,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 116,
+        "text": "户名和密码都在我手里有哎路你用微信吗我觉得是个中国人应该都会用微信吗年轻人吧啊开玩笑对但是现在微信确实非常非常的普遍呃基本上年轻人都会有一个微信号呃只要你你不是也用微信吗啊也用啊嗯你觉得微信好用吗可以嗯为什么呢我觉得有时候比那个发短",
+        "fluent": true
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "mixed",
+      "share": 0.67,
+      "langs": "zh,en,en,zh,zh,en,zh,zh,zh"
+    }
+  },
+  {
+    "name": "試當真Trial & Error",
+    "url": "https://www.youtube.com/@trialanderror924",
+    "category": "cantonese",
+    "expected_label": "other",
+    "why_tricky": "Hong Kong comedy group; Chinese-character and English-translated titles, Cantonese speech.",
+    "error": "Error: Command failed: yt-dlp -q -f bestaudio --download-sections *18-48 -o /var/folders/0p/1mb5hhxd1psdylpfy5cy5dk80000gn/T/gt-G02M9B/c0.%(ext)s https://www.youtube.com/watch?v=zivwljeLpRA\nERROR: [youtube] zivwljeLpRA: This video is available to this channel's members on level: 認真毛 (or any higher l"
+  },
+  {
+    "name": "Learn Cantonese with CantoneseClass101.com",
+    "url": "https://www.youtube.com/@CantoneseClass101",
+    "category": "learning",
+    "expected_label": "other",
+    "why_tricky": "Cantonese taught in English; a learning channel that is not Mandarin.",
+    "clips": [
+      {
+        "videoId": "S059NV1Gnns",
+        "start": 897,
+        "lang": "yue",
+        "event": "BGM",
+        "chars": 81,
+        "text": "定要试咗部机先呢样最重要 ok 知道仲有啲报告影印咗未田钟先生整紧仲有乜呢啊 check个 check有时啲笔冇墨你有冇 check埋啲笔我一阵会 check 噶啦好住今日搞掂"
+      },
+      {
+        "videoId": "S059NV1Gnns",
+        "start": 2244,
+        "lang": "yue",
+        "event": "Speech",
+        "chars": 109,
+        "text": "第二多嘅系三至五个钟而 b 分行就系一个钟以下嗯 b 分行都唔够一成人运动多过六个钟冇错所以我打算举办一个运动会个个都可以参加好主意而且仲可以俾啲职员一个交流嘅好机会咁就交俾你啦知道我会尽力噶啦边一幅图代表 b 分行嘅职员呢一个女"
+      },
+      {
+        "videoId": "S059NV1Gnns",
+        "start": 3590,
+        "lang": "yue",
+        "event": "Speech",
+        "chars": 119,
+        "text": "佢会换啲乜呢一个男人喺度投诉紧一啲网上买嘅产品佢会换啲乜呢你好呢度系客户服务热线唔好意思我啱啱收到啲货但系同我买嘅嘢唔同真系好抱歉请问有啲乜嘢错咗我买咗件有三粒楼嘅褛但系收到嗰件得两粒咁应该系搞错咗个型号真系唔好意思麻烦你用运费到库机翻嚟"
+      },
+      {
+        "videoId": "p-qzwPxk93Q",
+        "start": 52,
+        "lang": "yue",
+        "event": "Speech",
+        "chars": 3,
+        "text": "酷业相"
+      },
+      {
+        "videoId": "p-qzwPxk93Q",
+        "start": 131,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 13,
+        "text": "waah sculpture"
+      },
+      {
+        "videoId": "p-qzwPxk93Q",
+        "start": 209,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 69,
+        "text": "actress director great job on completing the quiz if you didn't get 100 don't worry"
+      },
+      {
+        "videoId": "B2Vs2R1x97g",
+        "start": 623,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 216,
+        "text": "holiday words series we're going to talk about some holidays and events in hong kong in this video we're going to talk about is budd birthday budd of budd and let's see what are the holiday words budd"
+      },
+      {
+        "videoId": "B2Vs2R1x97g",
+        "start": 1558,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 277,
+        "text": "ghost some people call the festival a hungry ghost festival as well because those restless spirits are too hungry or they died out of starvation people put incense or food outside for the roaming spir"
+      },
+      {
+        "videoId": "B2Vs2R1x97g",
+        "start": 2493,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 256,
+        "text": "ing means film intelligence film smartphone or nowadays since everybody has a smartphone we just say you not only can use a smartphone to take pictures you can also use it to browse internet how dicti"
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "other",
+      "share": 0,
+      "langs": "yue,yue,yue,en,en,en,en,en"
+    }
+  },
+  {
+    "name": "毛記電視",
+    "url": "https://www.youtube.com/@100MOSTHongKong",
+    "category": "cantonese",
+    "expected_label": "other",
+    "why_tricky": "Hong Kong TVMost; titles use written Cantonese (嘅, 咩), audio Cantonese.",
+    "clips": [
+      {
+        "videoId": "iFkUgQk3Jbw",
+        "start": 138,
+        "lang": "yue",
+        "event": "BGM",
+        "chars": 171,
+        "text": "诶公司先啦起码系咪都几大啊系啊系啊但系你见到啲嘢几乱周围摆污糟邋遢吓唉真系我真系睇唔过啊呢啲呢度先严重吓我哋啲同事哇咁糟啊嗰啲正尸嚟啫张台咧吓几多嘢就摆埋咁咩 pick嗰啲我最中意干净嘅因为我真系有时睇唔过啊好嬲啊真系好睇下我间房几干净哦几干净哦唔系唔系唔系唔系系我间房其实做乱嘅所以我要你帮我做家私就系咁解诶我我间房太细啦先啦我推翻佢门出去房"
+      },
+      {
+        "videoId": "iFkUgQk3Jbw",
+        "start": 345,
+        "lang": "yue",
+        "event": "BGM",
+        "chars": 175,
+        "text": "哇kenny 你好系 hello hello 呢位系系呢个系我设计师阿开啊阿开花师傅你好你系好挂住你啊我挂住你帮我设计嗰个格当然当然系喺你坐先系有咩谂法咧我哋咧已经准备咗两个设计俾你睇睇先系嗱好似诶嗰啲 pitch 啊嗰啲系啦老细有两个系应该嘅我哋咧嗱俾你睇咗我哋嗰个款式先啦需要有张床啊嘛啦我哋都有两种嘅唔同高度嘅床俾你啦咁呢一个咧系一个半 u嘅床啦下低咧有柜筒"
+      },
+      {
+        "videoId": "iFkUgQk3Jbw",
+        "start": 552,
+        "lang": "nospeech",
+        "event": "BGM",
+        "chars": 3,
+        "text": "俾个礼"
+      },
+      {
+        "videoId": "qo0HsXlxpNA",
+        "start": 202,
+        "lang": "yue",
+        "event": "BGM",
+        "chars": 159,
+        "text": "但我觉得 o k 嘅我哋系一个出口嚟嘅系可以咁样做嘅系咁啊睇下点样有几衰啦十归咗我哋未咧嗱睇片之前咧记得十归我哋同埋揿埋个宗仔 lucy 你好 hello 你有咪即将结婚但系想订低一段旧嘅唔好嘅经历啊都想分享下俾大家听咁即系数秋系欢迎嗱欢迎你都好多年前都七百年前嘅啦其实最后俾我发现其实佢系疯狂食女型系点样发现咧你盼咗几耐拖先转转做"
+      },
+      {
+        "videoId": "qo0HsXlxpNA",
+        "start": 507,
+        "lang": "yue",
+        "event": "BGM",
+        "chars": 206,
+        "text": "都戒唔到口啊啲食咧就容易反弹要食咧又好难坚持单单靠意志力咧真系冇咩可能嘅因为咧身体就会分泌呢个饥饿荷尔蒙啊好难长时间去对抗尤其是喺压力大嘅时候啦就好容易食多咗造成呢个压力肥我谂好多人咧都有听过或者想打呢个瘦瘦针啦但其实佢又贵啦副作用又大和停针嘅话咧仲好易反弹添所以咧我就拣呢一款口服瘦瘦针保健替代版食品 coly g g l plus 空食受佢利用天然成分去提升人体 g l p 一荷尔蒙有助阻碍糖分"
+      },
+      {
+        "videoId": "qo0HsXlxpNA",
+        "start": 811,
+        "lang": "yue",
+        "event": "BGM",
+        "chars": 152,
+        "text": "就 m m k k 咁样同一齐再又唔系真正中意佢咁度玩翻去跟住呢段又又得好长系咯又系咯争系另一样嘢咯系啊系啊可能真系啊唔同感觉咯个男人都所以都几有趣即系因为通常咧有啲人咧就系佢好容易会稳翻同上一段感情好似嘅人嘅因为佢吸引力法则啊嘛但系你又冇咁都去好少几个呢个男人出切过啦哦即系中间系有嘅我之前嗰啲可能都系会去戚咯系"
+      },
+      {
+        "videoId": "gKpEk1gaIQI",
+        "start": 209,
+        "lang": "yue",
+        "event": "BGM",
+        "chars": 186,
+        "text": "咪都诶离过婚嘅寻求我哋嘅意见咁啊听下系咩事啦睇我我而家我哋前辈啊唔知我哋帮帮到佢啦十归咗我哋未咧嗱睇片之前咧记得十归我哋同埋揿埋个宗仔阿 b 你好 hello 四位主持你唔系应该唔系阿 b 有前辈你好啊我又好少有四十加岁嘅你嘅经验仲会一定系丰富我哋都系同你倾下偈睇唔知帮帮手喂咁你可以讲你个诶爱情问题烦恼出嚟啦我有个拍咗拖三年嘅意大利直男朋友最近呢就漏紧分手啦系咁所以我想你哋你啲意见"
+      },
+      {
+        "videoId": "gKpEk1gaIQI",
+        "start": 522,
+        "lang": "yue",
+        "event": "BGM",
+        "chars": 133,
+        "text": "啊或者即系注重自己反叛系青春期咁啱咪你我我中意长洲嘅长洲啦系啊啊系啊反啊我都觉得系诶即系如果佢真系冇鬼嘅或者系想证明俾我睇佢冇出轨嘅我真系同同事去嘅咁其实你呢四日哦小可以影张相诶同你同事诶即俾我话我哋到咗米兰啦佢冇咯你我哋出嚟食饭佢都同我讲诶我冇影相啦啲相喺我同事度"
+      },
+      {
+        "videoId": "gKpEk1gaIQI",
+        "start": 836,
+        "lang": "yue",
+        "event": "BGM",
+        "chars": 164,
+        "text": "所以嗱所以我大概听到个结论就系咧诶为你就觉得诶稳个都系开心下我觉得佢都系咁样嘅佢真系谂下一个稳个另个盘一个礼拜见下面食下饭开心下咁就冇压力我怀疑报备都系你要求跟住但但我理解嘅甚至乎佢觉得嗰个诶开心嘅程度系我随时稳都第二个咪稳咯但系你就唔得咁所以冇话就倾唔埋烂咯你冇错咯你都选择得正确咯其实所以啱啱冇问题啊系我冇要求太高啊冇冇大家"
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "other",
+      "share": 0,
+      "langs": "yue,yue,yue,yue,yue,yue,yue,yue"
+    }
+  },
+  {
+    "name": "我係多師奶 C-Lady",
+    "url": "https://www.youtube.com/@c-lady",
+    "category": "cantonese",
+    "expected_label": "other",
+    "why_tricky": "Hong Kong housewife travel vlogs, including trips to mainland cities (Hangzhou) which might suggest Mandarin.",
+    "clips": [
+      {
+        "videoId": "TblZgJgR1Xw",
+        "start": 243,
+        "lang": "yue",
+        "event": "BGM",
+        "chars": 10,
+        "text": "基本上都系俾行人行嘅"
+      },
+      {
+        "videoId": "TblZgJgR1Xw",
+        "start": 608,
+        "lang": "yue",
+        "event": "Speech",
+        "chars": 36,
+        "text": "唔同嘅呢边呢系红线嘅嗰边系厚少少嘅呢两边呢有啲叶都几红嘅但油好饭店嘅呢度"
+      },
+      {
+        "videoId": "TblZgJgR1Xw",
+        "start": 972,
+        "lang": "yue",
+        "event": "Speech",
+        "chars": 109,
+        "text": "可能啊但系佢因为而家啲系旺季啊嘛睇红个旺季啊嘛嗯哇好靓整晒啲红嘅嗰波喺度嗰啲花球哇系红红地好靓我都觉都度有树哇几靓呢间茶色阵间几优雅系啊好有优雅我哋包墙我哋真系包墙啊到时啦啊真望住啲绿柚好靓啊系啊其实真系唔错啦哇山好靓"
+      },
+      {
+        "videoId": "dNYXCOe5YeQ",
+        "start": 372,
+        "lang": "yue",
+        "event": "Speech",
+        "chars": 141,
+        "text": "系女士嚟噶啦你睇下啲花盘几靓米奇啊租一个呢啲盘进似就话几多钱哇一百蚊一百蚊一百蚊就嗬系啊租一层就有特价啦租一层平之头先嗰个诶摆啲草咁样咯哇呢个烧两层嘅呢个租三层三层添啊发烧油嚟发烧油咁咪周先啦你冇信心冇中到人哋咁靓啊试下啦玩下嘛系啦诶初头嚟咧好多人都话冇信心嘅个个都话自己系植物杀手"
+      },
+      {
+        "videoId": "dNYXCOe5YeQ",
+        "start": 930,
+        "lang": "yue",
+        "event": "Speech",
+        "chars": 170,
+        "text": "咁样嘅咁我我哋成日应用咧诶三到小天地系俾到佢哋喺工作之余屋企之余另到一个自己嘅空间其心灵满足系就更加更加紧要哦系俾到佢哋啊呢铺咁得意一啲页咁细嘅得佢系超迷你总嚟嘅系呢啲嚟佢佢佢佢叫做 pizza 嗯嗯咁我好似好似好似好好似 pizza 咁样嘅其实我哋同一个关系已经唔系诶客人同店主嗰讲系显系去到去到大家朋友好 friend 嘅关系嘅即系等佢哋之间亦都系"
+      },
+      {
+        "videoId": "dNYXCOe5YeQ",
+        "start": 1488,
+        "lang": "yue",
+        "event": "Speech",
+        "chars": 141,
+        "text": "稳 c怡出口因为咧我哋要去食肠粉同埋打藕字系咪肠粉系你儿自嘅至爱啊由使食到大海我我最中意食嗰个花生酱嘅我希望佢落多啲花生酱花生酱多啲可惜嗰个花生酱吸时物汁真系灵魂嚟灵魂再吸少少咖喱汁系啊系啊啊更加好啦好味啊啫就系喺呢一个 c怡出口即系鸭寮街嗰个出口啊我哋一行出嚟咧见到呢个鸭寮街公厕咧吓"
+      }
+    ],
+    "failed_clips": 3,
+    "audio_label": {
+      "label": "other",
+      "share": 0,
+      "langs": "yue,yue,yue,yue,yue,yue"
+    }
+  },
+  {
+    "name": "碌斌深夜粵語廣播",
+    "url": "https://www.youtube.com/@lubinlost",
+    "category": "cantonese",
+    "expected_label": "other",
+    "why_tricky": "Cantonese storytelling ('粵語' in name), but titles are in standard written Chinese with no Cantonese markers.",
+    "clips": [
+      {
+        "videoId": "Ja6Y0HWqwSI",
+        "start": 206,
+        "lang": "yue",
+        "event": "BGM",
+        "chars": 162,
+        "text": "喺道教文化入边大蛇系守护祭坛嘅灵物牛头骨架咧系献俾神明嘅祭品再加埋抬高咗起身嘅主舞台一眼望过去啊就好似一个祭祀主坛咁而嗰几万名坐低位嘅观众呢佢哋嘅气息系会顺住场地向上汇聚嘅咁观众直星星点点着起身嗰啲手机灯光呢就被睇成系持续向弹场输送能量嘅载体呢种高低错落嘅布局啊会锁住所有汇聚而嚟嘅人气唔俾能量外散顺呢一场万人聚集嘅演出呢其"
+      },
+      {
+        "videoId": "Ja6Y0HWqwSI",
+        "start": 515,
+        "lang": "yue",
+        "event": "BGM",
+        "chars": 169,
+        "text": "唱会期间太过兴奋体力不知道似嘅而且人多聚集嘅地方好容易传播病菌咁如果你抵抗力一差后续一段时间唔舒服其实都系正常嘅就唔一定代表话系演唱会吸咗大家嘅扬气但系除此之外呢本场巡演有一个官方互动环节都俾翻网友讨论得好犀利嘅嗱官方号召全国各地到场嘅粉丝自己带住啲家乡泥入场统一收集汇总呢个做法听落去啊就已经够晒特别啦咁于是就有网友话啦一方水土养一方人"
+      },
+      {
+        "videoId": "Ja6Y0HWqwSI",
+        "start": 824,
+        "lang": "yue",
+        "event": "BGM",
+        "chars": 159,
+        "text": "去拣三排六号呢个位呢因为三三不尽碌碌无穷呢个成个场馆最好最可以吸收阳气嘅位唔至于包厢偏西北边属于火库咧就系话能量最后会归到库入边被吸收晒虽经过呢两重推论之后结果就开出嚟啦李嘉诚系为咗吸阳气而开续命嘅甚至有啲人更夸张咁话五月天呢场演唱会啊其实就系为佢准备嘅嗱虽然话为咗李嘉诚特登开场演唱会呢个讲法咧我觉得难免系啲夸张嘅但"
+      },
+      {
+        "videoId": "4zPu3sr-Tfk",
+        "start": 208,
+        "lang": "yue",
+        "event": "BGM",
+        "chars": 173,
+        "text": "到车之后佢情绪相当平稳佢不停咁话我冇恶意噶我就想攞翻属于我自己嘅嘢仲多次向车上面嘅乘客道歉跟住佢就拉埋啲窗帘收走大家嘅手提电话将人指集中到车厢尾部跟住喺车窗上面贴纸仔写明话下午三点之前一定要俾个答复佢其实嚟到呢部仲可以睇得出佢系并冇杀意嘅因为从朝头早上午十点半开始佢就分批放人先系一位六十六岁嘅女士话自己肚痛跟住佢七十二岁嘅老公话要去买糖尿病嘅样"
+      },
+      {
+        "videoId": "4zPu3sr-Tfk",
+        "start": 522,
+        "lang": "yue",
+        "event": "BGM",
+        "chars": 123,
+        "text": "七点二十分车门隔离响起咗第一声枪声而冧低嘅系俾手铐靠喺车门扶手上面嘅领队谢廷俊枪声响起之后车厢入边又是响起连片嘅枪声有人扑咗上去有人挡喺其他人前面跟住门多刹就命令司机挞住部车车一踏着想开嘅时候警察嘅反应好快佢哋做嘅第一件事系开枪打爆车胎官方嘅解释"
+      },
+      {
+        "videoId": "4zPu3sr-Tfk",
+        "start": 835,
+        "lang": "yue",
+        "event": "BGM",
+        "chars": 145,
+        "text": "当日就嚟到现场视察但系佢接受采访嘅时候呢系笑口噬噬嘅呢个亦都成为咗成场营救最知名嘅一个镜头咁后来一问佢啦你当时点解要笑呢佢解释就话我笑代表我愤怒喺此情此景下听到呢句说话嘅我真系唔方又笑有愤怒呢嗱佢仲话救援不力主要要怪媒体系媒体嘅报道激嬲咗门多撒后来香港特区政府要求菲律宾道歉嘅时候阿基诺三十"
+      },
+      {
+        "videoId": "ZiuwWd6cSfY",
+        "start": 217,
+        "lang": "yue",
+        "event": "BGM",
+        "chars": 158,
+        "text": "创始地所以唔知人都喺度估应该就系此湛江啦二零一七年系佢自我恐惧最强烈嘅阶段跟住二零一八一九年佢有对人类未来嘅大历史感到严重恐慌当时佢啊确实系抱住唔带上生活落去嘅心态我谂呢应该就系思想自杀啦佢话自己嘅身体已经发生不可逆转嘅伤害呢种状态令到佢喺正常人入边鹤立鸡群容易遭到攻击生活过得唔好咁就喺呢个时间呢二零一九年嘅六月企"
+      },
+      {
+        "videoId": "ZiuwWd6cSfY",
+        "start": 868,
+        "lang": "yue",
+        "event": "BGM",
+        "chars": 173,
+        "text": "深奥啲嘅嘢吓咁就系 k f k 之前回答入边提到过但并冇解释嘅一样叫做律嘅嘢呢位女老师终于俾出咗答案啦佢话呢个系佢自创嘅叫法亦都系打开未来嘅重要所匙之一咁律究竟系咩嘢呢嗱按句说法嚟讲佢系一种类似于宇宙美粒嘅存在喺度影响紧呢个世界都喺度影响紧人嘅生物活动就好似阳光喺度影响紧人咁而区别在于律系有成千上万种人系好难去控制嘅人呢会俾啲弱小嘅律嚟影响但系强大嘅律"
+      }
+    ],
+    "failed_clips": 1,
+    "audio_label": {
+      "label": "other",
+      "share": 0,
+      "langs": "yue,yue,yue,yue,yue,yue,yue,yue"
+    }
+  },
+  {
+    "name": "MY FM 好玩",
+    "url": "https://www.youtube.com/@MY-malaysia",
+    "category": "cantonese",
+    "expected_label": "mixed",
+    "why_tricky": "Malaysian Chinese radio station historically Cantonese-heavy; simplified-character Mandarin-looking titles; current speech may be largely Mandarin.",
+    "clips": [
+      {
+        "videoId": "4bpxr8iHoGU",
+        "start": 144,
+        "lang": "yue",
+        "event": "BGM",
+        "chars": 71,
+        "text": "其实真系好神奇嘅我哋忙不得了啦啲人好好奇喂你哋都已经上一山彩牌我嘅果以前我要大像啦加要补晒系啦而家个科技就得啦早晨早晨我周主演早晨早晨我系德伟"
+      },
+      {
+        "videoId": "4bpxr8iHoGU",
+        "start": 361,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 105,
+        "text": "大家好 ok我长还是很忙呢我在时代表发言一下因为刚才我们在台上进行第二天的 res这次比较完整呢有这个啡然后光后不小心注入了一点点的情感我知为什么因为我们从练歌选哥拉所有的过程我有一次是觉得比 o 只是刚才不得可能就是",
+        "fluent": true
+      },
+      {
+        "videoId": "4bpxr8iHoGU",
+        "start": 577,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "vJOHdATxxhQ",
+        "start": 215,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 45,
+        "text": "音乐出来哇你就想到我训练的时候多辛苦啊筹备了很多东西一哭完全唱不到完了我也感动 d j 歌手舞的",
+        "fluent": true
+      },
+      {
+        "videoId": "vJOHdATxxhQ",
+        "start": 538,
+        "lang": "zh",
+        "event": "Laughter",
+        "chars": 173,
+        "text": "后还有一个是走落的那一段的特定的一些动作有这样子吧其他时候是你你不是是啊老是你会不会有觉得 miel 的一些动作啊嗯他会有点驼背的感觉有你在这些人周周边哦很明显的因为他们他们都很挺第二个是你的表情有时候也会让我疑惑是讲动作那个快半拍的人也是不要笑啊一直快半拍的我只能说你们要加油吧请他们在 on air前 on air拜托练下午如果是舞台是一有一百分的话今天",
+        "fluent": true
+      },
+      {
+        "videoId": "vJOHdATxxhQ",
+        "start": 861,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 126,
+        "text": "我们富奥两了富豪富奥两九九刚刚我有九十八点五只是化妆服装装服装下去就很像啊所以就是魔术师所以一定棒爆一定炸炸炸一定全非你去担其他三组 ok对反先翻先翻先翻先可以可以嘅升你 ok yes睇老细都我哋连多一两次啊我哋真系可啦唔使 ok 噶啦 ok k 即系 ok 冇时间啦 o今",
+        "fluent": false
+      },
+      {
+        "videoId": "77YH21AjUcg",
+        "start": 36,
+        "lang": "yue",
+        "event": "Laughter",
+        "chars": 177,
+        "text": "跟住就由头湿到尾咯成个会好敏重好敏强啊你好敏阵所以嗰啲现实嘅眼神系真系你加入咗新嘅公司之后令到你有个嗯我要更加真实我觉得入咗新嘅唱片公司咧系一个开端因为我记得我入咗英旺嘅时候咧我嘅同事就同我讲太正惊啦你呢访问好闷啊即系全部一样嘅都你未讲已经知道你讲咩啦谂你放松啲啦其实你好好笑噶咦竟然有人想睇我好笑咁其实系俾到信心我嘅我就慢慢捉到啦慢慢捉到原来系 free"
+      },
+      {
+        "videoId": "77YH21AjUcg",
+        "start": 91,
+        "lang": "yue",
+        "event": "BGM",
+        "chars": 209,
+        "text": "有挂住我啊阿妈冇佢讲笑嘅佢系笑住讲嘅冇跟住话哦 ok 咁我而家俾你几个选择嘅 o 而家嘅你系 ready for定系 not ready for ok 再开演唱会 ready 因为开演唱会系我毕生嘅梦想希望可以快啲翻嚟开演唱会 ready for人生嘅下一个阶段 different fun ready or not ready  ready  and not ready 因为我系几随缘啊对呢件事我"
+      },
+      {
+        "videoId": "77YH21AjUcg",
+        "start": 145,
+        "lang": "yue",
+        "event": "BGM",
+        "chars": 220,
+        "text": "可能性就系如果有一日我可以开始可以放慢事业嘅脚步我可能都会搬翻嚟住因为我觉得喺马来西亚生活系舒服嘅哼咁你今次翻嚟嘅时候会唔会觉得呢度依然系一个好 warm嘅地方定系诶忽然间觉得自己好似呢度好似唔系我屋企但系我好似我屋企呢个归属咁嘅部分马来西亚咧就正如你头先咁讲我明知道系我屋企一翻嚟好开心嘅即系觉得系哇好放松嘅地方好大啊又见翻啲老朋友好开心啊咁两边我都会觉得有家嘅感觉嘅嗯嗯一边就系好熟悉就其实两边都"
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "mixed",
+      "share": 0.38,
+      "langs": "yue,zh,zh,zh,zh?,yue,yue,yue"
+    }
+  },
+  {
+    "name": "神經俠侶 - SG Couple",
+    "url": "https://www.youtube.com/@SGCouple_Jo_Hiromi",
+    "category": "cantonese",
+    "expected_label": "other",
+    "why_tricky": "'SG Couple' suggests Singapore (Mandarin/English); actually Hong Kong comedian Joseph Lam's Cantonese talk show.",
+    "clips": [
+      {
+        "videoId": "awHCm1SwOJo",
+        "start": 402,
+        "lang": "yue",
+        "event": "Speech",
+        "chars": 126,
+        "text": "咁样我我谂表面上嘅教育表面上嘅文化好似系讲紧要共荣要诶和谐要群体但系真实生活世界里边个个都系有少少系诶我好就好过你就我爽皮系啊你嘅唔成功就系我嘅快乐但我觉得外国有少啲噶独立啲噶大家都睇文化啦讲外国喺外国边度啦诶即系你你你英国啊美国啊甚至乎美国唔同嘅地区"
+      },
+      {
+        "videoId": "awHCm1SwOJo",
+        "start": 1006,
+        "lang": "yue",
+        "event": "Speech",
+        "chars": 173,
+        "text": "觉得而家都唔唔唔系存在恨咯嗯系纯粹系唔想再放个心出嚟但你咁样会唔会有少少太过冷漠咧收埋自己其实冷唔冷漠我觉得我自己而家情绪咁稳定其实都冇话点样嘅纯粹系觉得啊情绪解决唔到问题咁不如我哋面对或者系处理好做好自己嘅嘢啦即系我谂法系咁但你你个好处系你做嘅工作同埋你而家嘅所谓地位啊美姐喂你唔会遇到好多人搞你啊嘛或者讲紧系有啲人喺工作环境里边喺学业环境啊喺"
+      },
+      {
+        "videoId": "awHCm1SwOJo",
+        "start": 1609,
+        "lang": "yue",
+        "event": "Speech",
+        "chars": 175,
+        "text": "我明嘅呢个我好明但系我我我即使系作为嗰个俾人搞嘅人都好我都唔会太有感觉啊因为我我我明佢唔好唔会太嬲嗰个人应该感觉唔系呢个我都明嘅以前嘅我咧我会好好辛苦自己即系喊细个啲就喊啦因为懦弱啲嘛日日喺度喊觉得好委屈咁样而家就大大下咧就可能有种好想复仇即系未必我真系做啲乜嘢但我一定要赢你即系嗰种感觉而家好嗰两个例子因为我同你系调翻转嘅系咪你系嗰个细个俾人欺凌过"
+      },
+      {
+        "videoId": "BDPgVUl6oiE",
+        "start": 636,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 303,
+        "text": "hugely difficult decision in your life i said no it wasn't although this is linked to our last episode on intuition and i think i have a rather good sense of intuition and i just knew not just felt ne"
+      },
+      {
+        "videoId": "BDPgVUl6oiE",
+        "start": 1591,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 318,
+        "text": "in that case your tolerance level is just too low how difficult is it really just to graduate and get a especially when such people come to me aren't exactly at the sort of world class universes anywa"
+      },
+      {
+        "videoId": "BDPgVUl6oiE",
+        "start": 2545,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 339,
+        "text": "it it quite early on that no its it's not for me but i think people do that because they want this familiar familiarity comfort from knowing that by quitting they know for sure but things won't change"
+      },
+      {
+        "videoId": "YUe0oWwovTU",
+        "start": 826,
+        "lang": "yue",
+        "event": "Speech",
+        "chars": 165,
+        "text": "呢样嘢死啊嘛嗱你唔食我想象唔到咯你唔食饭你会死啊你口渴唔饮水你会死啊你眼瞓都未试过啊系啊你你眼瞓样嘢饮水食饭痛瞓觉瞓诶呢个性教育系每日我都发生紧噶唔系系咯嗱如果你食嘢你每日点样发生啊我系发生紧啊每日做咩啫你听我讲埋先啦喂你你食你唔食嘢你会死你唔饮水你会死你唔瞓觉你会死但系咧你唔做呢样嘢咧你 physical 你系唔会死噶嘛 ok 系系啦"
+      },
+      {
+        "videoId": "YUe0oWwovTU",
+        "start": 2066,
+        "lang": "yue",
+        "event": "Speech",
+        "chars": 134,
+        "text": "佢话男人如果要女人要叫知音男人叫咩啊保养啊啊总之就系男人要 keep 住喺一个最佳状态哦喺呢个行防方面咧系要啊啊九钱一心咩意思两个概念第一喺每一次嘅交配如悦嘅时候真系要九钱一心就系乜嘢啫即系话你排唔好去到罪行哦我即系好似道教教嗰啲咁样系啦另外一个就系喺次数上面都要诶诶有下"
+      },
+      {
+        "videoId": "YUe0oWwovTU",
+        "start": 3306,
+        "lang": "yue",
+        "event": "Speech",
+        "chars": 186,
+        "text": "系我搞唔掂我到今日都系好开心而家点解你要入嚟咁样冇嗱咁所以所嗱咁但系对于佢嚟讲你一咁样咁样就嚟啦咁样嘅时候咪就系冇咗嗰种 mystery 咯冇咗嗰种营造嘅浪漫啦既然你系 understand mystery 嘅人佢都需要呢样嘢啦喺嗰一刻嗰个 moment 啊你信我啦因为其实咧你个成个 percent 咧或者你个样你副计咧其实你系应该要即系再 gentle所以而家我获得嘅建议系 mystery"
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "other",
+      "share": 0,
+      "langs": "yue,yue,yue,en,en,en,yue,yue,yue"
+    }
+  },
+  {
+    "name": "台南妹仔教你講台語",
+    "url": "https://www.youtube.com/@a_yo__oy_a",
+    "category": "hokkien_hakka_wu",
+    "expected_label": "mixed",
+    "why_tricky": "Teaches Taiwanese Hokkien, likely mixing Mandarin explanation; titles in Hokkien Han characters.",
+    "clips": [
+      {
+        "videoId": "Ee5SSUbVmPw",
+        "start": 36,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "Ee5SSUbVmPw",
+        "start": 90,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "Ee5SSUbVmPw",
+        "start": 144,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "fia3xyD4YOI",
+        "start": 131,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 4,
+        "text": "水器拌棒"
+      },
+      {
+        "videoId": "fia3xyD4YOI",
+        "start": 329,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 1,
+        "text": "蔡"
+      },
+      {
+        "videoId": "fia3xyD4YOI",
+        "start": 527,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 7,
+        "text": "酒店购选酒店购"
+      },
+      {
+        "videoId": "Ffmp_AXeyfg",
+        "start": 123,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 9,
+        "text": "如讲你去交车款迄个",
+        "fluent": false
+      },
+      {
+        "videoId": "Ffmp_AXeyfg",
+        "start": 309,
+        "lang": "ko",
+        "event": "BGM",
+        "chars": 5,
+        "text": "可세요朋友"
+      },
+      {
+        "videoId": "Ffmp_AXeyfg",
+        "start": 495,
+        "lang": "zh",
+        "event": "Laughter",
+        "chars": 6,
+        "text": "房动的车车厨"
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "other",
+      "share": 0,
+      "langs": "zh?",
+      "note": "mostly no speech"
+    }
+  },
+  {
+    "name": "公視台語台",
+    "url": "https://www.youtube.com/@ptstaigitai",
+    "category": "hokkien_hakka_wu",
+    "expected_label": "other",
+    "why_tricky": "Taiwan public TV's Taiwanese Hokkien channel; titles in Han characters read like Chinese.",
+    "clips": [
+      {
+        "videoId": "FQjONNaINLI",
+        "start": 550,
+        "lang": "nospeech",
+        "event": "BGM",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "FQjONNaINLI",
+        "start": 1375,
+        "lang": "ko",
+        "event": "BGM",
+        "chars": 6,
+        "text": "지故 시 가리잖"
+      },
+      {
+        "videoId": "FQjONNaINLI",
+        "start": 2200,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 10,
+        "text": "我 경悍所以其代我当解",
+        "fluent": false
+      },
+      {
+        "videoId": "ewiKIl1CWH8",
+        "start": 546,
+        "lang": "nospeech",
+        "event": "BGM",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "ewiKIl1CWH8",
+        "start": 1365,
+        "lang": "ko",
+        "event": "BGM",
+        "chars": 7,
+        "text": "大者我公管你公"
+      },
+      {
+        "videoId": "ewiKIl1CWH8",
+        "start": 2184,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 4,
+        "text": "계속 마시"
+      },
+      {
+        "videoId": "Ly4NxBUvOjE",
+        "start": 540,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 23,
+        "text": "做作世个家己的名还阿乱名不管最后谁的对奖拢希望",
+        "fluent": false
+      },
+      {
+        "videoId": "Ly4NxBUvOjE",
+        "start": 1352,
+        "lang": "nospeech",
+        "event": "Laughter",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "Ly4NxBUvOjE",
+        "start": 2163,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 2,
+        "text": "无公"
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "other",
+      "share": 0,
+      "langs": "zh?,zh?",
+      "note": "mostly no speech"
+    }
+  },
+  {
+    "name": "吳儂軟語 Wu Chinese",
+    "url": "https://www.youtube.com/@WuChinese",
+    "category": "hokkien_hakka_wu",
+    "expected_label": "other",
+    "why_tricky": "Shanghainese/Wu content (~23k subs); some videos are Mandarin, titles mostly simplified Chinese.",
+    "clips": [
+      {
+        "videoId": "Rs40k7IHPcA",
+        "start": 49,
+        "lang": "ko",
+        "event": "Speech",
+        "chars": 61,
+        "text": "우예好비双수 진아님감매 왜래 리의 성 다가 냉감매 미 에 리에 노 인 천이 뜨뜻 하 내 매 치로 보 에 터 하 듯 구함 맺 치런져야 나 너무 우던 빛 해 고만두신 우야"
+      },
+      {
+        "videoId": "Rs40k7IHPcA",
+        "start": 124,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 81,
+        "text": "女儿出嫁的那天趁女儿梳妆打扮时母亲就坐在女儿床口上哭唱叮嘱女儿到婆家要守规矩尽孝道当娘哭过一阵之后由阿嫂端来满满的一碗上轿饭给姑娘吃这时新娘子就拉着阿嫂哭唱上轿饭",
+        "fluent": true
+      },
+      {
+        "videoId": "Rs40k7IHPcA",
+        "start": 198,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 8,
+        "text": "时新娘子要唱报上"
+      },
+      {
+        "videoId": "FFsDzgo_5N0",
+        "start": 21,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 97,
+        "text": "两相辣辣隔面墙边的单过有的一排橱窗里向摆的侪是伊拉用的多但是来有的夏大一部分是许拍照片的葛拉辣搭就守拍出来把大家看了可他搭的展厅来有白相环节做山只简单小游戏通过之后结束拆辰光可领一张证拉来看看脚",
+        "fluent": false
+      },
+      {
+        "videoId": "FFsDzgo_5N0",
+        "start": 53,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 63,
+        "text": "看看块拍照的地方是我个人去欢喜蛮有意思的可只餐厅就是部电影有名的场面我关欢喜拉简单看到眼有交关女里场景惜看只好来过来部分结束之",
+        "fluent": false
+      },
+      {
+        "videoId": "FFsDzgo_5N0",
+        "start": 85,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 61,
+        "text": "过来做了的部分结束之后要忘记特去拿自家的参市旁边还有周边商品的卖拍照片机器跑出去之后商场里向还有适合角大娃娃寻寻看朝下再会",
+        "fluent": false
+      },
+      {
+        "videoId": "8U48pS8u9tQ",
+        "start": 36,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 83,
+        "text": "向敬备起来了趟子展览展出了四百九十两种七八十八件古界文明勿同辰光的珍贵文物也是中国博领趟发最两古老文明对话根计算果讲辣文面前展览足花费个钟头得一是文物百以上是一趟来到",
+        "fluent": false
+      },
+      {
+        "videoId": "8U48pS8u9tQ",
+        "start": 90,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 106,
+        "text": "角度萨避太子独特时代三个子典的古玩级文明传全球只有上海现在可以通统看得到都和来之后还可以到楼向来玩一玩跟我一道来看看年女展厅消失体验大家通过虚拟艺术技足五分钟身临其境有一样体验出境体验壁还有相文产品以周边小一眼眼",
+        "fluent": false
+      },
+      {
+        "videoId": "8U48pS8u9tQ",
+        "start": 144,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 90,
+        "text": "还勿一样要看人家许多付钱钞票了还是老方便电子付款一说就好在上海已经是夏天了小朋友们也开始放暑假了家长朋友们要在里相吹空调看手机好来白相躺上海夏天过节夏以参加上海家国际人节上海家光阴",
+        "fluent": false
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "other",
+      "share": 0.13,
+      "langs": "ko,zh,zh?,zh?,zh?,zh?,zh?,zh?"
+    }
+  },
+  {
+    "name": "讲闲话的夏安七",
+    "url": "https://www.youtube.com/@xiaanqi",
+    "category": "hokkien_hakka_wu",
+    "expected_label": "unknown",
+    "why_tricky": "Tiny (~4k) Shanghai-culture channel; '讲闲话' hints Shanghainese, but simplified Mandarin titles; little online evidence.",
+    "clips": [
+      {
+        "videoId": "2GOGVICWQKU",
+        "start": 47,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 218,
+        "text": "上海楼市不行了那么像我家亲戚这样的人是否只是少数呢上海楼是冷淡吗会不会再次放开限购呢如果放开限购是不是说明上海房子没人要供大于求了呢上海正是出台具体限购令啊是二零一一年的一月三十一日在两千年开始说上海房价就如同飞毛腿一样一飞冲天原因是上海市民看好楼市所以积极买房炒房吗 no no no no no 上海市民那些年更多时候都在研究另一件事情假期分网自分钞票其实让房价涨上去了从来都不是上海人而是全国各",
+        "fluent": true
+      },
+      {
+        "videoId": "2GOGVICWQKU",
+        "start": 119,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 227,
+        "text": "二零二一年那一次暂时被打击到房价了是针对二手房出台的三价就低就是指导价这让贷款额度降低难度增加所以在那些时间里二手房成交量是骤降但是松动以后又回暖了哎你说奇怪吧二手房交易在复苏啊这是必然的结果有几个原因啊其中一个就是落户政策放宽了二零二零年上海开始抢人第一年新增户籍人口比过去多了百分之四十以上第二年是过去的两到三倍第三年比过去六年的总和还要多更重要的原因是什么上海抢来的都是什么人九八五双一流研究生",
+        "fluent": true
+      },
+      {
+        "videoId": "2GOGVICWQKU",
+        "start": 190,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 243,
+        "text": "买房子最好降了没人买的朋友们或者说希望所有人都买得起的情况虽然我也不是很懂经济学但我也知道如果房价崩了那么房地产行业首当其冲受冲击银行接着贷款就会出问题就会导致破产再阶段呢金融业就会出现坏账产业萧条那么所有与之有关一切的行业都会人员失业那么失业的人去哪里找工作呢回老家和你一起竞争上岗了你的家乡有关的产业链是不是也会受牵连呢那那时候呢你又会不会被迫失业了呢千一发而动全身伤筋动骨啊大家都是利益共同体所",
+        "fluent": true
+      },
+      {
+        "videoId": "B5O6QifLobg",
+        "start": 57,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 217,
+        "text": "an music 啊穿卫衣 some you 我记得当年北方来的大学同学刚来上海就开始拐浪都说我们北方人临下怎么会怕你们零上那么上海都是第一个冬替对吧别提了我鬼模了五天真你也轰的了但是这位朋友说上海绿植种的真的挺好的这点我是很有感触的其实小冬广没有那么茂密的那个时候修路造地铁造楼到处灰蒙蒙的空气也不是很好那么上海现在城市绿化覆盖率已达到了百分之三十五点一八据说冲刺国家园林城市不远雷是啊那聊到城市规",
+        "fluent": true
+      },
+      {
+        "videoId": "B5O6QifLobg",
+        "start": 143,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 196,
+        "text": "在外地开车轻喇叭的时候只是轻轻的摸一下滴就收手了就不太会就滴滴滴疯狂的长按反正清完以后我就很心虚的感觉了这位北京朋友还说感觉上海自行车道并不多其实上海非机动车道和机动车道划分还是非常明显的只有那些小的街道啊因为这个宽度问题这样的情况呢其实不多如果你看不到自行车道那有可能就是不让你骑了他还说到北京非机动车道经常被机动车占道那我在北京的确也亲眼所见过后来我发现其实不仅是北京啊那前一阵子我去江苏",
+        "fluent": true
+      },
+      {
+        "videoId": "B5O6QifLobg",
+        "start": 229,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 248,
+        "text": "巴着去做一件事情如果今天有人违规那么停好车第一件事情就举报违反交规的人久而久之不马这个司机都会比较文明开车的很多人来上海旅游抱怨说为什么上海的垃圾桶那么少垃圾都没地方丢这么大一个城市难道还摆不起垃圾桶啊先说结果这么做的目的当然就是希望你减少垃圾排放实在不行你可以带个马甲袋放在包里回去丢在关于垃圾桶这件事情上也是有循序进进的过程的很多人是这几年才来上海旅游而上海已经落实实行垃圾分类好多年了以前在我小",
+        "fluent": true
+      },
+      {
+        "videoId": "NnlPqrBX-bc",
+        "start": 29,
+        "lang": "nospeech",
+        "event": "Laughter",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "NnlPqrBX-bc",
+        "start": 73,
+        "lang": "nospeech",
+        "event": "Laughter",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "NnlPqrBX-bc",
+        "start": 117,
+        "lang": "nospeech",
+        "event": "Laughter",
+        "chars": 1,
+        "text": "러"
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "mandarin",
+      "share": 1,
+      "langs": "zh,zh,zh,zh,zh,zh"
+    }
+  },
+  {
+    "name": "客家電視 HakkaTV",
+    "url": "https://www.youtube.com/@hakkatv",
+    "category": "hokkien_hakka_wu",
+    "expected_label": "other",
+    "why_tricky": "Taiwan Hakka TV; titles show translated to English; programmes mostly Hakka with some Mandarin.",
+    "clips": [
+      {
+        "videoId": "OqoRoDVWTDI",
+        "start": 415,
+        "lang": "zh",
+        "event": "Laughter",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "OqoRoDVWTDI",
+        "start": 1038,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 2,
+        "text": "高级"
+      },
+      {
+        "videoId": "OqoRoDVWTDI",
+        "start": 1661,
+        "lang": "yue",
+        "event": "BGM",
+        "chars": 8,
+        "text": "体可讲嘅同讲下感"
+      },
+      {
+        "videoId": "-k1OrnbkLXk",
+        "start": 24,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 8,
+        "text": "你角度转一作取完",
+        "fluent": false
+      },
+      {
+        "videoId": "-k1OrnbkLXk",
+        "start": 60,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "-k1OrnbkLXk",
+        "start": 96,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "fTaxudFtFOE",
+        "start": 416,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 103,
+        "text": "所 he没从对面对对表示游对对我刚刚看了一下地点其实后哎对对对对你都要素啊呃我是早上去买咖啡的时候然刚好看到那个电过来一个我好没有留电话这我下我就打电话问然我们我上就跟房东约时间去看当我跟老板娘说我找他一间很",
+        "fluent": true
+      },
+      {
+        "videoId": "fTaxudFtFOE",
+        "start": 1042,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 46,
+        "text": "调整对对对做一些调我觉得我刚刚真的预到你胸底度湿奶盖就会然后很重的那一种爽口起来的然基本配吧",
+        "fluent": true
+      },
+      {
+        "videoId": "fTaxudFtFOE",
+        "start": 1667,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 138,
+        "text": "现的还有整个摆设的式气改 he改编所以现在周 he买个小点心帮一因为呃公来听鬼耶呃就是打的那种整科给论搞黑周代闲听呢有我们现在有可以预定的是生日蛋糕那季节季呃像过年过节就是比如说母亲节然后父亲节都有一些限定的蛋糕那情人节有呃我们做一个像情人节我们有做那个爱心的马卡龙对对对礼小礼盒",
+        "fluent": true
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "mixed",
+      "share": 0.6,
+      "langs": "yue,zh?,zh,zh,zh"
+    }
+  },
+  {
+    "name": "鳥人間 中国史三昧",
+    "url": "https://www.youtube.com/@c-history",
+    "category": "japanese",
+    "expected_label": "other",
+    "why_tricky": "Japanese 'yukkuri' narration about Chinese history; kanji-heavy titles full of Chinese names.",
+    "clips": [
+      {
+        "videoId": "Pa7vUnx40XI",
+        "start": 234,
+        "lang": "ja",
+        "event": "BGM",
+        "chars": 160,
+        "text": "武速点を頂点に女性の発言力が増しまた盗朝をそれまで支えていた官老集団や統出の利子などが中心となっていた旧勢力系を排除し可挙を通じて新たな人材が登場した転換機となったのだぜう武足天の政治えやんえやしかし政治が内向きに傾いたため特東特厥や切端また後の牧海国につながる清国の台頭を許し律量支配体制に緩みを与えてもしまったむむむ"
+      },
+      {
+        "videoId": "Pa7vUnx40XI",
+        "start": 585,
+        "lang": "ja",
+        "event": "BGM",
+        "chars": 165,
+        "text": "軍備の期間でもあったと言えるのだぜ方法詳しくというわけでここからは武足展による完了制度人材投用の改革についてお話していこうまず武足天はだな一体何が目的でそのような改革を推進したかというとそれはこれまでの当初の調廷をリードしていた貴族勢力官労集団北技末より正義北州随等にかけて政治軍事の中枢を担い続けてきた韓中老制の地域に基盤を持つ"
+      },
+      {
+        "videoId": "Pa7vUnx40XI",
+        "start": 936,
+        "lang": "ja",
+        "event": "BGM",
+        "chars": 183,
+        "text": "の時代でありその後の党の生成改厳の地につながっていくと考えると武足点の無朽の時代って一体何だったんですかね彼女の時代は今まで見てきたようなプラスの面後の時代の遺産となった事業も確かに多くこれらの他にも武足点が神徒と呼んで新たな首都とした落耀の大発展もあって囲後楽要は党においても副斗として政治的文化的に重要な拠点として機能するようになったわけだがただまあ一方で武足点"
+      },
+      {
+        "videoId": "5AoNA98z3HI",
+        "start": 214,
+        "lang": "ja",
+        "event": "BGM",
+        "chars": 169,
+        "text": "また採集された土編などから新石器時代の有山文化に属すると判断されたしかし当時もまだ遺跡の全体像は分かっておらず巨大な都遺跡としての勝値も認識されていなかったホシーマを発見後すぐに注目されたわけではなかったんだそうそんな目立たぬ遺跡だったシマ尾に注目が初めて集まったのは1976年に玉旗を中心に多数の異物が発見されたことがきっかけであり成功"
+      },
+      {
+        "videoId": "5AoNA98z3HI",
+        "start": 535,
+        "lang": "ja",
+        "event": "BGM",
+        "chars": 175,
+        "text": "を合わせて10キロを超えるとされるその外状東門には通路を曲げて侵入者の動きを制限するような防御構造や突出した防御施設さらに遥か後地の時代の王場城文街に設置された城文を二重にかけた繁円形あるいは包茎の城壁に似た構造も築づかれていたのだぜシ魔を遺跡の防御構造充実しすぎじゃないなんでここまで堅吾なんだろね不思議だねそれと内城は都市の中核となる区域で外状の"
+      },
+      {
+        "videoId": "5AoNA98z3HI",
+        "start": 856,
+        "lang": "ja",
+        "event": "BGM",
+        "chars": 181,
+        "text": "シマオには後の中国文明につながる要素がある一方独自の信興体系の存在も伺えるのだシーマを独自の信興体系実に興味深いと以上シーマ文化の特徴を述べてきたわけだがこのシーマも当然当時の各地の文化と交流を持ち共通点も多かった例えば農業を基盤において形成された社会階層や専門的な耕芸の発達玉旗や宝らがの維新材としての使様などが挙げられるわけだがそれらは権威や豊かさの証が当時"
+      }
+    ],
+    "failed_clips": 3,
+    "audio_label": {
+      "label": "other",
+      "share": 0,
+      "langs": "ja,ja,ja,ja,ja,ja"
+    }
+  },
+  {
+    "name": "日本経済新聞",
+    "url": "https://www.youtube.com/@nikkei",
+    "category": "japanese",
+    "expected_label": "other",
+    "why_tricky": "Nikkei; kanji-heavy news titles, some about Xi Jinping and China.",
+    "clips": [
+      {
+        "videoId": "Y2zU7lZ4zP8",
+        "start": 37,
+        "lang": "ja",
+        "event": "Speech",
+        "chars": 81,
+        "text": "お客様の情報が流出し結果悪意のあるものによってお客様の資産が毀存するという事故が発生いたしました被害に会われましたお客様と関係者の皆様に心よりお詫びを申し上げます"
+      },
+      {
+        "videoId": "Y2zU7lZ4zP8",
+        "start": 93,
+        "lang": "ja",
+        "event": "Speech",
+        "chars": 75,
+        "text": "は事実ですまた報道をされている通り当グループのサイバーセキュリティバイイエられの専門家からシステム上の課題の指摘を受けていたことも事実ですしかしながら"
+      },
+      {
+        "videoId": "Y2zU7lZ4zP8",
+        "start": 148,
+        "lang": "ja",
+        "event": "Speech",
+        "chars": 114,
+        "text": "重く受け止めておりますこの度はお客様をお守りすることができず誠に申し訳ありませんでした現在被害の全員を把握と原因の究命を最優先で進めるとともに被害を受けられたお客様への対応に誠意を持って取り組んでおります原因の究明再発防止に努め"
+      },
+      {
+        "videoId": "C27XzF2MG4E",
+        "start": 98,
+        "lang": "ja",
+        "event": "Speech",
+        "chars": 185,
+        "text": "指導者の個人的って言ったらおかしいですけどその指導者固有の運動としてやってきたわけですよね今回の後宙前会の意味はそういった反フはあと治安監視といった国安全的な話それを運動じゃなく党の使命とか体制とかそういったものとして固めると掲げるということをやったていう意味で中国共産党の歴史の中で重要なご宙前会になるとい位置づけだと思います習近平さんの頭の中では今年の初めに失脚した"
+      },
+      {
+        "videoId": "C27XzF2MG4E",
+        "start": 246,
+        "lang": "ja",
+        "event": "Speech",
+        "chars": 170,
+        "text": "それ以外たくさんいわゆる官僚入ってたわけだからそうするとどんどんどんどんこの政府機関の機能は弱まっていくだろうと思われるしそれから経済いかなることやろうと思ってもこの経済がダメになった場合どうしようもないわけでこの会議開かれる前ですけれども中国政府がある発表がありましてこれからビッグデータを動員して年金を収めてない人特定してちゃんと取ると"
+      },
+      {
+        "videoId": "C27XzF2MG4E",
+        "start": 394,
+        "lang": "ja",
+        "event": "Speech",
+        "chars": 201,
+        "text": "その七人いるほとんどがですねほとんど汚職腐敗でその感職を売るの事務所に人民元積み上げるとオーフィスにそういうことをやってたわけですよねそんな人何人いても対してそれでガバナンス聞くとか関係ないんですよガバナンスが聞くかどうかっていうのは一重に人物ですよねトップにいるもしくは七人でトップするんだったら七人の人物がどうかということで結局二人であろうと七人であろうとも人民解放軍はもう習近平一人に権力が発言"
+      },
+      {
+        "videoId": "M-zU22H9xvQ",
+        "start": 21,
+        "lang": "ja",
+        "event": "BGM",
+        "chars": 122,
+        "text": "200億円規模の投資を計画しますこのニュースポイントはこちら1次期テープとは2増産の背景3サイバー攻撃に強い磁期テープはテープ表面の自性帯にデータを記録する仕組みでカセットテープやビデオテープなどに使われてきました記録媒体としてはやハードディス"
+      },
+      {
+        "videoId": "M-zU22H9xvQ",
+        "start": 53,
+        "lang": "ja",
+        "event": "Speech",
+        "chars": 142,
+        "text": "やハードディスクと比べてデータ転送は遅いもののコストが安いというのが特徴で次テープ増産の背景にはの普及でデータの生成量が爆発的に増えたことがありますやハードディスクの価格が高騰する中使用頻度の低いデータを長期保存するのに磁期テープはコストの面で優位性が高まっています金融機関や研究機間"
+      },
+      {
+        "videoId": "M-zU22H9xvQ",
+        "start": 85,
+        "lang": "ja",
+        "event": "Speech",
+        "chars": 131,
+        "text": "金融機関や研究機関ではデータのバックアップ用途として磁期テープが使われていますネットワークから切り離した状態で保存するのに向いていることからサイバー攻撃による機密データの改ざんや消失を防ぎやすいとされています日系電子版ではグり詳しく深掘りした記事を掲載しています"
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "other",
+      "share": 0,
+      "langs": "ja,ja,ja,ja,ja,ja,ja,ja,ja"
+    }
+  },
+  {
+    "name": "NAKATA UNIVERSITY ",
+    "url": "https://www.youtube.com/@NKTofficial",
+    "category": "japanese",
+    "expected_label": "other",
+    "why_tricky": "Japanese lecture channel; YouTube shows English-translated titles, the original Japanese name has kanji (中田敦彦のYouTube大学).",
+    "clips": [
+      {
+        "videoId": "qh5t4WMroyU",
+        "start": 639,
+        "lang": "ja",
+        "event": "Speech",
+        "chars": 231,
+        "text": "よというそういう戦略なんですよダブルでかかりますちょっと真江さんとそんなお金どこりありますのということで我々は不安になりますそれに対してさナさん言うわけですそのデフレマインドがよくないの緊縮財政なんていうのは財務省の意見でございますいいですから日本はもっともっと国債を発行して元気になるためにチャンスに投資しなきゃいけないそれがで来る国なです円なんですからいう話をしてましたつまり真エノミクスというの"
+      },
+      {
+        "videoId": "qh5t4WMroyU",
+        "start": 1599,
+        "lang": "ja",
+        "event": "Speech",
+        "chars": 186,
+        "text": "リインフレーションなんで必要なのというとデフレだったからデフレいうのは物価がどんどん下がっていく景気が元気ない実はインフレていう物価が上がるって恐ろしことだ今皆思ってるかもしれませんずと異次元金融化はアベノミクスで求程度の物価上昇を求めたれは緩やかな物価上昇は通常のことであり後景気の象徴うと昔のオ三丁目の融日みたいな時物大体安くないか今では聞いたことない単位とか使ってま"
+      },
+      {
+        "videoId": "qh5t4WMroyU",
+        "start": 2558,
+        "lang": "ja",
+        "event": "Speech",
+        "chars": 198,
+        "text": "ちょっとでも攻撃されたらイエ絶底的に報復するということでアメリカはイランとイスラエルに停戦を促しても止められないでれこちらは宗教上の理由民族上の理由イラエルに対してはそしてイランに関しては組織の統治上の理由です止められないんだ2年で止まるかどうか分からないロシアウクライナもイライエルアメリカも2年で終わるかどうかが全く不透明な非常に根深い戦争であるだからここれは非常に先は見えない低金利はどうな"
+      },
+      {
+        "videoId": "hmir93NorKo",
+        "start": 438,
+        "lang": "ja",
+        "event": "Speech",
+        "chars": 212,
+        "text": "当省が配分後に柳氏に報告したという事実は報告されてますただその時のやり取りが残ってないと言うんですよただその確認して報告しましたよと言でも確認して報告しただけかと思うかもしれませんがこれは立場をお忘れになっているということでね柳那さんは私の大臣なやちゃん知恵袋の矢ちゃんと言わせるだけのエリートでございますのでその当時すでに党の役職てのはあるねこれは言ったら内閣としての大臣とかそういう政府の役割では"
+      },
+      {
+        "videoId": "hmir93NorKo",
+        "start": 1097,
+        "lang": "ja",
+        "event": "Speech",
+        "chars": 143,
+        "text": "そうですか私は社長していました働いて返なさいしまねセクハラパが問題働いて返問題ない能かうかをじ仕事の中のやり方そのものがガものである場合働くことそのものが害を助長するだとしたられはポストを返換してもらうしかないろう議論押し返すようにいて仕事で返うわでございますしかしその追求は止まらない"
+      },
+      {
+        "videoId": "hmir93NorKo",
+        "start": 1755,
+        "lang": "ja",
+        "event": "Speech",
+        "chars": 170,
+        "text": "罰金をするのか罰払うのかもし罰金とかだったら軽くするのかななんて思うかもしれませんけ政治家さんにとってこれが実系食らってのは大変なことなでか公金刑だろうが罰金刑だろうが公民権停止を伴うから公民権公のためになるつまり政治家になる権利を停止させられるつまり議員を辞職しなきゃいけないということなですそして非選挙権つまり立候補する権利をその後数年"
+      },
+      {
+        "videoId": "azx8Up-cSWA",
+        "start": 496,
+        "lang": "ja",
+        "event": "Speech",
+        "chars": 211,
+        "text": "どっちのやつができましたなったらスマホでも何でも相談に乗ってくれますで連携して動いてくれます動いたらずっと働いてくれますわかります今までチャッピーっていうのはアプリ開いて聞いたら答えるチャッピーってうのはこっちが動いたら答えてくれるっていうさそういう静かなるやつだったじゃん違うのずっと動き続けてくれるしなんせプッシュ通知これ自発的に向こうから話しかけてきますいいですか向こうから話しかけてくるの意味"
+      },
+      {
+        "videoId": "azx8Up-cSWA",
+        "start": 1240,
+        "lang": "ja",
+        "event": "Speech",
+        "chars": 211,
+        "text": "このスーパーマンッツなんですよあなたの生活のなとか担当大臣を1も20も与えちゃってくださいそういう話例えば時間に関することお金に関するこ情報に関するこれを分析したり何かを作り出したりするこういったことに関して継続的業務をお任せするのが上手な人爆発的にドッのポテンシャルを引き出すことができるんで例えばいきましょうまずは時間の管理これを継続的にやってただきたいいう方は先ほどら何度も最初の例と申し上げて"
+      },
+      {
+        "videoId": "azx8Up-cSWA",
+        "start": 1984,
+        "lang": "ja",
+        "event": "Speech",
+        "chars": 205,
+        "text": "どういうことか企画分析して成績分析して企画立案したらなるほどじゃそれでさ動画1本作っちゃってよって言ったら作っちゃうんです作れるんですもちろん今は最大で1あたり30秒の動画とかですよでもこれどんどん伸びていきますよね1分のも作れる2分のも作るなんだったら今30秒でのショート動画一発ほどドんで作れるかもしれないですね音楽だったら1曲2曲ンボンボン作れちゃいますねそれを例えば音声音楽配信サイトにどんど"
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "other",
+      "share": 0,
+      "langs": "ja,ja,ja,ja,ja,ja,ja,ja,ja"
+    }
+  },
+  {
+    "name": "serpentza",
+    "url": "https://www.youtube.com/@serpentza",
+    "category": "english_about_china",
+    "expected_label": "other",
+    "why_tricky": "South African in China speaking English; heavy China topic.",
+    "clips": [
+      {
+        "videoId": "wxnWQ5hXKc8",
+        "start": 155,
+        "lang": "en",
+        "event": "BGM",
+        "chars": 373,
+        "text": "play on her phone she'll eat an incredibly cheap meal that she's either prepared herself or has bought from a nearby street vendor but she can't just go home at 5 o'clock because shes stuck out there "
+      },
+      {
+        "videoId": "wxnWQ5hXKc8",
+        "start": 388,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 520,
+        "text": "reallyand that's why so many younger people and not even young middleageged chinese people who have lost their jobs or currently unemployed or trying to do some kind of gig work are pretending to stil"
+      },
+      {
+        "videoId": "wxnWQ5hXKc8",
+        "start": 621,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 476,
+        "text": "service that i can wholeheartedly recommend to anyone who cares about their privacy i always used to wonder why all these shops want you to sign up for their rewards programs or their you know sign up"
+      },
+      {
+        "videoId": "wJk_kl78YOE",
+        "start": 170,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 560,
+        "text": "to thinking that we're constantly growing bigger and overtaking the united states and overtaking europe and we're strong and we're the strongest nation in the world that type of thing local government"
+      },
+      {
+        "videoId": "wJk_kl78YOE",
+        "start": 426,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 509,
+        "text": "in with you you're gonna have a child they're going to look after the child while you work and it's a whole sort of family unit like that so a house is incredibly important to basically the survival i"
+      },
+      {
+        "videoId": "wJk_kl78YOE",
+        "start": 682,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 418,
+        "text": "on the street especially since if they could somehow all get together all these different protests happening around the country all the time because this is quite a common thing to happen it would cre"
+      },
+      {
+        "videoId": "oKNqclrswvI",
+        "start": 395,
+        "lang": "en",
+        "event": "BGM",
+        "chars": 303,
+        "text": "horriblerible disgusting room i' be honest i've seen them i've been in them and you can go outside and get a meal for under a dollar you've got lots of street vendors cooking food selling their cheap "
+      },
+      {
+        "videoId": "oKNqclrswvI",
+        "start": 632,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 494,
+        "text": "from tons of different numbers and obviously they'd sold my information to a data broker your information gets out there somewhere or the other you don't know how but you need to be able to combat it "
+      }
+    ],
+    "failed_clips": 1,
+    "audio_label": {
+      "label": "other",
+      "share": 0,
+      "langs": "en,en,en,en,en,en,en,en"
+    }
+  },
+  {
+    "name": "Chinese Cooking Demystified",
+    "url": "https://www.youtube.com/@ChineseCookingDemystified",
+    "category": "english_about_china",
+    "expected_label": "other",
+    "why_tricky": "English narration by a couple including a Chinese speaker; occasional Mandarin on location.",
+    "clips": [
+      {
+        "videoId": "F8ZNNMaQD8s",
+        "start": 200,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 439,
+        "text": "let's talk about the spice mix now according to my analysis of the original mix this is what i was able to figure out and chinese spice mixes usually leans on a couple major flavors with the rest sub "
+      },
+      {
+        "videoId": "F8ZNNMaQD8s",
+        "start": 500,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 461,
+        "text": "it's famous for being the turning point of long march it's a bit of a rat tourism destination and its yang rou fe has thicker noodles pan the chili paste and seems to be the first version of this nood"
+      },
+      {
+        "videoId": "F8ZNNMaQD8s",
+        "start": 800,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 500,
+        "text": "your rice noodles so we've tried two types of rice noodles here jiangxi rice sticks and vietnamese rice vermicli for this noodle soup i personally prefer the jiangxi rice stick because they're slightl"
+      },
+      {
+        "videoId": "tsuSylVVx2w",
+        "start": 408,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 580,
+        "text": "slaught the entire population of kjohou slaughter the entire population of majo slaughtered the entire population of chongqing in wanian he lured refugees down from the mountains promising that he was"
+      },
+      {
+        "videoId": "tsuSylVVx2w",
+        "start": 1021,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 330,
+        "text": "and modern day thailand and vietnam and then they also had this stuff juy which is an ingredient that i'd never even heard about before researching this video it's related to sichuan pepper it's prett"
+      },
+      {
+        "videoId": "tsuSylVVx2w",
+        "start": 1634,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 370,
+        "text": "so let's also double click on that see how songqhu made it okay not super helpful because songch's recipe unfortunately he doesn't specify any ratios whatsoever which is going to be pretty important f"
+      },
+      {
+        "videoId": "39L4Zl2JB7Y",
+        "start": 294,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 435,
+        "text": "preferences they kind of cluster around similar ideas and for me and my buddy skely who's from canada they basically did but then our friend yuf who comes from a palestinian family and grew up in the "
+      },
+      {
+        "videoId": "39L4Zl2JB7Y",
+        "start": 735,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 267,
+        "text": "aprico aprico't know i like this one i mean if you like it it's good then like you know this is just personal taste for me because it also has dry like cand orange peels or like tender in peel in that"
+      },
+      {
+        "videoId": "39L4Zl2JB7Y",
+        "start": 1176,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 321,
+        "text": "like clean but like deep rich but clean that kind of taste yeah exactly i think that's like very important all right so next we'll have another canese one which is the winter melon one my favorite in "
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "other",
+      "share": 0,
+      "langs": "en,en,en,en,en,en,en,en,en"
+    }
+  },
+  {
+    "name": "mrnigelng",
+    "url": "https://www.youtube.com/@mrnigelng",
+    "category": "english_about_china",
+    "expected_label": "other",
+    "why_tricky": "Malaysian Chinese comedian (Uncle Roger) speaking English with an affected accent; may drop Cantonese/Mandarin words.",
+    "clips": [
+      {
+        "videoId": "Ot3fvPPWSGM",
+        "start": 221,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 283,
+        "text": "until the sugar and salt have dissolved liquid but you don't need it just radish that fridge' i'm show two different sauce for the because i think everyone should know both first will be ym the most f"
+      },
+      {
+        "videoId": "Ot3fvPPWSGM",
+        "start": 554,
+        "lang": "nospeech",
+        "event": "Speech",
+        "chars": 89,
+        "text": "go fast forward now through the rest of the ddging process so you don't have to wait not no't stages for thery"
+      },
+      {
+        "videoId": "Ot3fvPPWSGM",
+        "start": 886,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 19,
+        "text": "insane god nephew chew"
+      },
+      {
+        "videoId": "8i_TFTyLzqo",
+        "start": 275,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 164,
+        "text": "then when they defrost it they got special technique to do it also to maintain quality andcro guessing this restaurant they probably buy cheap fish and then just freeze and freezer themselves that"
+      },
+      {
+        "videoId": "8i_TFTyLzqo",
+        "start": 688,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 107,
+        "text": "maionna don't need to be refrigerated where you hear that from except from the same voices to tell you to make sushi pizzapan when"
+      },
+      {
+        "videoId": "8i_TFTyLzqo",
+        "start": 1101,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 73,
+        "text": "ef ras morning holdingddlings pleaded with to embrace try to give the he like beingborn"
+      },
+      {
+        "videoId": "JhHQcHzDPww",
+        "start": 163,
+        "lang": "en",
+        "event": "BGM",
+        "chars": 453,
+        "text": "now we just leave the egg for like seven minutes seven minutes actually okay your yo gonna be a little bit like jam that very nice texture uncle roger have recipe for that in my cookbook very simple t"
+      },
+      {
+        "videoId": "JhHQcHzDPww",
+        "start": 407,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 20,
+        "text": "dam no boards and cheese"
+      },
+      {
+        "videoId": "JhHQcHzDPww",
+        "start": 652,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 298,
+        "text": "enough you little bit jammy still okay uncle ro gets wrong but this egg so plan if you want running egg like this for your noodle you should cook it yesterday and then marinate it for more flavor othe"
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "other",
+      "share": 0,
+      "langs": "en,en,en,en,en,en,en,en"
+    }
+  },
+  {
+    "name": "Strictly Dumpling",
+    "url": "https://www.youtube.com/@strictlydumpling",
+    "category": "english_about_china",
+    "expected_label": "other",
+    "why_tricky": "Chinese-American Mike Chen speaks English; name suggests Chinese food.",
+    "clips": [
+      {
+        "videoId": "ptCy6wBcVA0",
+        "start": 245,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 316,
+        "text": "ly ever had ks and salads yeah honestly even then i really like it this dish to choose from the lamb it's all soaked up into co so it's nice and fatty we've got the vegetables in here looks like some "
+      },
+      {
+        "videoId": "ptCy6wBcVA0",
+        "start": 981,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 278,
+        "text": "my lehi shrimp just got here so this is a really popular dish they basically fry up a shrimp ball make it look like leci and this is very well done right looks like lici fresh of the oh my gosh fresh "
+      },
+      {
+        "videoId": "owW_EEb8yaM",
+        "start": 1142,
+        "lang": "nospeech",
+        "event": "Speech",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "owW_EEb8yaM",
+        "start": 2857,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 122,
+        "text": "chise theura is great i wish to give more fried rice now cooking cu as well and know what i' eat my the rice i'm go and double my usual someeg it my f dipki"
+      },
+      {
+        "videoId": "owW_EEb8yaM",
+        "start": 4571,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 31,
+        "text": "included little teadas grilled what"
+      },
+      {
+        "videoId": "ZX2EJP-0Nec",
+        "start": 2941,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 283,
+        "text": "wow and the wumami of the crab that shines through about three seconds after your first sip that you definitely taste crab in this one want try some of salsa i don't want to waste a single mores salt "
+      },
+      {
+        "videoId": "ZX2EJP-0Nec",
+        "start": 7354,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 424,
+        "text": "thear you can also order the tasting menu and i think they have like one additional item that's only available at the far but everything here is a car so i basically got pretty much the entire tasting"
+      },
+      {
+        "videoId": "ZX2EJP-0Nec",
+        "start": 11767,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 76,
+        "text": "this is heart crab and there and wowve meat i definitely not what i a flavor and this the of the"
+      }
+    ],
+    "failed_clips": 1,
+    "audio_label": {
+      "label": "other",
+      "share": 0,
+      "langs": "en,en,en,en,en,en,en"
+    }
+  },
+  {
+    "name": "Xiaomanyc 小马在纽约",
+    "url": "https://www.youtube.com/@xiaomanyc",
+    "category": "bilingual",
+    "expected_label": "mixed",
+    "why_tricky": "American speaking Mandarin and many other languages; recent videos feature various languages, so Mandarin share may be under 25%.",
+    "clips": [
+      {
+        "videoId": "za6_aed5z_s",
+        "start": 144,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 230,
+        "text": "you may be seated and friends today we are here to celebrate the marriage of michelle william as many of you know michelle and william's beautiful story of romance begins with the dissection of frogs "
+      },
+      {
+        "videoId": "za6_aed5z_s",
+        "start": 361,
+        "lang": "ja",
+        "event": "BGM",
+        "chars": 80,
+        "text": "してミシロ日本の親戚の皆様の幸せ心から願っています今日はこの場にお越しいただくことは叶いませんでしたかきっとオで見を守ってくださってと思いミシロ皆様のために結婚"
+      },
+      {
+        "videoId": "za6_aed5z_s",
+        "start": 578,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "3ZP9BINzZf8",
+        "start": 505,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "3ZP9BINzZf8",
+        "start": 1264,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 272,
+        "text": "probably the number one thing that consistently amazed warcca throughout the trip was multistory structures like the concept that each floor had its own stores the idea that under each building was a "
+      },
+      {
+        "videoId": "3ZP9BINzZf8",
+        "start": 2023,
+        "lang": "nospeech",
+        "event": "Speech",
+        "chars": 24,
+        "text": "中国旅农村系啦地啊住我哋中国人煮鸡蛋鸡蛋蛋中意但"
+      },
+      {
+        "videoId": "7mxWpKHTt2A",
+        "start": 133,
+        "lang": "nospeech",
+        "event": "Speech",
+        "chars": 28,
+        "text": "shirt're going wait the elevator"
+      },
+      {
+        "videoId": "7mxWpKHTt2A",
+        "start": 333,
+        "lang": "nospeech",
+        "event": "Speech",
+        "chars": 60,
+        "text": "i studied but i really only speak like three maybe well speak of language"
+      },
+      {
+        "videoId": "7mxWpKHTt2A",
+        "start": 532,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 20,
+        "text": "i love one lone flag over"
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "other",
+      "share": 0,
+      "langs": "en,ja,en"
+    }
+  },
+  {
+    "name": "YuYu love vlog",
+    "url": "https://www.youtube.com/@yuyuqinglv",
+    "category": "bilingual",
+    "expected_label": "unknown",
+    "why_tricky": "Korean couple vlogging trips in China; Korean speech with Chinese bits; Chinese-sounding name.",
+    "clips": [
+      {
+        "videoId": "ftjf9E_FSh8",
+        "start": 215,
+        "lang": "ko",
+        "event": "Speech",
+        "chars": 73,
+        "text": "압록강 단교 앞에 와 있습니다 여기 야 여기 들어가려면 티켓을 사야 되거든요 얼마죠 인당 30이야 아 저기 어차피 여기 창고가 있으니까 가서 사도 돼요 여기코를 여기 찍고 들어가요"
+      },
+      {
+        "videoId": "ftjf9E_FSh8",
+        "start": 539,
+        "lang": "ko",
+        "event": "Speech",
+        "chars": 120,
+        "text": "신기하다 5 5000원  5000원 여기서 있어 평양조 진짜 평양건 25도예요 그렇게 쓰는데줘민 인민국국 술 들어가니 나 안 들어가까 맥주도 안 먹고 싶다 사실 먹고 싶지 않아아 사 가지고 가 다시 나오거든요 왜냐 방금 입구에서 입구에서 그 사람들 얼굴 찍게 돼서 그 전체 영상 다 삭제 됐어요 제가"
+      },
+      {
+        "videoId": "ftjf9E_FSh8",
+        "start": 863,
+        "lang": "ko",
+        "event": "Speech",
+        "chars": 75,
+        "text": "괜 설만 안 쓰고 사출 있으면 괜찮 아마 모를 것 같다 이 생각이고 많이 신경 안 쓰고 뭐 10분 전 검사하는 거 못 봤어요 괜히 눈치 보면서 쭈 하는 것보다단 자신있게 들어가서 그냥 시키고 한국"
+      },
+      {
+        "videoId": "wBcLDd6VQB0",
+        "start": 249,
+        "lang": "ko",
+        "event": "BGM",
+        "chars": 15,
+        "text": "2 시간 20분 타고 이제 도착합니다"
+      },
+      {
+        "videoId": "wBcLDd6VQB0",
+        "start": 622,
+        "lang": "ko",
+        "event": "BGM",
+        "chars": 27,
+        "text": "이 구 간이 가장 가장 어려운 데래요 되 엄청 아파 달라 여 옆 에 잡고가"
+      },
+      {
+        "videoId": "wBcLDd6VQB0",
+        "start": 996,
+        "lang": "ko",
+        "event": "Speech",
+        "chars": 89,
+        "text": "쳤마민한테 대련이랑 비교했다고 혼났어요가면 북한이야 난조 조선 민주주의 공부화 인민 인민 다시 조선 조선 민주주의 공부화 인민 빼 인민을 왜자꾸 빼먹어 인민 익기로어 다시 한 번만 더 말지 조선 인민 민주주의 됐다 그"
+      },
+      {
+        "videoId": "L7cT8yJVsK8",
+        "start": 219,
+        "lang": "ko",
+        "event": "BGM",
+        "chars": 47,
+        "text": "이러고 어디 가 너도 입5 싶은 재밌어 할집 먼저 할래 재밌어 나도 설렌다 애들갔다 애들 몇 살이야 다른른 다섯섯이야"
+      },
+      {
+        "videoId": "L7cT8yJVsK8",
+        "start": 549,
+        "lang": "ko",
+        "event": "BGM",
+        "chars": 81,
+        "text": "어 있네래 안 먹저 뭐 가 어 봐 국어 봐 먹어어 하나 먹자 먹자 먹자3 개 세 주세요세요 새 토림 두 개 하나요어쟁은 안 먹니 어 먹 어 어젠 하나 얼마 에요 세 개 차 세 개 있잖아 그럼럼 나 하나 너  두 개아 우리 어디 가"
+      },
+      {
+        "videoId": "L7cT8yJVsK8",
+        "start": 878,
+        "lang": "ko",
+        "event": "Speech_Noise",
+        "chars": 26,
+        "text": "뉴스개 웃겨언뭔데 알려줘 휴러 많이 먹어 맛있어 초콜릿 안 먹어"
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "other",
+      "share": 0,
+      "langs": "ko,ko,ko,ko,ko,ko,ko,ko,ko"
+    }
+  },
+  {
+    "name": "Mandarin Monkey",
+    "url": "https://www.youtube.com/@MandarinMonkey",
+    "category": "bilingual",
+    "expected_label": "other",
+    "why_tricky": "Name says Mandarin; British-Taiwanese couple talking mostly English.",
+    "clips": [
+      {
+        "videoId": "r3vnYoZ0WfE",
+        "start": 819,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 490,
+        "text": "you can take my phone whenever you want and you do and you go through the pictures and the whatever and i don't care because nothing's on it so do what you're like because i've got nothing so and i do"
+      },
+      {
+        "videoId": "r3vnYoZ0WfE",
+        "start": 2047,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 388,
+        "text": "and i said look i've got such a busy day we'll record a podcast record five short videos and edit something for work work and i said look after i've ticked some of those off i'll drop you a call ever "
+      },
+      {
+        "videoId": "r3vnYoZ0WfE",
+        "start": 3276,
+        "lang": "nospeech",
+        "event": "Speech",
+        "chars": 45,
+        "text": "personality round try and think something what you do"
+      },
+      {
+        "videoId": "o_ySognxeQM",
+        "start": 535,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 45,
+        "text": "when you can your childhood you must a different oneea"
+      },
+      {
+        "videoId": "o_ySognxeQM",
+        "start": 1337,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 35,
+        "text": "yeah great if that' me i do that你的很喜欢 would"
+      },
+      {
+        "videoId": "o_ySognxeQM",
+        "start": 2140,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 122,
+        "text": "i couldn't choose one having sunday roast every forever one brit i ital i couldn' anyway so i agree with you too should go that from scratch moving on"
+      },
+      {
+        "videoId": "WJdE5f3wQyU",
+        "start": 600,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 129,
+        "text": "translate in driving test and majors this is a minor get three of you three three majors get failed or so three level lowest告 major i would say wise different"
+      },
+      {
+        "videoId": "WJdE5f3wQyU",
+        "start": 1501,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 63,
+        "text": "boy playboy so we me mom scroll through that boy boy电上就有那个 which很不戏 car game",
+        "fluent": false
+      },
+      {
+        "videoId": "WJdE5f3wQyU",
+        "start": 2401,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 257,
+        "text": "s not mar a like或 yeah can look what we did it's kind of like like pointless感 no meaning i feel like that yeah she wonder how long they lie it'd be so interesting to talk to start like someone who did"
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "other",
+      "share": 0,
+      "langs": "en,en,en,en,en,en,zh?,en"
+    }
+  },
+  {
+    "name": "阿滴",
+    "url": "https://www.youtube.com/@rayduenglish",
+    "category": "misleading",
+    "expected_label": "mandarin",
+    "why_tricky": "Handle @rayduenglish and English-teaching origins, but Taiwanese host speaks Mandarin; now general vlogs with translated English titles.",
+    "clips": [
+      {
+        "videoId": "27Fgy9soxr8",
+        "start": 526,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 133,
+        "text": "ok k 这个不太多因为我也不能吃太多嗯好吃这个嗯而且从你家走走路走得到啊你可以来吃啊它的饭是好吃的好幸福啊也是啊你看这个鱼鱼没有我想的更好吃多对没有到很多次然后那个皮没有到很但是就是一个我觉得 o ok k 的好鱼很能之为我从阿拉斯加回来所以我这鲑鱼的标准现在变觉得太高了好好",
+        "fluent": true
+      },
+      {
+        "videoId": "27Fgy9soxr8",
+        "start": 1317,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 216,
+        "text": "非常干净的厕所然后它给的是两张床今天有够漫长的感觉好像过了两天我会想找上执行一下好像是昨天的事了好那接着 day three day four 就是期待已久的 bcon 这个之前的那支影片已经都记录到了我们的周记应该会直接跳到 day five 那接下来要跟大家介绍的是我晚上的五体因为通常都是一整天下来洗完澡之后所以我的保养会做的比较完整一点除了清洁跟镇定之外也会加强保养我最近很在意的皮肤弹性还有",
+        "fluent": true
+      },
+      {
+        "videoId": "27Fgy9soxr8",
+        "start": 2107,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 150,
+        "text": "买到然后回到民宿的时候发现会跟他买的一模一样的一本好好笑这爱这个感觉可以买来抽奖哦他是一整区哎哇可爱哦这个这个这个这个这个就是他们买的那一本然后他我像购买一个颜色吧哦很正向对但是很正向这个很适合那个阿迪英语的频道学英文哎没有没有我已经没有教英文有英文我已经不务正业了你要叫阿迪斯好所一共有十本我们就是",
+        "fluent": true
+      }
+    ],
+    "failed_clips": 6,
+    "audio_label": {
+      "label": "unknown",
+      "note": "too few clips"
+    }
+  },
+  {
+    "name": "Blondie in China",
+    "url": "https://www.youtube.com/@BlondieinChina",
+    "category": "bilingual",
+    "expected_label": "other",
+    "why_tricky": "American who speaks fluent Mandarin; earlier videos had much Mandarin, recent ones mostly English narration.",
+    "clips": [
+      {
+        "videoId": "V13HstqwaXs",
+        "start": 259,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 255,
+        "text": "b into those flower petals and you've got that beautiful kind of floral taste as well i like tasting it as you're explaining it because it's like yeahodod slide out i need some scisss one eternity go "
+      },
+      {
+        "videoId": "V13HstqwaXs",
+        "start": 649,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 585,
+        "text": "beginning of this name it's a local ingredient you'll come across a lot in this part of ynan and while it looks a little like a cithuan peppercor it has this wonderfully citrusy almost lemongras like "
+      },
+      {
+        "videoId": "V13HstqwaXs",
+        "start": 1038,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 526,
+        "text": "at the same time my it's really good i'm going to go for basically all the flavors that exist are in this bowl this is like a rainbow of the food world and just use that chicken to mop and scoop up as"
+      },
+      {
+        "videoId": "aX5BbTFijhc",
+        "start": 258,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 548,
+        "text": "ay we like this would be a gross understatement i would say next let's try this soup i was immediately drawn to this on the menu because of its name soup tu which literally means bone soup which broug"
+      },
+      {
+        "videoId": "aX5BbTFijhc",
+        "start": 646,
+        "lang": "en",
+        "event": "BGM",
+        "chars": 182,
+        "text": "this is rice and chocolate but not so close it's a purple sticky rice with a warm coconut milk sauce i there's this milkys like coconut bit it' a tiny because i've been eating with my and i've touchin"
+      },
+      {
+        "videoId": "aX5BbTFijhc",
+        "start": 1033,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 372,
+        "text": "so they came over here through boat during the spice tray chili itself actually arrived as a ornament as a garden plant what yes i arrived in china as a garden plant we have the earliest document in t"
+      },
+      {
+        "videoId": "212syyeBT_o",
+        "start": 251,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 244,
+        "text": "this one there is no more trolley service you order menu you tick maybe this is contributing to some of theing of items troll if something looks good it whereas like this with so many options and refe"
+      },
+      {
+        "videoId": "212syyeBT_o",
+        "start": 629,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 627,
+        "text": "alad that comes from the very same fish you just ate and it's this zingy refreshing salad fragrant with citrusy cafiia lime leaf so freaking good these are just some of the dishes you can look forward"
+      },
+      {
+        "videoId": "212syyeBT_o",
+        "start": 1006,
+        "lang": "en",
+        "event": "BGM",
+        "chars": 525,
+        "text": "cookbook something that this reminds me of is kind of the food that my grandma used to cook a little bit used to do a lot of like meat jellies and aspectss it tastes kind of like an older generation i"
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "other",
+      "share": 0,
+      "langs": "en,en,en,en,en,en,en,en,en"
+    }
+  },
+  {
+    "name": "Jerry Kowal 郭杰瑞",
+    "url": "https://www.youtube.com/@jerrykowal1007",
+    "category": "misleading",
+    "expected_label": "mandarin",
+    "why_tricky": "American host known for Mandarin videos; recent titles show in English, possibly more English content now.",
+    "clips": [
+      {
+        "videoId": "P1cIkTLi67I",
+        "start": 137,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 12,
+        "text": "的我家 onion洋葱道欢",
+        "fluent": false
+      },
+      {
+        "videoId": "P1cIkTLi67I",
+        "start": 343,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 4,
+        "text": "第美ic"
+      },
+      {
+        "videoId": "P1cIkTLi67I",
+        "start": 548,
+        "lang": "nospeech",
+        "event": "BGM",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "z3Zd75QMl6M",
+        "start": 51,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 79,
+        "text": "买隔壁的你你是你是这个你是这个是谁呢你买你你是比比你你比你的好太多了对不对嗯这个这不是这是这是哪个哪个男的减肥减肥你吃我谢谢拜拜拜拜拜拜拜你可以叫我怎么说哎下",
+        "fluent": true
+      },
+      {
+        "videoId": "z3Zd75QMl6M",
+        "start": 127,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 157,
+        "text": "有肉的味道很多时候你吃这个小麦你你你不知道里面是什么这个是肉肯定是肉多吃肉那个鸡肉的好好吃哇这这里肉 is amazing oh my god 别别的大盘鸡我来没有吃大盘鸡这是这是第一次真的是的一觉就马上 explosion of juice好吃好吃的好吃是是需要黑些对吧好就俩包容易吃好吃好吃好吃好吃大盘鸡米粉啊中辣我们看看辣不辣",
+        "fluent": true
+      },
+      {
+        "videoId": "z3Zd75QMl6M",
+        "start": 204,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 111,
+        "text": "辣我就我们还是要去买那个老黄瓜加一个我刚刚我刚刚吃太辣的我需要再买一个哇真的没吃好吃真的很好吃伊宁的羊肉串嗯 oh my god that is like很嫩嗯它的羊肉很新鲜的很嫩所以它不是要放很多很多味道那个羊肉的本来的味道就 o k 啊",
+        "fluent": true
+      },
+      {
+        "videoId": "ZL_hmBumAQs",
+        "start": 48,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 70,
+        "text": "这个湖太阳出来是夏天风闭来是冬天中间只差几秒风找到鹅你看有这多鹅但他有友告到鹅我必那首诗是所有的中国小朋友都背那首了一下鹅鹅鹅去山填个白马夫",
+        "fluent": true
+      },
+      {
+        "videoId": "ZL_hmBumAQs",
+        "start": 121,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 152,
+        "text": "我在中国见过这个牌子好裸嗦但是从来没有觉得跟这样呃这么自然的地方有关系的而且这个品牌是个非常有爱心的一个企业啊给我们这个新疆捐赠了几千万的物资啊几千万哦非常感人的哇这么多没有上量在鹅厂会听到这个是的是的是的谢谢我们我们继续去看鹅可以吗好的好的我觉得这里的鹅的生活环境真的蛮好的很舒服好美我从鹅厂出来一直在",
+        "fluent": true
+      },
+      {
+        "videoId": "ZL_hmBumAQs",
+        "start": 194,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 94,
+        "text": "就在这这个鹅绒服很轻不厚很软很舒服鹅昌老板跟我讲鹅绒怎么反击但是他用专业的单词我有点记不住现在下山了风好大我要做一个挑战没干词没背数今天总结一下那句话说的没错啊这个湖如果不来确实白活了这有",
+        "fluent": true
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "mandarin",
+      "share": 0.86,
+      "langs": "zh?,zh,zh,zh,zh,zh,zh"
+    }
+  },
+  {
+    "name": "Thomas阿福",
+    "url": "https://www.youtube.com/@ThomasAfu",
+    "category": "misleading",
+    "expected_label": "mandarin",
+    "why_tricky": "German host with Chinese name, speaks Mandarin; latest titles in English may signal a shift.",
+    "clips": [
+      {
+        "videoId": "Qk9SkcHANsQ",
+        "start": 220,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 120,
+        "text": "啊有点那个久仰的味道吃的饭嗯吃的惯吃的饭啊这个是这是泡椒炒牛肉哦这个好吃哇哦麦克你真的会点菜好我知道我的师傅叫我很好因为你的师傅也是一个吃货打开这个我好像没吃过这个嗯这个很不错啊什么都还天气泡这个牛肉炒牛肉特好吃嗯哇哦哦啊这个腊烛刚刚好还有",
+        "fluent": true
+      },
+      {
+        "videoId": "Qk9SkcHANsQ",
+        "start": 552,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 85,
+        "text": "i这个 cancer anti不我们讨论看用德语怎么说我都知道没有没有这种说法德语的朋友也可以跟我们说一下看用德语怎么说给大家看看这个颜色很漂亮跟普通的牛肉完全不一样啊嗯哇哇",
+        "fluent": true
+      },
+      {
+        "videoId": "Qk9SkcHANsQ",
+        "start": 883,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 70,
+        "text": "牛肉非常嫩而且这个牛肉也不是很肥吃不吃还是感觉在这里走两步就好累对我现在也感觉累而且我这几天健我也敢在这里健了就了我经现在看看医怎么说因为我",
+        "fluent": true
+      },
+      {
+        "videoId": "LHcniv9C1Nw",
+        "start": 197,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 152,
+        "text": "也很有意思这个这个外面是脆脆的然后里面就非常的软糯对这个是鸡豆凉粉我们现在尝一下这个主食哦哇调饼甜甜的你肯定很喜欢但也没有特的辣的东西都羊肚菌汤味道怎么样鸡肉就是鸡肉的味道蛋白质刚刚我们吃了超多的碳水有一点熨烫所以我们回酒店每每睡了一觉现在我要去叫迈克起床喝下午茶了麦克是第一次到云南所以我真心希望它会喜",
+        "fluent": true
+      },
+      {
+        "videoId": "LHcniv9C1Nw",
+        "start": 494,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 80,
+        "text": "普通的那种牛肉区别还是挺大的嗯太好吃了这个就是那个牛杆菌米饭对吧对菌大面来吃你来去吧太棒了云南菜好谢谢妹妹你要不要一起吃是不是咱们这里连这种非常简单的菜就特别好",
+        "fluent": true
+      },
+      {
+        "videoId": "LHcniv9C1Nw",
+        "start": 790,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 201,
+        "text": "so we have to take some pictures of you 在丽江那肯定要拍一些他们的传统服装的拍照然后我们这个酒店也是有免费的服务带麦克去一下但是我们七月就能拍室内的雨下的太大了不过我们来这里也就是放松养生所以我们的心情还是美美哒等会给你们看看迈克拍出来的照片到底有多帅好帅哥我们约队拍照哇这个鱼跟德国的鱼非常的像他老家在汉堡一年三百六十三天是这样的 hello hello给咱",
+        "fluent": true
+      },
+      {
+        "videoId": "DuDwL5Hq4_I",
+        "start": 82,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 103,
+        "text": "中文听力是挺好的对你们看他一直在尬笑因为他肯能有一些都听不懂然后自己不敢说但是我后面还会跟他拍个视频好好让他说第一天的中文打马赛克欧阳德华你为什么要搬来中国因为我觉得在中国发展比德国更爱哇非常完美的一句中文",
+        "fluent": true
+      },
+      {
+        "videoId": "DuDwL5Hq4_I",
+        "start": 205,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 184,
+        "text": "看重我们做的这件事情我们就像做一个桥梁在 innovation 创新和有高科技给在欧洲在美国的老外我自己也是老外但是给一些对中国感兴趣的人提供更多的信息所以欢迎你们也支持我们转发给你们的朋友 a 其实我们除了是拉面我们还是很喜欢吃中式的健康餐有一家很推荐给你们的山里又什么有特别多的蛋白质而且很干净选子不多但是很好吃很适合中国宝贝的口味等会我们给你们看一下在中国创业的老外他们",
+        "fluent": true
+      },
+      {
+        "videoId": "DuDwL5Hq4_I",
+        "start": 328,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 155,
+        "text": "每个人一份饭点牛肉还有三百克的鸡腿肉还有一个泰式辣酱又健康又卫生营养又丰富你可以买克最喜欢吃的中餐是什么我觉得火锅因为火锅很健康你可以吃的很健康也可以吃不健贵现来你现在来中国一个月了你后不后悔不后悔为什么不后悔因为我在中国觉得做关系比较简单所以你的意思你喜欢你在上海认识人比简单就比较容易对吧虽以然我也吃德国人",
+        "fluent": true
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "mandarin",
+      "share": 1,
+      "langs": "zh,zh,zh,zh,zh,zh,zh,zh,zh"
+    }
+  },
+  {
+    "name": "周杰倫 Jay Chou",
+    "url": "https://www.youtube.com/@jaychou",
+    "category": "music",
+    "expected_label": "mandarin",
+    "why_tricky": "Mandopop; videos are music videos plus announcements with little speech.",
+    "clips": [
+      {
+        "videoId": "yCWTHQ3_O-I",
+        "start": 46,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 19,
+        "text": "暗已经倒下听了喧闹枪渐渐的响默默的走掉",
+        "fluent": true
+      },
+      {
+        "videoId": "yCWTHQ3_O-I",
+        "start": 117,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 4,
+        "text": "掩盖不了"
+      },
+      {
+        "videoId": "yCWTHQ3_O-I",
+        "start": 187,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 14,
+        "text": "枪中有人在不远处叹息下的在为",
+        "fluent": true
+      },
+      {
+        "videoId": "aGsrg1NO1cM",
+        "start": 45,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 5,
+        "text": "还不错带出"
+      },
+      {
+        "videoId": "aGsrg1NO1cM",
+        "start": 112,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "aGsrg1NO1cM",
+        "start": 180,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 17,
+        "text": "你门美吗我和你的好朋友们已经是牵手",
+        "fluent": true
+      },
+      {
+        "videoId": "PJyFND4-zR4",
+        "start": 38,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 23,
+        "text": "我们精彩你情的侧脸别晚霞的晕开装美让世界不存在",
+        "fluent": true
+      },
+      {
+        "videoId": "PJyFND4-zR4",
+        "start": 95,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 25,
+        "text": "夜空里流星划过天际我静静看你所有的愿望我都留给你许",
+        "fluent": true
+      },
+      {
+        "videoId": "PJyFND4-zR4",
+        "start": 152,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 4,
+        "text": "爱我为你"
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "mandarin",
+      "share": 1,
+      "langs": "zh,zh,zh,zh,zh"
+    }
+  },
+  {
+    "name": "VOA 美國之音粵語",
+    "url": "https://www.youtube.com/@voacantonese",
+    "category": "misleading",
+    "expected_label": "other",
+    "why_tricky": "VOA Cantonese; stopped uploading March 2025, traditional-character titles look like Mandarin news.",
+    "clips": [
+      {
+        "videoId": "qi33_Arfpk8",
+        "start": 360,
+        "lang": "yue",
+        "event": "Speech",
+        "chars": 158,
+        "text": "安全同经济发展中间稳到好嘅平衡都会由地方党委甚至系中央派出一个专门嘅党委去关注佢哋嘅工作但系呢啲党员干部本身并唔系做开企业嘅导致好多企业苦不堪言而家仲要加强党对呢啲市场经济化嘅企业进行管理对于呢啲企业嚟讲佢哋会需要用钱去让一大班根本唔做嘢乱咁指挥嘅党员干部认为如果系要通过加强党嚟到管企业嘅话未来经济可能崩溃所以今次"
+      },
+      {
+        "videoId": "qi33_Arfpk8",
+        "start": 900,
+        "lang": "yue",
+        "event": "Speech",
+        "chars": 172,
+        "text": "体制不可能有民主另一位亦都因为议题敏感不便据名嘅意议人士真系对美国之恩话佢今年响南京系感受到嘅维稳情势系相对平静除咗听闻进出北京嘅盘查比较严格之外其他嘅维稳力度都系不明显不过佢亦都同意两会越嚟越像好似电影节嘅咁样系走秀紧存嘅功能或者系认可以一窥中国官场嘅运作但系总理嘅记者会取消之后尤其系武看头亦都同人民嘅生活越嚟越脱节比如佢话中国集彩嘅雀欲质"
+      },
+      {
+        "videoId": "qi33_Arfpk8",
+        "start": 1440,
+        "lang": "yue",
+        "event": "Speech",
+        "chars": 173,
+        "text": "钟基表示台湾面临嘅情势系敌人铺天盖地要对你渗透实在系冇边一局嘅理由用一般太平盛势嘅心态去印应恢复军事法院呢一步系跨出非常之重要再嚟则系强化军中监察跟补防嘅整体力量要将呢两股反制体解渗透嘅手段要整合起嚟曾经担任台湾国防部新闻秘书嘅卢德稳真系认为严刑峻法强力基保恢复军事审判并无法彻底解决共谍问题重要嘅就系要让军人知道为谁而战为何而战佢指出国军就系要"
+      },
+      {
+        "videoId": "rU9OJSaJEIU",
+        "start": 360,
+        "lang": "yue",
+        "event": "Speech",
+        "chars": 151,
+        "text": "斯机会系巨大日本承诺透过购买美国液化天然气嚟减少同美国嘅贸易逆差以及对俄罗斯嘅依赖如果得到确认佢系将会要求佢哋嘅履行呢项嘅承诺日本承诺提高国防预算建立既能够推进我哋嘅国家安全目标又能够加强区域威慑力嘅能力七个主要工业国集团嘅首席外交官星期四系随聚喺魁巴克省嘅夏洛瓦东道国加拿大展述咗呢一次会议嘅首要议程"
+      },
+      {
+        "videoId": "rU9OJSaJEIU",
+        "start": 900,
+        "lang": "yue",
+        "event": "Speech",
+        "chars": 171,
+        "text": "诶睇上可能会讨好啲啊因为究竟咩人出嚟选甚至选唔选到啊主要大部分嘅因素咧就在于即系由北京所选定嘅个制度唔会点样宽松噶啦吓即系我相信系会以政治安即系佢嘅政权嘅安全呢系大过咧个民意机构嗰个重要性上届二零二一年底举行嘅首次爱国者治港下嘅立法会选举候选人提名门槛大幅提高九十名当选人之中只有社福界嘅新思为主席狄志远自称非建制派其余当选人全部都系建制派被"
+      },
+      {
+        "videoId": "rU9OJSaJEIU",
+        "start": 1440,
+        "lang": "yue",
+        "event": "Speech",
+        "chars": 190,
+        "text": "对华加征嘅关税已经要求中国供应商全面降价百分之十令到唔少中企嘅供应商认为系难以负担但系为补订单恐怕仍然系忍痛坎价不过中国商务部喺星期二传出已经约谈沃尔玛并且关注佢哋嘅压价嘅行为去升沃尔玛后续恐怕系遭到中国报复嘅隐忧对此市场观察人士话沃尔玛有买家嘅优势中企供应商恐怕难以抗拒系杀价不过随住中国政府出面施压沃尔玛喺中国嘅前景亦都恐怕系堪忧下边系美个 g m地 嘅记者黄丽玲喺台北报道中国官媒"
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "other",
+      "share": 0,
+      "langs": "yue,yue,yue,yue,yue,yue"
+    }
+  },
+  {
+    "name": "GEM鄧紫棋",
+    "url": "https://www.youtube.com/@gem0816",
+    "category": "music",
+    "expected_label": "mandarin",
+    "why_tricky": "Hong Kong-born singer; mostly Mandarin vocals, HK origin may suggest Cantonese.",
+    "clips": [
+      {
+        "videoId": "cWZvojeFbXo",
+        "start": 118,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 14,
+        "text": "当荒唐也只能幽默小步有我枷锁",
+        "fluent": true
+      },
+      {
+        "videoId": "cWZvojeFbXo",
+        "start": 297,
+        "lang": "nospeech",
+        "event": "BGM",
+        "chars": 1,
+        "text": "这"
+      },
+      {
+        "videoId": "cWZvojeFbXo",
+        "start": 475,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 17,
+        "text": "是什么我不知道但只一双手局有能改写",
+        "fluent": true
+      },
+      {
+        "videoId": "0GZ4gQQE1yM",
+        "start": 59,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 7,
+        "text": "苍我变成了枷锁"
+      },
+      {
+        "videoId": "0GZ4gQQE1yM",
+        "start": 149,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 9,
+        "text": "伤口只有你抚摸而且",
+        "fluent": true
+      },
+      {
+        "videoId": "0GZ4gQQE1yM",
+        "start": 238,
+        "lang": "nospeech",
+        "event": "BGM",
+        "chars": 3,
+        "text": "一挣着"
+      },
+      {
+        "videoId": "Meg1w2_5Q9Q",
+        "start": 517,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 129,
+        "text": "决定不去纠结你能不能改变什么只要你接受他你适应他你就是可以适应然后出来就不一样了其实也不过是多少十五分钟的事你看当你纠结外面环境怎么样怎么样的时候你看到我总采之前的那个整个状态就是很就是这样的嘛整个样子就是这样的嘛对吧你也不会因为这样唱的好一点对吧最后搞得你",
+        "fluent": true
+      },
+      {
+        "videoId": "Meg1w2_5Q9Q",
+        "start": 827,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 56,
+        "text": "一下子就七年了是不是哇哦真的是太难以置信了七年官司还没打完现在的我不会被打没打完官司而阻碍自己的喜乐跟自由其实我",
+        "fluent": true
+      }
+    ],
+    "failed_clips": 1,
+    "audio_label": {
+      "label": "mandarin",
+      "share": 1,
+      "langs": "zh,zh,zh,zh,zh"
+    }
+  },
+  {
+    "name": "Eason Chan",
+    "url": "https://www.youtube.com/@easonchan",
+    "category": "music",
+    "expected_label": "mixed",
+    "why_tricky": "Hong Kong singer with both Cantonese and Mandarin catalogues; recent uploads are Cantonese songs.",
+    "clips": [
+      {
+        "videoId": "TUpCvThMbEE",
+        "start": 102,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "TUpCvThMbEE",
+        "start": 257,
+        "lang": "yue",
+        "event": "Speech",
+        "chars": 165,
+        "text": "我嚟讲唔系我要规定你想点啊系我唔要规定你想点啊系啊系啊冇啊冇变嘅同翻去攞音应该都系我惊你成日话我我唔系好好严啊又话我系你系要求高又话我要求高啊咁跟住好事嚟噶呢个补一句又系好事啊好似好似嚟噶你期待好期待哦好正啊多谢你有呢个谂法啊又要系咁啊因为你都唔知唔系因为你又喺香港录系啊又系咁咯咁你就算唔系同系我哋都好熟悉啊嘛我哋都冇乜冲击噶嘛"
+      },
+      {
+        "videoId": "TUpCvThMbEE",
+        "start": 411,
+        "lang": "en",
+        "event": "BGM",
+        "chars": 30,
+        "text": "beautiful everything is beautiful"
+      },
+      {
+        "videoId": "NtJZ0jBuSzg",
+        "start": 76,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 30,
+        "text": "我已经相信有些人我永远不必等所以我明白在灯火阑珊嫁给我明爱潮",
+        "fluent": true
+      },
+      {
+        "videoId": "NtJZ0jBuSzg",
+        "start": 192,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 10,
+        "text": "情何苦我想来一个吻别",
+        "fluent": true
+      },
+      {
+        "videoId": "NtJZ0jBuSzg",
+        "start": 307,
+        "lang": "en",
+        "event": "Applause",
+        "chars": 147,
+        "text": "and our guitarist our solo guitarist tommyilton thank you we have our concert master for the orchestra magnushns mag and please give a big round of applause to our great conduct"
+      },
+      {
+        "videoId": "9elvYViwP4g",
+        "start": 56,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 18,
+        "text": "畅游到下世纪请你别我将这煽情奉献奋唱",
+        "fluent": true
+      },
+      {
+        "videoId": "9elvYViwP4g",
+        "start": 141,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 23,
+        "text": "里话眼泪会流要怕难过抱住我手千在心比渴望地老简",
+        "fluent": false
+      },
+      {
+        "videoId": "9elvYViwP4g",
+        "start": 225,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 10,
+        "text": "绝得不能说绝到用掉我",
+        "fluent": false
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "mixed",
+      "share": 0.38,
+      "langs": "yue,en,zh,zh,en,zh,zh?,zh?"
+    }
+  },
+  {
+    "name": "MIRROR",
+    "url": "https://www.youtube.com/@MIRRORweare",
+    "category": "music",
+    "expected_label": "other",
+    "why_tricky": "Hong Kong boy band singing Cantonese; English-ish titles.",
+    "clips": [
+      {
+        "videoId": "SlHREtL-pEo",
+        "start": 38,
+        "lang": "nospeech",
+        "event": "BGM",
+        "chars": 3,
+        "text": "不会有"
+      },
+      {
+        "videoId": "SlHREtL-pEo",
+        "start": 96,
+        "lang": "nospeech",
+        "event": "BGM",
+        "chars": 3,
+        "text": "神请想"
+      },
+      {
+        "videoId": "SlHREtL-pEo",
+        "start": 154,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "HaVJzvxPZTc",
+        "start": 40,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 11,
+        "text": "在远方的你是否害怕这遍",
+        "fluent": true
+      },
+      {
+        "videoId": "HaVJzvxPZTc",
+        "start": 100,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 16,
+        "text": "抬头望向天上无知的星星闭着眼睛倾",
+        "fluent": true
+      },
+      {
+        "videoId": "HaVJzvxPZTc",
+        "start": 160,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 20,
+        "text": "抬头望向天上无知的星星闭着耳朵不会笑掠倾",
+        "fluent": true
+      },
+      {
+        "videoId": "Ds67EtYMN34",
+        "start": 43,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 21,
+        "text": "愿上就喝上我就如被世场投入忘掉困扰片段厌倦",
+        "fluent": false
+      },
+      {
+        "videoId": "Ds67EtYMN34",
+        "start": 108,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 19,
+        "text": "未一样愿岸情话亦在闪亮要疲能自如地幕的",
+        "fluent": false
+      },
+      {
+        "videoId": "Ds67EtYMN34",
+        "start": 173,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 15,
+        "text": "逃避也许软弱但东软弱在南戏世角",
+        "fluent": false
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "mixed",
+      "share": 0.5,
+      "langs": "zh,zh,zh,zh?,zh?,zh?"
+    }
+  },
+  {
+    "name": "办公室小野 Ms Yeah",
+    "url": "https://www.youtube.com/@MsYeahOfficialChannel",
+    "category": "no_speech",
+    "expected_label": "other",
+    "why_tricky": "Office cooking stunts with minimal speech; some recent multinational videos.",
+    "clips": [
+      {
+        "videoId": "W0HsM-bJ6gA",
+        "start": 51,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "W0HsM-bJ6gA",
+        "start": 129,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 10,
+        "text": "这个家不能没有小爷啊",
+        "fluent": true
+      },
+      {
+        "videoId": "W0HsM-bJ6gA",
+        "start": 207,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 37,
+        "text": "严总新年快乐哎呀不用不用不用快说了不用我先给你们保管着给你们转正了再话给他",
+        "fluent": true
+      },
+      {
+        "videoId": "TQrxnDF9rSY",
+        "start": 57,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "TQrxnDF9rSY",
+        "start": 144,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "TQrxnDF9rSY",
+        "start": 230,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 81,
+        "text": "来不来这种送你双好吧哎你好不情愿的样子好拜再来支持我哈拜拜小妹妹你等下小过来你在这边来挑你踢足球等会去踢足球吗打篮球啊有点烫哇咋个评语用四个字评一下呢还以非常好干",
+        "fluent": true
+      },
+      {
+        "videoId": "U9GdF5v7N5A",
+        "start": 43,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 50,
+        "text": "this is not only my button but yours as well' give a youtubere"
+      },
+      {
+        "videoId": "U9GdF5v7N5A",
+        "start": 108,
+        "lang": "en",
+        "event": "BGM",
+        "chars": 72,
+        "text": "did you know that there are only two tables award in the great china and you got one a desk"
+      },
+      {
+        "videoId": "U9GdF5v7N5A",
+        "start": 172,
+        "lang": "en",
+        "event": "BGM",
+        "chars": 319,
+        "text": "shaed the beautiful moments in life together you gave me so many encouragement i feel truly grateful for having your supports all the way along by the way i hope everyone stay healthy and keep yeah we"
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "mixed",
+      "share": 0.5,
+      "langs": "zh,zh,zh,en,en,en"
+    }
+  },
+  {
+    "name": "李子柒 Liziqi",
+    "url": "https://www.youtube.com/@cnliziqi",
+    "category": "no_speech",
+    "expected_label": "other",
+    "why_tricky": "Rural cooking/crafts with almost no talking; famous Chinese creator likely to be labelled Mandarin.",
+    "clips": [
+      {
+        "videoId": "8Cg3p9K0il4",
+        "start": 149,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "8Cg3p9K0il4",
+        "start": 374,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "8Cg3p9K0il4",
+        "start": 598,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 5,
+        "text": "见与不都一"
+      },
+      {
+        "videoId": "JJL3ZKrHeKM",
+        "start": 169,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 3,
+        "text": "别喝啊"
+      },
+      {
+        "videoId": "JJL3ZKrHeKM",
+        "start": 423,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "JJL3ZKrHeKM",
+        "start": 677,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "IrXjnw8BpM0",
+        "start": 168,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "IrXjnw8BpM0",
+        "start": 420,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "IrXjnw8BpM0",
+        "start": 672,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 0,
+        "text": ""
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "other",
+      "share": 0,
+      "langs": "",
+      "note": "mostly no speech"
+    }
+  },
+  {
+    "name": "BBC News 中文",
+    "url": "https://www.youtube.com/@bbcnewschinese",
+    "category": "news",
+    "expected_label": "mandarin",
+    "why_tricky": "Foreign broadcaster's Chinese service; traditional characters; some Cantonese clips possible.",
+    "clips": [
+      {
+        "videoId": "r5-iNyYT4eE",
+        "start": 99,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 568,
+        "text": "saithis will determine who controls congress which is the body that makes all of the laws in america so this is actually something that is very very important ok sarah we're back with you in a moment "
+      },
+      {
+        "videoId": "r5-iNyYT4eE",
+        "start": 249,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 541,
+        "text": "unisticso a range of opinions there on what matters most to voters across the us the vast majority are choosing between either republican or democratic candidates in these midterm elections so back to"
+      },
+      {
+        "videoId": "r5-iNyYT4eE",
+        "start": 399,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 621,
+        "text": "because the president still has a veto power over a lot of what they could pass legislation they will try to frustrate donald trump's agenda though and they could do things like vote for instance to e"
+      },
+      {
+        "videoId": "CR3hhrVYX2g",
+        "start": 176,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 463,
+        "text": "and that's because officials think it's too controversial too sensitive to be even talking about the question of whether mao is a dictator so they're perhaps to sort of say he said things various thin"
+      },
+      {
+        "videoId": "CR3hhrVYX2g",
+        "start": 441,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 334,
+        "text": "have to dig into what he really said and if that's not available to because all the materials being blocked by the great wall great firewall of china you can understand why people in that vacuum of kn"
+      },
+      {
+        "videoId": "CR3hhrVYX2g",
+        "start": 706,
+        "lang": "en",
+        "event": "Speech",
+        "chars": 407,
+        "text": "fashion designers dlin gabana also having to apologize i think they also used a bit of mandarin so stepeven again can you just unpack what exactly was their sin i mean they had an ad with a beautiful "
+      },
+      {
+        "videoId": "KktNG1k-JEk",
+        "start": 69,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 82,
+        "text": "以上 你就会看到很多留言还是会发一些嘲笑的名音或者是讲一些很很刻板印象的话所以我觉得在台湾人都可以有性别意思说哦信象本来就不是走异性恋之前我们都要推广说同性恋是正常的",
+        "fluent": true
+      },
+      {
+        "videoId": "KktNG1k-JEk",
+        "start": 110,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 98,
+        "text": "让台北市政府看一下我们我们没有说话不代表你可以乱作事你今天应该可以看到很多人都站出来嗯大家有的穿的很铺路有的穿的很普通要请教讲室长说这样子这样子穿着打扮是 ok k 的吗可以走在台北市街头吗这样会被抓吗",
+        "fluent": true
+      }
+    ],
+    "failed_clips": 1,
+    "audio_label": {
+      "label": "other",
+      "share": 0.25,
+      "langs": "en,en,en,en,en,en,zh,zh"
+    }
+  },
+  {
+    "name": "RFI 华语 - 法国国际广播电台",
+    "url": "https://www.youtube.com/@RFI_Cn",
+    "category": "news",
+    "expected_label": "mandarin",
+    "why_tricky": "Small (~81k) French broadcaster Mandarin service.",
+    "clips": [
+      {
+        "videoId": "GRahhB0r7zk",
+        "start": 177,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 154,
+        "text": "根据佛罗里达大学选举实验室统计截至美国东岸时间周日上午全美已经有五千三百一十四万人提前投票当中约有两千九百万人亲自到投票所投票另有约两千三百万人通过邮寄选票完成投票这一届的提前投票人数已经超过上一次二零二二年当时约有四千六百万人提前投票反映出选民的参与程度增加根据数据约有一千一百万名登记民主党选民提前投票共",
+        "fluent": true
+      },
+      {
+        "videoId": "GRahhB0r7zk",
+        "start": 444,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 172,
+        "text": "韬略策警学会在二日公布最新民调显示沈博阳支持度首度突破五成来到五十二点六剩余蒋万安的百分之三十五点三双方支持度拉大到百分之十七点三蒋万安甚至跌破泛篮百分之四十的基本盘沈博央则以百分之五十二点六成功外溢冲破泛率的百分之三十五基本盘选举看好度方面沈博阳也首度超越蒋万安以百分之四十七点九赢过蒋万安的百分之四十点一出现黄金交叉资深记者赵晓慧表示这份明",
+        "fluent": true
+      },
+      {
+        "videoId": "GRahhB0r7zk",
+        "start": 710,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 187,
+        "text": "应他们诉求的措施比如承诺在二零二八年以前逐渐取代引发多方批评的大学报名机制 停止教育部此前削减师资队伍的安排增设五百名教师名额高中一年级每班人数不得超过二十八人等等政府总理也要求教育部与各地方行政部门以及学校对话为大约两百间困难最多的中学解决问题那学生会团体认为政府的这些措施还不够一名学生会团体的负责人二日向法新社记者表示学生们仍然不满他认为仍然会有很多学校参加封堵校门的行",
+        "fluent": true
+      },
+      {
+        "videoId": "xN0unT9KlnY",
+        "start": 177,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 136,
+        "text": "局拥有六千名成员他们还从国外展开行动包括白俄罗斯中国印度马来西亚和俄罗斯等地更多情况请听佐伊的耀文解说日本外务省遭网工或有三千六百件个人信息外泄请听法广驻东京特约记者楚良一的报道日本外务省遭网络攻击或有三千六百件个人信息外泄日本外务省宣布因遭到非法访问部分个人信息可能已经",
+        "fluent": true
+      },
+      {
+        "videoId": "xN0unT9KlnY",
+        "start": 443,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 158,
+        "text": "获旋人员周五在德黑兰与伊朗方面会谈超过十二个小时期间持续与白宫联系周六转往卡达的首都多哈继续磋商一名外交消息人士就说目前取得正面的进展谈判仍在持续目的是为美国和伊朗达成协议打开局面目前谈判的主要障碍是美伊双方对于恢复谈判的先决条件存在分歧美国要求伊朗先在核计划上作出让步伊朗则是要求美国先解除海上封锁解冻被冻结的资产",
+        "fluent": true
+      },
+      {
+        "videoId": "xN0unT9KlnY",
+        "start": 709,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 203,
+        "text": "为印度的民主同时要求选举委员会负责人库马尔辞职原因是围绕选民登记册修订问题引发了巨大的争议自去年以来持续进行的选民名册审查已删除了超过一点三亿个选民登记信息批评人士认为这项行动带有政治动机可能导致更多的民众失去投票权其中少数族群特别是穆斯林群体受到的影响尤为严重印度选举委员会和莫迪政府否认这些指控表示此次修订工作的目的是清除重复登记和不符合资格的选民信息人权观察组织宇宙斯表示围绕选民名册修订的争议",
+        "fluent": true
+      },
+      {
+        "videoId": "ZQvylfX2Yss",
+        "start": 177,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 112,
+        "text": "陈茂目敏冲于日本时间三十一日凌晨在访问美国期间与俄罗斯外长拉夫罗夫举行会谈强烈要求俄方立即释放被拘押的日本记者这是日俄外长相隔约五年后首次举行外长会谈据日本外务省消息会谈中茂目外相强烈要求立即释放自本月十三日起遭到羁押的北海",
+        "fluent": true
+      },
+      {
+        "videoId": "ZQvylfX2Yss",
+        "start": 443,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 171,
+        "text": "一介绍法新社周六的消息称多家人工智能行业巨头周五承诺将为媒体及其他网站提供一种统一的方式以便阻止出版的内容被抓取用于训练 a i 模型目前已承诺参与的公司包括 open a i 谷歌微软和 anthic 在现有的技术和法规框架下网站运营者如果想阻止出版的内容被收集必须针对每一家公司的网络爬虫单独设置屏蔽规则新方案的目标是建立一套统一的制定标准所有参与该倡议的",
+        "fluent": true
+      },
+      {
+        "videoId": "ZQvylfX2Yss",
+        "start": 708,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 160,
+        "text": "休闲设施的储物柜中将装有一万现金的背包放到储物柜中进行交易美司法部称同年陈某在赖某及其他中国情报官员指示下收集了有关美国军事设施和人员的信息包括拍摄位于华盛顿布雷莫顿的美国海军设施美国联邦调查人员表示陈某还拍摄了南加州海军征兵站的水兵和新兵据报道其中大多数人的家乡标注为中国司法部还指出陈某收集了海军文职雇员的个人身份并",
+        "fluent": true
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "mandarin",
+      "share": 1,
+      "langs": "zh,zh,zh,zh,zh,zh,zh,zh,zh"
+    }
+  },
+  {
+    "name": "Dianxi Xiaoge",
+    "url": "https://www.youtube.com/@dianxixiaoge",
+    "category": "no_speech",
+    "expected_label": "other",
+    "why_tricky": "Yunnan cooking with sparse speech, partly Yunnan dialect; English titles.",
+    "clips": [
+      {
+        "videoId": "uv_dddMIeIg",
+        "start": 319,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "uv_dddMIeIg",
+        "start": 798,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "uv_dddMIeIg",
+        "start": 1277,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "pT-h9uE0730",
+        "start": 1477,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 15,
+        "text": "他跟说大王是很乖让握手就了昆昆",
+        "fluent": false
+      },
+      {
+        "videoId": "pT-h9uE0730",
+        "start": 3694,
+        "lang": "nospeech",
+        "event": "Laughter",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "pT-h9uE0730",
+        "start": 5911,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "530imRDOFxs",
+        "start": 399,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "530imRDOFxs",
+        "start": 999,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 5,
+        "text": "这个太红了"
+      },
+      {
+        "videoId": "530imRDOFxs",
+        "start": 1599,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 0,
+        "text": ""
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "other",
+      "share": 0,
+      "langs": "zh?",
+      "note": "mostly no speech"
+    }
+  },
+  {
+    "name": "RFA 自由亞洲粵語",
+    "url": "https://www.youtube.com/@rfacantonese",
+    "category": "news",
+    "expected_label": "other",
+    "why_tricky": "RFA Cantonese service; latest video is a farewell; RFA's Mandarin service is far better known.",
+    "clips": [
+      {
+        "videoId": "ZIaknePlcsE",
+        "start": 24,
+        "lang": "yue",
+        "event": "BGM",
+        "chars": 136,
+        "text": "喺廿七年嚟我哋一直坚守住岗位为香港为全球华人社困带嚟最真实最即时嘅新闻同埋深度报道无论风雨变幻我哋始终相信言论自由嘅大门必须为每一位追求真相嘅人打开随住美国政府终止之助自由亚洲团队将会进一步缩减而预做喺听日开始亦即系香港主权移交二十八周年起将会停止更新所有新闻内容喺网上面"
+      },
+      {
+        "videoId": "ZIaknePlcsE",
+        "start": 61,
+        "lang": "yue",
+        "event": "BGM",
+        "chars": 133,
+        "text": "嘅声音将会暂时消失咁但系我哋对新闻专业对言论自由嘅信念将会永远留喺每一位同事同埋读者嘅心里边感谢每一位曾经收听阅读留言分享甚至系批评你喺呢段旅程里面因为有你哋嘅支持同鼓励俾我哋喺风雨里面坚持落去见证并且记录呢个时代嘅重要时刻虽然讲再见总系难过噶咁但系我哋相信追求真相"
+      },
+      {
+        "videoId": "ZIaknePlcsE",
+        "start": 98,
+        "lang": "yue",
+        "event": "BGM",
+        "chars": 31,
+        "text": "追求真相同埋自由嘅精神会喺大家嘅心里边继续传承落去大家珍重再会"
+      },
+      {
+        "videoId": "ArQ_xOFV2vo",
+        "start": 61,
+        "lang": "yue",
+        "event": "Speech",
+        "chars": 137,
+        "text": "系咪可以改个名然后叫做换个名翻香港去旅行兜一转咧咁始终即系都呢啲个即系谂谂系呢啲都好似太天真第一样要做嘢应该系攞翻张去申请 passport 因为始终大家都系面临呢个 passport 活到企业问题请翻可开开翻围台请翻喺台湾帮个帮我手有人食间食餐饭咁样咯系啦我只可以讲个多谢咯即系一"
+      },
+      {
+        "videoId": "ArQ_xOFV2vo",
+        "start": 154,
+        "lang": "yue",
+        "event": "BGM",
+        "chars": 127,
+        "text": "因为参与过抗争认为自己风险太高短短几日就走咗嚟台湾成为第一批流氓台湾嘅香港人嗰晚翻到屋企只脚成摊血咁样喺度佢都见到佢都知佢都知我有想去嘅咁但系即系我阿妈讲一句咯条路自己拣仆街系唔好喊你拣条路系要咁行就咁行嘅咯当初嚟到台湾仲未有专案系统连稳边一个帮手都唔知"
+      },
+      {
+        "videoId": "ArQ_xOFV2vo",
+        "start": 246,
+        "lang": "yue",
+        "event": "Speech",
+        "chars": 119,
+        "text": "二去挺心保卫新嘅家园你嚟到呢边更加要融融入呢边嘅土地更加要去睇睇清楚呢啲嘅呢啲不易嘅事情咯嘛即系面对我选择去面对创自己嘅创伤嘅一个方法咯系啊其实企出嚟好自思应该系等等下自己嗰个嗰罪咁减轻啲啊嘛即系觉得我嚟呢边我啲系照就让一换个方式抗争咯啊"
+      },
+      {
+        "videoId": "Hot8-FbXRn4",
+        "start": 21,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 15,
+        "text": "忘不了的田月也不会息心深里化为",
+        "fluent": false
+      },
+      {
+        "videoId": "Hot8-FbXRn4",
+        "start": 54,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 11,
+        "text": "通通斩去不必多看他人无",
+        "fluent": true
+      },
+      {
+        "videoId": "Hot8-FbXRn4",
+        "start": 86,
+        "lang": "nospeech",
+        "event": "BGM",
+        "chars": 11,
+        "text": "但有一个梦不会死怎打死"
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "other",
+      "share": 0.13,
+      "langs": "yue,yue,yue,yue,yue,yue,zh?,zh"
+    }
+  },
+  {
+    "name": "zaobaosg",
+    "url": "https://www.youtube.com/@zaobaodotsg",
+    "category": "news",
+    "expected_label": "mandarin",
+    "why_tricky": "Singapore Lianhe Zaobao; Singapore Mandarin with some '[EN]' English videos.",
+    "clips": [
+      {
+        "videoId": "ApPYPVkQwg0",
+        "start": 382,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 145,
+        "text": "干部就是从严治党标准选出来的官员干部可能也是他认为有资格去接班的人没有接班人的接班也可以说是没有接班人的交班啊他在为未来的交班开始进行制度准备从中共历史上来看没有接班人的接班感觉不大成功例如简单来说这个一九七六年毛泽东去世了呃虽然华国锋是他的接班人但是其实那一场接班也有点像是没有接班的接班",
+        "fluent": true
+      },
+      {
+        "videoId": "ApPYPVkQwg0",
+        "start": 955,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 167,
+        "text": "会遇到哪一些困难跟挑战呢其实这个问题一直都是一样的哈习近平上任以来就推动反腐反了十几年还在反而且越反越腐对不对越反越腐所以这个问题其实是这个是元明说的他们是说不是越反越腐只是一直抓不进的人们的感觉就是怎么越反越对有时候是越反越腐我们知道其实习近平一开始反腐他的问题真正不是腐败他问题是他在党内的权力不够稳固但是后来反腐反到后面就是变成",
+        "fluent": true
+      },
+      {
+        "videoId": "ApPYPVkQwg0",
+        "start": 1528,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 176,
+        "text": "来这么空虚那解放军有很多的中将带上将职这样的形态你怎么有说服力的跟人家说你建军百年已经实现了强军实现了这个军事现代化所以我相信也是一样明年二十一大之后军队人事的增补也会加速所以整个干部的这个增补我相信在明年二十一大都会加速那这里其实也回应到为什么习近平要通过他的这个全面从严治党这个决定还有这个要确立他习近平党建思想的地位因为他其实在决定里面有写到现在",
+        "fluent": true
+      },
+      {
+        "videoId": "gh_Fa0-HFpA",
+        "start": 201,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 186,
+        "text": "可以去就是买一下这个市场的脉搏嘛然后看一下到底市场对这一季度的财报这个预期到底会是在哪里所以当它一出来的时候呢其实你第一个分析就是哦它是低于还是高于这个预期嘛然后就市场你就看到其实很快的就会做出一些的反应了财报你就是要看根据你之前的这个预期然后以现在的表现到底吻不吻合这财报毕竟就是一个算是一个公司一个中期的一个成绩单吧就是虽然就是不能表现就是公司未来的前景可是他起码就是",
+        "fluent": true
+      },
+      {
+        "videoId": "gh_Fa0-HFpA",
+        "start": 503,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 213,
+        "text": "有没有兑现这样在还还可能比较实际的很多投资者他在买一些股票的时候他可能就是看重他的那个派息率特别好那他是不是在看财报说只需要看他的那个股息政策就可以了这个不一定你要看他的 cash flow statement论然后他能够以现在的资产负债表能够提供这个 capital 去还他的这个派息率嘛可能因为有时候如果你现在在进入一个投资的状态你可能现金流动量可能就没有那么的高然后你现在短期内可能不能像之前对",
+        "fluent": true
+      },
+      {
+        "videoId": "gh_Fa0-HFpA",
+        "start": 804,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 206,
+        "text": "所以您做完工作晚上要去打进一个 earnings call 就比较单调反正是四到其反因为你未必能真正去了解他们在讲什么投资者要知道就是他们买这个股票他们能够在他们的知识范围了解多少如果不了解的行业或者不了解公司就尽量不要投所以有时候同一家公司对他这一季超乎预期隔天股价涨可是下一季他同样也是超预期可是隔天股价跌所以他们有一个脉络可循是每个主要的定律因为这些趋势嘛我们就是建议就是投资者就是不要每个季度",
+        "fluent": true
+      },
+      {
+        "videoId": "cgIh_6u0ts4",
+        "start": 69,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 168,
+        "text": "我现在的位置呢就是重庆地下之城的防空洞火锅店里面我们看到这个火锅店它是建立在这个防空洞内然后一眼是望不到头的因为它大概有五百多米在防空洞内吃火锅对重庆来说已不新鲜但对外地游客而言却是一种独特体验曾经神秘的地下空间如今火锅飘香充满了市井烟火气蛮有名的就是因为它有这个知名度我们是有知名度才过来的很有重庆特色可能比日常在一般的火锅店凉快一些",
+        "fluent": true
+      },
+      {
+        "videoId": "cgIh_6u0ts4",
+        "start": 173,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 161,
+        "text": "五十年的历史了哎就像一个老坛子一样书都是我自己收集的书都放在那个里面都让那个地方发酵的效果我都觉得就像两股火焰一样都让那个地方更有重庆味了就是哎在这样一个特别的空间许多本地人前来把它作为一个休闲聊天的场所也吸引了许多外地游客慕名而来可能自在一点吧就是你看夏小琪啊这有我觉得还有小什么小猫啊可以露撸啊什么的嗯又可以看书又可以",
+        "fluent": true
+      },
+      {
+        "videoId": "cgIh_6u0ts4",
+        "start": 277,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 165,
+        "text": "体系他就专门给他的这个统帅部就打了一份报告那报告名字就叫重庆轰炸无用论没用啊在周勇看来今天利用防空洞作为文旅或商业用途时应该把防空洞的历史记录下来告诉人们防空洞是怎么来的曾经发挥过什么作用不要忘记历史的重要性从过去到今天到未来防空洞就从功能性的一个呃避难场所或者是工厂变成了覆盖着我们生活方方面面的一个消费场景那当未来他还有更多的",
+        "fluent": true
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "mandarin",
+      "share": 1,
+      "langs": "zh,zh,zh,zh,zh,zh,zh,zh,zh"
+    }
+  },
+  {
+    "name": "日本電視台(Nippon TV)-NTV中文",
+    "url": "https://www.youtube.com/@日本電視台-NTV",
+    "category": "news",
+    "expected_label": "unknown",
+    "why_tricky": "Japanese broadcaster's Chinese channel; titles show in English; audio may be Japanese with Chinese subtitles or a Mandarin voiceover.",
+    "clips": [
+      {
+        "videoId": "wjiL372KaS4",
+        "start": 84,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 58,
+        "text": "正在进行三周日本环岛旅行的一家据说在网上发现这方的来到位于二楼的客房十敞的日式合适被褥旅客自行铺设素方原为提给从远方",
+        "fluent": true
+      },
+      {
+        "videoId": "wjiL372KaS4",
+        "start": 211,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 54,
+        "text": "一家人因为隔天清晨有这趟旅程中最期待的仪式所以很早就入睡了在导览人员的陪同下一行人前往善光寺的本堂来到本堂前",
+        "fluent": true
+      },
+      {
+        "videoId": "wjiL372KaS4",
+        "start": 338,
+        "lang": "zh",
+        "event": "Speech",
+        "chars": 93,
+        "text": "结束晨间法会后就是回到素方享用早餐的时间包这是以不使用肉类或鱼类味特色的精进料理主要选用当季在地食材制作包括以大豆取代肉类的豆皮包馅料理以及口感近似起丝的味噌腌渍豆腐等妈妈非常喜欢的则式",
+        "fluent": true
+      },
+      {
+        "videoId": "Dbi6RxAFbwo",
+        "start": 290,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "Dbi6RxAFbwo",
+        "start": 726,
+        "lang": "ja",
+        "event": "Speech",
+        "chars": 71,
+        "text": "本日はお集まりいただきましてありがとうございましお手元にヘッドセットをございます同日通訳でやりますのでヘッドセットございますのでお使いください"
+      },
+      {
+        "videoId": "Dbi6RxAFbwo",
+        "start": 1161,
+        "lang": "nospeech",
+        "event": "Event_UNK",
+        "chars": 0,
+        "text": ""
+      },
+      {
+        "videoId": "88S0H1rjkk8",
+        "start": 43,
+        "lang": "ja",
+        "event": "BGM",
+        "chars": 129,
+        "text": "自分の発言によっていろいろな憶測が通り当時のチームにすごい迷惑かけたと思ってますか言うべきじゃなかったなと思っておりますということで私の中では自主撤回しておりまして皆さんがご自由に考察してくださいこれが答えかもしれないし答えじゃないかもしれないし今長島さんが"
+      },
+      {
+        "videoId": "88S0H1rjkk8",
+        "start": 109,
+        "lang": "zh",
+        "event": "BGM",
+        "chars": 70,
+        "text": "在球迷多年来引警期盼下松井新任总教练时隔二十四年重返巨人队他承袭了长茂雄担任总教练时首次穿上的九号球衣巨人将重建重任再度登上日本职棒的最高峰",
+        "fluent": true
+      },
+      {
+        "videoId": "88S0H1rjkk8",
+        "start": 174,
+        "lang": "ja",
+        "event": "Speech",
+        "chars": 139,
+        "text": "目接受现场直播访问同じスーツで日は監督も会験所のどっかで見てたんじゃいかと思います言葉2人の間に言葉ってそんなになかったんですよね会話というよりもバット振ることによって最も選手して大事なことを育って気がします私の仕事ジャン強くすること力づくみが成長して彼たちがグランドで躍動して"
+      }
+    ],
+    "failed_clips": 0,
+    "audio_label": {
+      "label": "mixed",
+      "share": 0.57,
+      "langs": "zh,zh,zh,ja,ja,zh,ja"
     }
   }
 ]
