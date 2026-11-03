@@ -31,7 +31,7 @@ async function render() {
         el("span", { textContent: formatDuration(item.seconds) })));
       if (item.channel?.reason || item.channel?.error) {
         const reason = el("div", { className: "reason", textContent: item.channel.reason ?? item.channel.error });
-        const redo = el("button", { textContent: "Reclassify" });
+        const redo = el("button", { className: "link", textContent: "reclassify" });
         redo.onclick = () => chrome.runtime.sendMessage({ type: "reclassify", channelUrl: item.key, name: item.title }).then(render);
         reason.append(" ", redo);
         det.append(reason);
