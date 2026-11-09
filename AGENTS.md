@@ -7,7 +7,7 @@ Scope: track time spent on Mandarin input across YouTube, Readwise Reader, Pleco
 
 ## Credentials
 
-Rebuild `.env` with `~/best/stash/dotfiles/bin/op-agent inject -i .env.tpl -o .env -f`.
+Rebuild `.env` with `~/best/areas/dotfiles/bin/op-agent inject -i .env.tpl -o .env -f`.
 
 | Variable | 1Password item | Field |
 |---|---|---|
