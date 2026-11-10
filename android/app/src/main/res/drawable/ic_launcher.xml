@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A red square with 中 drawn as strokes. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp" android:height="48dp" android:viewportWidth="48" android:viewportHeight="48">
+    <path android:fillColor="#FFC62828" android:pathData="M6,2H42A4,4 0 0,1 46,6V42A4,4 0 0,1 42,46H6A4,4 0 0,1 2,42V6A4,4 0 0,1 6,2Z" />
+    <path android:fillColor="#00000000" android:strokeColor="#FFFFFFFF" android:strokeWidth="3.5"
+        android:pathData="M13,16H35V30H13Z M24,8V40" />
+</vector>

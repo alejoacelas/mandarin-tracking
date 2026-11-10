@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- packageNames must equal TrackedApps.sampledPackages (a unit test checks this). -->
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityEventTypes="typeWindowStateChanged|typeWindowContentChanged|typeViewScrolled|typeViewTextChanged"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:accessibilityFlags="flagIncludeNotImportantViews"
+    android:canRetrieveWindowContent="true"
+    android:description="@string/accessibility_description"
+    android:notificationTimeout="500"
+    android:packageNames="com.readermobile,com.openai.chatgpt,com.anthropic.claude,com.google.android.apps.bard,com.deepseek.chat,com.larus.nova,com.larus.wolf,com.moonshot.kimichat,com.aliyun.tongyi,ai.qwenlm.chat.android,ai.perplexity.app.android,ai.x.grok,com.microsoft.copilot,com.tencent.hunyuan.app.chat" />
