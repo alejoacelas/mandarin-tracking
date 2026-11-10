@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mandarin Time</title>
+<style>
+:root { --bg:#fbfaf7; --fg:#1d1b18; --muted:#6f6a62; --line:#e4e0d8; --card:#fff; --accent:#c2410c; --partly:#f0b48f; --warn-bg:#fff4e5; --warn:#8a4b00; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#171615; --fg:#ece8e1; --muted:#a39d93; --line:#34312d; --card:#201f1d; --accent:#f97316; --partly:#9a5a33; --warn-bg:#3a2a12; --warn:#f5c27a; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+main { max-width: 860px; margin: 0 auto; padding: 24px 16px 64px; }
+h1 { font-size: 22px; margin: 0 0 4px; }
+h2 { font-size: 16px; margin: 28px 0 10px; }
+.muted { color: var(--muted); }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px; }
+.big { font-size: 40px; font-weight: 650; letter-spacing: -0.02em; }
+.warn { background: var(--warn-bg); color: var(--warn); border-radius: 8px; padding: 10px 12px; margin: 6px 0; }
+.bars { display: flex; align-items: flex-end; gap: 4px; height: 140px; margin-top: 12px; }
+.bar { flex: 1; display: flex; flex-direction: column; justify-content: flex-end; cursor: pointer; min-width: 0; }
+.bar .zh { background: var(--accent); border-radius: 3px 3px 0 0; }
+.bar .partly { background: var(--partly); }
+.bar.sel .zh { outline: 2px solid var(--fg); }
+.labels { display: flex; gap: 4px; font-size: 11px; color: var(--muted); }
+.labels span { flex: 1; text-align: center; min-width: 0; overflow: hidden; }
+.sources { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin-top: 12px; }
+.sources div b { display: block; font-size: 22px; }
+table { width: 100%; border-collapse: collapse; }
+td, th { text-align: left; padding: 6px 4px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-weight: 600; font-size: 13px; color: var(--muted); }
+td.num { text-align: right; white-space: nowrap; }
+.tag { font-size: 12px; padding: 1px 6px; border-radius: 99px; border: 1px solid var(--line); white-space: nowrap; }
+.tag.zh { background: var(--accent); color: #fff; border-color: var(--accent); }
+.tag.partly { background: var(--partly); }
+input, select, button { font: inherit; color: inherit; background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; }
+button { cursor: pointer; }
+input[type=password], input[type=text] { width: 100%; }
+.row { display: flex; gap: 8px; align-items: center; margin: 8px 0; flex-wrap: wrap; }
+.code { font: 600 28px ui-monospace, Menlo, monospace; letter-spacing: 0.15em; }
+#msg { min-height: 1.4em; }
+.wrap { overflow-wrap: anywhere; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Mandarin time</h1>
+  <div class="muted" id="sub">Loading…</div>
+  <div id="warnings"></div>
+
+  <div class="card" style="margin-top:16px">
+    <div class="muted" id="dayname"></div>
+    <div class="big" id="total">–</div>
+    <div class="muted" id="extra"></div>
+    <div class="sources" id="sources"></div>
+    <div class="bars" id="bars"></div>
+    <div class="labels" id="barlabels"></div>
+  </div>
+
+  <h2>What counted that day</h2>
+  <div class="card"><table id="items"></table></div>
+
+  <h2>YouTube channels</h2>
+  <p class="muted">Each channel is labelled once. Change a label if it's wrong; it applies to past days too.</p>
+  <div class="card"><table id="channels"></table></div>
+
+  <h2>Connect</h2>
+  <div class="card">
+    <div>Phone pairing code</div>
+    <div class="code" id="code">––––––</div>
+    <div class="muted">The Android app finds this Mac on the same Wi-Fi by itself. If it can't, enter one of these addresses in the app: <span id="addrs"></span></div>
+    <h3 style="font-size:15px;margin:18px 0 6px">Connected devices</h3>
+    <table id="devices"></table>
+  </div>
+
+  <h2>Settings</h2>
+  <div class="card">
+    <label for="rw">Readwise access token (from <span class="wrap">readwise.io/access_token</span>)</label>
+    <div class="row"><input id="rw" type="password" autocomplete="off" placeholder="paste token"><button id="rwsave">Save</button></div>
+    <div class="muted" id="rwstate"></div>
+    <label for="ak" style="display:block;margin-top:14px">Anthropic API key (optional: lets Claude label YouTube channels by researching them; without it, channels are judged from their video titles)</label>
+    <div class="row"><input id="ak" type="password" autocomplete="off" placeholder="sk-ant-…"><button id="aksave">Save</button></div>
+    <div class="muted" id="akstate"></div>
+    <div id="msg"></div>
+  </div>
+</main>
+<script>
+const SRC = { youtube: "YouTube", reader: "Reader", pleco: "Pleco", llm: "AI chats" };
+const LABEL = { mandarin: "Mandarin", mixed: "Partly Mandarin", other: "Not Mandarin", unknown: "Unknown", pending: "Not yet labelled" };
+const CLASS = { zh: "Mandarin", partly: "Partly", other: "Not Mandarin", unknown: "Not classified" };
+let data = null, sel = null;
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+const fmt = (m) => m >= 60 ? `${Math.floor(m / 60)} h ${Math.round(m % 60)} min` : `${Math.round(m)} min`;
+const dayName = (d) => new Date(d + "T12:00:00").toLocaleDateString(undefined, { weekday: "long", month: "long", day: "numeric" });
+
+async function post(path, body) {
+  const r = await fetch(path, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(body) });
+  const j = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(j.error || `failed (${r.status})`);
+  return j;
+}
+
+function render() {
+  const days = data.days, today = days[days.length - 1];
+  const d = days.find((x) => x.date === sel) || today;
+  sel = d.date;
+  $("sub").textContent = `Hub ${data.version} · updated ${new Date().toLocaleTimeString()}`;
+  $("warnings").innerHTML = data.warnings.map((w) => `<div class="warn">${esc(w)}</div>`).join("");
+  $("dayname").textContent = d.date === today.date ? "Today" : dayName(d.date);
+  $("total").textContent = fmt(d.total_min);
+  const extra = [];
+  if (d.partly_min >= 1) extra.push(`plus ${fmt(d.partly_min)} of partly-Mandarin videos`);
+  if (d.unclassified_min >= 1) extra.push(`${fmt(d.unclassified_min)} not yet classified`);
+  $("extra").textContent = extra.join(" · ");
+  $("sources").innerHTML = Object.entries(SRC).map(([k, n]) => `<div><span class="muted">${n}</span><b>${fmt(d.by_source[k] || 0)}</b></div>`).join("");
+  const shown = days.slice(-14), top = Math.max(30, ...shown.map((x) => x.total_min + x.partly_min));
+  $("bars").innerHTML = shown.map((x) => `<div class="bar ${x.date === sel ? "sel" : ""}" data-d="${x.date}" title="${dayName(x.date)}: ${fmt(x.total_min)}">
+      <div class="partly" style="height:${(x.partly_min / top) * 100}%"></div><div class="zh" style="height:${(x.total_min / top) * 100}%"></div></div>`).join("");
+  $("barlabels").innerHTML = shown.map((x) => `<span>${new Date(x.date + "T12:00:00").toLocaleDateString(undefined, { weekday: "narrow" })}</span>`).join("");
+  document.querySelectorAll(".bar").forEach((b) => (b.onclick = () => { sel = b.dataset.d; render(); }));
+  $("items").innerHTML = d.items?.length
+    ? `<tr><th>What</th><th>Where</th><th>Counted as</th><th class="num">Time</th></tr>` + d.items.map((i) =>
+      `<tr><td class="wrap"><span class="muted">${SRC[i.source] || "App"}</span> · ${esc(i.name)}${i.detail ? `<div class="muted">${esc(i.detail)}</div>` : ""}</td><td>${esc(i.device)}</td><td><span class="tag ${i.class}">${CLASS[i.class]}</span></td><td class="num">${fmt(i.min)}</td></tr>`).join("")
+    : `<tr><td class="muted">Nothing recorded this day.</td></tr>`;
+  $("channels").innerHTML = data.channels?.length
+    ? data.channels.map((c) => `<tr><td class="wrap">${esc(c.Name)}<div class="muted">${esc(c.Error ? "Last attempt failed: " + c.Error : c.Reason)}${c.DecidedBy ? ` (decided by ${esc(c.DecidedBy === "titles" ? "video titles" : c.DecidedBy)})` : ""}</div></td>
+        <td><select data-k="${esc(c.Key)}">${["mandarin", "mixed", "other", "unknown"].concat(c.Label === "pending" ? ["pending"] : []).map((l) => `<option value="${l}" ${l === c.Label ? "selected" : ""}>${LABEL[l]}</option>`).join("")}</select></td></tr>`).join("")
+    : `<tr><td class="muted">No YouTube channels yet.</td></tr>`;
+  document.querySelectorAll("select[data-k]").forEach((s) => (s.onchange = async () => {
+    try { await post("/api/v1/channel-label", { key: s.dataset.k, label: s.value }); load(); } catch (e) { $("msg").textContent = e.message; }
+  }));
+  $("code").textContent = data.pair_code;
+  $("addrs").textContent = (data.addresses || []).join(", ") || "(no network)";
+  $("devices").innerHTML = data.devices?.length
+    ? data.devices.map((v) => `<tr><td>${esc(v.Name)}<div class="muted">${esc(v.Kind)} ${esc(v.Version)}</div></td><td>last in touch ${esc(v.LastSeen)}</td><td class="num"><button data-f="${esc(v.ID)}">Disconnect</button></td></tr>`).join("")
+    : `<tr><td class="muted">None yet.</td></tr>`;
+  document.querySelectorAll("button[data-f]").forEach((b) => (b.onclick = async () => {
+    if (b.dataset.armed !== "1") { b.dataset.armed = "1"; b.textContent = "Click again to disconnect"; return; }
+    try { await post("/api/v1/forget-device", { id: b.dataset.f }); load(); } catch (e) { $("msg").textContent = e.message; }
+  }));
+  $("rwstate").textContent = data.reader_connected ? `Connected.${data.reader_last_poll ? " Last checked " + new Date(data.reader_last_poll).toLocaleString() + "." : ""}` : "Not connected.";
+  $("akstate").textContent = data.anthropic_set ? "Set." : "Not set.";
+}
+
+async function load() {
+  try {
+    const r = await fetch("/api/v1/dashboard");
+    if (!r.ok) throw new Error((await r.json()).error);
+    data = await r.json();
+    render();
+  } catch (e) { $("sub").textContent = "Couldn't load: " + e.message; }
+}
+async function save(field, input, label) {
+  $("msg").textContent = "Saving…";
+  try { await post("/api/v1/settings", { [field]: $(input).value }); $(input).value = ""; $("msg").textContent = `${label} saved.`; load(); }
+  catch (e) { $("msg").textContent = e.message; }
+}
+$("rwsave").onclick = () => save("readwise_token", "rw", "Readwise token");
+$("aksave").onclick = () => save("anthropic_key", "ak", "Anthropic key");
+$("rw").onkeydown = (e) => e.key === "Enter" && $("rwsave").click();
+$("ak").onkeydown = (e) => e.key === "Enter" && $("aksave").click();
+load();
+setInterval(load, 30000);
+</script>
+</body>
+</html>
