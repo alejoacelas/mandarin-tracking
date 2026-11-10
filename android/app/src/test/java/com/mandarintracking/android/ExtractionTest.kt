@@ -63,5 +63,6 @@ class ExtractionTest {
         assertTrue(AdRules.mentionsYoutube("https://www.youtube.com/watch?v=abc"))
         assertTrue(AdRules.mentionsYoutube("m.youtube.com"))
         assertFalse(AdRules.mentionsYoutube("Bilibili 视频"))
+        assertFalse(AdRules.mentionsYoutube("music.youtube.com"))
     }
 }

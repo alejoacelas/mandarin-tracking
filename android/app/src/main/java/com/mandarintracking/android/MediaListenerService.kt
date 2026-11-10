@@ -1,6 +1,9 @@
 package com.mandarintracking.android
 
+import android.app.Notification
 import android.media.MediaMetadata
+import android.media.session.MediaSession
+import android.service.notification.StatusBarNotification
 import android.media.session.MediaController
 import android.media.session.MediaSessionManager
 import android.media.session.PlaybackState
@@ -138,8 +141,33 @@ class MediaListenerService : NotificationListenerService() {
     private fun onMeta(c: MediaController, key: String, md: MediaMetadata?) {
         if (BuildConfig.DEBUG) Log.d(TAG, "metadata ${c.packageName}: ${MediaAdapter.dump(md)}")
         lastMetadataDump = "${c.packageName}: ${MediaAdapter.dump(md)}"
-        if (c.packageName in TrackedApps.browsers) browserIsYoutube[key] = MediaAdapter.browserShowsYoutube(md)
+        if (c.packageName in TrackedApps.browsers) browserIsYoutube[key] = AdRules.mentionsYoutube(browserSite(c) ?: "")
         tracker?.onMetadata(key, c.packageName, currentKind(c, key), MediaAdapter.info(c.packageName, md, browserIsYoutube[key] == true))
+    }
+
+    /**
+     * The site a browser is playing. Browsers' media sessions don't say it, but their media
+     * notification does: Chrome puts the host ("m.youtube.com") in the sub-text, and the
+     * notification carries the session token, which ties it to this controller.
+     */
+    private fun browserSite(c: MediaController): String? = try {
+        activeNotifications.orEmpty().firstOrNull { sbn ->
+            sbn.packageName == c.packageName &&
+                sbn.notification.extras.getParcelable<MediaSession.Token>(Notification.EXTRA_MEDIA_SESSION) == c.sessionToken
+        }?.notification?.extras?.let { e ->
+            listOfNotNull(e.getCharSequence(Notification.EXTRA_SUB_TEXT), e.getCharSequence(Notification.EXTRA_INFO_TEXT)).joinToString(" ")
+        }
+    } catch (e: Exception) {
+        null
+    }
+
+    /** A browser's media notification can appear after its metadata; check its session again. */
+    override fun onNotificationPosted(sbn: StatusBarNotification?) {
+        if (sbn == null || sbn.packageName !in TrackedApps.browsers) return
+        callbacks.values.filter { it.first.packageName == sbn.packageName }.forEach { (c, _) ->
+            val key = keyOf(c)
+            if (browserIsYoutube[key] != AdRules.mentionsYoutube(browserSite(c) ?: "")) onMeta(c, key, c.metadata)
+        }
     }
 
     private fun currentKind(c: MediaController, key: String) = if (c.packageName == TrackedApps.YOUTUBE) "app" else "browser"
@@ -183,14 +211,6 @@ object MediaAdapter {
 
     fun looksLikeAd(info: MediaInfo): Boolean = AdRules.isAd(info.title, info.artist, info.durationMs)
 
-    fun browserShowsYoutube(md: MediaMetadata?): Boolean {
-        md ?: return false
-        return md.keySet().any { k ->
-            val v = try { md.getString(k) } catch (e: Exception) { null } ?: return@any false
-            AdRules.mentionsYoutube(v)
-        }
-    }
-
     fun dump(md: MediaMetadata?): String {
         md ?: return "null"
         return md.keySet().sorted().joinToString(", ") { k ->
@@ -206,6 +226,7 @@ object AdRules {
 
     fun mentionsYoutube(s: String): Boolean {
         val l = s.lowercase()
-        return "youtube.com" in l || "youtu.be" in l || "m.youtube" in l
+        if ("music.youtube.com" in l) return false // YouTube Music is not counted
+        return "youtube.com" in l || "youtu.be" in l
     }
 }
