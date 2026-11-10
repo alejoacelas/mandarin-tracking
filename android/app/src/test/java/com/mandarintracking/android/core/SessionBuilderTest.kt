@@ -85,6 +85,16 @@ class SessionBuilderTest {
         )
     }
 
+    @Test fun shortScreenOffIsNotBridged() {
+        val s = build(
+            ev(0, pleco, EventKind.RESUMED),
+            ev(min, "android", EventKind.SCREEN_OFF),
+            ev(min + 5 * sec, pleco, EventKind.RESUMED),
+            ev(2 * min, pleco, EventKind.PAUSED),
+        )
+        assertEquals(listOf(min, 2 * min - (min + 5 * sec)), s.map { it.endMs - it.startMs })
+    }
+
     @Test fun keyguardAndShutdownEndSessions() {
         val a = build(ev(0, pleco, EventKind.RESUMED), ev(min, "android", EventKind.KEYGUARD_SHOWN))
         assertEquals(EndReason.KEYGUARD, a.single().endReason)

@@ -88,7 +88,9 @@ class SessionBuilder(
         val out = ArrayList<Session>()
         for (s in sessions) {
             val prev = out.lastOrNull()
-            if (prev != null && prev.pkg == s.pkg && s.startMs - prev.endMs <= bridgeMs) {
+            // Only switches inside the app are joined; the screen going off always ends a session.
+            val joinable = prev != null && prev.endReason in JOINABLE
+            if (prev != null && joinable && prev.pkg == s.pkg && s.startMs - prev.endMs <= bridgeMs) {
                 out[out.size - 1] = prev.copy(endMs = maxOf(prev.endMs, s.endMs), endReason = s.endReason)
             } else {
                 out += s
@@ -100,6 +102,7 @@ class SessionBuilder(
     companion object {
         const val BRIDGE_MS = 10_000L
         const val MIN_MS = 1_000L
+        private val JOINABLE = setOf(EndReason.PAUSED, EndReason.OTHER_APP)
         /** How far back each read reaches before the cursor-defining "now", for late events. */
         const val MARGIN_MS = 10 * 60_000L
 
