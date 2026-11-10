@@ -254,6 +254,12 @@ func TestChatMessagesProblemsHeartbeatWarnings(t *testing.T) {
 	if !strings.Contains(strings.Join(th.srv.Warnings(), "\n"), "Pixel was last in touch 25 hours ago") {
 		t.Errorf("no silence warning: %v", th.srv.Warnings())
 	}
+	// Reinstalling pairs a new device; the abandoned one stops warning.
+	tok2 := th.pairPhone()
+	th.do(req{path: "/api/v1/heartbeat", token: tok2, body: `{"version":"1.0"}`})
+	if strings.Contains(strings.Join(th.srv.Warnings(), "\n"), "last in touch") {
+		t.Errorf("abandoned device still warns: %v", th.srv.Warnings())
+	}
 }
 
 func TestDashboardIsLocalOnly(t *testing.T) {

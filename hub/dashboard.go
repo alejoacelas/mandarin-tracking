@@ -66,10 +66,16 @@ func (s *Server) Warnings() []string {
 	devs, _ := s.St.Devices()
 	names := map[string]string{"hub": "Hub"}
 	has := map[string]bool{}
+	// A reinstalled extension or app pairs as a new device and leaves the old one silent. Only
+	// warn when no device of that kind has been in touch recently.
+	lastByKind := map[string]int64{}
+	for _, d := range devs {
+		lastByKind[d.Kind] = max(lastByKind[d.Kind], d.LastSeenMs)
+	}
 	for _, d := range devs {
 		names[d.ID] = d.Name
 		has[d.Kind] = true
-		if now.Sub(time.UnixMilli(d.LastSeenMs)) > silentAfter {
+		if now.Sub(time.UnixMilli(d.LastSeenMs)) > silentAfter && d.LastSeenMs == lastByKind[d.Kind] {
 			hint := ""
 			if d.Kind == "android" {
 				hint = " Time on the phone is kept there and arrives once the phone and this Mac are on the same Wi-Fi. If that's already the case, open the app on the phone to see what's wrong."
