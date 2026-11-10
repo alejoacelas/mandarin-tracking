@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mandarin time</title>
+<style>
+  :root { color-scheme: light dark; --muted: #6b6b6b; --warn: #a15c00; --warn-bg: #fff4e0; --ok: #2e7d32; }
+  @media (prefers-color-scheme: dark) { :root { --muted: #a0a0a0; --warn: #ffb74d; --warn-bg: #3a2a10; --ok: #81c784; } }
+  body { font: 13px/1.4 system-ui, sans-serif; margin: 0; padding: 12px 14px; width: 300px; }
+  h1 { font-size: 13px; font-weight: 600; margin: 0 0 6px; color: var(--muted); }
+  .total { font-size: 28px; font-weight: 600; margin: 0; }
+  .sources { color: var(--muted); margin: 2px 0 10px; }
+  .row { display: flex; justify-content: space-between; gap: 8px; margin: 3px 0; }
+  .label { color: var(--muted); }
+  .ok { color: var(--ok); }
+  .bad { color: var(--warn); }
+  ul { list-style: none; padding: 0; margin: 8px 0 0; }
+  li { background: var(--warn-bg); color: var(--warn); border-radius: 6px; padding: 6px 8px; margin: 4px 0; }
+  li small { display: block; opacity: 0.8; }
+  a { display: inline-block; margin-top: 10px; }
+  section + section { margin-top: 10px; border-top: 1px solid color-mix(in srgb, currentColor 15%, transparent); padding-top: 8px; }
+</style>
+</head>
+<body>
+  <section>
+    <h1>Mandarin today</h1>
+    <p class="total" id="total">…</p>
+    <p class="sources" id="sources"></p>
+  </section>
+  <section>
+    <div class="row"><span class="label">Hub</span><span id="hub">…</span></div>
+    <div class="row"><span class="label">Waiting to send</span><span id="outbox">…</span></div>
+    <div class="row"><span class="label">Chat history</span><span id="history">…</span></div>
+    <ul id="problems"></ul>
+    <a id="dashboard" href="http://127.0.0.1:47800/" target="_blank">Open the dashboard</a>
+  </section>
+  <script type="module" src="dist/popup.js"></script>
+</body>
+</html>
