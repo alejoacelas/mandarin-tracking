@@ -6,6 +6,7 @@ import java.lang.Character.UnicodeScript
  * Share of a text that is Chinese, as defined in docs/protocol.md ("Chinese share").
  * Each Han character is one unit, each run of Latin/Cyrillic letters is one unit,
  * each kana character is one unit and each run of Hangul is one unit.
+ * Text whose kana are at least 10% of its Han plus kana characters is Japanese and scores 0.
  * Ported from v1's src/language.js.
  */
 data class Share(val han: Int, val units: Int) {
@@ -29,6 +30,7 @@ object ChineseShare {
     fun of(text: String?): Share {
         if (text.isNullOrEmpty()) return Share.EMPTY
         var han = 0
+        var kana = 0
         var other = 0
         var run = Run.NONE
         var i = 0
@@ -38,12 +40,13 @@ object ChineseShare {
             val script = try { UnicodeScript.of(cp) } catch (e: IllegalArgumentException) { UnicodeScript.UNKNOWN }
             run = when (script) {
                 UnicodeScript.HAN -> { han++; Run.NONE }
-                UnicodeScript.HIRAGANA, UnicodeScript.KATAKANA -> { other++; Run.NONE }
+                UnicodeScript.HIRAGANA, UnicodeScript.KATAKANA -> { kana++; other++; Run.NONE }
                 UnicodeScript.HANGUL -> { if (run != Run.HANGUL) other++; Run.HANGUL }
                 UnicodeScript.LATIN, UnicodeScript.CYRILLIC -> { if (run != Run.LETTERS) other++; Run.LETTERS }
                 else -> Run.NONE
             }
         }
-        return Share(han, han + other)
+        val japanese = kana > 0 && kana * 10 >= han + kana
+        return Share(if (japanese) 0 else han, han + other)
     }
 }

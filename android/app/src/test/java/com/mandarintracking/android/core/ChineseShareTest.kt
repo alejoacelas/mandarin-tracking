@@ -33,9 +33,24 @@ class ChineseShareTest {
     }
 
     @Test fun japaneseKanaCountsPerCharacter() {
-        // 今日 忙 are Han (3); は と て も し い で す are 8 kana units.
-        assertEquals(Share(3, 11), ChineseShare.of("今日はとても忙しいです"))
+        // 今日 忙 are Han (3); は と て も し い で す are 8 kana units; kana >= 10%, so Japanese.
+        assertEquals(Share(0, 11), ChineseShare.of("今日はとても忙しいです"))
         assertFalse(ChineseShare.of("今日はとても忙しいです。明日もたぶん忙しいでしょう。").isMandarin)
+    }
+
+    @Test fun kanjiHeavyJapaneseScoresZero() {
+        // Without the kana rule this scored 0.31 and passed the 0.3 threshold.
+        val t = "今日はとても良い天気ですね。散歩に行きましょうか。明日も晴れるといいですね。"
+        assertEquals(0.0, ChineseShare.of(t).share, 0.0)
+        assertFalse(ChineseShare.of(t).isMandarin)
+    }
+
+    @Test fun strayKanaInChineseIsStillChinese() {
+        // One kana among 20 Han characters is under 10%.
+        val t = "我昨天和朋友一起去吃饭了我们吃了很多东西の"
+        val s = ChineseShare.of(t)
+        assertEquals(20, s.han)
+        assertTrue(s.isMandarin)
     }
 
     @Test fun koreanHangulCountsPerRun() {
