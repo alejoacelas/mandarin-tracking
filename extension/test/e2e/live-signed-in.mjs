@@ -39,8 +39,13 @@ const b = await Browser.connect({ wsUrl, hub, idleSeconds: 6 });
 const out = { extension: b.extId };
 try {
   // ---------- chat history ----------
+  // A first import of a busy account takes minutes, so start it and watch its status.
   const t0 = Date.now();
-  await b.message({ type: "syncHistory" });
+  await b.ctl.eval(`chrome.runtime.sendMessage({ type: "syncHistory" }); true`);
+  await b.waitFor(async () => {
+    const { historyStatus: h = {} } = await b.storage(["historyStatus"]);
+    return ["chatgpt", "claude"].every((s) => (h[s]?.last_ok_at ?? 0) > t0 || (h[s]?.last_fail_at ?? 0) > t0);
+  }, { timeout: 15 * 60_000, every: 5000, what: "the history import" });
   await b.pump();
   const st = await b.message({ type: "status" });
   out.history = { seconds: Math.round((Date.now() - t0) / 1000), status: st.historyStatus, problems: st.problems };
@@ -82,7 +87,12 @@ try {
       const ivs = b.hub ? b.hub.list((i) => i.conversation_id === id) : [];
       out.throwaway[svc].intervals = ivs.map((i) => ({ s: (i.end_ms - i.start_ms) / 1000, language: i.language, zh_share: i.zh_share, units: i.units, measured: i.meta?.measured, title: !!i.title }));
       // Import it from history, then delete the chat the way the web app does.
-      await b.message({ type: "syncHistory" });
+      const t1 = Date.now();
+      await b.ctl.eval(`chrome.runtime.sendMessage({ type: "syncHistory" }); true`);
+      await b.waitFor(async () => {
+        const { historyStatus: h = {} } = await b.storage(["historyStatus"]);
+        return (h[svc]?.last_ok_at ?? 0) > t1 || (h[svc]?.last_fail_at ?? 0) > t1;
+      }, { timeout: 10 * 60_000, every: 3000, what: "the history import" });
       await b.pump();
       const imported = b.hub ? [...b.hub.messages.values()].filter((m) => m.conversation_id === id) : [];
       out.throwaway[svc].imported = imported.map((m) => ({ role: m.role, zh_share: m.zh_share, units: m.units }));
