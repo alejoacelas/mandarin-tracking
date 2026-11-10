@@ -185,8 +185,12 @@ func dayBounds(date time.Time, loc *time.Location) (int64, int64) {
 var appNames = map[string]string{
 	"com.openai.chatgpt": "ChatGPT", "com.openai.chat": "ChatGPT", "com.openai.codex": "ChatGPT",
 	"com.anthropic.claude": "Claude", "com.anthropic.claudefordesktop": "Claude",
-	"io.readwise.read": "Reader", "com.readwise.reader": "Reader", "readwise-api": "Reader",
+	"io.readwise.read": "Reader", "com.readermobile": "Reader", "readwise-api": "Reader",
 	"com.google.android.apps.bard": "Gemini", "com.deepseek.chat": "DeepSeek",
+	"com.larus.nova": "Doubao", "com.larus.wolf": "Dola", "com.moonshot.kimichat": "Kimi",
+	"com.aliyun.tongyi": "Tongyi", "ai.qwenlm.chat.android": "Qwen", "ai.perplexity.app.android": "Perplexity",
+	"ai.x.grok": "Grok", "com.tencent.hunyuan.app.chat": "Yuanbao", "com.microsoft.copilot": "Copilot",
+	"com.pleco.chinesesystem":    "Pleco",
 	"com.google.android.youtube": "YouTube",
 }
 
