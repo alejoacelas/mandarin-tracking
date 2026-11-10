@@ -22,7 +22,7 @@ android {
         create("youtube") { dimension = "app"; applicationId = "com.google.android.youtube"; resValue("string", "app_name", "YouTube (sim)") }
         create("hubbeacon") { dimension = "app"; applicationId = "com.mandarintracking.hubbeacon"; resValue("string", "app_name", "Hub beacon (sim)") }
     }
-    buildFeatures { resValues = true }
+    buildFeatures { resValues = true; buildConfig = true }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
