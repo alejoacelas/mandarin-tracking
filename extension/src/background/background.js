@@ -70,7 +70,6 @@ async function addSpans(tabId, desc, spans) {
 
 // ---------- sending to the hub ----------
 
-let pumping = null;
 let soonTimer = null;
 let lastPumpAt = 0;
 function soon() {
@@ -79,9 +78,24 @@ function soon() {
   soonTimer = setTimeout(() => { soonTimer = null; pump(); }, wait);
 }
 
+// One run at a time. A call during a run gets a fresh run right after it, so whatever made the
+// caller ask (a new problem, a test) is included.
+function once(fn) {
+  let running = null;
+  let queued = null;
+  const run = (...a) => {
+    if (!running) {
+      running = fn(...a).finally(() => { running = null; });
+      return running;
+    }
+    queued ??= running.catch(() => {}).then(() => { queued = null; return run(...a); });
+    return queued;
+  };
+  return run;
+}
+const pumpRun = once((force) => pumpOnce(force));
 function pump({ force = false } = {}) {
-  pumping ??= pumpOnce(force).finally(() => { pumping = null; });
-  return pumping;
+  return pumpRun(force);
 }
 
 const PROTOCOL_FIELDS = ["id", "source", "start_ms", "end_ms", "language", "zh_share", "units", "app", "title",
@@ -122,6 +136,9 @@ async function sendMessages(h) {
       throw new HubError("bad_response", `The hub's answer to chat-messages has no accepted count: ${JSON.stringify(resp).slice(0, 200)}`);
     }
     await serial(() => outbox.removeMessages(batch));
+    if (resp.accepted < batch.length) {
+      await report("extension.chat-messages", `The hub accepted ${resp.accepted} of ${batch.length} chat messages; the rest were dropped as invalid.`);
+    }
   }
 }
 
@@ -208,12 +225,7 @@ const HISTORY = {
   chatgpt: { name: "chatgpt.com", client: () => new ChatgptClient({ fetch: (...a) => fetch(...a) }) },
   claude: { name: "claude.ai", client: () => new ClaudeClient({ fetch: (...a) => fetch(...a) }) },
 };
-let syncing = null;
-
-function syncHistory() {
-  syncing ??= syncHistoryOnce().finally(() => { syncing = null; });
-  return syncing;
-}
+const syncHistory = once(() => syncHistoryOnce());
 
 async function syncHistoryOnce() {
   let more = false;

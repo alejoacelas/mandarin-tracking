@@ -1,6 +1,9 @@
 // Talks to the Mac hub (docs/protocol.md). Pairs on first use through the loopback-only
 // pair-extension call, and pairs again when the hub answers 401.
-export const DEFAULT_HUB_URL = "http://127.0.0.1:47800";
+// The end-to-end tests build a copy of the extension with another address, so that it never
+// talks to a real hub on this Mac.
+/* global __MT_HUB_URL__ */
+export const DEFAULT_HUB_URL = typeof __MT_HUB_URL__ === "string" ? __MT_HUB_URL__ : "http://127.0.0.1:47800";
 
 export class HubError extends Error {
   // kind: "unreachable" (no answer), "http" (unexpected status), "pair_refused", "bad_response"

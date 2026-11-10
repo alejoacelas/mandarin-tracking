@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "test": "node --test 'test/unit/*.test.js'",
-    "test:e2e": "node scripts/build.mjs && node --test --test-concurrency=1 'test/e2e/*.test.js'"
+    "test:e2e": "node --test --test-timeout=240000 --test-concurrency=1 'test/e2e/*.test.js'"
   },
   "devDependencies": {
     "esbuild": "0.28.2"
