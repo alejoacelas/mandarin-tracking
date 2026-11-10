@@ -9,7 +9,22 @@ import (
 	"sort"
 	"strings"
 	"time"
+
+	qrcode "github.com/skip2/go-qrcode"
 )
+
+// AppURL is where the phone downloads the Android app.
+const AppURL = "https://github.com/alejoacelas/mandarin-tracking/releases/latest/download/mandarin-tracker.apk"
+
+func (s *Server) appQR(w http.ResponseWriter, r *http.Request) {
+	png, err := qrcode.Encode(AppURL, qrcode.Medium, 512)
+	if err != nil {
+		fail(w, 500, err.Error())
+		return
+	}
+	w.Header().Set("Content-Type", "image/png")
+	_, _ = w.Write(png)
+}
 
 //go:embed dashboard.html
 var dashboardHTML []byte
@@ -17,12 +32,12 @@ var dashboardHTML []byte
 const silentAfter = 24 * time.Hour
 
 var permissionNames = map[string]string{
-	"usage_access":          "Usage access",
-	"notification_access":   "Notification access (for YouTube)",
-	"accessibility":         "Accessibility (for the language of chats and reading)",
-	"battery_unrestricted":  "Unrestricted battery use",
-	"history_chatgpt":       "signed in to chatgpt.com",
-	"history_claude":        "signed in to claude.ai",
+	"usage_access":         "Usage access",
+	"notification_access":  "Notification access (for YouTube)",
+	"accessibility":        "Accessibility (for the language of chats and reading)",
+	"battery_unrestricted": "Unrestricted battery use",
+	"history_chatgpt":      "signed in to chatgpt.com",
+	"history_claude":       "signed in to claude.ai",
 }
 
 func (s *Server) dashboardPage(w http.ResponseWriter, r *http.Request) {
@@ -150,9 +165,10 @@ func (s *Server) dashboard(w http.ResponseWriter, r *http.Request) {
 	writeJSON(w, 200, map[string]any{
 		"days": sum.Days, "warnings": sum.Warnings, "devices": devs, "channels": chs,
 		"pair_code": s.PairCode(), "addresses": addrs, "version": s.Version,
-		"reader_connected":  s.St.Get("readwise_token") != "",
-		"anthropic_set":     s.St.Get("anthropic_key") != "",
-		"reader_last_poll":  s.St.Get("reader_last_ok"),
+		"reader_connected": s.St.Get("readwise_token") != "",
+		"anthropic_set":    s.St.Get("anthropic_key") != "",
+		"reader_last_poll": s.St.Get("reader_last_ok"),
+		"app_url":          AppURL,
 	})
 }
 
@@ -190,8 +206,11 @@ func (s *Server) settings(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 	}
-	if s.Kick != nil {
-		s.Kick()
+	if req.ReadwiseToken != nil && s.KickReader != nil {
+		s.KickReader()
+	}
+	if req.AnthropicKey != nil && s.KickClassifier != nil {
+		s.KickClassifier()
 	}
 	writeJSON(w, 200, map[string]bool{"ok": true})
 }

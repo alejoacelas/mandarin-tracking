@@ -156,12 +156,12 @@ func (r *Resolver) Resolve(iv Interval) Class {
 
 // DaySummary is one day of the dashboard.
 type DaySummary struct {
-	Date        string             `json:"date"`
-	TotalMin    float64            `json:"total_min"`
-	BySource    map[string]float64 `json:"by_source"`
-	PartlyMin   float64            `json:"partly_min"`
-	Unclassified float64           `json:"unclassified_min"`
-	Items       []Item             `json:"items"`
+	Date         string             `json:"date"`
+	TotalMin     float64            `json:"total_min"`
+	BySource     map[string]float64 `json:"by_source"`
+	PartlyMin    float64            `json:"partly_min"`
+	Unclassified float64            `json:"unclassified_min"`
+	Items        []Item             `json:"items"`
 }
 
 // Item is one video channel, document, chat or app within a day.
@@ -181,6 +181,22 @@ func dayBounds(date time.Time, loc *time.Location) (int64, int64) {
 	return start.UnixMilli(), end.UnixMilli()
 }
 
+// appNames are display names for apps (Android packages and Mac bundle IDs).
+var appNames = map[string]string{
+	"com.openai.chatgpt": "ChatGPT", "com.openai.chat": "ChatGPT", "com.openai.codex": "ChatGPT",
+	"com.anthropic.claude": "Claude", "com.anthropic.claudefordesktop": "Claude",
+	"io.readwise.read": "Reader", "com.readwise.reader": "Reader", "readwise-api": "Reader",
+	"com.google.android.apps.bard": "Gemini", "com.deepseek.chat": "DeepSeek",
+	"com.google.android.youtube": "YouTube",
+}
+
+func appName(app string) string {
+	if n := appNames[app]; n != "" {
+		return n
+	}
+	return app
+}
+
 func itemName(iv Interval) (name, detail string) {
 	switch iv.Source {
 	case "youtube":
@@ -192,9 +208,9 @@ func itemName(iv Interval) (name, detail string) {
 		return "Pleco", ""
 	}
 	if t := str(iv.Title); t != "" {
-		return t, iv.App
+		return t, appName(iv.App)
 	}
-	return iv.App, ""
+	return appName(iv.App), ""
 }
 
 // Summarize computes one DaySummary per day, oldest first, ending with the day containing now.

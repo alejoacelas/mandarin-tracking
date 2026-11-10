@@ -149,7 +149,10 @@ func TestClassifyRefusalBadJSONAndBadLabel(t *testing.T) {
 			json.NewEncoder(w).Encode(map[string]any{"stop_reason": "end_turn", "content": []any{map[string]any{"type": "text", "text": "I think Mandarin"}}})
 		},
 		"badlabel": answer("cantonese"),
-		"html":     func(w http.ResponseWriter, _ map[string]any) { w.WriteHeader(502); w.Write([]byte("<html>bad gateway</html>")) },
+		"html": func(w http.ResponseWriter, _ map[string]any) {
+			w.WriteHeader(502)
+			w.Write([]byte("<html>bad gateway</html>"))
+		},
 		"authfail": nil,
 	} {
 		t.Run(name, func(t *testing.T) {

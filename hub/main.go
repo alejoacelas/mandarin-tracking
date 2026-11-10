@@ -50,17 +50,13 @@ func main() {
 	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
 	defer stop()
 
-	kick := make(chan struct{}, 1)
+	kickReader, kickClassifier := make(chan struct{}, 1), make(chan struct{}, 1)
 	client := &http.Client{Timeout: 5 * time.Minute}
 	reader := &Reader{Base: *readerBase, Client: &http.Client{Timeout: 60 * time.Second}}
 	srv := &Server{
 		St: st, Now: time.Now, Loc: time.Local, Port: *port, Version: version,
-		Kick: func() {
-			select {
-			case kick <- struct{}{}:
-			default:
-			}
-		},
+		KickClassifier: func() { nudge(kickClassifier) },
+		KickReader:     func() { nudge(kickReader) },
 		CheckRead: func(t string) error {
 			c, cancel := context.WithTimeout(ctx, 20*time.Second)
 			defer cancel()
@@ -77,8 +73,8 @@ func main() {
 	}()
 	log.Printf("mandarin-hub %s on http://127.0.0.1:%d, data in %s", version, *port, *dataDir)
 
-	go readerLoop(ctx, st, reader, kick)
-	go classifierLoop(ctx, st, &Classifier{Base: *anthropicBase, Client: client}, kick)
+	go readerLoop(ctx, st, reader, kickReader)
+	go classifierLoop(ctx, st, &Classifier{Base: *anthropicBase, Client: client}, kickClassifier)
 	if !*noMac {
 		go macLoop(ctx, st)
 	}
@@ -89,6 +85,13 @@ func main() {
 	sctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
 	defer cancel()
 	_ = hs.Shutdown(sctx)
+}
+
+func nudge(c chan struct{}) {
+	select {
+	case c <- struct{}{}:
+	default:
+	}
 }
 
 func readerLoop(ctx context.Context, st *Store, r *Reader, kick <-chan struct{}) {

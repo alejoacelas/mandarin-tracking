@@ -25,15 +25,16 @@ var validSources = map[string]bool{"youtube": true, "reader": true, "pleco": tru
 var validLanguages = map[string]bool{"zh": true, "other": true, "unknown": true}
 
 type Server struct {
-	St        *Store
-	Now       func() time.Time
-	Loc       *time.Location
-	Port      int
-	Version   string
-	Kick      func()                   // wakes the classifier and Reader loops
-	CheckRead func(token string) error // validates a Readwise token
-	mu        sync.Mutex
-	wrongCode int
+	St             *Store
+	Now            func() time.Time
+	Loc            *time.Location
+	Port           int
+	Version        string
+	KickClassifier func()                   // wakes the YouTube channel labeller
+	KickReader     func()                   // wakes the Reader poller
+	CheckRead      func(token string) error // validates a Readwise token
+	mu             sync.Mutex
+	wrongCode      int
 }
 
 func (s *Server) Handler() http.Handler {
@@ -51,6 +52,7 @@ func (s *Server) Handler() http.Handler {
 	// The dashboard and its controls answer only the Mac itself.
 	m.HandleFunc("GET /{$}", s.local(s.dashboardPage))
 	m.HandleFunc("GET /api/v1/dashboard", s.local(s.dashboard))
+	m.HandleFunc("GET /app-qr.png", s.local(s.appQR))
 	m.HandleFunc("POST /api/v1/settings", s.local(s.settings))
 	m.HandleFunc("POST /api/v1/channel-label", s.local(s.channelLabel))
 	m.HandleFunc("POST /api/v1/forget-device", s.local(s.forgetDevice))
@@ -63,7 +65,9 @@ func writeJSON(w http.ResponseWriter, code int, v any) {
 	_ = json.NewEncoder(w).Encode(v)
 }
 
-func fail(w http.ResponseWriter, code int, msg string) { writeJSON(w, code, map[string]string{"error": msg}) }
+func fail(w http.ResponseWriter, code int, msg string) {
+	writeJSON(w, code, map[string]string{"error": msg})
+}
 
 func readBody(w http.ResponseWriter, r *http.Request, v any) bool {
 	body, err := io.ReadAll(io.LimitReader(r.Body, 8<<20))
@@ -287,8 +291,8 @@ func (s *Server) intervals(w http.ResponseWriter, r *http.Request, dev string) {
 			newChannel = true
 		}
 	}
-	if newChannel && s.Kick != nil {
-		s.Kick()
+	if newChannel && s.KickClassifier != nil {
+		s.KickClassifier()
 	}
 	if len(rejected) > 0 {
 		log.Printf("%s: rejected %d intervals, first: %s", dev, len(rejected), rejected[0].Reason)

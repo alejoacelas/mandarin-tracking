@@ -65,6 +65,12 @@ input[type=password], input[type=text] { width: 100%; }
 
   <h2>Connect</h2>
   <div class="card">
+    <div class="row" style="align-items:flex-start;gap:16px">
+      <img src="/app-qr.png" alt="QR code for the Android app" width="150" height="150" style="border-radius:6px;background:#fff">
+      <div><b>1. Get the Android app.</b> Scan this with the phone's camera to download it, then open the downloaded file to install it. Android asks you to allow installing from the browser the first time.
+        <div class="muted wrap" id="appurl"></div>
+        <p style="margin:10px 0 0"><b>2. Pair it.</b> Open the app; it finds this Mac and asks for this code:</p></div>
+    </div>
     <div>Phone pairing code</div>
     <div class="code" id="code">––––––</div>
     <div class="muted">The Android app finds this Mac on the same Wi-Fi by itself. If it can't, enter one of these addresses in the app: <span id="addrs"></span></div>
@@ -130,6 +136,7 @@ function render() {
     try { await post("/api/v1/channel-label", { key: s.dataset.k, label: s.value }); load(); } catch (e) { $("msg").textContent = e.message; }
   }));
   $("code").textContent = data.pair_code;
+  $("appurl").textContent = data.app_url;
   $("addrs").textContent = (data.addresses || []).join(", ") || "(no network)";
   $("devices").innerHTML = data.devices?.length
     ? data.devices.map((v) => `<tr><td>${esc(v.Name)}<div class="muted">${esc(v.Kind)} ${esc(v.Version)}</div></td><td>last in touch ${esc(v.LastSeen)}</td><td class="num"><button data-f="${esc(v.ID)}">Disconnect</button></td></tr>`).join("")

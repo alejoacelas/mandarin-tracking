@@ -148,17 +148,17 @@ func TestIntervalValidationAndUpsert(t *testing.T) {
 	now := th.now.UnixMilli()
 	min := int64(60000)
 	cases := map[string]string{
-		"ok":         ivJSON("ok", now-10*min, now-5*min, ""),
-		"backwards":  ivJSON("backwards", now-5*min, now-10*min, ""),
-		"zero":       ivJSON("zero", now-5*min, now-5*min, ""),
-		"future":     ivJSON("future", now, now+10*min, ""),
-		"old":        ivJSON("old", 1000, 2000, ""),
-		"long":       ivJSON("long", now-13*60*min, now, ""),
-		"badsource":  strings.Replace(ivJSON("badsource", now-2*min, now-min, ""), `"pleco"`, `"tiktok"`, 1),
-		"badlang":    strings.Replace(ivJSON("badlang", now-2*min, now-min, ""), `"zh"`, `"cn"`, 1),
-		"badshare":   ivJSON("badshare", now-2*min, now-min, `,"zh_share":1.5`),
-		"bigmeta":    ivJSON("bigmeta", now-2*min, now-min, `,"meta":{"x":"`+strings.Repeat("a", 5000)+`"}`),
-		"withmeta":   ivJSON("withmeta", now-2*min, now-min, `,"meta":{"pkg":"x"}`),
+		"ok":           ivJSON("ok", now-10*min, now-5*min, ""),
+		"backwards":    ivJSON("backwards", now-5*min, now-10*min, ""),
+		"zero":         ivJSON("zero", now-5*min, now-5*min, ""),
+		"future":       ivJSON("future", now, now+10*min, ""),
+		"old":          ivJSON("old", 1000, 2000, ""),
+		"long":         ivJSON("long", now-13*60*min, now, ""),
+		"badsource":    strings.Replace(ivJSON("badsource", now-2*min, now-min, ""), `"pleco"`, `"tiktok"`, 1),
+		"badlang":      strings.Replace(ivJSON("badlang", now-2*min, now-min, ""), `"zh"`, `"cn"`, 1),
+		"badshare":     ivJSON("badshare", now-2*min, now-min, `,"zh_share":1.5`),
+		"bigmeta":      ivJSON("bigmeta", now-2*min, now-min, `,"meta":{"x":"`+strings.Repeat("a", 5000)+`"}`),
+		"withmeta":     ivJSON("withmeta", now-2*min, now-min, `,"meta":{"pkg":"x"}`),
 		"slightfuture": ivJSON("slightfuture", now-min, now+2*min, ""),
 	}
 	var parts []string
@@ -209,7 +209,7 @@ func TestIntervalValidationAndUpsert(t *testing.T) {
 func TestYouTubeIntervalRegistersChannel(t *testing.T) {
 	th := newHub(t)
 	kicked := 0
-	th.srv.Kick = func() { kicked++ }
+	th.srv.KickClassifier = func() { kicked++ }
 	tok := th.pairPhone()
 	now := th.now.UnixMilli()
 	body := fmt.Sprintf(`{"intervals":[{"id":"y","source":"youtube","start_ms":%d,"end_ms":%d,"language":"unknown","app":"com.google.android.youtube","title":"老高與小茉","channel_name":"老高與小茉 Mr & Mrs Gao"}]}`, now-600000, now)

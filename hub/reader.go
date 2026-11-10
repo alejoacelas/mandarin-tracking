@@ -24,7 +24,7 @@ import (
 const (
 	readerGap        = 300 * time.Second
 	readerTail       = 45 * time.Second
-	readerIdlePoll   = 300 * time.Second
+	readerIdlePoll   = 60 * time.Second // well under the API limit of 20 calls a minute
 	readerActivePoll = 30 * time.Second
 	readerKeepEvents = 48 * time.Hour
 )
@@ -73,7 +73,9 @@ type apiPage struct {
 // RateLimitError carries the wait the API asked for.
 type RateLimitError struct{ Wait time.Duration }
 
-func (e RateLimitError) Error() string { return fmt.Sprintf("Reader API rate limit, retry in %s", e.Wait) }
+func (e RateLimitError) Error() string {
+	return fmt.Sprintf("Reader API rate limit, retry in %s", e.Wait)
+}
 
 // AuthError means the token was refused.
 type AuthError struct{}

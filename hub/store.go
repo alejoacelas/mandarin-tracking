@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS intervals (
   device_id TEXT NOT NULL, id TEXT NOT NULL, source TEXT NOT NULL,
   start_ms INTEGER NOT NULL, end_ms INTEGER NOT NULL, language TEXT NOT NULL,
   zh_share REAL, units INTEGER, app TEXT NOT NULL, title TEXT, channel_name TEXT,
-  channel_id TEXT, video_id TEXT, conversation_id TEXT, doc_id TEXT, url TEXT, meta TEXT,
+  channel_key TEXT, channel_id TEXT, video_id TEXT, conversation_id TEXT, doc_id TEXT, url TEXT, meta TEXT,
   received_ms INTEGER NOT NULL, PRIMARY KEY (device_id, id));
 CREATE INDEX IF NOT EXISTS intervals_time ON intervals (start_ms, end_ms);
 CREATE TABLE IF NOT EXISTS chat_messages (
@@ -56,7 +56,43 @@ func OpenStore(path string) (*Store, error) {
 		db.Close()
 		return nil, fmt.Errorf("creating tables: %w", err)
 	}
+	if err := migrate(db); err != nil {
+		db.Close()
+		return nil, fmt.Errorf("updating tables: %w", err)
+	}
+	if _, err := db.Exec(`CREATE INDEX IF NOT EXISTS intervals_channel ON intervals (channel_key)`); err != nil {
+		db.Close()
+		return nil, err
+	}
 	return &Store{db: db}, nil
+}
+
+// migrate brings a database made by an earlier version up to date. Each step runs once, in
+// order; user_version records how many have run.
+var migrations = []string{
+	// 1: channel_key, added after the first test installs.
+	`ALTER TABLE intervals ADD COLUMN channel_key TEXT; UPDATE intervals SET channel_key=lower(trim(channel_name)) WHERE channel_name IS NOT NULL;`,
+}
+
+func migrate(db *sql.DB) error {
+	var v int
+	if err := db.QueryRow(`PRAGMA user_version`).Scan(&v); err != nil {
+		return err
+	}
+	for i := v; i < len(migrations); i++ {
+		var has int
+		// Fresh databases already have the column from the schema above.
+		_ = db.QueryRow(`SELECT count(*) FROM pragma_table_info('intervals') WHERE name='channel_key'`).Scan(&has)
+		if !(i == 0 && has == 1) {
+			if _, err := db.Exec(migrations[i]); err != nil {
+				return err
+			}
+		}
+		if _, err := db.Exec(fmt.Sprintf(`PRAGMA user_version=%d`, i+1)); err != nil {
+			return err
+		}
+	}
+	return nil
 }
 
 func (s *Store) Close() error { return s.db.Close() }
@@ -188,11 +224,11 @@ func (s *Store) UpsertIntervals(ivs []Interval, now int64) error {
 		return err
 	}
 	defer tx.Rollback()
-	st, err := tx.Prepare(`INSERT INTO intervals(device_id,id,source,start_ms,end_ms,language,zh_share,units,app,title,channel_name,channel_id,video_id,conversation_id,doc_id,url,meta,received_ms)
-	  VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+	st, err := tx.Prepare(`INSERT INTO intervals(device_id,id,source,start_ms,end_ms,language,zh_share,units,app,title,channel_name,channel_key,channel_id,video_id,conversation_id,doc_id,url,meta,received_ms)
+	  VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
 	  ON CONFLICT(device_id,id) DO UPDATE SET source=excluded.source,start_ms=excluded.start_ms,end_ms=excluded.end_ms,
 	  language=excluded.language,zh_share=excluded.zh_share,units=excluded.units,app=excluded.app,title=excluded.title,
-	  channel_name=excluded.channel_name,channel_id=excluded.channel_id,video_id=excluded.video_id,
+	  channel_name=excluded.channel_name,channel_key=excluded.channel_key,channel_id=excluded.channel_id,video_id=excluded.video_id,
 	  conversation_id=excluded.conversation_id,doc_id=excluded.doc_id,url=excluded.url,meta=excluded.meta,received_ms=excluded.received_ms`)
 	if err != nil {
 		return err
@@ -200,7 +236,7 @@ func (s *Store) UpsertIntervals(ivs []Interval, now int64) error {
 	defer st.Close()
 	for _, iv := range ivs {
 		if _, err := st.Exec(iv.DeviceID, iv.ID, iv.Source, iv.StartMs, iv.EndMs, iv.Language, iv.ZhShare, iv.Units, iv.App,
-			iv.Title, iv.ChannelName, iv.ChannelID, iv.VideoID, iv.ConversationID, iv.DocID, iv.URL, iv.Meta, now); err != nil {
+			iv.Title, iv.ChannelName, ChannelKey(str(iv.ChannelName)), iv.ChannelID, iv.VideoID, iv.ConversationID, iv.DocID, iv.URL, iv.Meta, now); err != nil {
 			return err
 		}
 	}
@@ -348,7 +384,7 @@ func (s *Store) ChannelLabels() (map[string]string, error) {
 
 // ChannelTitles returns the video titles seen for a channel, newest first.
 func (s *Store) ChannelTitles(key string, limit int) ([]string, error) {
-	rows, err := s.db.Query(`SELECT DISTINCT title FROM intervals WHERE source='youtube' AND title IS NOT NULL AND title<>'' AND lower(channel_name)=? ORDER BY start_ms DESC LIMIT ?`, key, limit)
+	rows, err := s.db.Query(`SELECT DISTINCT title FROM intervals WHERE source='youtube' AND title IS NOT NULL AND title<>'' AND channel_key=? ORDER BY start_ms DESC LIMIT ?`, key, limit)
 	if err != nil {
 		return nil, err
 	}

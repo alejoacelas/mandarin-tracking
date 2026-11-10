@@ -112,7 +112,9 @@ func newFakeReader(t *testing.T) (*fakeReadwise, *Reader) {
 const zhText = "<p>我最近在学习中文，每天都会和老师练习口语。你觉得我应该先学汉字还是先练习听力？其实我更喜欢看视频学习。</p>"
 const enText = "<p>I have been thinking about how to plan the project timeline and which tasks come first, and then some more words here.</p>"
 
-func ts(base time.Time, sec int) string { return base.Add(time.Duration(sec) * time.Second).UTC().Format(time.RFC3339Nano) }
+func ts(base time.Time, sec int) string {
+	return base.Add(time.Duration(sec) * time.Second).UTC().Format(time.RFC3339Nano)
+}
 
 func TestReaderFirstPollDoesNotCountHistory(t *testing.T) {
 	f, r := newFakeReader(t)
@@ -288,33 +290,20 @@ func TestReaderReplayOfScriptedReading(t *testing.T) {
 			snaps = append(snaps, s)
 		}
 	}
-	type truth struct {
-		Scenario   string  `json:"scenario"`
-		Start, End float64 `json:"start"`
+	type scenario struct {
+		Scenario string  `json:"scenario"`
+		S        float64 `json:"start"`
+		E        float64 `json:"end"`
 	}
-	var scen []struct {
-		Scenario   string  `json:"scenario"`
-		Start, End float64 `json:"-"`
-		S          float64 `json:"start"`
-		E          float64 `json:"end"`
-	}
+	var scen []scenario
 	tb, _ := os.ReadFile("testdata/readwise/runs/truth.jsonl")
 	for _, l := range strings.Split(strings.TrimSpace(string(tb)), "\n") {
-		var x struct {
-			Scenario string  `json:"scenario"`
-			S        float64 `json:"start"`
-			E        float64 `json:"end"`
-		}
+		var x scenario
 		json.Unmarshal([]byte(l), &x)
 		if x.Scenario == "probe" || x.Scenario == "js_scroll_8min" {
 			continue // no input events, so Reader stopped syncing; not reading the API can see
 		}
-		scen = append(scen, struct {
-			Scenario   string  `json:"scenario"`
-			Start, End float64 `json:"-"`
-			S          float64 `json:"start"`
-			E          float64 `json:"end"`
-		}{Scenario: x.Scenario, S: x.S, E: x.E})
+		scen = append(scen, x)
 	}
 	html := map[string]string{}
 	files, _ := filepath.Glob("testdata/readwise/fixtures/*.html")
