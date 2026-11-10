@@ -114,7 +114,8 @@ class MainActivity : Activity() {
         val restrictedAllowed = Permissions.restrictedSettingsAllowed(this)
         if (Build.VERSION.SDK_INT >= 33 && (!a11y || !notif) && restrictedAllowed != true) {
             list.addView(item("Allow restricted settings", false,
-                "Android blocks the accessibility and notification switches for apps installed from a file.",
+                if (restrictedAllowed == false) "Android blocks the accessibility and notification switches for apps installed from a file."
+                else "If the accessibility or notification switch below is greyed out or shows \"Restricted setting\", do this first.",
                 "Tap Open. On the App info page, tap ⋮ (top right), then Allow restricted settings, and confirm with your PIN. " +
                     "If ⋮ has no such item, first try the Accessibility step below once (Android shows a \"Restricted setting\" message), then come back here.",
                 "Open App info") { openAppDetails() })
