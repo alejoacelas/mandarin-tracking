@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="accessibility_description">Measures how much of the text in Readwise Reader and AI chat apps is Chinese. It counts characters only; it never stores or sends the text, and it looks at no other apps.</string>
+</resources>
