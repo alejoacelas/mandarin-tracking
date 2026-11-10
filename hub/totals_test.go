@@ -193,3 +193,13 @@ func TestResolveReaderAppFromAPI(t *testing.T) {
 	d := Summarize([]Interval{api, phone}, r, now, 1, time.UTC, nil)[0]
 	near(t, "reader", d.BySource["reader"], 10)
 }
+
+func TestItemListsEveryDevice(t *testing.T) {
+	now := time.Date(2026, 11, 10, 12, 0, 0, 0, time.UTC)
+	a := iv("p", "1", "pleco", "zh", now.Add(-time.Hour), 5)
+	b := iv("c", "2", "pleco", "zh", now.Add(-30*time.Minute), 5)
+	d := Summarize([]Interval{a, b, a}, &Resolver{}, now, 1, time.UTC, map[string]string{"p": "Phone", "c": "Chrome"})[0]
+	if len(d.Items) != 1 || d.Items[0].Device != "Phone, Chrome" {
+		t.Errorf("%+v", d.Items)
+	}
+}

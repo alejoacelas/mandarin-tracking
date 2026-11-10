@@ -256,12 +256,15 @@ func Summarize(ivs []Interval, r *Resolver, now time.Time, days int, loc *time.L
 			name, detail := itemName(iv)
 			k := itemKey{iv.Source, name, c}
 			items[k] = append(items[k], sp)
-			if _, ok := itemInfo[k]; !ok {
-				dev := deviceNames[iv.DeviceID]
-				if dev == "" {
-					dev = iv.DeviceID
-				}
+			dev := deviceNames[iv.DeviceID]
+			if dev == "" {
+				dev = iv.DeviceID
+			}
+			if it, ok := itemInfo[k]; !ok {
 				itemInfo[k] = Item{Source: iv.Source, Name: name, Detail: detail, Class: c, Device: dev}
+			} else if it.Device != dev && !strings.Contains(", "+it.Device+", ", ", "+dev+", ") {
+				it.Device += ", " + dev
+				itemInfo[k] = it
 			}
 		}
 		zhM, partlyM := merge(zh), merge(partly)
