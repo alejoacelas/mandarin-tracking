@@ -14,7 +14,8 @@ trap 'kill $HUB 2>/dev/null' EXIT
 
 ./gradlew -q :simulators:assembleDebug :app:assembleDebug :app:assembleDebugAndroidTest
 for apk in simulators/build/outputs/apk/*/debug/*.apk; do
-  adb install -r -t "$apk" >/dev/null
+  # The fake YouTube can't replace a preinstalled real one; its tests then fail, the others still run.
+  adb install -r -t "$apk" >/dev/null || echo "could not install $apk"
 done
 # Let notifications from the fake YouTube player show (Android 13+).
 adb shell pm grant com.google.android.youtube android.permission.POST_NOTIFICATIONS 2>/dev/null || true

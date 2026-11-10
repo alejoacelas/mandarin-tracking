@@ -66,6 +66,7 @@ class MainActivity : Activity() {
 
     private var codeField: EditText? = null
     private var addressField: EditText? = null
+    private var lastSignature: String? = null
 
     private fun render() {
         val prefs = Prefs(this)
@@ -74,6 +75,18 @@ class MainActivity : Activity() {
         val addr = addressField?.text?.toString()
         val focused = currentFocus
         if (focused is EditText) return // don't rebuild under the user's fingers
+        // Rebuild only when something shown changed, so buttons don't move or vanish mid-tap.
+        val store = Store.get(this)
+        val signature = listOf(
+            prefs.paired, prefs.pairingLost, prefs.manualHub, prefs.lastHub, prefs.lastSyncError,
+            prefs.lastSyncOk?.let { it / 60_000 }, foundHub, searching, pairing, pairMessage,
+            Permissions.usageAccess(this), Permissions.notificationAccess(this), Permissions.accessibility(this),
+            Permissions.batteryUnrestricted(this), Permissions.backgroundRestricted(this), Permissions.notificationsAllowed(this),
+            Permissions.restrictedSettingsAllowed(this), MediaListenerService.connected, TextSamplerService.running,
+            store.unsentCount(), store.activeProblems(),
+        ).toString()
+        if (signature == lastSignature) return
+        lastSignature = signature
         list.removeAllViews()
 
         list.addView(text("Mandarin tracker", 22f, bold = true))
@@ -176,7 +189,6 @@ class MainActivity : Activity() {
 
         // Status
         list.addView(text("Status", 18f, bold = true).also { it.setPadding(0, dp(20), 0, dp(4)) })
-        val store = Store.get(this)
         val lastOk = prefs.lastSyncOk
         list.addView(text(buildString {
             append(if (lastOk != null) "Last sent to the Mac: ${ago(lastOk)}." else "Nothing sent to the Mac yet.")
