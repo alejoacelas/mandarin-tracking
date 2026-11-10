@@ -1,3 +1,4 @@
 .env
 hub/mandarin-hub
 dist/
+.claude/
