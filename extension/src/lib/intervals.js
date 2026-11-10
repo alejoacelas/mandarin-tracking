@@ -8,7 +8,8 @@
 //   than JOIN_GAP_MS (pauses aren't counted as time), or the open one reaching 30 minutes.
 // - A span that repeats time already in the open interval (a retry after the worker stopped
 //   before it answered) adds only the part that is new.
-// - Time on a new chat that has no conversation id yet goes to the conversation it becomes.
+// - Time on a new chat that has no conversation id yet goes to the conversation it becomes, and
+//   time on a page before its text was first measured takes that first measurement.
 export const MAX_INTERVAL_MS = 30 * 60_000;
 export const JOIN_GAP_MS = 3000;
 
@@ -22,10 +23,13 @@ function sameContent(open, desc) {
   return FILL_IN.every((k) => open[k] == null || desc[k] == null || open[k] === desc[k]);
 }
 
-// A new chat (no conversation id yet) turning into a conversation in the same tab.
+// A new chat (no conversation id yet) turning into a conversation in the same tab, or a page's
+// first seconds, before its text was measured, joining what the measurement found.
 function adopts(open, desc) {
-  return open.source === "llm" && open.conversation_id == null && open.meta?.new_chat === true
-    && desc.conversation_id != null && open.app === desc.app;
+  if (open.source !== desc.source || open.app !== desc.app) return false;
+  if (open.source === "llm" && open.conversation_id == null && open.meta?.new_chat === true && desc.conversation_id != null) return true;
+  return open.meta?.measured === "not_yet" && desc.meta?.measured !== "not_yet"
+    && (open.conversation_id ?? null) === (desc.conversation_id ?? null) && (open.doc_id ?? null) === (desc.doc_id ?? null);
 }
 
 function describe(desc) {

@@ -123,3 +123,16 @@ test("only protocol fields are set, with null for missing ones", () => {
     "language", "meta", "source", "start_ms", "title", "units", "url", "video_id", "zh_share"].sort());
   assert.equal(intervals[0].doc_id, null);
 });
+
+test("a page's first seconds, before its text was measured, join the measured interval", () => {
+  const early = chat({ language: "unknown", zh_share: null, units: null, title: null, meta: { measured: "not_yet" } });
+  const { intervals } = run([[early, [[T, T + 1 * S]]], [chat(), [[T + 1 * S, T + 20 * S]]]]);
+  assert.equal(intervals.length, 1);
+  assert.equal(intervals[0].language, "zh");
+  assert.equal(dur(intervals[0]), 20);
+});
+
+test("a measured chat doesn't turn into another conversation", () => {
+  const { intervals } = run([[chat({ meta: { measured: "content" } }), [[T, T + 5 * S]]], [chat({ conversation_id: "c2" }), [[T + 5 * S, T + 9 * S]]]]);
+  assert.equal(intervals.length, 2);
+});
