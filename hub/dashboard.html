@@ -164,8 +164,8 @@ async function save(field, input, label) {
 }
 $("rwsave").onclick = () => save("readwise_token", "rw", "Readwise token");
 $("aksave").onclick = () => save("anthropic_key", "ak", "Anthropic key");
-$("rw").onkeydown = (e) => e.key === "Enter" && $("rwsave").click();
-$("ak").onkeydown = (e) => e.key === "Enter" && $("aksave").click();
+$("rw").onkeydown = (e) => { if (e.key === "Enter") $("rwsave").click(); };
+$("ak").onkeydown = (e) => { if (e.key === "Enter") $("aksave").click(); };
 load();
 setInterval(load, 30000);
 </script>
