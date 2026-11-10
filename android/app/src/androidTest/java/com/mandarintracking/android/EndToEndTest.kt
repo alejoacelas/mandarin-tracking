@@ -65,7 +65,23 @@ class EndToEndTest {
         val db = Store.get(ctx).writableDatabase
         db.execSQL("DELETE FROM outbox"); db.execSQL("DELETE FROM samples"); db.execSQL("DELETE FROM problems")
         ctx.getSystemService(NotificationManager::class.java).cancelAll()
-        waitFor("services bound", 30_000) { MediaListenerService.connected && TextSamplerService.running }
+        try {
+            waitFor("services bound", 15_000) { MediaListenerService.connected && TextSamplerService.running }
+        } catch (e: AssertionError) {
+            // Older Android rebinds the services to the restarted test process slowly; switch them off and on.
+            Log.i(TAG, "rebinding: listener=${MediaListenerService.connected} a11y=${TextSamplerService.running}")
+            val l = shell("settings get secure enabled_notification_listeners").trim()
+            val a = shell("settings get secure enabled_accessibility_services").trim()
+            shell("settings put secure enabled_notification_listeners ${l.split(':').filter { !it.startsWith(pkg) }.joinToString(":").ifEmpty { "\"\"" }}")
+            shell("settings put secure enabled_accessibility_services \"\"")
+            Thread.sleep(1_000)
+            shell("settings put secure enabled_notification_listeners $l")
+            shell("settings put secure enabled_accessibility_services $a")
+            // Android 8 doesn't bind the notification listener into an instrumented process at all
+            // (outside tests it rebinds within ~20 s of the process dying), so only YouTube tests need it there.
+            val needListener = android.os.Build.VERSION.SDK_INT >= 28
+            waitFor("services bound", 30_000) { (MediaListenerService.connected || !needListener) && TextSamplerService.running }
+        }
         shell("input keyevent KEYCODE_WAKEUP"); shell("wm dismiss-keyguard"); home()
     }
 
@@ -126,7 +142,8 @@ class EndToEndTest {
     fun screenOffEndsSession() {
         pair()
         open(PLECO, "zh"); Thread.sleep(6_000)
-        shell("input keyevent KEYCODE_SLEEP"); Thread.sleep(8_000)
+        // Off for longer than the 10 s join window: Android 8 records no screen-off event, only a pause.
+        shell("input keyevent KEYCODE_SLEEP"); Thread.sleep(15_000)
         shell("input keyevent KEYCODE_WAKEUP"); shell("wm dismiss-keyguard"); Thread.sleep(2_000); home()
         Collector.runAll(ctx)
         val pleco = hubIntervals().filter { it.getString("app") == PLECO }.sortedBy { it.getLong("start_ms") }
@@ -287,7 +304,12 @@ class EndToEndTest {
 
     private fun grantAll() {
         shell("appops set $pkg GET_USAGE_STATS allow")
-        shell("cmd notification allow_listener $pkg/$pkg.MediaListenerService")
+        val listener = "$pkg/$pkg.MediaListenerService"
+        if (shell("cmd notification allow_listener $listener").contains("No shell command")) {
+            // Android 8.0 has no "cmd notification"; edit the setting directly.
+            val cur = shell("settings get secure enabled_notification_listeners").trim().takeUnless { it == "null" }.orEmpty()
+            if (!cur.contains(listener)) shell("settings put secure enabled_notification_listeners ${listOf(cur, listener).filter { it.isNotEmpty() }.joinToString(":")}")
+        }
         val a11y = "$pkg/$pkg.TextSamplerService"
         val current = shell("settings get secure enabled_accessibility_services").trim()
         if (!current.contains(a11y)) {
