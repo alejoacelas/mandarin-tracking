@@ -97,9 +97,11 @@ object Sync {
         val prefs = Prefs(c)
         val token = prefs.token ?: return null
         val store = Store.get(c)
-        val found = HubLocator.withHub(c) { addr ->
-            val rep = SyncEngine(store, store, HttpTransport(addr, token)) { System.currentTimeMillis() }.run(heartbeat(c))
-            HttpResult(if (rep.outcome == SyncOutcome.UNREACHABLE) -1 else 200, null, error = rep.detail) to rep
+        val engine = { addr: String -> SyncEngine(store, store, HttpTransport(addr, token)) { System.currentTimeMillis() } }
+        val found = HubLocator.withHub(c, accept = { it.code != 401 }) { addr ->
+            val rep = engine(addr).run(heartbeat(c))
+            val code = when (rep.outcome) { SyncOutcome.UNREACHABLE -> -1; SyncOutcome.UNAUTHORIZED -> 401; else -> 200 }
+            HttpResult(code, null, error = rep.detail) to rep
         }
         val report = found?.second ?: SyncReport(SyncOutcome.UNREACHABLE, detail = prefs.lastSyncError)
         val now = System.currentTimeMillis()
@@ -126,6 +128,10 @@ object Sync {
             c, Health.CLOCK_SKEW,
             if (skew != null && abs(skew) > 2 * 60_000) "The phone clock differs from the Mac's by ${skew / 60_000} minutes; times from the phone may be off." else null,
         )
+        // Problems found by this sync (rejections, clock skew) go out now rather than next time.
+        if (report.outcome == SyncOutcome.OK && found != null && store.pendingProblems().isNotEmpty()) {
+            engine(found.first).pushProblems()
+        }
         return report
     }
 

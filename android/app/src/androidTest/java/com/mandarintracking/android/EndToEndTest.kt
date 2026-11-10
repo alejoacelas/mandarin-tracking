@@ -248,8 +248,8 @@ class EndToEndTest {
         prefs.manualHub = null
         prefs.lastHub = null
         shell("am start -n com.mandarintracking.hubbeacon/$SIM.BeaconActivity --ei target 47811")
+        // The beacon stays in the foreground: Android freezes cached background apps.
         Thread.sleep(3_000)
-        home()
         val found = HubLocator.discover(ctx)
         Log.i(TAG, "discovered: $found")
         assertTrue("found: $found", found.isNotEmpty())

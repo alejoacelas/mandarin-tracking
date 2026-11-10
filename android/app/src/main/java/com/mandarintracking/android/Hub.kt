@@ -57,19 +57,24 @@ object HubLocator {
         if (discover) yieldAll(discover(c).filter { it != prefs.lastHub })
     }
 
-    /** Runs [call] against each candidate until one answers with any HTTP status. */
-    fun <T> withHub(c: Context, call: (String) -> Pair<HttpResult, T>): Pair<String, T>? {
+    /**
+     * Runs [call] against each candidate until one answers and [accept]s the answer. The local
+     * network may hold more than one hub (two Macs), so a hub that answers but refuses (wrong
+     * code, unknown token) doesn't stop the search. If none accepts, returns the first refusal.
+     */
+    fun <T> withHub(c: Context, accept: (HttpResult) -> Boolean, call: (String) -> Pair<HttpResult, T>): Pair<String, T>? {
         var lastFailure: String? = null
+        var refused: Pair<String, T>? = null
         for (addr in candidates(c)) {
             val (res, value) = call(addr)
-            if (res.code > 0) {
+            if (res.code > 0 && accept(res)) {
                 Prefs(c).lastHub = addr
                 return addr to value
             }
-            lastFailure = res.error
+            if (res.code > 0) refused = refused ?: (addr to value) else lastFailure = res.error
         }
-        Prefs(c).lastSyncError = lastFailure ?: "No hub found on this network"
-        return null
+        if (refused == null) Prefs(c).lastSyncError = lastFailure ?: "No hub found on this network"
+        return refused
     }
 
     /** Blocking NSD discovery. Returns "host:port" for each resolved service. */
@@ -141,7 +146,7 @@ object Pairing {
             .put("device_name", deviceName())
             .put("kind", "android")
             .toString()
-        val got = HubLocator.withHub(c) { addr ->
+        val got = HubLocator.withHub(c, accept = { it.code != 403 }) { addr ->
             val r = HttpTransport(addr, null).post("pair", body)
             r to r
         } ?: return Outcome.Failed("No hub found on this Wi-Fi. Check that the Mac is on and on the same network, or type its address under Advanced.")

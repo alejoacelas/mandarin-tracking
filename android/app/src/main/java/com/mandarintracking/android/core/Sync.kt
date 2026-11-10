@@ -89,7 +89,8 @@ class SyncEngine(
         return SyncReport(SyncOutcome.OK, sent, rejected, serverDateMs = date)
     }
 
-    private fun pushProblems(): SyncReport? {
+    /** Sends problem changes. Returns null on success, else the failure. */
+    fun pushProblems(): SyncReport? {
         for (p in problems.pendingProblems()) {
             val body = JSONObject().put("component", p.component)
             if (p.resolved) body.put("resolved", true) else body.put("message", p.message)
