@@ -193,13 +193,13 @@ test("sync: a run stopped by an error resumes with the conversations still pendi
   const run1 = await syncService({ client, state: undefined, save: async (s) => { run1State = s; }, emit: async () => {}, now: () => NOW }).catch((e) => e);
   var run1State;
   assert.equal(run1.kind, "rate_limited");
-  assert.deepEqual(run1State.pending.map((p) => p.id), ["c2", "c3"]);
+  assert.deepEqual(run1State.pending.map((p) => p.id), ["c2", "c1"]); // newest first; c3 was done
   assert.equal(run1State.cursor_ms, null, "the cursor moves only when every listed conversation is done");
 
   const client2 = fakeClient(convs);
   const run2 = await syncLoop(client2, run1State);
   assert.equal(client2.listed, 0, "no new listing while conversations are pending");
-  assert.deepEqual(run2.sent.map((m) => m.conversation_id), ["c2", "c3"]);
+  assert.deepEqual(run2.sent.map((m) => m.conversation_id), ["c2", "c1"]);
   assert.equal(run2.saved.cursor_ms, NOW - 10_000 + 3);
 });
 

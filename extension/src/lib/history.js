@@ -218,7 +218,7 @@ export async function syncService({ client, state, save, emit, now, sleep = asyn
   if (!st.pending.length) {
     const since = st.cursor_ms ?? now() - LOOKBACK_MS;
     const list = await client.listUpdatedSince(since);
-    st.pending = list.sort((a, b) => a.updated_ms - b.updated_ms);
+    st.pending = list.sort((a, b) => b.updated_ms - a.updated_ms); // newest first
     st.next_cursor_ms = Math.max(since, ...list.map((c) => c.updated_ms));
     await save(st);
   }
