@@ -1,5 +1,6 @@
 # mandarin-tracking
 
+Tags: languages, mandarin, tracking
 ## Credentials
 
 Rebuild `.env` with `~/best/areas/dotfiles/bin/op-agent inject -i .env.tpl -o .env -f`.
